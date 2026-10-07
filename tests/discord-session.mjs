@@ -22,6 +22,9 @@ try{
  // A just-verified session still rechecks membership before a write.
  roles=[ninja];await assert.rejects(auth.requireMember(request,false,true),e=>e.status===403);assert.equal(db.connection.prepare('SELECT COUNT(*) n FROM sessions').get().n,0);assert.equal(db.connection.prepare('SELECT active FROM members WHERE id=?').get(other).active,0);
  roles=[memberRole,ninja];request=await login();assert.equal(db.connection.prepare('SELECT active FROM members WHERE id=?').get(other).active,1);
+ // The Member role grants access even before a cosmetic class role is assigned.
+ roles=[memberRole];request=await login();user=await auth.requireMember(request,false,true);assert.equal(user.class,'Unassigned');assert.equal(db.connection.prepare('SELECT active FROM members WHERE id=?').get(other).active,1);
+ roles=[memberRole,ninja,shaman];request=await login();user=await auth.requireMember(request,false,true);assert.equal(user.class,'Unassigned');assert.equal(user.admin,0);
  // Member role removal also expires a periodically refreshed read-only session.
  roles=[ninja];db.connection.prepare('UPDATE sessions SET verified=?').run(seconds()-31);await assert.rejects(auth.requireMember(request),e=>e.status===403);
  identity=yigo;roles=[memberRole,shaman];request=await login();user=await auth.requireMember(request,false,true);assert.equal(user.admin,1);assert.equal(user.can_host,1);

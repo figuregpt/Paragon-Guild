@@ -99,3 +99,5 @@ The bot imports every human account with the configured guild member role, inclu
 Historical contribution totals are frozen when an operator resets the database, at 20 PP per 500,000 Yang (integer PP rounded down). Each source character and Discord account can receive the opening credit only once. Exact character names in slash-separated nicknames are supported; ambiguous or misspelled names require an explicit server-side mapping. Current-week amounts already included in the opening credit cannot earn the same quest PP again. Members not currently in the guild retain a pending source balance.
 
 A reset requires maintenance mode, creates a complete SQLite backup, archives previous uploads, rebuilds the schema, and checks all opening totals before replacing the live database. There is no reset HTTP endpoint. Real payment snapshots and database backups are never committed here.
+
+The Member role is the access requirement. Accounts whose class has not been assigned yet appear as `Unassigned` and can still enter; class roles do not grant administrator or organizer permissions.
