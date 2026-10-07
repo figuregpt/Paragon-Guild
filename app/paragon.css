@@ -103,3 +103,13 @@
 #paragon-design .pg-attendance-creator .pg-attendance-choice>span{text-align:left}
 #paragon-design .pg-attendance-creator .pg-attendance-choice strong{display:block;color:#edf0f5;font-size:12px}
 #paragon-design .pg-attendance-creator .pg-attendance-choice small{display:block;color:#aab3c1;font-size:11px;margin-top:4px}
+
+/* Shared help link is available on every screen, outside the four app tabs. */
+#paragon-design .pg-footer-links{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:8px 20px;min-width:0}
+#paragon-design .pg-footer-links>a{display:inline-flex;align-items:center;min-height:44px;color:var(--pg-muted);font-size:12px;text-decoration:underline;text-underline-offset:4px}
+#paragon-design .pg-footer-links>a:hover{color:var(--pg-text)}
+#paragon-design .pg-footer-links>span{overflow-wrap:anywhere}
+#paragon-design .pg-footer-standalone{padding-bottom:max(20px,env(safe-area-inset-bottom))}
+#paragon-design .pg-entry-app{display:flex;flex-direction:column}
+#paragon-design .pg-entry-app>.pg-login{flex:1;width:100%}
+@media(max-width:700px){#paragon-design .pg-footer-links{justify-content:flex-start;gap:6px 16px}#paragon-design .pg-footer-standalone{padding-bottom:max(18px,env(safe-area-inset-bottom))}}

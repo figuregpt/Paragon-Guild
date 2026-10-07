@@ -8,7 +8,7 @@ Desktop has a logo masthead, four tabs, a compact character/PP sidebar and the w
 
 Reference: Awesome DESIGN.md Raycast, adapted for dark surface hierarchy and data density. User logo and guild functions lead the design; Raycast branding and marketing compositions are not used. Reviewed against Vercel Web Interface Guidelines, with desktop/mobile rendering and real interactions.
 
-Guild entry stays compact: centered emblem, Discord access status and two demo role buttons. No slogans, feature icon strip, marketing explanations or decorative section eyebrows.
+Guild entry stays compact: centered emblem and Discord sign-in with current Member-role access. Public demo buttons are disabled in production. No slogans, feature icon strip, marketing explanations or decorative section eyebrows.
 
 All displayed timestamps and event calendar tiles use the device time zone. Event creation shows that zone and converts local input to a UTC timestamp; invalid local times during daylight-saving gaps are rejected. Push payloads contain the UTC event timestamp for local formatting by the device service worker. The guild's weekly deposit boundary remains a shared guild rule.
 
@@ -33,3 +33,5 @@ Guild Settings and Manage Profile are removed. The account menu opens an adminis
 Profile notification controls include an own-device push test. New Help announcements remain deliverable during their duration. Notifications deep-link to the event and honor member/preference changes. Discord event announcements use a single rich embed, guild emblem, location, reward, device-local Discord timestamps and an Open Event link button, with mentions disabled. A persistent outbox and stable nonce limit duplicate sends; demos never post to Discord.
 
 New events offer a Channel selector with CH-1 through CH-6. The map and channel appear together in home/profile summaries and event details, and the Discord card includes a Channel field. Device notifications also show the selected CH. Historic events with unknown channels are not assigned a fabricated value.
+
+How to Use is a public, static English guide at /how-to-use. A shared footer link exposes it on the sign-in gateway and all application screens; it is not a fifth application tab. The guide uses the existing brand, a sticky desktop contents column and compact mobile section links, numbered steps, native FAQ disclosures and a four-row event-reward table. Instructions cover iPhone/Android installation, device notifications and reminders, contributions, event attendance/evidence/approval, auction reservations and administrator workflows. Apple and Google help links support device setup. No account or guild data is fetched by the guide.

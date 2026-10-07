@@ -7,6 +7,7 @@ This initial source snapshot is based on deployment source commit `20a1817`. Run
 ## Features
 
 - Home: weekly Yang contribution quest, ongoing/upcoming events and auctions.
+- How to Use: a public step-by-step guide at `/how-to-use`, linked from every screen and the sign-in gateway. Covers phone installation, notifications, reminders, PP, contributions, events, auctions and administrator workflows without fetching private guild data.
 - Discord sign-in: server nickname, class roles, guild membership, organizer roles and administrator allowlists are enforced on the server. A connected bot follows membership/role changes; OAuth verification is the fallback.
 - Participation Points: immutable transaction history, available and reserved balances, and administrator Add PP / Remove PP adjustments with a reason and audit record. Deductions cannot consume auction reservations or make available PP negative.
 - Auctions: only administrators create them, using an item name and screenshot. Bids reserve PP. Outbidding or cancellation releases reservations; settlement deducts PP from the winner once.
@@ -101,6 +102,6 @@ Historical contribution totals are frozen when an operator resets the database, 
 
 A reset requires maintenance mode, creates a complete SQLite backup, archives previous uploads, rebuilds the schema, and checks all opening totals before replacing the live database. There is no reset HTTP endpoint. Real payment snapshots and database backups are never committed here.
 
-Production uses `MEMBERS_ONLY=true` and `DEMO_ENABLED=false`. The server verifies the current Discord Member role before rendering the application, including direct view links; visitors see only the Discord sign-in gateway. HTML is private and uncached. Missing member-role configuration fails closed, and administrators also require the Member role.
+Production uses `MEMBERS_ONLY=true` and `DEMO_ENABLED=false`. The server verifies the current Discord Member role before rendering the application, including direct view links; visitors see the Discord sign-in gateway, with a link to the public `/how-to-use` guide. HTML is private and uncached. Missing member-role configuration fails closed, and administrators also require the Member role.
 
 The Member role is the access requirement. Accounts whose class has not been assigned yet appear as `Unassigned` and can still enter; class roles do not grant administrator or organizer permissions.

@@ -1,5 +1,7 @@
+import GuildFooter from './guild-footer';
+
 export default function GuildSignIn({ready,message}:{ready:boolean;message?:string}){
- return <div id="paragon-design"><div className="pg-stage"><div className="pg-app">
+ return <div id="paragon-design"><div className="pg-stage"><div className="pg-app pg-entry-app">
   <a className="pg-skip" href="#main-content">Skip to content</a>
   <header className="pg-masthead"><div className="pg-brand">
    <img className="pg-crest" src="/branding/paragon-emblem.png" width="80" height="80" alt="Paragon guild emblem"/>
@@ -13,5 +15,6 @@ export default function GuildSignIn({ready,message}:{ready:boolean;message?:stri
     {ready?<a className="pg-button pg-red" href="/auth/discord">Sign in with Discord</a>:<><button className="pg-button pg-red" disabled>Sign in with Discord</button><p className="pg-dim">Discord sign-in is currently unavailable.</p></>}
    </div></section>
   </main>
+  <GuildFooter standalone/>
  </div></div></div>;
 }
