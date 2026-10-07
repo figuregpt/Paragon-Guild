@@ -1,0 +1,21 @@
+import {EventEmitter} from 'node:events';
+import {Events,Status} from 'discord.js';
+import assert from 'node:assert/strict';
+import {membershipReader} from '../lib/railway/discord-bot.mjs';
+const guild='100000000000000001',user='100000000000000002',memberRole='100000000000000003',organizer='100000000000000004';
+const client=new EventEmitter();let connected=true,calls=0,roles=[memberRole,organizer],gate;
+client.isReady=()=>connected;client.ws={status:Status.Ready};
+const member=()=>({id:user,nickname:'Character',user:{username:'player',globalName:'Player',avatar:null},guild:{id:guild},roles:{cache:new Map([guild,...roles].map(id=>[id,{}]))}});
+client.guilds={cache:new Map([[guild,{members:{fetch:async()=>{calls++;if(gate)await gate;return member();}}}]])};
+const bot=membershipReader(client,guild);
+assert.equal(bot.ready,true);
+const first=await Promise.all([bot.getMember(user),bot.getMember(user)]);assert.equal(calls,1);assert.deepEqual(first[0].roles,[memberRole,organizer]);
+roles=[memberRole];client.emit(Events.GuildMemberUpdate,null,member());assert.deepEqual((await bot.getMember(user)).roles,[memberRole]);assert.equal(calls,1);
+client.emit(Events.GuildMemberRemove,member());assert.equal(await bot.getMember(user),null);
+client.emit(Events.GuildMemberAdd,member());assert.deepEqual((await bot.getMember(user)).roles,[memberRole]);
+connected=false;client.emit(Events.ShardDisconnect);await assert.rejects(bot.getMember(user));assert.equal(bot.ready,false);
+connected=true;client.emit(Events.ShardResume);await bot.getMember(user);assert.equal(calls,2);
+client.emit(Events.ShardResume);let release;gate=new Promise(r=>release=r);const pending=bot.getMember(user);client.emit(Events.GuildMemberRemove,member());release();assert.equal(await pending,null);gate=null;
+// A disconnect while a REST fetch is in flight never authorizes with the old response.
+client.emit(Events.ShardResume);gate=new Promise(r=>release=r);const stale=bot.getMember(user);connected=false;client.emit(Events.ShardDisconnect);release();await assert.rejects(stale);
+console.log('PASS: bot reads are deduplicated, Gateway role changes/leave/rejoin update immediately, reconnect clears cache and in-flight stale reads cannot authorize.');

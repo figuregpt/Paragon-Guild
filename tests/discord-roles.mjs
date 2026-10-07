@@ -1,0 +1,23 @@
+import assert from 'node:assert/strict';
+import {CLASSES} from '../lib/domain.ts';
+import {parseClassRoles,parseRoleList,resolveDiscordRoles,matchesDiscordAccess} from '../lib/discord-roles.ts';
+const raw={Warrior:['1480604321627373619','1480604146569842750'],Ninja:['1480605021983997983','1480604825891766292'],Sura:['1480604554541269002','1480604668651634873'],Shaman:['1480603704099864769','1480603972715942141']};
+const map=parseClassRoles(JSON.stringify(raw),CLASSES),member='1476262174971400332',moderator='1486644687358922823';
+for(const [name,ids] of Object.entries(raw))for(const id of ids)assert.deepEqual(resolveDiscordRoles([member,id],map,[member],[]),{class:name,admin:0});
+assert.deepEqual(resolveDiscordRoles([member,...raw.Shaman],map,[member],[]),{class:'Shaman',admin:0});
+assert.equal(resolveDiscordRoles([member,moderator,raw.Shaman[0]],map,[member],[]).admin,0);
+assert.equal(resolveDiscordRoles([member,moderator,raw.Shaman[0]],map,[member],[moderator]).admin,1);
+assert.deepEqual(parseClassRoles(JSON.stringify({Shaman:raw.Shaman[0]}),CLASSES),{Shaman:[raw.Shaman[0]]});
+for(const roles of [[],[member],[raw.Shaman[0]],[member,raw.Shaman[0],raw.Sura[0]],null,[undefined]])assert.throws(()=>resolveDiscordRoles(roles,map,[member],[]),e=>e.status===403);
+for(const invalid of ['{','{}','[]','null',JSON.stringify({Unknown:raw.Shaman}),JSON.stringify({Shaman:[]}),JSON.stringify({Shaman:12}),JSON.stringify({Shaman:['bad']}),JSON.stringify({Shaman:raw.Shaman[0],Warrior:raw.Shaman[0]})])assert.throws(()=>parseClassRoles(invalid,CLASSES),e=>e.status===503);
+assert.deepEqual(parseRoleList(),[]);
+assert.deepEqual(parseRoleList(' '+member+','+member+' '),[member]);
+assert.throws(()=>parseRoleList('Moderator'),e=>e.status===503);
+console.log('PASS: all 8 class roles, legacy mapping, member gate, same-family roles, conflicting classes, malformed settings and explicit admin assignment.');
+
+const yigo='358748815831990274',organizer='1557381184231710770';
+assert.equal(matchesDiscordAccess([organizer],member,[organizer],[]),true);
+assert.equal(matchesDiscordAccess([organizer],member,[],[yigo]),false);
+assert.equal(matchesDiscordAccess([],yigo,[],[yigo]),true);
+assert.equal(matchesDiscordAccess([],member,[organizer],[yigo]),false);
+console.log('PASS: organizer roles do not imply admin, exact user-ID allowlist works and unknown accounts remain unprivileged.');

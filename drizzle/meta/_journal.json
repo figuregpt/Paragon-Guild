@@ -1,0 +1,97 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1791221528531,
+      "tag": "0000_left_sebastian_shaw",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1791222595491,
+      "tag": "0001_furry_energizer",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1791224122595,
+      "tag": "0002_luxuriant_archangel",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1791224250208,
+      "tag": "0003_living_ben_grimm",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1791225490802,
+      "tag": "0004_silent_blur",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1791379075033,
+      "tag": "0005_glorious_morlocks",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1791381005436,
+      "tag": "0006_superb_iron_monger",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "6",
+      "when": 1791381167936,
+      "tag": "0007_low_rage",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "6",
+      "when": 1791382567982,
+      "tag": "0008_talented_callisto",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "6",
+      "when": 1791403760843,
+      "tag": "0009_creator_event_rewards",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "6",
+      "when": 1791405446805,
+      "tag": "0010_individual_event_rewards",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "6",
+      "when": 1791406069003,
+      "tag": "0011_discord_event_cards",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "6",
+      "when": 1791407300260,
+      "tag": "0012_event_game_channel",
+      "breakpoints": true
+    }
+  ]
+}

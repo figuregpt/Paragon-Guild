@@ -1,0 +1,27 @@
+{
+  "id": "/",
+  "name": "Paragon Arthion Guild App",
+  "short_name": "Paragon",
+  "description": "Guild events, participation points and shared Arthion loot.",
+  "lang": "en",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0b0d11",
+  "theme_color": "#0b0d11",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/branding/paragon-emblem.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

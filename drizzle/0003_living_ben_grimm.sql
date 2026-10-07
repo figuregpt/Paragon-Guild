@@ -1,0 +1,1 @@
+ALTER TABLE `bank_entries` ADD `status` text DEFAULT 'recorded' NOT NULL;
