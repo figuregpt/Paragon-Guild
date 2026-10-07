@@ -19,6 +19,7 @@ try{
  let called=false;const invalid=await demoRuntime.run(request('state','pg_demo=invalid'),async()=>{called=true;});assert.equal(invalid.status,401);assert.equal(called,false);
  await demoRuntime.run(request('jobs/tick',first),async()=>{assert.equal(env.DEMO_SESSION,false);assert.equal(env.SCHEDULER_SECRET,'PRIVATE');});
  assert.equal((await env.DB.prepare('SELECT COUNT(*) n FROM members').first()).n,0);assert.equal(await env.DB.prepare('SELECT * FROM bank_source').first(),null);
+ process.env.MEMBERS_ONLY='true';assert.equal(demoRuntime.enabled,false);assert.equal((await demoRuntime.login(request('demo-login'),'member')).status,404);assert.equal((await demoRuntime.login(request('demo-login'),'leader')).status,404);assert.equal((await demoRuntime.run(request('state',first),async()=>{throw new Error('Old demo must never run');})).status,401);delete process.env.MEMBERS_ONLY;
  process.env.DEMO_ENABLED='false';assert.equal((await demoRuntime.run(request('state',first),async()=>{})).status,401);assert.equal((await demoRuntime.login(request('demo-login'),'leader')).status,404);
  console.log('PASS member/leader fixtures, isolated databases, concurrent request contexts, role switching, invalid credentials fail closed, private snapshot/push isolation, production database unchanged and demo disable.');
 }finally{getDatabase().close();rmSync(root,{recursive:true,force:true});}

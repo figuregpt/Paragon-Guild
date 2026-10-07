@@ -8,7 +8,7 @@ import {NodeDatabase,migrate} from '../lib/railway/storage.mjs';
 const db=new NodeDatabase(':memory:');migrate(db);
 const memberRole='1476262174971400332',organizerRole='1557381184231710770',shaman='1480603704099864769',ninja='1480605021983997983',yigo='358748815831990274',other='100000000000000001';
 let identity=other,roles=[memberRole,shaman,organizerRole],fetches=0,delay=0,limited=false;
-const env={DB:db,SESSION_SECRET:'test-secret-never-production',DISCORD_GUILD_ID:'1475989193300643853',DISCORD_CLIENT_ID:'1557348788950011955',DISCORD_CLIENT_SECRET:'mock-secret',DISCORD_MEMBER_ROLE_IDS:memberRole,DISCORD_CLASS_ROLES:JSON.stringify({Shaman:shaman,Ninja:ninja}),DISCORD_EVENT_CREATOR_ROLE_IDS:organizerRole,DISCORD_ADMIN_USER_IDS:yigo,DISCORD_EVENT_CREATOR_USER_IDS:yigo};
+const env={DB:db,MEMBERS_ONLY:'true',SESSION_SECRET:'test-secret-never-production',DISCORD_GUILD_ID:'1475989193300643853',DISCORD_CLIENT_ID:'1557348788950011955',DISCORD_CLIENT_SECRET:'mock-secret',DISCORD_MEMBER_ROLE_IDS:memberRole,DISCORD_CLASS_ROLES:JSON.stringify({Shaman:shaman,Ninja:ninja}),DISCORD_EVENT_CREATOR_ROLE_IDS:organizerRole,DISCORD_ADMIN_USER_IDS:yigo,DISCORD_EVENT_CREATOR_USER_IDS:yigo};
 const context=vm.createContext({crypto:webcrypto,TextEncoder,TextDecoder,Uint8Array,atob,btoa,Date,URL,URLSearchParams,Request,Response,AbortSignal,console,fetch:async(url)=>{fetches++;if(delay)await new Promise(resolve=>setTimeout(resolve,delay));if(limited)return new Response('{}',{status:429,headers:{'retry-after':'60'}});return Response.json(url.endsWith('/member')?{nick:'Test Member',roles}:{id:identity,username:'tester',global_name:'Test Member',avatar:null});}});
 const worker=new vm.SyntheticModule(['env'],function(){this.setExport('env',env);},{context});
 const modules=new Map();
@@ -17,6 +17,12 @@ const mod=await load(path.resolve('lib/auth.ts'));await mod.evaluate();const aut
 const seconds=()=>Math.floor(Date.now()/1000);
 async function login(){await auth.upsertMember(await auth.discordIdentity('mock-access'));const cookie=await auth.createSession(identity,new Request('https://guild.test/'),{access:'mock-access',refresh:'mock-refresh',expires:seconds()+3600});return new Request('https://guild.test/api/state',{headers:{Cookie:cookie.split(';')[0]}});}
 try{
+ assert.equal(auth.configReady(),true);
+ const configuredMemberRole=env.DISCORD_MEMBER_ROLE_IDS;
+ env.DISCORD_MEMBER_ROLE_IDS='';assert.equal(auth.configReady(),false);
+ assert.throws(()=>auth.identityPermissions({id:other,name:'Test',roles:[shaman],avatar:null}),e=>e.status===503);
+ env.DISCORD_MEMBER_ROLE_IDS=configuredMemberRole;
+ env.DEMO_SESSION=true;await assert.rejects(auth.requireMember(new Request('https://guild.test/')),e=>e.status===401);env.DEMO_SESSION=false;
  let request=await login();assert.equal((await auth.requireMember(request)).can_host,1);assert.equal((await auth.requireMember(request)).admin,0);
  roles=[memberRole,ninja];db.connection.prepare('UPDATE sessions SET verified=?').run(seconds()-31);let user=await auth.requireMember(request);assert.equal(user.class,'Ninja');assert.equal(user.can_host,0);
  // A just-verified session still rechecks membership before a write.

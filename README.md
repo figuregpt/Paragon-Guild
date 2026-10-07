@@ -14,7 +14,7 @@ This initial source snapshot is based on deployment source commit `20a1817`. Run
 - Attendance: the creator uploads mandatory screenshot evidence, selects confirmed participants, and submits for administrator review. Administrators select individual recipients; the creator and selected confirmed participants receive the event reward once.
 - Contributions: a configured guild spreadsheet is checked server-side every five minutes. Weekly Deposit Log entries verify the 500,000 Yang quest and award its PP once; profiles show recorded deposit history.
 - Notifications: optional Web Push, event reminders and Discord event cards with a location/channel and an Open Event link. Dates display in the viewer's timezone.
-- Public trial: separate member/leader demo databases per browser, containing fictional characters. Demo actions do not change production data or send real notifications.
+- Local trial: optional isolated member/leader demo databases with fictional characters. Production uses `MEMBERS_ONLY=true`, which disables all demo/preview entry points even if demo mode is accidentally enabled.
 
 ## Run locally
 
@@ -62,6 +62,7 @@ node node_modules/typescript/bin/tsc --noEmit
 node tests/ledger.mjs
 node tests/railway-storage.mjs
 node tests/demo-isolation.mjs
+node --experimental-vm-modules tests/member-page.mjs
 node --experimental-vm-modules tests/discord-session.mjs
 node tests/discord-bot.mjs
 node tests/discord-event-cards.mjs
@@ -99,5 +100,7 @@ The bot imports every human account with the configured guild member role, inclu
 Historical contribution totals are frozen when an operator resets the database, at 20 PP per 500,000 Yang (integer PP rounded down). Each source character and Discord account can receive the opening credit only once. Exact character names in slash-separated nicknames are supported; ambiguous or misspelled names require an explicit server-side mapping. Current-week amounts already included in the opening credit cannot earn the same quest PP again. Members not currently in the guild retain a pending source balance.
 
 A reset requires maintenance mode, creates a complete SQLite backup, archives previous uploads, rebuilds the schema, and checks all opening totals before replacing the live database. There is no reset HTTP endpoint. Real payment snapshots and database backups are never committed here.
+
+Production uses `MEMBERS_ONLY=true` and `DEMO_ENABLED=false`. The server verifies the current Discord Member role before rendering the application, including direct view links; visitors see only the Discord sign-in gateway. HTML is private and uncached. Missing member-role configuration fails closed, and administrators also require the Member role.
 
 The Member role is the access requirement. Accounts whose class has not been assigned yet appear as `Unassigned` and can still enter; class roles do not grant administrator or organizer permissions.

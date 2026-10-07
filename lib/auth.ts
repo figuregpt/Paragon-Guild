@@ -5,8 +5,8 @@ import {DiscordRoleError,parseClassRoles,parseRoleList,resolveDiscordRoles,match
 export class HttpError extends Error{constructor(public status:number,message:string){super(message);}}
 export const cookieName='pg_session';
 export const sessionCookieName=()=>env.DEMO_SESSION?'pg_demo_session':cookieName;
-export const configReady=()=>{if(!env.DISCORD_CLIENT_ID||!env.DISCORD_CLIENT_SECRET||!env.DISCORD_GUILD_ID||!env.SESSION_SECRET)return false;try{parseClassRoles(env.DISCORD_CLASS_ROLES,CLASSES);parseRoleList(env.DISCORD_MEMBER_ROLE_IDS);parseRoleList(env.DISCORD_ADMIN_ROLE_IDS);parseRoleList(env.DISCORD_ADMIN_USER_IDS);parseRoleList(env.DISCORD_EVENT_CREATOR_USER_IDS);parseRoleList(env.DISCORD_EVENT_CREATOR_ROLE_IDS);return true;}catch{return false;}};
-export const localRequest=(r:Request)=>import.meta.env.DEV&&['localhost','127.0.0.1','[::1]'].includes(new URL(r.url).hostname);
+export const configReady=()=>{if(!env.DISCORD_CLIENT_ID||!env.DISCORD_CLIENT_SECRET||!env.DISCORD_GUILD_ID||!env.SESSION_SECRET)return false;try{parseClassRoles(env.DISCORD_CLASS_ROLES,CLASSES);const memberRoles=parseRoleList(env.DISCORD_MEMBER_ROLE_IDS);if(env.MEMBERS_ONLY==='true'&&!memberRoles.length)return false;parseRoleList(env.DISCORD_ADMIN_ROLE_IDS);parseRoleList(env.DISCORD_ADMIN_USER_IDS);parseRoleList(env.DISCORD_EVENT_CREATOR_USER_IDS);parseRoleList(env.DISCORD_EVENT_CREATOR_ROLE_IDS);return true;}catch{return false;}};
+export const localRequest=(r:Request)=>env.MEMBERS_ONLY!=='true'&&import.meta.env.DEV&&['localhost','127.0.0.1','[::1]'].includes(new URL(r.url).hostname);
 export const cookie=(name:string,value:string,age:number,request:Request)=>`${name}=${value}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${age}${(new URL(request.url).protocol==='https:'||env.APP_ORIGIN?.startsWith('https://'))?'; Secure':''}`;
 export function cookies(request:Request){return Object.fromEntries((request.headers.get('cookie')||'').split(';').map(v=>v.trim().split('=')));}
 export const hash=async(v:string)=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(v)))).map(v=>v.toString(16).padStart(2,'0')).join('');
@@ -26,7 +26,7 @@ async function discordFetch(url:string,options:RequestInit,key:string){
 }
 export function identityPermissions(value:{id:string;name:string;roles:unknown;avatar:string|null},allowUnassigned=true){
  let permissions:{class:string;admin:number};let canHost=0;
- try{permissions=resolveDiscordRoles(value.roles,parseClassRoles(env.DISCORD_CLASS_ROLES,CLASSES),parseRoleList(env.DISCORD_MEMBER_ROLE_IDS),parseRoleList(env.DISCORD_ADMIN_ROLE_IDS),allowUnassigned);canHost=matchesDiscordAccess(value.roles as string[],value.id,parseRoleList(env.DISCORD_EVENT_CREATOR_ROLE_IDS),parseRoleList(env.DISCORD_EVENT_CREATOR_USER_IDS))?1:0;if(parseRoleList(env.DISCORD_ADMIN_USER_IDS).includes(value.id))permissions.admin=1;}catch(error){if(error instanceof DiscordRoleError)throw new HttpError(error.status,error.message);throw error;}
+ try{const memberRoles=parseRoleList(env.DISCORD_MEMBER_ROLE_IDS);if(env.MEMBERS_ONLY==='true'&&!memberRoles.length)throw new HttpError(503,'Guild member access has not been configured.');permissions=resolveDiscordRoles(value.roles,parseClassRoles(env.DISCORD_CLASS_ROLES,CLASSES),memberRoles,parseRoleList(env.DISCORD_ADMIN_ROLE_IDS),allowUnassigned);canHost=matchesDiscordAccess(value.roles as string[],value.id,parseRoleList(env.DISCORD_EVENT_CREATOR_ROLE_IDS),parseRoleList(env.DISCORD_EVENT_CREATOR_USER_IDS))?1:0;if(parseRoleList(env.DISCORD_ADMIN_USER_IDS).includes(value.id))permissions.admin=1;}catch(error){if(error instanceof DiscordRoleError)throw new HttpError(error.status,error.message);throw error;}
  return {id:value.id,name:value.name.slice(0,80),class:permissions.class,avatar:value.avatar,admin:permissions.admin,can_host:canHost};
 }
 export async function botMemberIdentity(memberId:string,allowUnassigned=true){
@@ -68,6 +68,7 @@ async function verifySession(hashed:string,memberId:string){
  })();verifications.set(hashed,operation);try{return await operation;}finally{if(verifications.get(hashed)===operation)verifications.delete(hashed);}
 }
 export async function requireMember(request:Request,admin=false,reverify=false):Promise<Member>{
+ if(env.MEMBERS_ONLY==='true'&&env.DEMO_SESSION)throw new HttpError(401,'Sign in with Discord to continue.');
  const token=cookies(request)[sessionCookieName()];if(!token)throw new HttpError(401,'Sign in with Discord to continue.');
  const hashed=await hash(token);
  const s=await first<any>('SELECT s.*,m.active FROM sessions s JOIN members m ON m.id=s.member_id WHERE token=? AND expires>?',hashed,now());
