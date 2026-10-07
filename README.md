@@ -91,3 +91,11 @@ Some older browser scripts document previous HUD, treasury or catalogue interfac
 [SECURITY.md](SECURITY.md) maps authentication, access checks, PP accounting, screenshot storage, demo isolation and background jobs to the corresponding files. Sharing source enables inspection; it is not an independent security audit or proof of the production host's runtime configuration.
 
 Yang and item transfers happen in game. This website records contributions and PP; it does not move in-game currency or items. Game artwork and third-party dependencies retain their respective owners' rights and license notices.
+
+## Guild roster and opening PP
+
+The bot imports every human account with the configured guild member role, including players who have never signed in. The admin PP panel can adjust their balances immediately. Gateway role changes invalidate the roster cache; a complete refresh also runs every five minutes. Removed members lose access and sessions, while their financial history remains intact.
+
+Historical contribution totals are frozen when an operator resets the database, at 20 PP per 500,000 Yang (integer PP rounded down). Each source character and Discord account can receive the opening credit only once. Exact character names in slash-separated nicknames are supported; ambiguous or misspelled names require an explicit server-side mapping. Current-week amounts already included in the opening credit cannot earn the same quest PP again. Members not currently in the guild retain a pending source balance.
+
+A reset requires maintenance mode, creates a complete SQLite backup, archives previous uploads, rebuilds the schema, and checks all opening totals before replacing the live database. There is no reset HTTP endpoint. Real payment snapshots and database backups are never committed here.

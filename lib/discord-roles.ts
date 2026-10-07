@@ -21,12 +21,12 @@ export function parseRoleList(raw?:string):string[]{
  if(!list.every(snowflake))throw new DiscordRoleError(503,'Guild role settings are invalid.');
  return [...new Set(list)];
 }
-export function resolveDiscordRoles(memberRoles:unknown,map:Record<string,string[]>,required:string[],admins:string[]){
+export function resolveDiscordRoles(memberRoles:unknown,map:Record<string,string[]>,required:string[],admins:string[],allowUnassigned=false){
  if(!Array.isArray(memberRoles)||!memberRoles.every(snowflake))throw new DiscordRoleError(403,'Discord membership roles could not be verified.');
  if(required.length&&!required.some(id=>memberRoles.includes(id)))throw new DiscordRoleError(403,'Your Discord account does not have a guild member role.');
  const classes=Object.keys(map).filter(name=>map[name].some(id=>memberRoles.includes(id)));
- if(classes.length!==1)throw new DiscordRoleError(403,'Ask a guild administrator to assign exactly one Arthion class in Discord.');
- return {class:classes[0],admin:admins.some(id=>memberRoles.includes(id))?1:0};
+ if(classes.length!==1&&!allowUnassigned)throw new DiscordRoleError(403,'Ask a guild administrator to assign exactly one Arthion class in Discord.');
+ return {class:classes.length===1?classes[0]:'Unassigned',admin:admins.some(id=>memberRoles.includes(id))?1:0};
 }
 
 export function matchesDiscordAccess(memberRoles:readonly string[],userId:string,roleIds:string[],userIds:string[]){return roleIds.some(role=>memberRoles.includes(role))||userIds.includes(userId);}

@@ -1,0 +1,31 @@
+import assert from 'node:assert/strict';
+import {mkdtempSync,rmSync,mkdirSync,writeFileSync,existsSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import path from 'node:path';
+import {createHash} from 'node:crypto';
+import {NodeDatabase,migrate} from '../lib/railway/storage.mjs';
+import {resetGuildDatabase} from '../lib/railway/reset-database.mjs';
+import {parseContributionSheets,memberContributionKey,resolveContributionName} from '../lib/contribution-source.mjs';
+const root=mkdtempSync(path.join(tmpdir(),'paragon-reset-test-')),live=path.join(root,'guild.sqlite');
+const alice='100000000000000001',bob='100000000000000002',yigo='100000000000000003',required='100000000000000004',shaman='100000000000000005';
+const saved={...process.env};
+process.env.DISCORD_MEMBER_ROLE_IDS=required;process.env.DISCORD_CLASS_ROLES=JSON.stringify({Shaman:[shaman]});process.env.DISCORD_ADMIN_USER_IDS=yigo;process.env.DISCORD_EVENT_CREATOR_ROLE_IDS='100000000000000006';delete process.env.DISCORD_CONTRIBUTION_NAMES;
+const created=Math.floor(Date.now()/1000),day=new Date(created*1000+3*3600000),today=day.toISOString().slice(0,10);day.setUTCDate(day.getUTCDate()-(day.getUTCDay()||7)+1);const week=day.toISOString().slice(0,10);
+const snapshot=parseContributionSheets(`Date,Member Name,Yang Deposited,Notes\n${today},Alice,500000,weekly\n2026-09-01,Bob,1250000,history\n2026-09-01,Absent,500000,history`,`Member Name,Class,Yang Deposited\nAlice,Shaman,500000\nBob,Shaman,1250000\nAbsent,Shaman,500000\nYIGO,Shaman,0`);
+const input={created,unit:500000,rate:20,snapshot,batch:createHash('sha256').update(JSON.stringify(snapshot)).digest('hex'),baselines:snapshot.people.map(p=>({...p,pp:Math.floor(p.yang/500000*20),week,weekly_pp:p.name==='Alice'?20:0})),roster:{checked:created,members:[{id:alice,name:'Alice / Real Name'},{id:bob,name:'Real Name/Bob'},{id:yigo,name:'YIGO'}].map(m=>({...m,avatar:null,roles:[required,shaman]}))}};
+let db;
+try{
+ db=new NodeDatabase(live);migrate(db);db.connection.prepare("INSERT INTO members(id,name,class,created) VALUES(?,?,'Shaman',?)").run(alice,'Alice',created);
+ db.connection.prepare("INSERT INTO members(id,name,class,created) VALUES('mock-test','Mock','Warrior',?)").run(created);
+ db.connection.prepare("INSERT INTO ledger VALUES('old-points',?,111,'Manual','Old test PP',?)").run(alice,created);
+ db.connection.prepare("INSERT INTO events(id,title,type,starts,pp,description,created_by,created) VALUES('old-event','Old Event','PvE',?,25,'',?,?)").run(created,alice,created);
+ db.close();mkdirSync(path.join(root,'uploads','icons'),{recursive:true});writeFileSync(path.join(root,'uploads','icons','old.png'),'fixture');
+ delete process.env.PARAGON_MAINTENANCE;assert.throws(()=>resetGuildDatabase(input,root),/Maintenance/);
+ process.env.PARAGON_MAINTENANCE='true';assert.throws(()=>resetGuildDatabase({...input,baselines:input.baselines.map(b=>({...b,pp:b.pp+1}))},root),/reconcile/);
+ const result=resetGuildDatabase(input,root);assert.equal(result.guildMembers,3);assert.equal(result.credited.pp,70);assert.equal(result.pending.pp,20);
+ db=new NodeDatabase(live);assert.equal(db.connection.prepare('SELECT COUNT(*) n FROM members').get().n,3);assert.equal(db.connection.prepare('SELECT COUNT(*) n FROM events').get().n,0);assert.equal(db.connection.prepare("SELECT balance FROM members WHERE id=?").get(alice).balance,20);assert.equal(db.connection.prepare("SELECT balance FROM members WHERE id=?").get(bob).balance,50);assert.equal(db.connection.prepare("SELECT admin,balance FROM members WHERE id=?").get(yigo).admin,1);assert.equal(db.connection.prepare('SELECT pp FROM weekly_rewards').get().pp,0);assert.equal(db.connection.prepare('PRAGMA foreign_key_check').all().length,0);db.close();
+ db=new NodeDatabase(path.join(result.backup,'guild.sqlite'));assert.equal(db.connection.prepare('SELECT COUNT(*) n FROM events').get().n,1);assert.equal(db.connection.prepare('SELECT balance FROM members WHERE id=?').get(alice).balance,111);db.close();assert.equal(existsSync(path.join(result.backup,'uploads','icons','old.png')),true);assert.equal(existsSync(path.join(root,'uploads','icons','old.png')),false);
+ const keys=['alice','bob','sappo (edward)','tank'];assert.equal(resolveContributionName('Sappo / Edward',keys),'sappo (edward)');assert.equal(resolveContributionName('Alice | Name',keys),'alice');assert.equal(resolveContributionName('TANK(duo)/Baran',keys),'tank');assert.equal(resolveContributionName('Alice / Bob',keys),null);assert.equal(resolveContributionName('Alicee',keys),null);
+ const links=JSON.stringify({[alice]:'TANK'});assert.equal(memberContributionKey({id:alice,name:'unrelated'},keys,links),'tank');assert.equal(memberContributionKey({id:bob,name:'TANK'},keys,links),null);assert.throws(()=>memberContributionKey({id:bob,name:'TANK'},keys,'{"invalid":"TANK"}'));
+ console.log('PASS: maintenance gate, verified totals, full backed-up reset, all role members created before sign-in, proportional initial balances, no duplicate weekly reward, mock removal, immutable baseline source, archived images and exact/explicit character matching.');
+}finally{try{db.close();}catch{}for(const k of Object.keys(process.env))if(!(k in saved))delete process.env[k];Object.assign(process.env,saved);rmSync(root,{recursive:true,force:true});}

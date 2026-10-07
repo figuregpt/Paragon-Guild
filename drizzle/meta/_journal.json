@@ -92,6 +92,13 @@
       "when": 1791407300260,
       "tag": "0012_event_game_channel",
       "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "6",
+      "when": 1791410264193,
+      "tag": "0013_contribution_opening_balances",
+      "breakpoints": true
     }
   ]
 }

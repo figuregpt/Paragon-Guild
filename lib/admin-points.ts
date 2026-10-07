@@ -3,11 +3,14 @@ import {z} from 'zod';
 import {HttpError,botMemberIdentity,upsertMember,localRequest} from './auth';
 import {all,first,database} from './database';
 import {now,type Member} from './domain';
+import {syncGuildMembers} from './guild-roster';
+import {rewardGuildContributions} from './contributions';
 const json=(value:unknown)=>Response.json(value,{headers:{'Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff'}});
 export async function adminPointsRoute(request:Request,path:string,m:Member):Promise<Response|null>{
  if(!['admin/players','admin/points'].includes(path))return null;
  if(!m.admin)throw new HttpError(403,'Administrator access is required.');
  if(request.method==='GET'&&path==='admin/players'){
+  await syncGuildMembers();await rewardGuildContributions();
   const [players,awards]=await Promise.all([
    all('SELECT id,name,class,balance,reserved FROM members WHERE active=1 ORDER BY name COLLATE NOCASE LIMIT 500'),
    all("SELECT l.id,l.member_id,l.amount,l.label,l.created,m.name,m.class,a.name awarded_by FROM ledger l JOIN members m ON m.id=l.member_id JOIN audit au ON au.target=l.id AND au.action='manual-pp' JOIN members a ON a.id=au.member_id WHERE l.category='Manual' ORDER BY l.created DESC,l.rowid DESC LIMIT 20")
@@ -21,7 +24,7 @@ export async function adminPointsRoute(request:Request,path:string,m:Member):Pro
   if(await existing())return json({ok:true});
   const recipient=await first<any>('SELECT id,active FROM members WHERE id=?',b.memberId);if(!recipient||!recipient.active)throw new HttpError(400,'Choose an active guild player.');
   // Guild membership can change between sign-ins; verify it before adjusting PP.
-  if(!env.DEMO_SESSION&&!localRequest(request))await upsertMember(await botMemberIdentity(b.memberId));
+  if(!env.DEMO_SESSION&&!localRequest(request))await upsertMember(await botMemberIdentity(b.memberId,true));
   try{await database().batch([
    // The condition and ledger balance trigger execute in the same transaction as
    // bidding, so a deduction cannot consume PP reserved by a concurrent bid.

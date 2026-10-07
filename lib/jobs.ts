@@ -4,10 +4,13 @@ import {all,run} from './database';
 import {now} from './domain';
 import {shouldDeliverNotification} from './notification-policy';
 import {sendPush} from './web-push';
-import {syncContributions} from './contributions';
+import {syncContributions,rewardGuildContributions} from './contributions';
+import {syncGuildMembers} from './guild-roster';
 export async function settleAuctions(){await run("UPDATE auctions SET status='closed' WHERE status='active' AND ends<=?",now());}
 export async function processJobs(){
- await settleAuctions();await syncContributions();await announceEvents();
+ await settleAuctions();
+ try{await syncGuildMembers();}catch{console.warn('Guild roster refresh delayed; retained the last verified members.');}
+ await syncContributions();await rewardGuildContributions();await announceEvents();
  await run("DELETE FROM sessions WHERE expires<?",now());await run('DELETE FROM oauth_states WHERE expires<?',now());
  await run("INSERT OR IGNORE INTO notifications(id,member_id,event_id,kind,created) SELECT 'reminder:'||e.id||':'||em.member_id,em.member_id,e.id,'reminder',? FROM event_members em JOIN events e ON e.id=em.event_id WHERE em.reminder IS NOT NULL AND e.status='upcoming' AND e.phase IN ('open','legacy') AND e.starts>? AND e.starts-em.reminder*60<=?",now(),now(),now());
  if(!env.VAPID_PUBLIC_KEY||!env.VAPID_PRIVATE_KEY||!env.VAPID_SUBJECT)return;

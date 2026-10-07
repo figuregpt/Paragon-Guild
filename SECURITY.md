@@ -17,3 +17,5 @@ This document describes the implementation for source review. It is not an indep
 Production databases, payment logs, uploaded evidence, credentials and private runtime configuration are deliberately absent from this repository. `.env.example` contains placeholders. Keep credentials in server variables, and never post tokens, evidence screenshots, member/payment data or exploit details in public issues.
 
 If you find a potential issue, contact the repository owner privately before disclosing details publicly. No dedicated private reporting address is configured in this snapshot.
+
+Historical PP and roster checks: `lib/historical-contributions.ts`, `lib/contribution-source.mjs`, `lib/guild-roster.ts`, `lib/railway/reset-database.mjs`, and migration `0013_contribution_opening_balances.sql`. Opening totals and claims are immutable; source names and recipient accounts are unique. Operator resets require maintenance mode and backups.

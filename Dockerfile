@@ -14,6 +14,7 @@ COPY --from=build /app/dist ./dist
 COPY --from=build /app/public ./public
 COPY --from=build /app/drizzle ./drizzle
 COPY --from=build /app/lib/railway ./lib/railway
+COPY --from=build /app/lib/contribution-source.mjs ./lib/contribution-source.mjs
 COPY --from=build /app/scripts/railway-start.mjs ./scripts/railway-start.mjs
 COPY --from=build /app/package.json ./package.json
 EXPOSE 3000

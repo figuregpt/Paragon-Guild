@@ -24,17 +24,17 @@ async function discordFetch(url:string,options:RequestInit,key:string){
  if(response.status>=500){console.warn('Discord verification failed: HTTP',response.status);throw unavailable();}
  return response;
 }
-function identityPermissions(value:{id:string;name:string;roles:unknown;avatar:string|null}){
+export function identityPermissions(value:{id:string;name:string;roles:unknown;avatar:string|null},allowUnassigned=false){
  let permissions:{class:string;admin:number};let canHost=0;
- try{permissions=resolveDiscordRoles(value.roles,parseClassRoles(env.DISCORD_CLASS_ROLES,CLASSES),parseRoleList(env.DISCORD_MEMBER_ROLE_IDS),parseRoleList(env.DISCORD_ADMIN_ROLE_IDS));canHost=matchesDiscordAccess(value.roles as string[],value.id,parseRoleList(env.DISCORD_EVENT_CREATOR_ROLE_IDS),parseRoleList(env.DISCORD_EVENT_CREATOR_USER_IDS))?1:0;if(parseRoleList(env.DISCORD_ADMIN_USER_IDS).includes(value.id))permissions.admin=1;}catch(error){if(error instanceof DiscordRoleError)throw new HttpError(error.status,error.message);throw error;}
+ try{permissions=resolveDiscordRoles(value.roles,parseClassRoles(env.DISCORD_CLASS_ROLES,CLASSES),parseRoleList(env.DISCORD_MEMBER_ROLE_IDS),parseRoleList(env.DISCORD_ADMIN_ROLE_IDS),allowUnassigned);canHost=matchesDiscordAccess(value.roles as string[],value.id,parseRoleList(env.DISCORD_EVENT_CREATOR_ROLE_IDS),parseRoleList(env.DISCORD_EVENT_CREATOR_USER_IDS))?1:0;if(parseRoleList(env.DISCORD_ADMIN_USER_IDS).includes(value.id))permissions.admin=1;}catch(error){if(error instanceof DiscordRoleError)throw new HttpError(error.status,error.message);throw error;}
  return {id:value.id,name:value.name.slice(0,80),class:permissions.class,avatar:value.avatar,admin:permissions.admin,can_host:canHost};
 }
-export async function botMemberIdentity(memberId:string){
+export async function botMemberIdentity(memberId:string,allowUnassigned=false){
  const bot=env.DISCORD_BOT;if(!bot?.ready)throw unavailable();
  let identity;try{identity=await bot.getMember(memberId);}catch{throw unavailable();}
  if(!identity)throw new HttpError(403,'You must be a member of the Paragon Discord server.');
  if(identity.id!==memberId)throw new HttpError(401,'Discord account could not be verified.');
- return identityPermissions(identity);
+ return identityPermissions(identity,allowUnassigned);
 }
 export async function discordIdentity(access:string){
  const headers={Authorization:`Bearer ${access}`},key=await hash(access);

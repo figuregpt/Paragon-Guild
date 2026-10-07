@@ -19,3 +19,11 @@ client.emit(Events.ShardResume);let release;gate=new Promise(r=>release=r);const
 // A disconnect while a REST fetch is in flight never authorizes with the old response.
 client.emit(Events.ShardResume);gate=new Promise(r=>release=r);const stale=bot.getMember(user);connected=false;client.emit(Events.ShardDisconnect);release();await assert.rejects(stale);
 console.log('PASS: bot reads are deduplicated, Gateway role changes/leave/rejoin update immediately, reconnect clears cache and in-flight stale reads cannot authorize.');
+// Complete paginated lists populate individual reads and refresh after role changes.
+connected=true;client.emit(Events.ShardResume);let listCalls=0,listGate;
+client.guilds.cache.get(guild).members.list=async({after})=>{listCalls++;if(listGate)await listGate;const page=new Map();const count=after?1:1000;for(let i=0;i<count;i++){const m=member();m.id=after?'100000000000002000':String(100000000000000100n+BigInt(i));page.set(m.id,m);}return page;};
+const lists=await Promise.all([bot.getMembers(),bot.getMembers()]);assert.equal(listCalls,2);assert.equal(lists[0].members.length,1001);assert.equal(lists[0],lists[1]);await bot.getMembers();assert.equal(listCalls,2);
+const primedCalls=calls;await bot.getMember(lists[0].members[0].id);assert.equal(calls,primedCalls);
+client.emit(Events.GuildMemberUpdate,null,member());await bot.getMembers();assert.equal(listCalls,4);
+client.emit(Events.ShardResume);let releaseList;listGate=new Promise(r=>releaseList=r);const staleList=bot.getMembers();client.emit(Events.GuildMemberRemove,member());releaseList();await assert.rejects(staleList);listGate=null;
+console.log('PASS: full roster pagination, concurrent list deduplication, primed member checks, five-minute cache, Gateway invalidation and stale list rejection.');
