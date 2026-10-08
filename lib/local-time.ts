@@ -1,7 +1,8 @@
+import {localeTag} from './i18n';
 // Browser consumers format stored UTC timestamps in the device's current zone.
 export const localTimeZone=()=>Intl.DateTimeFormat().resolvedOptions().timeZone;
-export const localTime=(seconds:number)=>new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',timeZoneName:'short'}).format(new Date(seconds*1000));
-export const localDatePart=(seconds:number,part:'day'|'month')=>new Intl.DateTimeFormat('en-GB',{[part]:part==='day'?'2-digit':'short'}).format(new Date(seconds*1000));
+export const localTime=(seconds:number)=>new Intl.DateTimeFormat(localeTag(),{day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',timeZoneName:'short'}).format(new Date(seconds*1000));
+export const localDatePart=(seconds:number,part:'day'|'month')=>new Intl.DateTimeFormat(localeTag(),{[part]:part==='day'?'2-digit':'short'}).format(new Date(seconds*1000));
 export function localInputTimestamp(value:string){
  const d=new Date(value);
  if(!Number.isFinite(d.getTime()))throw new Error('Choose a valid event date and time.');

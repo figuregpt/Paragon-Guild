@@ -1,7 +1,10 @@
 'use client';
+import {useLanguage} from '@/app/language-provider';
+import {t} from '@/lib/i18n';
 import {useEffect,useRef,useState,type FormEvent} from 'react';
 
 export default function AuctionCreate({onCreated}:{onCreated:()=>Promise<void>}){
+ useLanguage();
  const [file,setFile]=useState<File|null>(null),[preview,setPreview]=useState(''),[pending,setPending]=useState(false),[error,setError]=useState(''),[dirty,setDirty]=useState(false);
  const requestId=useRef(''),errorRef=useRef<HTMLParagraphElement>(null);
  useEffect(()=>{if(!file){setPreview('');return;}const url=URL.createObjectURL(file);setPreview(url);return()=>URL.revokeObjectURL(url);},[file]);
@@ -17,22 +20,22 @@ export default function AuctionCreate({onCreated}:{onCreated:()=>Promise<void>})
   finally{setPending(false);}
  }
  return <form className="pg-form pg-auction-create" onSubmit={create} onChange={()=>setDirty(true)} aria-busy={pending}>
-  {error&&<p className="pg-error" role="alert" tabIndex={-1} ref={errorRef}>{error}</p>}
+  {error&&<p className="pg-error" role="alert" tabIndex={-1} ref={errorRef}>{t(error)}</p>}
   <fieldset disabled={pending} className="pg-auction-fields">
    <div className="pg-auction-upload">
-    <label className="pg-field pg-file" htmlFor="pg-auction-image"><span>Item Screenshot</span></label><input id="pg-auction-image" name="screenshot" type="file" required accept="image/png,image/jpeg,image/webp" aria-describedby="pg-auction-image-help" onChange={event=>{const next=event.target.files?.[0];requestId.current='';if(next&&(!['image/png','image/jpeg','image/webp'].includes(next.type)||next.size>8000000)){event.target.value='';setFile(null);setError('Choose a PNG, JPEG or WebP screenshot smaller than 8 MB.');return;}setFile(next||null);setError('');}}/><small id="pg-auction-image-help">PNG, JPEG or WebP · Up to 8 MB</small>
-    {preview&&<div className="pg-auction-preview"><img src={preview} width={640} height={480} alt="Selected item screenshot"/><span>{file?.name}</span></div>}
+    <label className="pg-field pg-file" htmlFor="pg-auction-image"><span>{t("Item Screenshot")}</span></label><input id="pg-auction-image" name="screenshot" type="file" required accept="image/png,image/jpeg,image/webp" aria-describedby="pg-auction-image-help" onChange={event=>{const next=event.target.files?.[0];requestId.current='';if(next&&(!['image/png','image/jpeg','image/webp'].includes(next.type)||next.size>8000000)){event.target.value='';setFile(null);setError('Choose a PNG, JPEG or WebP screenshot smaller than 8 MB.');return;}setFile(next||null);setError('');}}/><small id="pg-auction-image-help">{t("PNG, JPEG or WebP · Up to 8 MB")}</small>
+    {preview&&<div className="pg-auction-preview"><img src={preview} width={640} height={480} alt={t("Selected item screenshot")}/><span>{file?.name}</span></div>}
    </div>
    <div className="pg-auction-inputs">
-    <label className="pg-field pg-span"><span>Item Name</span><input name="name" required maxLength={80} autoComplete="off" placeholder="Poison Sword +9…" onChange={()=>{requestId.current='';}}/></label>
-    <label className="pg-field"><span>Quantity</span><input name="quantity" type="number" min={1} max={200} defaultValue={1} required inputMode="numeric" autoComplete="off" onChange={()=>{requestId.current='';}}/></label>
-    <label className="pg-field"><span>Loot Source (optional)</span><input name="source" maxLength={80} autoComplete="off" placeholder="Demon Tower…" onChange={()=>{requestId.current='';}}/></label>
-    <label className="pg-field"><span>Minimum Bid (PP)</span><input name="minimum" type="number" min={1} max={1000000} defaultValue={100} required inputMode="numeric" autoComplete="off" onChange={()=>{requestId.current='';}}/></label>
-    <label className="pg-field"><span>Bid Increment (PP)</span><input name="increment" type="number" min={1} max={1000000} defaultValue={10} required inputMode="numeric" autoComplete="off" onChange={()=>{requestId.current='';}}/></label>
-    <label className="pg-field"><span>Duration (hours)</span><input name="hours" type="number" min={1} max={168} defaultValue={24} required inputMode="numeric" autoComplete="off" onChange={()=>{requestId.current='';}}/></label>
-    <label className="pg-field pg-span"><span>Item Details (optional)</span><textarea name="bonuses" rows={2} maxLength={300} autoComplete="off" placeholder="Bonuses or additional details…" onChange={()=>{requestId.current='';}}/></label>
+    <label className="pg-field pg-span"><span>{t("Item Name")}</span><input name="name" required maxLength={80} autoComplete="off" placeholder={t("Poison Sword +9…")} onChange={()=>{requestId.current='';}}/></label>
+    <label className="pg-field"><span>{t("Quantity")}</span><input name="quantity" type="number" min={1} max={200} defaultValue={1} required inputMode="numeric" autoComplete="off" onChange={()=>{requestId.current='';}}/></label>
+    <label className="pg-field"><span>{t("Loot Source (optional)")}</span><input name="source" maxLength={80} autoComplete="off" placeholder={t("Demon Tower…")} onChange={()=>{requestId.current='';}}/></label>
+    <label className="pg-field"><span>{t("Minimum Bid (PP)")}</span><input name="minimum" type="number" min={1} max={1000000} defaultValue={100} required inputMode="numeric" autoComplete="off" onChange={()=>{requestId.current='';}}/></label>
+    <label className="pg-field"><span>{t("Bid Increment (PP)")}</span><input name="increment" type="number" min={1} max={1000000} defaultValue={10} required inputMode="numeric" autoComplete="off" onChange={()=>{requestId.current='';}}/></label>
+    <label className="pg-field"><span>{t("Duration (hours)")}</span><input name="hours" type="number" min={1} max={168} defaultValue={24} required inputMode="numeric" autoComplete="off" onChange={()=>{requestId.current='';}}/></label>
+    <label className="pg-field pg-span"><span>{t("Item Details (optional)")}</span><textarea name="bonuses" rows={2} maxLength={300} autoComplete="off" placeholder={t("Bonuses or additional details…")} onChange={()=>{requestId.current='';}}/></label>
    </div>
   </fieldset>
-  <div className="pg-auction-create-actions"><button className="pg-button pg-red" type="submit" disabled={pending}>{pending?'Starting…':'Start Auction'}</button></div>
+  <div className="pg-auction-create-actions"><button className="pg-button pg-red" type="submit" disabled={pending}>{pending?t("Starting…"):t("Start Auction")}</button></div>
  </form>;
 }

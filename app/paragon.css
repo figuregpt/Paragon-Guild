@@ -117,3 +117,22 @@
 
 #paragon-design .pg-pp-meme{margin:-8px 0 14px;font-size:11px;line-height:1.6;color:var(--pg-muted)}
 #paragon-design .pg-pp-meme>span:first-child{color:#e8ebf1;font-variant-numeric:tabular-nums}
+
+/* Native language picker keeps the existing palette and stable control geometry. */
+#paragon-design .pg-masthead-tools{display:flex;align-items:center;gap:12px;min-width:0}
+#paragon-design .pg-language{display:flex;align-items:center;gap:8px;color:var(--pg-muted);font-size:12px;flex-shrink:0}
+#paragon-design .pg-language select{color:var(--pg-text,#e8ebf1);background:#11161d;border:1px solid #343c48;border-radius:4px;padding:9px 26px 9px 10px;min-height:44px;max-width:140px;font:inherit;cursor:pointer;touch-action:manipulation}
+#paragon-design .pg-language select:focus-visible{outline:2px solid #e34b55;outline-offset:3px}
+#paragon-design .pg-nav button{min-width:0;overflow-wrap:anywhere}
+@media(max-width:700px){
+ #paragon-design .pg-language>span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ #paragon-design .pg-masthead-tools{gap:6px;flex-wrap:wrap;justify-content:flex-end}
+ #paragon-design .pg-language select{max-width:110px;padding-inline:8px 20px}
+ #paragon-design .pg-nav button{font-size:11px;padding-inline:3px}
+ #paragon-design .pg-account .pg-button{max-width:140px;overflow:hidden;text-overflow:ellipsis}
+}
+@media(max-width:359px){
+ #paragon-design .pg-event-heading{flex-wrap:wrap;gap:12px}
+ #paragon-design .pg-event-heading>.pg-button{width:100%}
+ #paragon-design .pg-guide-controls .pg-button{font-size:12px;padding-inline:8px}
+}

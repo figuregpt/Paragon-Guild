@@ -115,3 +115,11 @@ Visual guide verification: `GUIDE_TEST_ORIGIN=http://127.0.0.1:3107 node tests/h
 Configure `DISCORD_NOTIFICATION_CHANNELS` and `DISCORD_NOTIFICATION_ROLE_ID` as described in [DISCORD_SETUP.md](DISCORD_SETUP.md). One announcement per event/auction is edited as its state changes. Initial announcements and final result cards ping Member; final results also mention affected participants or the winning bidder. Intermediate edits are quiet. Event result values come from the immutable PP ledger, so per-person rejection and creator rewards are reflected correctly. Auction settlement still charges only the winner. The minute scheduler processes a transactional queue with leases, bounded retries and duplicate recovery. Demo data never sends Discord notifications.
 
 Run `node tests/discord-event-cards.mjs` and `node tests/discord-card-delivery.mjs` to verify the notification workflow without any real Discord sends.
+
+## Languages
+
+The application and visual guide support English, Turkish and Greek. The native header picker remembers the choice on each device, synchronizes browser tabs and otherwise follows the browser’s language. UI copy, errors, maps, classes, dates, numbers, offline copy and device notification labels are localized. Player names, authored event/item titles, descriptions and administrator reasons remain unchanged. Discord channel cards keep a shared English format.
+
+Translations live in `lib/translations.json`; all languages use the same API identifiers, rewards and membership checks. Guide screenshots in `public/guide/tr` and `public/guide/el` use fictional local demo accounts.
+
+`node tests/i18n.mjs` checks translation coverage, interpolation, markup and notification language preferences. Run `TEST_BASE_URL=http://127.0.0.1:3190 node tests/i18n-ui.mjs` against an isolated demo server to verify all three languages at 320/390/1440 px, draft preservation, event creation, bids, admin adjustments and every guide step. The existing Playwright environment overrides apply.

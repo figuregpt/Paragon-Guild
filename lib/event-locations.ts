@@ -1,3 +1,4 @@
+import {t} from './i18n';
 // English names verified against Gameforge's Metin2 Wiki world-map index.
 // https://en-wiki.metin2.gameforge.com/index.php/Template:Main_Page/World_MapV2
 export const EVENT_LOCATIONS=[
@@ -11,4 +12,4 @@ export const EVENT_LOCATIONS=[
  {group:'PvP & Meeting Areas',maps:['Guild War Area','Arena','OX-Competition','Wedding Map','Castle Gate']},
 ] as const;
 export const EVENT_MAP_NAMES:readonly string[]=EVENT_LOCATIONS.flatMap(group=>[...group.maps]);
-export function mapLabel(name:string){return name==='Spider Dungeon 1'?name+' (SD1)':name==='Spider Dungeon 2'?name+' (SD2)':name==='Spider Dungeon 3'?name+' (SD3)':name;}
+export function mapLabel(name:string){const label=EVENT_MAP_NAMES.includes(name)?t(name):name;return name==='Spider Dungeon 1'?label+' (SD1)':name==='Spider Dungeon 2'?label+' (SD2)':name==='Spider Dungeon 3'?label+' (SD3)':label;}

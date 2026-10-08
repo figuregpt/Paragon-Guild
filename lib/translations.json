@@ -1,0 +1,3066 @@
+{
+ "(You)": {
+  "tr": "(Sen)",
+  "el": "(Εσύ)"
+ },
+ "(opens in a new tab)": {
+  "tr": "(yeni sekmede açılır)",
+  "el": "(ανοίγει σε νέα καρτέλα)"
+ },
+ "0 Members": {
+  "tr": "0 Üye",
+  "el": "0 Μέλη"
+ },
+ "1 hour before": {
+  "tr": "1 saat önce",
+  "el": "1 ώρα πριν"
+ },
+ "100 PP = 1 cm. Just a guild joke.": {
+  "tr": "100 PP = 1 cm. Sadece bir lonca şakası.",
+  "el": "100 PP = 1 cm. Απλώς ένα αστείο της συντεχνίας."
+ },
+ "15 minutes before": {
+  "tr": "15 dakika önce",
+  "el": "15 λεπτά πριν"
+ },
+ "2 Help events per guild day. Screenshot required before ending.": {
+  "tr": "Lonca gününde en fazla 2 yardım eventi. Bitirmek için ekran görüntüsü gerekir.",
+  "el": "Έως 2 εκδηλώσεις βοήθειας ανά ημέρα συντεχνίας. Απαιτείται στιγμιότυπο πριν τη λήξη."
+ },
+ "30 minutes before": {
+  "tr": "30 dakika önce",
+  "el": "30 λεπτά πριν"
+ },
+ "? Balance:": {
+  "tr": "? Bakiye:",
+  "el": "; Υπόλοιπο:"
+ },
+ "ARTHION GUILD": {
+  "tr": "ARTHION LONCASI",
+  "el": "ΣΥΝΤΕΧΝΙΑ ARTHION"
+ },
+ "Action": {
+  "tr": "İşlem",
+  "el": "Ενέργεια"
+ },
+ "Add PP": {
+  "tr": "PP Ekle",
+  "el": "Προσθήκη PP"
+ },
+ "Adjust Participation Points": {
+  "tr": "Katılım Puanlarını Düzenle",
+  "el": "Προσαρμογή Πόντων Συμμετοχής"
+ },
+ "Admin Panel": {
+  "tr": "Admin Paneli",
+  "el": "Πίνακας Διαχειριστή"
+ },
+ "Administrator": {
+  "tr": "Yönetici",
+  "el": "Διαχειριστής"
+ },
+ "All Classes": {
+  "tr": "Tüm Sınıflar",
+  "el": "Όλες οι Κλάσεις"
+ },
+ "Amount (Yang)": {
+  "tr": "Tutar (Yang)",
+  "el": "Ποσό (Yang)"
+ },
+ "Any Event Type": {
+  "tr": "Tüm Event Türleri",
+  "el": "Όλοι οι Τύποι Εκδηλώσεων"
+ },
+ "Approve": {
+  "tr": "Onayla",
+  "el": "Έγκριση"
+ },
+ "Approve Selected": {
+  "tr": "Seçilenleri Onayla",
+  "el": "Έγκριση Επιλεγμένων"
+ },
+ "Approved": {
+  "tr": "Onaylandı",
+  "el": "Εγκρίθηκε"
+ },
+ "Auction History": {
+  "tr": "Açık Artırma Geçmişi",
+  "el": "Ιστορικό Δημοπρασιών"
+ },
+ "Available": {
+  "tr": "Kullanılabilir",
+  "el": "Διαθέσιμα"
+ },
+ "Available to bid": {
+  "tr": "Teklif için kullanılabilir",
+  "el": "Διαθέσιμα για προσφορά"
+ },
+ "Available:": {
+  "tr": "Kullanılabilir:",
+  "el": "Διαθέσιμα:"
+ },
+ "Award PP to the checked participants and finalize attendance.": {
+  "tr": "Seçilen katılımcılara PP ver ve katılımı kesinleştir.",
+  "el": "Απόδωσε PP στους επιλεγμένους συμμετέχοντες και οριστικοποίησε τις παρουσίες."
+ },
+ "Back": {
+  "tr": "Geri",
+  "el": "Πίσω"
+ },
+ "Balance": {
+  "tr": "Bakiye",
+  "el": "Υπόλοιπο"
+ },
+ "Bank History": {
+  "tr": "Banka Geçmişi",
+  "el": "Ιστορικό Ταμείου"
+ },
+ "Be the first to bid": {
+  "tr": "İlk teklifi sen ver",
+  "el": "Κάνε την πρώτη προσφορά"
+ },
+ "Bid History": {
+  "tr": "Teklif Geçmişi",
+  "el": "Ιστορικό Προσφορών"
+ },
+ "Bid Increment (PP)": {
+  "tr": "Teklif Artışı (PP)",
+  "el": "Βήμα Προσφοράς (PP)"
+ },
+ "Bids reserve PP. Outbid reservations are released automatically.": {
+  "tr": "Teklifler PP ayırır. Teklifin geçilirse ayrılan PP otomatik serbest kalır.",
+  "el": "Οι προσφορές δεσμεύουν PP. Αν ξεπεραστεί η προσφορά σου, τα PP αποδεσμεύονται αυτόματα."
+ },
+ "Bonuses or additional details…": {
+  "tr": "Bonuslar veya ek bilgiler…",
+  "el": "Μπόνους ή επιπλέον πληροφορίες…"
+ },
+ "Borrowed": {
+  "tr": "Alınan borç",
+  "el": "Δανεισμένα"
+ },
+ "Borrower": {
+  "tr": "Borç Alan",
+  "el": "Δανειολήπτης"
+ },
+ "Cancel": {
+  "tr": "İptal",
+  "el": "Ακύρωση"
+ },
+ "Cancel Auction": {
+  "tr": "Açık Artırmayı İptal Et",
+  "el": "Ακύρωση Δημοπρασίας"
+ },
+ "Cancel This Event": {
+  "tr": "Bu Eventi İptal Et",
+  "el": "Ακύρωση Εκδήλωσης"
+ },
+ "Cancel this auction and release the leading bidder’s reserved PP.": {
+  "tr": "Açık artırmayı iptal et ve en yüksek teklife ayrılan PP’yi serbest bırak.",
+  "el": "Ακύρωσε τη δημοπρασία και αποδέσμευσε τα PP της υψηλότερης προσφοράς."
+ },
+ "Cancel this event. No participation points will be awarded.": {
+  "tr": "Bu eventi iptal et. Katılım puanı verilmeyecek.",
+  "el": "Ακύρωσε την εκδήλωση. Δεν θα αποδοθούν πόντοι συμμετοχής."
+ },
+ "Cancellation awards no PP.": {
+  "tr": "İptal edilen eventte PP verilmez.",
+  "el": "Η ακύρωση δεν αποδίδει PP."
+ },
+ "Cancelled": {
+  "tr": "İptal Edildi",
+  "el": "Ακυρώθηκε"
+ },
+ "Ch-3 Blacksmith": {
+  "tr": "CH-3 Demirci",
+  "el": "Σιδεράς στο CH-3"
+ },
+ "Channel": {
+  "tr": "Kanal",
+  "el": "Κανάλι"
+ },
+ "Character": {
+  "tr": "Karakter",
+  "el": "Χαρακτήρας"
+ },
+ "Character name…": {
+  "tr": "Karakter adı…",
+  "el": "Όνομα χαρακτήρα…"
+ },
+ "Checking Deposit Log…": {
+  "tr": "Ödeme kaydı kontrol ediliyor…",
+  "el": "Έλεγχος αρχείου καταθέσεων…"
+ },
+ "Choose a Map…": {
+  "tr": "Harita Seç…",
+  "el": "Επίλεξε Χάρτη…"
+ },
+ "Choose a player": {
+  "tr": "Bir oyuncu seç",
+  "el": "Επίλεξε παίκτη"
+ },
+ "Choose “Remind Me” on any event to receive a reminder 15, 30 or 60 minutes before it starts.": {
+  "tr": "Bir eventte “Hatırlat” seçeneğiyle başlamadan 15, 30 veya 60 dakika önce bildirim al.",
+  "el": "Επίλεξε «Υπενθύμιση» σε μια εκδήλωση για ειδοποίηση 15, 30 ή 60 λεπτά πριν ξεκινήσει."
+ },
+ "Class": {
+  "tr": "Sınıf",
+  "el": "Κλάση"
+ },
+ "Clear All": {
+  "tr": "Seçimleri Kaldır",
+  "el": "Καθαρισμός Επιλογών"
+ },
+ "Close": {
+  "tr": "Kapat",
+  "el": "Κλείσιμο"
+ },
+ "Confirm": {
+  "tr": "Onayla",
+  "el": "Επιβεβαίωση"
+ },
+ "Confirm Bid": {
+  "tr": "Teklifi Onayla",
+  "el": "Επιβεβαίωση Προσφοράς"
+ },
+ "Confirm Cancellation": {
+  "tr": "İptali Onayla",
+  "el": "Επιβεβαίωση Ακύρωσης"
+ },
+ "Confirm Removal": {
+  "tr": "PP Silmeyi Onayla",
+  "el": "Επιβεβαίωση Αφαίρεσης"
+ },
+ "Confirm Yang Transfer": {
+  "tr": "Yang Ödemesini Onayla",
+  "el": "Επιβεβαίωση Μεταφοράς Yang"
+ },
+ "Confirm that the Yang transfer was made in game.": {
+  "tr": "Yang ödemesinin oyun içinde yapıldığını doğrula.",
+  "el": "Επιβεβαίωσε ότι η μεταφορά Yang έγινε στο παιχνίδι."
+ },
+ "Confirm that you made the transfer in game. An administrator will verify it.": {
+  "tr": "Ödemeyi oyun içinde yaptığını doğrula. Bir yönetici kontrol edecek.",
+  "el": "Επιβεβαίωσε ότι έκανες τη μεταφορά στο παιχνίδι. Ένας διαχειριστής θα την ελέγξει."
+ },
+ "Confirmed": {
+  "tr": "Katılım Doğrulandı",
+  "el": "Επιβεβαιώθηκε"
+ },
+ "Create Auction": {
+  "tr": "Açık Artırma Oluştur",
+  "el": "Δημιουργία Δημοπρασίας"
+ },
+ "Create Event": {
+  "tr": "Event Oluştur",
+  "el": "Δημιουργία Εκδήλωσης"
+ },
+ "Creator": {
+  "tr": "Oluşturan",
+  "el": "Δημιουργός"
+ },
+ "Creator & confirmed participants earn the same PP after admin approval.": {
+  "tr": "Oluşturan ve doğrulanan katılımcılar, yönetici onayından sonra aynı PP’yi kazanır.",
+  "el": "Ο δημιουργός και οι επιβεβαιωμένοι συμμετέχοντες κερδίζουν τα ίδια PP μετά την έγκριση διαχειριστή."
+ },
+ "Creator +": {
+  "tr": "Oluşturan +",
+  "el": "Δημιουργός +"
+ },
+ "Creator ·": {
+  "tr": "Oluşturan ·",
+  "el": "Δημιουργός ·"
+ },
+ "Current Balance": {
+  "tr": "Mevcut Bakiye",
+  "el": "Τρέχον Υπόλοιπο"
+ },
+ "Current bid": {
+  "tr": "Mevcut teklif",
+  "el": "Τρέχουσα προσφορά"
+ },
+ "Custom Location": {
+  "tr": "Özel Konum",
+  "el": "Προσαρμοσμένη Τοποθεσία"
+ },
+ "Custom…": {
+  "tr": "Özel…",
+  "el": "Προσαρμοσμένο…"
+ },
+ "Date & Time —": {
+  "tr": "Tarih ve Saat ·",
+  "el": "Ημερομηνία & Ώρα ·"
+ },
+ "Demo Character": {
+  "tr": "Demo Karakter",
+  "el": "Δοκιμαστικός Χαρακτήρας"
+ },
+ "Demo mode · Sample data. Try features freely; your changes stay in this demo.": {
+  "tr": "Demo modu · Örnek veriler. Özellikleri dene; değişikliklerin bu demoda kalır.",
+  "el": "Δοκιμαστική λειτουργία · Ενδεικτικά δεδομένα. Δοκίμασε ελεύθερα· οι αλλαγές μένουν σε αυτή τη δοκιμή."
+ },
+ "Demo · Sample data": {
+  "tr": "Demo · Örnek veriler",
+  "el": "Δοκιμή · Ενδεικτικά δεδομένα"
+ },
+ "Demon Tower": {
+  "tr": "Şeytan Kulesi",
+  "el": "Πύργος Δαιμόνων"
+ },
+ "Demon Tower…": {
+  "tr": "Şeytan Kulesi…",
+  "el": "Πύργος Δαιμόνων…"
+ },
+ "Deposit History": {
+  "tr": "Ödeme Geçmişi",
+  "el": "Ιστορικό Καταθέσεων"
+ },
+ "Deposit Note (optional)": {
+  "tr": "Ödeme Notu (isteğe bağlı)",
+  "el": "Σημείωση Κατάθεσης (προαιρετικό)"
+ },
+ "Deposit history will appear after the first sync.": {
+  "tr": "İlk eşitlemeden sonra ödeme geçmişi görünecek.",
+  "el": "Το ιστορικό καταθέσεων θα εμφανιστεί μετά τον πρώτο συγχρονισμό."
+ },
+ "Device notifications require Discord sign-in. You can try event reminder choices in this demo.": {
+  "tr": "Cihaz bildirimleri için Discord girişi gerekir. Demoda event hatırlatıcılarını deneyebilirsin.",
+  "el": "Οι ειδοποιήσεις συσκευής απαιτούν σύνδεση μέσω Discord. Μπορείς να δοκιμάσεις τις υπενθυμίσεις σε αυτή τη δοκιμή."
+ },
+ "Disable Device Notifications": {
+  "tr": "Cihaz Bildirimlerini Kapat",
+  "el": "Απενεργοποίηση Ειδοποιήσεων"
+ },
+ "Discord Account": {
+  "tr": "Discord Hesabı",
+  "el": "Λογαριασμός Discord"
+ },
+ "Discord Connected": {
+  "tr": "Discord Bağlı",
+  "el": "Συνδεδεμένο με Discord"
+ },
+ "Discord sign-in is currently unavailable.": {
+  "tr": "Discord girişi şu anda kullanılamıyor.",
+  "el": "Η σύνδεση μέσω Discord δεν είναι διαθέσιμη αυτή τη στιγμή."
+ },
+ "Discord sign-in is not available yet.": {
+  "tr": "Discord girişi henüz kullanılamıyor.",
+  "el": "Η σύνδεση μέσω Discord δεν είναι ακόμα διαθέσιμη."
+ },
+ "Done": {
+  "tr": "Tamam",
+  "el": "Τέλος"
+ },
+ "Due Date (optional)": {
+  "tr": "Vade Tarihi (isteğe bağlı)",
+  "el": "Ημερομηνία Λήξης (προαιρετικό)"
+ },
+ "Duration (hours)": {
+  "tr": "Süre (saat)",
+  "el": "Διάρκεια (ώρες)"
+ },
+ "Duration (minutes)": {
+  "tr": "Süre (dakika)",
+  "el": "Διάρκεια (λεπτά)"
+ },
+ "Edit Reminder": {
+  "tr": "Hatırlatıcıyı Düzenle",
+  "el": "Επεξεργασία Υπενθύμισης"
+ },
+ "Enable Device Notifications": {
+  "tr": "Cihaz Bildirimlerini Aç",
+  "el": "Ενεργοποίηση Ειδοποιήσεων"
+ },
+ "Enable JavaScript to follow the visual guides. Open Paragon and sign in with Discord to use the app.": {
+  "tr": "Görsel rehber için JavaScript’i etkinleştir. Uygulamayı kullanmak için Paragon’u açıp Discord ile giriş yap.",
+  "el": "Ενεργοποίησε τη JavaScript για τους οπτικούς οδηγούς. Άνοιξε το Paragon και συνδέσου μέσω Discord για να χρησιμοποιήσεις την εφαρμογή."
+ },
+ "Enable device notifications to receive reminders when the app is closed.": {
+  "tr": "Uygulama kapalıyken hatırlatıcı almak için cihaz bildirimlerini aç.",
+  "el": "Ενεργοποίησε τις ειδοποιήσεις συσκευής για υπενθυμίσεις όταν η εφαρμογή είναι κλειστή."
+ },
+ "End Event": {
+  "tr": "Eventi Bitir",
+  "el": "Λήξη Εκδήλωσης"
+ },
+ "Ended without bids": {
+  "tr": "Teklif verilmeden bitti",
+  "el": "Έληξε χωρίς προσφορές"
+ },
+ "Ends": {
+  "tr": "Bitiş",
+  "el": "Λήγει"
+ },
+ "Ends manually with End Event. Screenshot & attendance confirmation required.": {
+  "tr": "“Eventi Bitir” ile manuel sonlandırılır. Ekran görüntüsü ve katılım doğrulaması gerekir.",
+  "el": "Λήγει χειροκίνητα με «Λήξη Εκδήλωσης». Απαιτούνται στιγμιότυπο και επιβεβαίωση παρουσιών."
+ },
+ "Ends when the creator selects End Event.": {
+  "tr": "Oluşturan kişi “Eventi Bitir” dediğinde sonlanır.",
+  "el": "Λήγει όταν ο δημιουργός επιλέξει «Λήξη Εκδήλωσης»."
+ },
+ "Enlarge:": {
+  "tr": "Büyüt:",
+  "el": "Μεγέθυνση:"
+ },
+ "Entering Paragon…": {
+  "tr": "Paragon yükleniyor…",
+  "el": "Φόρτωση Paragon…"
+ },
+ "Event Details": {
+  "tr": "Event Bilgileri",
+  "el": "Πληροφορίες Εκδήλωσης"
+ },
+ "Event Details (optional)": {
+  "tr": "Event Açıklaması (isteğe bağlı)",
+  "el": "Περιγραφή Εκδήλωσης (προαιρετικό)"
+ },
+ "Event Name": {
+  "tr": "Event Adı",
+  "el": "Όνομα Εκδήλωσης"
+ },
+ "Event Reminder": {
+  "tr": "Event Hatırlatıcısı",
+  "el": "Υπενθύμιση Εκδήλωσης"
+ },
+ "Event Type": {
+  "tr": "Event Türü",
+  "el": "Τύπος Εκδήλωσης"
+ },
+ "Event attendance screenshot": {
+  "tr": "Event katılımının ekran görüntüsü",
+  "el": "Στιγμιότυπο παρουσιών εκδήλωσης"
+ },
+ "Event participants": {
+  "tr": "Event katılımcıları",
+  "el": "Συμμετέχοντες εκδήλωσης"
+ },
+ "Event sections": {
+  "tr": "Event bölümleri",
+  "el": "Ενότητες εκδηλώσεων"
+ },
+ "Events": {
+  "tr": "Eventler",
+  "el": "Εκδηλώσεις"
+ },
+ "Example screen · Tap to enlarge": {
+  "tr": "Örnek ekran · Büyütmek için dokun",
+  "el": "Ενδεικτική οθόνη · Πάτησε για μεγέθυνση"
+ },
+ "Exit Demo": {
+  "tr": "Demodan Çık",
+  "el": "Έξοδος από τη Δοκιμή"
+ },
+ "Expected End:": {
+  "tr": "Tahmini Bitiş:",
+  "el": "Αναμενόμενη Λήξη:"
+ },
+ "Explore both roles in the same demo. Your changes are kept when you switch.": {
+  "tr": "Aynı demoda iki rolü de dene. Rol değiştirirken değişikliklerin korunur.",
+  "el": "Δοκίμασε και τους δύο ρόλους. Οι αλλαγές σου διατηρούνται όταν αλλάζεις ρόλο."
+ },
+ "Filter by event type": {
+  "tr": "Event türüne göre filtrele",
+  "el": "Φιλτράρισμα ανά τύπο εκδήλωσης"
+ },
+ "Find a Member": {
+  "tr": "Üye Bul",
+  "el": "Εύρεση Μέλους"
+ },
+ "Find a Player": {
+  "tr": "Oyuncu Bul",
+  "el": "Εύρεση Παίκτη"
+ },
+ "First visit?": {
+  "tr": "İlk ziyaretin mi?",
+  "el": "Πρώτη επίσκεψη;"
+ },
+ "Give": {
+  "tr": "Ver",
+  "el": "Δώσε"
+ },
+ "Guide step controls": {
+  "tr": "Rehber adımı kontrolleri",
+  "el": "Χειριστήρια βημάτων οδηγού"
+ },
+ "Guild Auctions": {
+  "tr": "Lonca Açık Artırmaları",
+  "el": "Δημοπρασίες Συντεχνίας"
+ },
+ "Guild Bank": {
+  "tr": "Lonca Bankası",
+  "el": "Ταμείο Συντεχνίας"
+ },
+ "Guild Bank Contribution": {
+  "tr": "Lonca Bankasına Katkı",
+  "el": "Συνεισφορά στο Ταμείο"
+ },
+ "Guild Bank Contributions": {
+  "tr": "Lonca Bankası Ödemeleri",
+  "el": "Συνεισφορές στο Ταμείο"
+ },
+ "Guild Donation": {
+  "tr": "Lonca Bağışı",
+  "el": "Δωρεά Συντεχνίας"
+ },
+ "Guild Loans": {
+  "tr": "Lonca Borçları",
+  "el": "Δάνεια Συντεχνίας"
+ },
+ "Guild Member": {
+  "tr": "Lonca Üyesi",
+  "el": "Μέλος Συντεχνίας"
+ },
+ "Guild Notice": {
+  "tr": "Lonca Duyurusu",
+  "el": "Ανακοίνωση Συντεχνίας"
+ },
+ "Guild bid history": {
+  "tr": "Lonca teklif geçmişi",
+  "el": "Ιστορικό προσφορών συντεχνίας"
+ },
+ "Guild members": {
+  "tr": "Lonca üyeleri",
+  "el": "Μέλη συντεχνίας"
+ },
+ "Guild members only.": {
+  "tr": "Sadece lonca üyeleri.",
+  "el": "Μόνο για μέλη της συντεχνίας."
+ },
+ "Guild navigation": {
+  "tr": "Lonca menüsü",
+  "el": "Πλοήγηση συντεχνίας"
+ },
+ "Guild players": {
+  "tr": "Lonca oyuncuları",
+  "el": "Παίκτες συντεχνίας"
+ },
+ "Help with a dungeon…": {
+  "tr": "Bir zindan için yardım…",
+  "el": "Βοήθεια σε μπουντρούμι…"
+ },
+ "Highest amounts first": {
+  "tr": "En yüksek tutar önce",
+  "el": "Μεγαλύτερα ποσά πρώτα"
+ },
+ "Highest bidder": {
+  "tr": "En yüksek teklifi veren",
+  "el": "Υψηλότερος πλειοδότης"
+ },
+ "Highest bidder:": {
+  "tr": "En yüksek teklifi veren:",
+  "el": "Υψηλότερος πλειοδότης:"
+ },
+ "Historical Yang payments do not award PP automatically.": {
+  "tr": "Geçmiş Yang ödemeleri otomatik PP vermez.",
+  "el": "Οι ιστορικές πληρωμές Yang δεν αποδίδουν αυτόματα PP."
+ },
+ "Hosted by": {
+  "tr": "Oluşturan:",
+  "el": "Διοργανωτής:"
+ },
+ "How to Use": {
+  "tr": "Nasıl Kullanılır?",
+  "el": "Οδηγός Χρήσης"
+ },
+ "I Have Given the Yang": {
+  "tr": "Yang Ödemesini Yaptım",
+  "el": "Έδωσα τα Yang"
+ },
+ "Imported guild records ·": {
+  "tr": "Aktarılan lonca kayıtları ·",
+  "el": "Εισαγόμενα αρχεία συντεχνίας ·"
+ },
+ "Inspect": {
+  "tr": "İncele",
+  "el": "Προβολή"
+ },
+ "Install App": {
+  "tr": "Uygulamayı Yükle",
+  "el": "Εγκατάσταση Εφαρμογής"
+ },
+ "Install Paragon": {
+  "tr": "Paragon’u Yükle",
+  "el": "Εγκατάσταση Paragon"
+ },
+ "Inventory page": {
+  "tr": "Envanter sayfası",
+  "el": "Σελίδα αποθήκης"
+ },
+ "Issue Loan": {
+  "tr": "Borç Ver",
+  "el": "Χορήγηση Δανείου"
+ },
+ "Issue a New Loan": {
+  "tr": "Yeni Borç Ver",
+  "el": "Χορήγηση Νέου Δανείου"
+ },
+ "Issued Date": {
+  "tr": "Verilme Tarihi",
+  "el": "Ημερομηνία Χορήγησης"
+ },
+ "It counts toward your daily Help limit.": {
+  "tr": "Günlük yardım eventi sınırına dahil edilir.",
+  "el": "Προσμετράται στο ημερήσιο όριο βοήθειας."
+ },
+ "Item Details (optional)": {
+  "tr": "Item Bilgileri (isteğe bağlı)",
+  "el": "Πληροφορίες Αντικειμένου (προαιρετικό)"
+ },
+ "Item Name": {
+  "tr": "Item Adı",
+  "el": "Όνομα Αντικειμένου"
+ },
+ "Item Screenshot": {
+  "tr": "Item Ekran Görüntüsü",
+  "el": "Στιγμιότυπο Αντικειμένου"
+ },
+ "Join Event": {
+  "tr": "Evente Katıl",
+  "el": "Συμμετοχή στην Εκδήλωση"
+ },
+ "Joined": {
+  "tr": "Katıldın",
+  "el": "Συμμετέχεις"
+ },
+ "Last checked:": {
+  "tr": "Son kontrol:",
+  "el": "Τελευταίος έλεγχος:"
+ },
+ "Leading": {
+  "tr": "En Yüksek Teklif",
+  "el": "Υψηλότερη Προσφορά"
+ },
+ "Leave Event": {
+  "tr": "Eventten Ayrıl",
+  "el": "Αποχώρηση από την Εκδήλωση"
+ },
+ "Level": {
+  "tr": "Seviye",
+  "el": "Επίπεδο"
+ },
+ "Loading bids…": {
+  "tr": "Teklifler yükleniyor…",
+  "el": "Φόρτωση προσφορών…"
+ },
+ "Loading event…": {
+  "tr": "Event yükleniyor…",
+  "el": "Φόρτωση εκδήλωσης…"
+ },
+ "Loading players…": {
+  "tr": "Oyuncular yükleniyor…",
+  "el": "Φόρτωση παικτών…"
+ },
+ "Location": {
+  "tr": "Konum",
+  "el": "Τοποθεσία"
+ },
+ "Location:": {
+  "tr": "Konum:",
+  "el": "Τοποθεσία:"
+ },
+ "Loot": {
+  "tr": "Ganimet",
+  "el": "Λάφυρα"
+ },
+ "Loot Source (optional)": {
+  "tr": "Ganimet Kaynağı (isteğe bağlı)",
+  "el": "Προέλευση Λαφύρων (προαιρετικό)"
+ },
+ "Made by": {
+  "tr": "Yapan:",
+  "el": "Δημιουργήθηκε από"
+ },
+ "Manage": {
+  "tr": "Yönet",
+  "el": "Διαχείριση"
+ },
+ "Manage Active Auctions": {
+  "tr": "Aktif Açık Artırmaları Yönet",
+  "el": "Διαχείριση Ενεργών Δημοπρασιών"
+ },
+ "Manage Loans": {
+  "tr": "Borçları Yönet",
+  "el": "Διαχείριση Δανείων"
+ },
+ "Mark Paid": {
+  "tr": "Ödendi Olarak İşaretle",
+  "el": "Σήμανση ως Πληρωμένο"
+ },
+ "Maximum bid:": {
+  "tr": "En yüksek teklifin:",
+  "el": "Μέγιστη προσφορά:"
+ },
+ "Meeting point…": {
+  "tr": "Buluşma noktası…",
+  "el": "Σημείο συνάντησης…"
+ },
+ "Minimum": {
+  "tr": "Minimum",
+  "el": "Ελάχιστη"
+ },
+ "Minimum Bid (PP)": {
+  "tr": "Minimum Teklif (PP)",
+  "el": "Ελάχιστη Προσφορά (PP)"
+ },
+ "My Events": {
+  "tr": "Eventlerim",
+  "el": "Οι Εκδηλώσεις μου"
+ },
+ "My event history": {
+  "tr": "Event geçmişim",
+  "el": "Το ιστορικό εκδηλώσεών μου"
+ },
+ "Name your event…": {
+  "tr": "Eventine bir ad ver…",
+  "el": "Δώσε όνομα στην εκδήλωση…"
+ },
+ "Newer": {
+  "tr": "Daha Yeni",
+  "el": "Νεότερα"
+ },
+ "Next": {
+  "tr": "Sonraki",
+  "el": "Επόμενο"
+ },
+ "Next Step →": {
+  "tr": "Sonraki Adım →",
+  "el": "Επόμενο Βήμα →"
+ },
+ "Next bid:": {
+  "tr": "Sonraki teklif:",
+  "el": "Επόμενη προσφορά:"
+ },
+ "Next members page": {
+  "tr": "Sonraki üye sayfası",
+  "el": "Επόμενη σελίδα μελών"
+ },
+ "No": {
+  "tr": "Yok",
+  "el": "Κανένα"
+ },
+ "No PP": {
+  "tr": "PP Yok",
+  "el": "Χωρίς PP"
+ },
+ "No PP transactions yet.": {
+  "tr": "Henüz PP işlemi yok.",
+  "el": "Δεν υπάρχουν ακόμα συναλλαγές PP."
+ },
+ "No active auctions.": {
+  "tr": "Aktif açık artırma yok.",
+  "el": "Δεν υπάρχουν ενεργές δημοπρασίες."
+ },
+ "No bids have been placed.": {
+  "tr": "Henüz teklif verilmedi.",
+  "el": "Δεν έχουν γίνει προσφορές."
+ },
+ "No bids yet": {
+  "tr": "Henüz teklif yok",
+  "el": "Δεν υπάρχουν προσφορές"
+ },
+ "No completed auctions yet.": {
+  "tr": "Henüz tamamlanan açık artırma yok.",
+  "el": "Δεν υπάρχουν ολοκληρωμένες δημοπρασίες."
+ },
+ "No deposit history yet.": {
+  "tr": "Henüz ödeme geçmişi yok.",
+  "el": "Δεν υπάρχει ακόμα ιστορικό καταθέσεων."
+ },
+ "No deposits awaiting approval.": {
+  "tr": "Onay bekleyen ödeme yok.",
+  "el": "Δεν υπάρχουν καταθέσεις προς έγκριση."
+ },
+ "No deposits recorded for your character yet.": {
+  "tr": "Karakterin adına kayıtlı ödeme yok.",
+  "el": "Δεν έχουν καταγραφεί καταθέσεις για τον χαρακτήρα σου."
+ },
+ "No guild bank history has been imported yet.": {
+  "tr": "Lonca bankası geçmişi henüz aktarılmadı.",
+  "el": "Δεν έχει εισαχθεί ιστορικό ταμείου συντεχνίας."
+ },
+ "No guild members yet.": {
+  "tr": "Henüz lonca üyesi yok.",
+  "el": "Δεν υπάρχουν ακόμα μέλη συντεχνίας."
+ },
+ "No manual adjustments yet.": {
+  "tr": "Henüz manuel PP işlemi yok.",
+  "el": "Δεν υπάρχουν χειροκίνητες προσαρμογές."
+ },
+ "No members match your search.": {
+  "tr": "Aramana uygun üye yok.",
+  "el": "Δεν βρέθηκαν μέλη για την αναζήτησή σου."
+ },
+ "No ongoing or upcoming auctions.": {
+  "tr": "Devam eden veya yaklaşan açık artırma yok.",
+  "el": "Δεν υπάρχουν δημοπρασίες σε εξέλιξη ή προσεχώς."
+ },
+ "No open auctions. Items will appear here when an administrator starts an auction.": {
+  "tr": "Açık artırma yok. Bir yönetici başlattığında itemler burada görünecek.",
+  "el": "Δεν υπάρχουν ανοιχτές δημοπρασίες. Τα αντικείμενα εμφανίζονται όταν ένας διαχειριστής ξεκινήσει δημοπρασία."
+ },
+ "No outstanding loans.": {
+  "tr": "Ödenmemiş borç yok.",
+  "el": "Δεν υπάρχουν ανεξόφλητα δάνεια."
+ },
+ "No participants yet.": {
+  "tr": "Henüz katılımcı yok.",
+  "el": "Δεν υπάρχουν ακόμα συμμετέχοντες."
+ },
+ "No players match your search.": {
+  "tr": "Aramana uygun oyuncu yok.",
+  "el": "Δεν βρέθηκαν παίκτες για την αναζήτησή σου."
+ },
+ "No records yet.": {
+  "tr": "Henüz kayıt yok.",
+  "el": "Δεν υπάρχουν ακόμα εγγραφές."
+ },
+ "No reminder": {
+  "tr": "Hatırlatma yok",
+  "el": "Χωρίς υπενθύμιση"
+ },
+ "No repaid loans yet.": {
+  "tr": "Henüz kapanan borç yok.",
+  "el": "Δεν υπάρχουν αποπληρωμένα δάνεια."
+ },
+ "No screenshots uploaded.": {
+  "tr": "Ekran görüntüsü yüklenmedi.",
+  "el": "Δεν έχουν ανεβεί στιγμιότυπα."
+ },
+ "Not Awarded": {
+  "tr": "PP Verilmedi",
+  "el": "Δεν Αποδόθηκαν PP"
+ },
+ "Not confirmed": {
+  "tr": "Doğrulanmadı",
+  "el": "Δεν επιβεβαιώθηκε"
+ },
+ "Notifications & App Settings": {
+  "tr": "Bildirimler ve Uygulama Ayarları",
+  "el": "Ειδοποιήσεις & Ρυθμίσεις Εφαρμογής"
+ },
+ "Notifications & Home Screen": {
+  "tr": "Bildirimler ve Ana Ekran",
+  "el": "Ειδοποιήσεις & Αρχική Οθόνη"
+ },
+ "Notify me when a new guild event is announced": {
+  "tr": "Yeni lonca eventi duyurulduğunda bana bildir",
+  "el": "Ειδοποίησέ με όταν ανακοινώνεται νέα εκδήλωση"
+ },
+ "Now": {
+  "tr": "Şimdi",
+  "el": "Τώρα"
+ },
+ "Older": {
+  "tr": "Daha Eski",
+  "el": "Παλαιότερα"
+ },
+ "On iPhone: open Paragon in Safari, tap Share → Add to Home Screen, then open the installed app and enable notifications.": {
+  "tr": "iPhone: Paragon’u Safari’de aç, Paylaş → Ana Ekrana Ekle’ye dokun. Ardından yüklenen uygulamayı açıp bildirimleri etkinleştir.",
+  "el": "Σε iPhone: άνοιξε το Paragon στο Safari, πάτησε Κοινοποίηση → Προσθήκη στην Αρχική Οθόνη. Άνοιξε την εφαρμογή και ενεργοποίησε τις ειδοποιήσεις."
+ },
+ "One step at a time.": {
+  "tr": "Adım adım.",
+  "el": "Ένα βήμα τη φορά."
+ },
+ "One weekly deposit per guild week, Monday–Sunday.": {
+  "tr": "Pazartesi–Pazar lonca haftasında tek haftalık ödeme.",
+  "el": "Μία εβδομαδιαία κατάθεση ανά εβδομάδα συντεχνίας, Δευτέρα–Κυριακή."
+ },
+ "Ongoing & Upcoming Auctions": {
+  "tr": "Devam Eden ve Yaklaşan Açık Artırmalar",
+  "el": "Δημοπρασίες σε Εξέλιξη & Προσεχώς"
+ },
+ "Ongoing & Upcoming Events": {
+  "tr": "Devam Eden ve Yaklaşan Eventler",
+  "el": "Εκδηλώσεις σε Εξέλιξη & Προσεχώς"
+ },
+ "Only selected members receive": {
+  "tr": "Sadece seçilen üyeler alır:",
+  "el": "Μόνο τα επιλεγμένα μέλη λαμβάνουν"
+ },
+ "Open Auctions": {
+  "tr": "Açık Artırma",
+  "el": "Ανοιχτές Δημοπρασίες"
+ },
+ "Open Paragon": {
+  "tr": "Paragon’u Aç",
+  "el": "Άνοιγμα Paragon"
+ },
+ "Open Screenshot": {
+  "tr": "Ekran Görüntüsünü Aç",
+  "el": "Άνοιγμα Στιγμιότυπου"
+ },
+ "Open guild auctions": {
+  "tr": "Açık lonca artırmaları",
+  "el": "Ανοιχτές δημοπρασίες συντεχνίας"
+ },
+ "Original Google Sheet": {
+  "tr": "Orijinal Google Tablosu",
+  "el": "Αρχικό Google Sheet"
+ },
+ "Other event types require the Experienced Discord role.": {
+  "tr": "Diğer event türleri için Experienced Discord rolü gerekir.",
+  "el": "Οι άλλοι τύποι εκδηλώσεων απαιτούν τον ρόλο Experienced στο Discord."
+ },
+ "PARAGON / ARTHION GUILD APP": {
+  "tr": "PARAGON / ARTHION LONCA UYGULAMASI",
+  "el": "PARAGON / ΕΦΑΡΜΟΓΗ ΣΥΝΤΕΧΝΙΑΣ ARTHION"
+ },
+ "PNG, JPEG or WebP · Up to 8 MB": {
+  "tr": "PNG, JPEG veya WebP · En fazla 8 MB",
+  "el": "PNG, JPEG ή WebP · Έως 8 MB"
+ },
+ "PP AVAILABLE": {
+  "tr": "KULLANILABİLİR PP",
+  "el": "ΔΙΑΘΕΣΙΜΑ PP"
+ },
+ "PP Amount": {
+  "tr": "PP Miktarı",
+  "el": "Ποσότητα PP"
+ },
+ "PP Awarded": {
+  "tr": "PP Verildi",
+  "el": "PP Αποδόθηκαν"
+ },
+ "PP after approval": {
+  "tr": "PP onaydan sonra",
+  "el": "PP μετά την έγκριση"
+ },
+ "PP available": {
+  "tr": "PP kullanılabilir",
+  "el": "PP διαθέσιμα"
+ },
+ "PP each": {
+  "tr": "PP kişi başı",
+  "el": "PP ανά άτομο"
+ },
+ "PP from": {
+  "tr": "PP şundan:",
+  "el": "PP από"
+ },
+ "PP is awarded for confirmed event attendance and approved Yang deposits. Winning auctions deduct PP.": {
+  "tr": "Doğrulanan event katılımı ve onaylanan Yang ödemeleri PP kazandırır. Kazanılan açık artırmalar PP düşer.",
+  "el": "Η επιβεβαιωμένη συμμετοχή και οι εγκεκριμένες καταθέσεις Yang αποδίδουν PP. Οι κερδισμένες δημοπρασίες αφαιρούν PP."
+ },
+ "PP per Member": {
+  "tr": "Üye Başına PP",
+  "el": "PP ανά Μέλος"
+ },
+ "PP size:": {
+  "tr": "PP boyu:",
+  "el": "Μέγεθος PP:"
+ },
+ "PP ·": {
+  "tr": "PP ·",
+  "el": "PP ·"
+ },
+ "PP · Increment:": {
+  "tr": "PP · Artış:",
+  "el": "PP · Βήμα:"
+ },
+ "PP.": {
+  "tr": "PP.",
+  "el": "PP."
+ },
+ "PP. Partial amounts award whole PP, rounded down.": {
+  "tr": "PP. Eksik tutarlar aşağı yuvarlanarak tam PP kazandırır.",
+  "el": "PP. Τα μερικά ποσά αποδίδουν ακέραια PP, στρογγυλοποιημένα προς τα κάτω."
+ },
+ "PP. Raising your bid replaces your existing reservation.": {
+  "tr": "PP. Teklifini yükselttiğinde önceki ayrılan tutar güncellenir.",
+  "el": "PP. Η αύξηση της προσφοράς αντικαθιστά την προηγούμενη δέσμευση."
+ },
+ "PP. Unselected members receive no PP.": {
+  "tr": "PP. Seçilmeyen üyelere PP verilmez.",
+  "el": "PP. Τα μη επιλεγμένα μέλη δεν λαμβάνουν PP."
+ },
+ "Paragon Guild": {
+  "tr": "Paragon Loncası",
+  "el": "Συντεχνία Paragon"
+ },
+ "Paragon guild emblem": {
+  "tr": "Paragon lonca arması",
+  "el": "Έμβλημα συντεχνίας Paragon"
+ },
+ "Paragon helmet emblem": {
+  "tr": "Paragon miğfer arması",
+  "el": "Έμβλημα κράνους Paragon"
+ },
+ "Paragon home": {
+  "tr": "Paragon ana sayfa",
+  "el": "Αρχική σελίδα Paragon"
+ },
+ "Participants": {
+  "tr": "Katılımcılar",
+  "el": "Συμμετέχοντες"
+ },
+ "Participation Points": {
+  "tr": "Katılım Puanları",
+  "el": "Πόντοι Συμμετοχής"
+ },
+ "Payment Date": {
+  "tr": "Ödeme Tarihi",
+  "el": "Ημερομηνία Πληρωμής"
+ },
+ "Per member, including creator": {
+  "tr": "Oluşturan dahil, kişi başı",
+  "el": "Ανά μέλος, μαζί με τον δημιουργό"
+ },
+ "Place Bid": {
+  "tr": "Teklif Ver",
+  "el": "Κάνε Προσφορά"
+ },
+ "Place a Bid": {
+  "tr": "Teklif Ver",
+  "el": "Υποβολή Προσφοράς"
+ },
+ "Planned Expenses": {
+  "tr": "Planlanan Giderler",
+  "el": "Προγραμματισμένα Έξοδα"
+ },
+ "Poison Sword +9…": {
+  "tr": "Zehir Kılıcı +9…",
+  "el": "Δηλητηριασμένο Σπαθί +9…"
+ },
+ "Previous": {
+  "tr": "Önceki",
+  "el": "Προηγούμενο"
+ },
+ "Previous members page": {
+  "tr": "Önceki üye sayfası",
+  "el": "Προηγούμενη σελίδα μελών"
+ },
+ "Purpose": {
+  "tr": "Amaç",
+  "el": "Σκοπός"
+ },
+ "Push delivery is awaiting server configuration. Event reminder choices are saved to your profile.": {
+  "tr": "Bildirim gönderimi sunucu ayarını bekliyor. Event hatırlatıcıları profiline kaydedilir.",
+  "el": "Η αποστολή ειδοποιήσεων αναμένει ρύθμιση διακομιστή. Οι υπενθυμίσεις αποθηκεύονται στο προφίλ σου."
+ },
+ "Quantity": {
+  "tr": "Adet",
+  "el": "Ποσότητα"
+ },
+ "Quest Completed": {
+  "tr": "Görev Tamamlandı",
+  "el": "Αποστολή Ολοκληρώθηκε"
+ },
+ "Raise Bid": {
+  "tr": "Teklifi Yükselt",
+  "el": "Αύξηση Προσφοράς"
+ },
+ "Reason": {
+  "tr": "Sebep",
+  "el": "Αιτία"
+ },
+ "Reason for this PP adjustment…": {
+  "tr": "Bu PP işleminin sebebi…",
+  "el": "Αιτία αυτής της προσαρμογής PP…"
+ },
+ "Recent PP Adjustments": {
+  "tr": "Son PP İşlemleri",
+  "el": "Πρόσφατες Προσαρμογές PP"
+ },
+ "Record Repayment": {
+  "tr": "Geri Ödeme Kaydet",
+  "el": "Καταχώριση Αποπληρωμής"
+ },
+ "Recorded in the player’s PP history with the administrator and reason.": {
+  "tr": "Yönetici ve sebep bilgisiyle oyuncunun PP geçmişine kaydedilir.",
+  "el": "Καταγράφεται στο ιστορικό PP του παίκτη μαζί με τον διαχειριστή και την αιτία."
+ },
+ "Reject": {
+  "tr": "Reddet",
+  "el": "Απόρριψη"
+ },
+ "Reject Event": {
+  "tr": "Eventi Reddet",
+  "el": "Απόρριψη Εκδήλωσης"
+ },
+ "Rejected": {
+  "tr": "Reddedildi",
+  "el": "Απορρίφθηκε"
+ },
+ "Rejected · No PP": {
+  "tr": "Reddedildi · PP Yok",
+  "el": "Απορρίφθηκε · Χωρίς PP"
+ },
+ "Remind Me": {
+  "tr": "Hatırlat",
+  "el": "Υπενθύμιση"
+ },
+ "Remove": {
+  "tr": "Sil",
+  "el": "Αφαίρεση"
+ },
+ "Remove PP": {
+  "tr": "PP Sil",
+  "el": "Αφαίρεση PP"
+ },
+ "Repayment (Yang)": {
+  "tr": "Geri Ödeme (Yang)",
+  "el": "Αποπληρωμή (Yang)"
+ },
+ "Required": {
+  "tr": "Zorunlu",
+  "el": "Απαιτείται"
+ },
+ "Reserved": {
+  "tr": "Ayrılan",
+  "el": "Δεσμευμένα"
+ },
+ "Reserved expenses reduce available funds. Mark paid only after the Yang has been spent.": {
+  "tr": "Planlanan giderler kullanılabilir tutarı azaltır. Yang harcandıktan sonra ödendi olarak işaretle.",
+  "el": "Τα δεσμευμένα έξοδα μειώνουν τα διαθέσιμα χρήματα. Σημείωσε ως πληρωμένα μόνο αφού δαπανηθούν τα Yang."
+ },
+ "Reserved:": {
+  "tr": "Ayrılan:",
+  "el": "Δεσμευμένα:"
+ },
+ "Review Note (required to reject the event)": {
+  "tr": "İnceleme Notu (reddetmek için zorunlu)",
+  "el": "Σημείωση Ελέγχου (απαιτείται για απόρριψη)"
+ },
+ "Review:": {
+  "tr": "İnceleme:",
+  "el": "Έλεγχος:"
+ },
+ "Reward Recipients": {
+  "tr": "PP Alacak Üyeler",
+  "el": "Αποδέκτες Ανταμοιβής"
+ },
+ "SELECT AN AUCTION": {
+  "tr": "BİR AÇIK ARTIRMA SEÇ",
+  "el": "ΕΠΙΛΕΞΕ ΔΗΜΟΠΡΑΣΙΑ"
+ },
+ "Save Reminder": {
+  "tr": "Hatırlatıcıyı Kaydet",
+  "el": "Αποθήκευση Υπενθύμισης"
+ },
+ "Saving…": {
+  "tr": "Kaydediliyor…",
+  "el": "Αποθήκευση…"
+ },
+ "Schedule Event": {
+  "tr": "Event Planla",
+  "el": "Προγραμματισμός Εκδήλωσης"
+ },
+ "Screenshot Evidence": {
+  "tr": "Ekran Görüntüsü Kanıtı",
+  "el": "Αποδεικτικά Στιγμιότυπα"
+ },
+ "Search name or class…": {
+  "tr": "Ad veya sınıf ara…",
+  "el": "Αναζήτηση ονόματος ή κλάσης…"
+ },
+ "Select All": {
+  "tr": "Tümünü Seç",
+  "el": "Επιλογή Όλων"
+ },
+ "Selected Player": {
+  "tr": "Seçilen Oyuncu",
+  "el": "Επιλεγμένος Παίκτης"
+ },
+ "Selected item screenshot": {
+  "tr": "Seçilen itemin ekran görüntüsü",
+  "el": "Επιλεγμένο στιγμιότυπο αντικειμένου"
+ },
+ "Show More Events": {
+  "tr": "Daha Fazla Event Göster",
+  "el": "Περισσότερες Εκδηλώσεις"
+ },
+ "Sign In": {
+  "tr": "Giriş Yap",
+  "el": "Σύνδεση"
+ },
+ "Sign Out": {
+  "tr": "Çıkış Yap",
+  "el": "Αποσύνδεση"
+ },
+ "Sign in with Discord": {
+  "tr": "Discord ile Giriş Yap",
+  "el": "Σύνδεση μέσω Discord"
+ },
+ "Sign in with Discord. You need the guild’s": {
+  "tr": "Discord ile giriş yap. Loncadaki gerekli rol:",
+  "el": "Συνδέσου μέσω Discord. Απαραίτητος ρόλος συντεχνίας:"
+ },
+ "Signed Up": {
+  "tr": "Katılacak",
+  "el": "Δήλωσε Συμμετοχή"
+ },
+ "Skip to content": {
+  "tr": "İçeriğe geç",
+  "el": "Μετάβαση στο περιεχόμενο"
+ },
+ "Start Auction": {
+  "tr": "Açık Artırmayı Başlat",
+  "el": "Έναρξη Δημοπρασίας"
+ },
+ "Start Help Event": {
+  "tr": "Yardım Eventini Başlat",
+  "el": "Έναρξη Εκδήλωσης Βοήθειας"
+ },
+ "Starting…": {
+  "tr": "Başlatılıyor…",
+  "el": "Έναρξη…"
+ },
+ "Starts": {
+  "tr": "Başlangıç",
+  "el": "Ξεκινά"
+ },
+ "Step": {
+  "tr": "Adım",
+  "el": "Βήμα"
+ },
+ "Submit Donation": {
+  "tr": "Bağışı Gönder",
+  "el": "Υποβολή Δωρεάς"
+ },
+ "Submit Weekly Deposit": {
+  "tr": "Haftalık Ödemeyi Gönder",
+  "el": "Υποβολή Εβδομαδιαίας Κατάθεσης"
+ },
+ "Submit for Approval": {
+  "tr": "Onaya Gönder",
+  "el": "Υποβολή για Έγκριση"
+ },
+ "Submitting…": {
+  "tr": "Gönderiliyor…",
+  "el": "Υποβολή…"
+ },
+ "Switch to Guild Leader": {
+  "tr": "Lonca Liderine Geç",
+  "el": "Αλλαγή σε Αρχηγό Συντεχνίας"
+ },
+ "Switch to Guild Member": {
+  "tr": "Lonca Üyesine Geç",
+  "el": "Αλλαγή σε Μέλος Συντεχνίας"
+ },
+ "Synced from the guild Deposit Log · Checks every 5 minutes.": {
+  "tr": "Lonca ödeme kaydıyla eşitlenir · Her 5 dakikada kontrol edilir.",
+  "el": "Συγχρονισμός από το αρχείο καταθέσεων · Έλεγχος κάθε 5 λεπτά."
+ },
+ "Test Device Notification": {
+  "tr": "Test Bildirimi Gönder",
+  "el": "Δοκιμαστική Ειδοποίηση"
+ },
+ "This Week": {
+  "tr": "Bu Hafta",
+  "el": "Αυτή την Εβδομάδα"
+ },
+ "Time left": {
+  "tr": "Kalan süre",
+  "el": "Χρόνος που απομένει"
+ },
+ "Times shown in your local time.": {
+  "tr": "Saatler cihazının saat diliminde gösterilir.",
+  "el": "Οι ώρες εμφανίζονται στη ζώνη ώρας της συσκευής σου."
+ },
+ "Total Deposited": {
+  "tr": "Toplam Ödeme",
+  "el": "Σύνολο Καταθέσεων"
+ },
+ "Transfer Submitted": {
+  "tr": "Ödeme Gönderildi",
+  "el": "Μεταφορά Υποβλήθηκε"
+ },
+ "Transfer Yang in game, then submit the deposit for an administrator to verify.": {
+  "tr": "Yang ödemesini oyunda yap, ardından yöneticiye doğrulama için gönder.",
+  "el": "Μετάφερε τα Yang στο παιχνίδι και υπέβαλε την κατάθεση για έλεγχο από διαχειριστή."
+ },
+ "Treasury sections": {
+  "tr": "Banka bölümleri",
+  "el": "Ενότητες ταμείου"
+ },
+ "Try as Guild Leader": {
+  "tr": "Lonca Lideri Olarak Dene",
+  "el": "Δοκιμή ως Αρχηγός Συντεχνίας"
+ },
+ "Try as Guild Member": {
+  "tr": "Lonca Üyesi Olarak Dene",
+  "el": "Δοκιμή ως Μέλος Συντεχνίας"
+ },
+ "Updates are delayed. Showing the last verified spreadsheet data.": {
+  "tr": "Güncellemeler gecikiyor. Son doğrulanmış tablo verileri gösteriliyor.",
+  "el": "Οι ενημερώσεις καθυστερούν. Εμφανίζονται τα τελευταία επαληθευμένα δεδομένα."
+ },
+ "Upload Screenshot": {
+  "tr": "Ekran Görüntüsü Yükle",
+  "el": "Ανέβασμα Στιγμιότυπου"
+ },
+ "Upload Screenshot (required, max. 8 MB)": {
+  "tr": "Ekran Görüntüsü Yükle (zorunlu, en fazla 8 MB)",
+  "el": "Ανέβασμα Στιγμιότυπου (υποχρεωτικό, έως 8 MB)"
+ },
+ "Upload a screenshot below to enable End Event.": {
+  "tr": "“Eventi Bitir” için aşağıya ekran görüntüsü yükle.",
+  "el": "Ανέβασε στιγμιότυπο παρακάτω για να ενεργοποιηθεί η «Λήξη Εκδήλωσης»."
+ },
+ "Uploaded ·": {
+  "tr": "Yüklendi ·",
+  "el": "Ανέβηκε ·"
+ },
+ "Vault:": {
+  "tr": "Kasa:",
+  "el": "Ταμείο:"
+ },
+ "View": {
+  "tr": "Görüntüle",
+  "el": "Προβολή"
+ },
+ "View All Auctions": {
+  "tr": "Tüm Açık Artırmaları Gör",
+  "el": "Όλες οι Δημοπρασίες"
+ },
+ "View All Events": {
+  "tr": "Tüm Eventleri Gör",
+  "el": "Όλες οι Εκδηλώσεις"
+ },
+ "View Full Screenshot": {
+  "tr": "Ekran Görüntüsünü Büyüt",
+  "el": "Προβολή Πλήρους Στιγμιότυπου"
+ },
+ "View PP History": {
+  "tr": "PP Geçmişini Gör",
+  "el": "Προβολή Ιστορικού PP"
+ },
+ "View full screenshot of": {
+  "tr": "Ekran görüntüsünü büyüt:",
+  "el": "Πλήρες στιγμιότυπο:"
+ },
+ "Waiting for the first spreadsheet sync.": {
+  "tr": "İlk tablo eşitlemesi bekleniyor.",
+  "el": "Αναμονή για τον πρώτο συγχρονισμό."
+ },
+ "Weekly Deposit": {
+  "tr": "Haftalık Ödeme",
+  "el": "Εβδομαδιαία Κατάθεση"
+ },
+ "Weekly Quests": {
+  "tr": "Haftalık Görevler",
+  "el": "Εβδομαδιαίες Αποστολές"
+ },
+ "Weekly Yang Deposit": {
+  "tr": "Haftalık Yang Ödemesi",
+  "el": "Εβδομαδιαία Κατάθεση Yang"
+ },
+ "Weekly contribution progress": {
+  "tr": "Haftalık ödeme ilerlemesi",
+  "el": "Πρόοδος εβδομαδιαίας συνεισφοράς"
+ },
+ "What would you like to do?": {
+  "tr": "Ne yapmak istersin?",
+  "el": "Τι θέλεις να κάνεις;"
+ },
+ "Won by": {
+  "tr": "Kazanan:",
+  "el": "Νικητής:"
+ },
+ "Yang =": {
+  "tr": "Yang =",
+  "el": "Yang ="
+ },
+ "Yang Amount": {
+  "tr": "Yang Miktarı",
+  "el": "Ποσότητα Yang"
+ },
+ "Yang Deposits & PP": {
+  "tr": "Yang Ödemeleri ve PP",
+  "el": "Καταθέσεις Yang & PP"
+ },
+ "Yang deposited": {
+  "tr": "Yang yatırıldı",
+  "el": "Yang κατατέθηκαν"
+ },
+ "Yang left": {
+  "tr": "Yang kaldı",
+  "el": "Yang απομένουν"
+ },
+ "Yang repaid": {
+  "tr": "Yang geri ödendi",
+  "el": "Yang αποπληρώθηκαν"
+ },
+ "Yang reserved": {
+  "tr": "Yang ayrıldı",
+  "el": "Yang δεσμευμένα"
+ },
+ "Yang to": {
+  "tr": "Yang şuna:",
+  "el": "Yang στον"
+ },
+ "Yang ·": {
+  "tr": "Yang ·",
+  "el": "Yang ·"
+ },
+ "Yang · Total deposited:": {
+  "tr": "Yang · Toplam ödeme:",
+  "el": "Yang · Σύνολο καταθέσεων:"
+ },
+ "Yang. Loans do not change PP.": {
+  "tr": "Yang. Borçlar PP’yi değiştirmez.",
+  "el": "Yang. Τα δάνεια δεν αλλάζουν τα PP."
+ },
+ "You": {
+  "tr": "Sen",
+  "el": "Εσύ"
+ },
+ "You do not have enough available PP for the next bid.": {
+  "tr": "Sonraki teklif için yeterli kullanılabilir PP’n yok.",
+  "el": "Δεν έχεις αρκετά διαθέσιμα PP για την επόμενη προσφορά."
+ },
+ "You have no leading bids.": {
+  "tr": "En yüksek teklifin olduğu artırma yok.",
+  "el": "Δεν έχεις προσφορές που προηγούνται."
+ },
+ "Your Deposit History": {
+  "tr": "Ödeme Geçmişin",
+  "el": "Το Ιστορικό Καταθέσεών σου"
+ },
+ "Your Leading Bids": {
+  "tr": "En Yüksek Tekliflerin",
+  "el": "Οι Προσφορές σου που Προηγούνται"
+ },
+ "Your Participation Points": {
+  "tr": "Katılım Puanların",
+  "el": "Οι Πόντοι Συμμετοχής σου"
+ },
+ "Your Total Bid (PP)": {
+  "tr": "Toplam Teklifin (PP)",
+  "el": "Συνολική Προσφορά σου (PP)"
+ },
+ "Your name, class and access are synchronized from Discord.": {
+  "tr": "Adın, sınıfın ve yetkilerin Discord’dan eşitlenir.",
+  "el": "Το όνομα, η κλάση και η πρόσβασή σου συγχρονίζονται από το Discord."
+ },
+ "after administrator approval": {
+  "tr": "yönetici onayından sonra",
+  "el": "μετά την έγκριση διαχειριστή"
+ },
+ "after the transfer appears in the Deposit Log": {
+  "tr": "ödeme kayda geçtiğinde",
+  "el": "όταν η μεταφορά εμφανιστεί στο αρχείο καταθέσεων"
+ },
+ "at the": {
+  "tr": "konum:",
+  "el": "στο"
+ },
+ "bid:": {
+  "tr": "teklif:",
+  "el": "προσφορά:"
+ },
+ "character": {
+  "tr": "karakter",
+  "el": "χαρακτήρας"
+ },
+ "cm": {
+  "tr": "cm",
+  "el": "cm"
+ },
+ "events yet.": {
+  "tr": "henüz event yok.",
+  "el": "εκδηλώσεις ακόμα."
+ },
+ "excluded from rewards": {
+  "tr": "kişi PP almayacak",
+  "el": "άτομα αποκλείονται από ανταμοιβές"
+ },
+ "guild crest": {
+  "tr": "lonca arması",
+  "el": "έμβλημα συντεχνίας"
+ },
+ "members ·": {
+  "tr": "üye ·",
+  "el": "μέλη ·"
+ },
+ "of": {
+  "tr": "/",
+  "el": "από"
+ },
+ "participants": {
+  "tr": "katılımcı",
+  "el": "συμμετέχοντες"
+ },
+ "players": {
+  "tr": "oyuncu",
+  "el": "παίκτες"
+ },
+ "records": {
+  "tr": "kayıt",
+  "el": "εγγραφές"
+ },
+ "reserved for auctions": {
+  "tr": "açık artırmalar için ayrıldı",
+  "el": "δεσμευμένα για δημοπρασίες"
+ },
+ "role.": {
+  "tr": "rolü.",
+  "el": "ρόλος."
+ },
+ "scheduled expenses ·": {
+  "tr": "planlanan gider ·",
+  "el": "προγραμματισμένα έξοδα ·"
+ },
+ "screenshot": {
+  "tr": "ekran görüntüsü",
+  "el": "στιγμιότυπο"
+ },
+ "selected": {
+  "tr": "seçildi",
+  "el": "επιλεγμένα"
+ },
+ "selected · Admin approval required": {
+  "tr": "seçildi · Yönetici onayı gerekir",
+  "el": "επιλεγμένα · Απαιτείται έγκριση διαχειριστή"
+ },
+ "with love": {
+  "tr": "sevgilerle",
+  "el": "με αγάπη"
+ },
+ "· Development data": {
+  "tr": "· Geliştirme verileri",
+  "el": "· Δεδομένα ανάπτυξης"
+ },
+ "· Due": {
+  "tr": "· Vade",
+  "el": "· Λήξη"
+ },
+ "· Hosted by": {
+  "tr": "· Oluşturan:",
+  "el": "· Διοργανωτής:"
+ },
+ "· Repaid": {
+  "tr": "· Geri ödenen",
+  "el": "· Αποπληρωμένα"
+ },
+ "· Resets every Monday": {
+  "tr": "· Her pazartesi yenilenir",
+  "el": "· Ανανεώνεται κάθε Δευτέρα"
+ },
+ "· Sample demo data": {
+  "tr": "· Örnek demo verileri",
+  "el": "· Ενδεικτικά δεδομένα δοκιμής"
+ },
+ "← All Guides": {
+  "tr": "← Tüm Rehberler",
+  "el": "← Όλοι οι Οδηγοί"
+ },
+ "Paragon Home with Weekly Quests and the bottom navigation": {
+  "tr": "Paragon ana sayfası, haftalık görevler ve alt menü",
+  "el": "Αρχική Paragon με εβδομαδιαίες αποστολές και κάτω μενού"
+ },
+ "Profile notification settings and Enable Device Notifications": {
+  "tr": "Profildeki bildirim ayarları ve cihaz bildirimlerini açma",
+  "el": "Ρυθμίσεις ειδοποιήσεων προφίλ και ενεργοποίηση ειδοποιήσεων συσκευής"
+ },
+ "Help event: location, CH-3, 10 PP and Join Event": {
+  "tr": "Yardım eventi: konum, CH-3, 10 PP ve katılma butonu",
+  "el": "Εκδήλωση βοήθειας: τοποθεσία, CH-3, 10 PP και συμμετοχή"
+ },
+ "Create Help: map, channel, duration and Start Help Event": {
+  "tr": "Yardım oluşturma: harita, kanal, süre ve başlatma",
+  "el": "Δημιουργία βοήθειας: χάρτης, κανάλι, διάρκεια και έναρξη"
+ },
+ "Screenshot Evidence with an example image and upload control": {
+  "tr": "Örnek görsel ve yükleme alanıyla ekran görüntüsü kanıtı",
+  "el": "Αποδεικτικό στιγμιότυπο με ενδεικτική εικόνα και πεδίο ανεβάσματος"
+ },
+ "Attendance checkboxes, Select All and Submit for Approval": {
+  "tr": "Katılım seçimi, tümünü seçme ve onaya gönderme",
+  "el": "Επιλογές παρουσιών, επιλογή όλων και υποβολή για έγκριση"
+ },
+ "Profile showing balance, available PP, reserved PP and history": {
+  "tr": "Bakiye, kullanılabilir PP, ayrılan PP ve geçmişi gösteren profil",
+  "el": "Προφίλ με υπόλοιπο, διαθέσιμα PP, δεσμευμένα PP και ιστορικό"
+ },
+ "PP rewards": {
+  "tr": "PP ödülleri",
+  "el": "Ανταμοιβές PP"
+ },
+ "Chosen by host": {
+  "tr": "Oluşturan belirler",
+  "el": "Επιλέγεται από τον διοργανωτή"
+ },
+ "New events use these rewards. Existing events keep their original PP.": {
+  "tr": "Yeni eventlerde bu ödüller geçerli. Eski eventlerin PP’si değişmez.",
+  "el": "Οι νέες εκδηλώσεις χρησιμοποιούν αυτές τις ανταμοιβές. Οι υπάρχουσες διατηρούν τα αρχικά PP."
+ },
+ "Add to iPhone": {
+  "tr": "iPhone’a Ekle",
+  "el": "Προσθήκη στο iPhone"
+ },
+ "Safari → Home Screen": {
+  "tr": "Safari → Ana Ekran",
+  "el": "Safari → Αρχική Οθόνη"
+ },
+ "Open Paragon in Safari": {
+  "tr": "Paragon’u Safari’de aç",
+  "el": "Άνοιξε το Paragon στο Safari"
+ },
+ "Visit <b>paragonguild.xyz</b>. If you opened the link in Discord, switch to Safari.": {
+  "tr": "<b>paragonguild.xyz</b> adresine git. Linki Discord’da açtıysan Safari’ye geç.",
+  "el": "Πήγαινε στο <b>paragonguild.xyz</b>. Αν άνοιξες τον σύνδεσμο στο Discord, άνοιξέ τον στο Safari."
+ },
+ "iPhone · Safari": {
+  "tr": "iPhone · Safari",
+  "el": "iPhone · Safari"
+ },
+ "Add it to your Home Screen": {
+  "tr": "Ana ekranına ekle",
+  "el": "Πρόσθεσέ το στην Αρχική Οθόνη"
+ },
+ "Tap <b>Share</b> (or <b>menu → Share</b>) → <b>Add to Home Screen</b> → <b>Add</b>. Keep <b>Open as Web App</b> on if shown.": {
+  "tr": "<b>Paylaş</b> (veya <b>menü → Paylaş</b>) → <b>Ana Ekrana Ekle</b> → <b>Ekle</b> seç. Görünüyorsa <b>Web Uygulaması Olarak Aç</b> açık kalsın.",
+  "el": "Πάτησε <b>Κοινοποίηση</b> (ή <b>μενού → Κοινοποίηση</b>) → <b>Προσθήκη στην Αρχική Οθόνη</b> → <b>Προσθήκη</b>. Κράτησε ενεργό το <b>Άνοιγμα ως Εφαρμογή Ιστού</b>, αν εμφανίζεται."
+ },
+ "See Apple’s illustrated steps ↗": {
+  "tr": "Apple’ın görsel anlatımına bak ↗",
+  "el": "Δες τα εικονογραφημένα βήματα της Apple ↗"
+ },
+ "Open the Paragon icon": {
+  "tr": "Paragon simgesini aç",
+  "el": "Άνοιξε το εικονίδιο Paragon"
+ },
+ "Launch it from your Home Screen and choose <b>Sign in with Discord</b>. Next, turn on notifications.": {
+  "tr": "Ana ekranından açıp <b>Discord ile Giriş Yap</b> seç. Ardından bildirimleri aç.",
+  "el": "Άνοιξέ το από την Αρχική Οθόνη και επίλεξε <b>Σύνδεση μέσω Discord</b>. Μετά ενεργοποίησε τις ειδοποιήσεις."
+ },
+ "Your Discord account needs the guild’s <b>Member</b> role.": {
+  "tr": "Discord hesabında loncanın <b>Member</b> rolü olmalı.",
+  "el": "Ο λογαριασμός σου στο Discord χρειάζεται τον ρόλο <b>Member</b> της συντεχνίας."
+ },
+ "Next guide: Notifications →": {
+  "tr": "Sonraki rehber: Bildirimler →",
+  "el": "Επόμενος οδηγός: Ειδοποιήσεις →"
+ },
+ "Get notifications": {
+  "tr": "Bildirim Al",
+  "el": "Λήψη Ειδοποιήσεων"
+ },
+ "New events & reminders": {
+  "tr": "Yeni eventler ve hatırlatıcılar",
+  "el": "Νέες εκδηλώσεις & υπενθυμίσεις"
+ },
+ "Open notification settings": {
+  "tr": "Bildirim ayarlarını aç",
+  "el": "Άνοιξε τις ρυθμίσεις ειδοποιήσεων"
+ },
+ "Tap <b>Profile</b>, then <b>Notifications & App Settings</b>.": {
+  "tr": "<b>Profil</b> → <b>Bildirimler ve Uygulama Ayarları</b> seç.",
+  "el": "Πάτησε <b>Προφίλ</b> και μετά <b>Ειδοποιήσεις & Ρυθμίσεις Εφαρμογής</b>."
+ },
+ "Profile → Notifications & App Settings": {
+  "tr": "Profil → Bildirimler ve Uygulama Ayarları",
+  "el": "Προφίλ → Ειδοποιήσεις & Ρυθμίσεις Εφαρμογής"
+ },
+ "On iPhone, use the Home Screen app. iOS 16.4 or later is required.": {
+  "tr": "iPhone’da ana ekrana eklediğin uygulamayı kullan. iOS 16.4 veya üstü gerekir.",
+  "el": "Σε iPhone, χρησιμοποίησε την εφαρμογή της Αρχικής Οθόνης. Απαιτείται iOS 16.4 ή νεότερο."
+ },
+ "Enable alerts & test them": {
+  "tr": "Bildirimleri aç ve dene",
+  "el": "Ενεργοποίησε και δοκίμασε τις ειδοποιήσεις"
+ },
+ "Tap <b>Enable Device Notifications</b> → <b>Allow</b>. Keep new-event alerts checked. Tap <b>Test Device Notification</b> and check your notifications.": {
+  "tr": "<b>Cihaz Bildirimlerini Aç</b> → <b>İzin Ver</b> seç. Yeni event bildirimleri işaretli kalsın. <b>Test Bildirimi Gönder</b> seçip bildirimlerini kontrol et.",
+  "el": "Πάτησε <b>Ενεργοποίηση Ειδοποιήσεων</b> → <b>Να Επιτρέπεται</b>. Κράτησε ενεργές τις ειδοποιήσεις νέων εκδηλώσεων. Πάτησε <b>Δοκιμαστική Ειδοποίηση</b> και έλεγξε τις ειδοποιήσεις σου."
+ },
+ "Enable notifications on each device. Signing out stops push on that device.": {
+  "tr": "Her cihazda bildirimleri ayrıca aç. Çıkış yapınca o cihazdaki bildirimler durur.",
+  "el": "Ενεργοποίησε τις ειδοποιήσεις σε κάθε συσκευή. Η αποσύνδεση σταματά τις ειδοποιήσεις σε εκείνη τη συσκευή."
+ },
+ "Set an event reminder": {
+  "tr": "Event hatırlatıcısı ayarla",
+  "el": "Όρισε υπενθύμιση εκδήλωσης"
+ },
+ "Open an upcoming event → <b>Remind Me</b>. Choose <b>15, 30 or 60 minutes before</b> → <b>Save Reminder</b>.": {
+  "tr": "Yaklaşan bir eventi aç → <b>Hatırlat</b>. <b>15, 30 veya 60 dakika önce</b> seç → <b>Hatırlatıcıyı Kaydet</b>.",
+  "el": "Άνοιξε μια προσεχή εκδήλωση → <b>Υπενθύμιση</b>. Επίλεξε <b>15, 30 ή 60 λεπτά πριν</b> → <b>Αποθήκευση Υπενθύμισης</b>."
+ },
+ "Event Reminder with time choices and Save Reminder": {
+  "tr": "Zaman seçenekleri ve kaydetme butonuyla event hatırlatıcısı",
+  "el": "Υπενθύμιση εκδήλωσης με επιλογές χρόνου και αποθήκευση"
+ },
+ "Help starts now, so Help requests use new-event alerts.": {
+  "tr": "Yardım eventleri hemen başlar, bu yüzden yeni event bildirimleri kullanılır.",
+  "el": "Η βοήθεια ξεκινά αμέσως, οπότε χρησιμοποιεί τις ειδοποιήσεις νέων εκδηλώσεων."
+ },
+ "Tap the notification to join": {
+  "tr": "Katılmak için bildirime dokun",
+  "el": "Πάτησε την ειδοποίηση για συμμετοχή"
+ },
+ "The alert opens the event. Tap <b>Join Event</b> to sign up.": {
+  "tr": "Bildirim eventi açar. Katılmak için <b>Evente Katıl</b> seç.",
+  "el": "Η ειδοποίηση ανοίγει την εκδήλωση. Πάτησε <b>Συμμετοχή στην Εκδήλωση</b> για να δηλώσεις συμμετοχή."
+ },
+ "No notification?": {
+  "tr": "Bildirim gelmedi mi?",
+  "el": "Δεν έλαβες ειδοποίηση;"
+ },
+ "On iPhone: Settings → Notifications → Paragon → Allow Notifications. Check Focus / Do Not Disturb, then try the test again.": {
+  "tr": "iPhone: Ayarlar → Bildirimler → Paragon → Bildirimlere İzin Ver. Odak / Rahatsız Etme ayarlarını kontrol et ve testi tekrar dene.",
+  "el": "Σε iPhone: Ρυθμίσεις → Ειδοποιήσεις → Paragon → Να Επιτρέπονται Ειδοποιήσεις. Έλεγξε Συγκέντρωση / Μην Ενοχλείτε και δοκίμασε ξανά."
+ },
+ "Join an event": {
+  "tr": "Evente Katıl",
+  "el": "Συμμετοχή σε Εκδήλωση"
+ },
+ "Join → attend → earn PP": {
+  "tr": "Katıl → oyunda bulun → PP kazan",
+  "el": "Δήλωσε → πήγαινε → κέρδισε PP"
+ },
+ "Choose an event": {
+  "tr": "Bir event seç",
+  "el": "Επίλεξε εκδήλωση"
+ },
+ "Open <b>Events</b> and tap an event. Check its map, CH and start time. Times follow your device.": {
+  "tr": "<b>Eventler</b> sayfasından bir event seç. Harita, CH ve başlangıç saatini kontrol et. Saatler cihazına göre gösterilir.",
+  "el": "Άνοιξε τις <b>Εκδηλώσεις</b> και επίλεξε μία. Έλεγξε χάρτη, CH και ώρα έναρξης. Οι ώρες ακολουθούν τη συσκευή σου."
+ },
+ "Events → Open an event": {
+  "tr": "Eventler → Bir event aç",
+  "el": "Εκδηλώσεις → Άνοιγμα εκδήλωσης"
+ },
+ "Tap Join Event": {
+  "tr": "Evente Katıl’a dokun",
+  "el": "Πάτησε Συμμετοχή στην Εκδήλωση"
+ },
+ "Attend in game at the shown location. If you cannot go, tap <b>Leave Event</b>.": {
+  "tr": "Oyunda gösterilen konumda bulun. Gelemeyeceksen <b>Eventten Ayrıl</b> seç.",
+  "el": "Πήγαινε στην τοποθεσία που εμφανίζεται στο παιχνίδι. Αν δεν μπορείς, πάτησε <b>Αποχώρηση από την Εκδήλωση</b>."
+ },
+ "Joining alone does not earn PP.": {
+  "tr": "Sadece katıl butonuna basmak PP kazandırmaz.",
+  "el": "Η δήλωση συμμετοχής από μόνη της δεν αποδίδει PP."
+ },
+ "Wait for your PP": {
+  "tr": "PP’nin onaylanmasını bekle",
+  "el": "Περίμενε τα PP σου"
+ },
+ "The host confirms attendance and sends proof. After admin approval, your reward appears in <b>Profile</b>.": {
+  "tr": "Oluşturan kişi katılımı doğrular ve kanıt gönderir. Yönetici onayından sonra ödülün <b>Profil</b> sayfasına gelir.",
+  "el": "Ο διοργανωτής επιβεβαιώνει τις παρουσίες και στέλνει αποδεικτικά. Μετά την έγκριση διαχειριστή, η ανταμοιβή εμφανίζεται στο <b>Προφίλ</b>."
+ },
+ "The creator and approved participants get the same PP.": {
+  "tr": "Oluşturan ve onaylanan katılımcılar aynı PP’yi alır.",
+  "el": "Ο δημιουργός και οι εγκεκριμένοι συμμετέχοντες λαμβάνουν τα ίδια PP."
+ },
+ "Create & finish Help": {
+  "tr": "Yardım Eventi Oluştur ve Bitir",
+  "el": "Δημιουργία & Λήξη Βοήθειας"
+ },
+ "10 PP · up to 2 per day": {
+  "tr": "10 PP · Günde en fazla 2",
+  "el": "10 PP · έως 2 την ημέρα"
+ },
+ "Create a Help request": {
+  "tr": "Yardım eventi oluştur",
+  "el": "Δημιούργησε αίτημα βοήθειας"
+ },
+ "Open <b>Events</b> → <b>Create Event</b>. Choose <b>Help</b>, enter the name, map, CH and duration → <b>Start Help Event</b>.": {
+  "tr": "<b>Eventler</b> → <b>Event Oluştur</b>. <b>Yardım</b> seç, adını, haritayı, CH’yi ve süreyi gir → <b>Yardım Eventini Başlat</b>.",
+  "el": "Άνοιξε <b>Εκδηλώσεις</b> → <b>Δημιουργία Εκδήλωσης</b>. Επίλεξε <b>Βοήθεια</b>, βάλε όνομα, χάρτη, CH και διάρκεια → <b>Έναρξη Εκδήλωσης Βοήθειας</b>."
+ },
+ "Events → Create Event → Help": {
+  "tr": "Eventler → Event Oluştur → Yardım",
+  "el": "Εκδηλώσεις → Δημιουργία Εκδήλωσης → Βοήθεια"
+ },
+ "Starts immediately. Maximum 2 Help events per guild day, using Istanbul time.": {
+  "tr": "Hemen başlar. İstanbul saatine göre lonca gününde en fazla 2 yardım eventi oluşturabilirsin.",
+  "el": "Ξεκινά αμέσως. Έως 2 εκδηλώσεις βοήθειας ανά ημέρα συντεχνίας, με ώρα Κωνσταντινούπολης."
+ },
+ "Upload your screenshot": {
+  "tr": "Ekran görüntünü yükle",
+  "el": "Ανέβασε το στιγμιότυπό σου"
+ },
+ "Open your event → <b>Screenshot Evidence</b>. Choose your screenshot → <b>Upload Screenshot</b>.": {
+  "tr": "Eventini aç → <b>Ekran Görüntüsü Kanıtı</b>. Görselini seç → <b>Ekran Görüntüsü Yükle</b>.",
+  "el": "Άνοιξε την εκδήλωσή σου → <b>Αποδεικτικά Στιγμιότυπα</b>. Επίλεξε εικόνα → <b>Ανέβασμα Στιγμιότυπου</b>."
+ },
+ "PNG, JPEG or WebP, up to 8 MB each. Maximum 3 screenshots.": {
+  "tr": "PNG, JPEG veya WebP; her biri en fazla 8 MB. En fazla 3 ekran görüntüsü.",
+  "el": "PNG, JPEG ή WebP, έως 8 MB το καθένα. Μέχρι 3 στιγμιότυπα."
+ },
+ "Tap End Event": {
+  "tr": "Eventi Bitir’e dokun",
+  "el": "Πάτησε Λήξη Εκδήλωσης"
+ },
+ "Finish the Help request when you are done. A screenshot is required before this button works.": {
+  "tr": "İşin bitince yardım eventini sonlandır. Bu buton için önce ekran görüntüsü gerekir.",
+  "el": "Όταν τελειώσεις, λήξε το αίτημα βοήθειας. Το κουμπί απαιτεί πρώτα στιγμιότυπο."
+ },
+ "The chosen duration does not end the event automatically.": {
+  "tr": "Seçilen süre eventi otomatik bitirmez.",
+  "el": "Η επιλεγμένη διάρκεια δεν λήγει αυτόματα την εκδήλωση."
+ },
+ "Choose who attended": {
+  "tr": "Katılanları seç",
+  "el": "Επίλεξε ποιοι παρευρέθηκαν"
+ },
+ "Tap <b>Select All</b>, then uncheck anyone who did not attend.": {
+  "tr": "<b>Tümünü Seç</b> seç, ardından katılmayanların işaretini kaldır.",
+  "el": "Πάτησε <b>Επιλογή Όλων</b> και αποεπίλεξε όποιον δεν παρευρέθηκε."
+ },
+ "Tap <b>Submit for Approval</b>. An admin checks the proof and decides who receives PP.": {
+  "tr": "<b>Onaya Gönder</b> seç. Yönetici kanıtı kontrol edip kimin PP alacağını belirler.",
+  "el": "Πάτησε <b>Υποβολή για Έγκριση</b>. Ένας διαχειριστής ελέγχει τα αποδεικτικά και αποφασίζει ποιοι λαμβάνουν PP."
+ },
+ "The creator and approved participants earn <b>10 PP each</b>.": {
+  "tr": "Oluşturan ve onaylanan katılımcılar <b>kişi başı 10 PP</b> kazanır.",
+  "el": "Ο δημιουργός και οι εγκεκριμένοι συμμετέχοντες κερδίζουν <b>10 PP ο καθένας</b>."
+ },
+ "Find or cancel your event": {
+  "tr": "Eventini bul veya iptal et",
+  "el": "Βρες ή ακύρωσε την εκδήλωσή σου"
+ },
+ "Open My Events or Profile. To cancel: Cancel This Event → Confirm Cancellation. Cancelled events award no PP and still count toward the daily Help limit.": {
+  "tr": "Eventlerim veya Profil’i aç. İptal için: Bu Eventi İptal Et → İptali Onayla. İptal edilen eventler PP vermez ve günlük yardım sınırına dahil edilir.",
+  "el": "Άνοιξε Οι Εκδηλώσεις μου ή Προφίλ. Για ακύρωση: Ακύρωση Εκδήλωσης → Επιβεβαίωση Ακύρωσης. Δεν αποδίδονται PP και η εκδήλωση μετρά στο ημερήσιο όριο βοήθειας."
+ },
+ "Create other events": {
+  "tr": "Diğer Eventleri Oluştur",
+  "el": "Δημιουργία Άλλων Εκδηλώσεων"
+ },
+ "Experienced role required": {
+  "tr": "Experienced rolü gerekir",
+  "el": "Απαιτείται ο ρόλος Experienced"
+ },
+ "Schedule Demon Tower": {
+  "tr": "Şeytan Kulesi planla",
+  "el": "Προγραμμάτισε Πύργο Δαιμόνων"
+ },
+ "Choose <b>Demon Tower</b>. Enter a name, CH and start time → <b>Schedule Event</b>. The map is already selected.": {
+  "tr": "<b>Şeytan Kulesi</b> seç. Adını, CH’yi ve başlangıç saatini gir → <b>Event Planla</b>. Harita zaten seçili.",
+  "el": "Επίλεξε <b>Πύργος Δαιμόνων</b>. Βάλε όνομα, CH και ώρα έναρξης → <b>Προγραμματισμός Εκδήλωσης</b>. Ο χάρτης είναι ήδη επιλεγμένος."
+ },
+ "Demon Tower form with 10 PP, channel and a start time only": {
+  "tr": "10 PP, kanal ve sadece başlangıç saatiyle Şeytan Kulesi formu",
+  "el": "Φόρμα Πύργου Δαιμόνων με 10 PP, κανάλι και μόνο ώρα έναρξης"
+ },
+ "Events → Create Event → Demon Tower": {
+  "tr": "Eventler → Event Oluştur → Şeytan Kulesi",
+  "el": "Εκδηλώσεις → Δημιουργία Εκδήλωσης → Πύργος Δαιμόνων"
+ },
+ "Requires <b>Experienced</b>. Reward: <b>10 PP</b>. No end time; finish with <b>End Event</b>.": {
+  "tr": "<b>Experienced</b> gerekir. Ödül: <b>10 PP</b>. Bitiş saati yok; <b>Eventi Bitir</b> ile sonlandır.",
+  "el": "Απαιτείται <b>Experienced</b>. Ανταμοιβή: <b>10 PP</b>. Χωρίς ώρα λήξης· ολοκλήρωσε με <b>Λήξη Εκδήλωσης</b>."
+ },
+ "Make a Custom event": {
+  "tr": "Özel event oluştur",
+  "el": "Δημιούργησε προσαρμοσμένη εκδήλωση"
+ },
+ "Choose <b>Custom</b>. Set the title, CH, PP and start time. Select a map, or choose <b>Custom…</b> and type a location.": {
+  "tr": "<b>Özel</b> seç. Başlık, CH, PP ve başlangıç saatini gir. Harita seç veya <b>Özel…</b> ile konumu yaz.",
+  "el": "Επίλεξε <b>Προσαρμοσμένο</b>. Όρισε τίτλο, CH, PP και ώρα έναρξης. Επίλεξε χάρτη ή <b>Προσαρμοσμένο…</b> και γράψε τοποθεσία."
+ },
+ "Custom form with title, CH-6, location, 41 PP and start time": {
+  "tr": "Başlık, CH-6, konum, 41 PP ve başlangıç saatiyle özel event formu",
+  "el": "Προσαρμοσμένη φόρμα με τίτλο, CH-6, τοποθεσία, 41 PP και ώρα έναρξης"
+ },
+ "Tap <b>Schedule Event</b>. Your chosen PP applies equally to the creator and approved participants.": {
+  "tr": "<b>Event Planla</b> seç. Belirlediğin PP, oluşturana ve onaylanan katılımcılara eşit verilir.",
+  "el": "Πάτησε <b>Προγραμματισμός Εκδήλωσης</b>. Τα PP που όρισες ισχύουν εξίσου για τον δημιουργό και τους εγκεκριμένους συμμετέχοντες."
+ },
+ "Choose another event type": {
+  "tr": "Başka event türü seç",
+  "el": "Επίλεξε άλλο τύπο εκδήλωσης"
+ },
+ "You can also choose <b>PvE</b>, <b>Open PvP</b>, <b>Guild War</b> or <b>World Boss</b>. Set the name, location, CH and start time.": {
+  "tr": "<b>PvE</b>, <b>Açık PvP</b>, <b>Lonca Savaşı</b> veya <b>Dünya Bossu</b> da seçebilirsin. Ad, konum, CH ve başlangıç saatini gir.",
+  "el": "Μπορείς επίσης να επιλέξεις <b>PvE</b>, <b>Ανοιχτό PvP</b>, <b>Πόλεμος Συντεχνιών</b> ή <b>Παγκόσμιος Αρχηγός</b>. Όρισε όνομα, τοποθεσία, CH και ώρα έναρξης."
+ },
+ "PvE form showing 35 PP, Spider Dungeon 2, CH-3 and start time": {
+  "tr": "35 PP, Örümcek Zindanı 2, CH-3 ve başlangıç saatiyle PvE formu",
+  "el": "Φόρμα PvE με 35 PP, Μπουντρούμι Αραχνών 2, CH-3 και ώρα έναρξης"
+ },
+ "End, confirm & submit": {
+  "tr": "Bitir, doğrula ve gönder",
+  "el": "Λήξη, επιβεβαίωση & υποβολή"
+ },
+ "After the start time, tap <b>End Event</b>. Upload proof, select attendance and tap <b>Submit for Approval</b>.": {
+  "tr": "Başlangıç saatinden sonra <b>Eventi Bitir</b> seç. Kanıt yükle, katılanları seç ve <b>Onaya Gönder</b> seç.",
+  "el": "Μετά την ώρα έναρξης, πάτησε <b>Λήξη Εκδήλωσης</b>. Ανέβασε αποδεικτικά, επίλεξε παρουσίες και πάτησε <b>Υποβολή για Έγκριση</b>."
+ },
+ "These events end manually. Proof is required before submission.": {
+  "tr": "Bu eventler manuel biter. Onaya göndermeden önce kanıt gerekir.",
+  "el": "Αυτές οι εκδηλώσεις λήγουν χειροκίνητα. Απαιτείται απόδειξη πριν την υποβολή."
+ },
+ "See the screenshot & attendance steps →": {
+  "tr": "Ekran görüntüsü ve katılım adımlarına bak →",
+  "el": "Δες τα βήματα στιγμιότυπων & παρουσιών →"
+ },
+ "Bid in an auction": {
+  "tr": "Açık Artırmaya Katıl",
+  "el": "Προσφορά σε Δημοπρασία"
+ },
+ "Only the winner pays": {
+  "tr": "Sadece kazanan öder",
+  "el": "Πληρώνει μόνο ο νικητής"
+ },
+ "Pick an item": {
+  "tr": "Bir item seç",
+  "el": "Επίλεξε αντικείμενο"
+ },
+ "Open <b>Auctions</b>. Check the item screenshot, highest bidder and time left → <b>Place Bid</b>.": {
+  "tr": "<b>Açık Artırmalar</b> sayfasını aç. Item görselini, en yüksek teklifi ve kalan süreyi kontrol et → <b>Teklif Ver</b>.",
+  "el": "Άνοιξε τις <b>Δημοπρασίες</b>. Έλεγξε το στιγμιότυπο, τον υψηλότερο πλειοδότη και τον χρόνο → <b>Κάνε Προσφορά</b>."
+ },
+ "Place a Bid showing the next minimum and Confirm Bid": {
+  "tr": "Sonraki minimum teklif ve onay butonuyla teklif formu",
+  "el": "Φόρμα προσφοράς με επόμενο ελάχιστο και επιβεβαίωση"
+ },
+ "Auctions → Place Bid": {
+  "tr": "Açık Artırmalar → Teklif Ver",
+  "el": "Δημοπρασίες → Κάνε Προσφορά"
+ },
+ "Enter your total bid": {
+  "tr": "Toplam teklifini gir",
+  "el": "Γράψε τη συνολική προσφορά"
+ },
+ "Enter the full amount → <b>Confirm Bid</b>. To raise a bid from 40 to 60 PP, enter <b>60</b>.": {
+  "tr": "Toplam tutarı gir → <b>Teklifi Onayla</b>. 40 PP’yi 60 PP’ye yükseltmek için <b>60</b> yaz.",
+  "el": "Γράψε το συνολικό ποσό → <b>Επιβεβαίωση Προσφοράς</b>. Για αύξηση από 40 σε 60 PP, γράψε <b>60</b>."
+ },
+ "Total bid input and Confirm Bid": {
+  "tr": "Toplam teklif alanı ve Teklifi Onayla butonu",
+  "el": "Πεδίο συνολικής προσφοράς και επιβεβαίωση"
+ },
+ "A leading bid reserves PP. Being outbid releases it.": {
+  "tr": "En yüksek teklif PP ayırır. Teklifin geçilirse serbest kalır.",
+  "el": "Η υψηλότερη προσφορά δεσμεύει PP. Αν ξεπεραστεί, τα PP αποδεσμεύονται."
+ },
+ "Check the result": {
+  "tr": "Sonucu kontrol et",
+  "el": "Έλεγξε το αποτέλεσμα"
+ },
+ "Open <b>Auction History</b>. Only the winner’s PP is deducted when the auction is finalized.": {
+  "tr": "<b>Açık Artırma Geçmişi</b> sayfasını aç. Artırma sonuçlanınca sadece kazananın PP’si düşer.",
+  "el": "Άνοιξε το <b>Ιστορικό Δημοπρασιών</b>. Όταν οριστικοποιηθεί η δημοπρασία, αφαιρούνται PP μόνο από τον νικητή."
+ },
+ "How reserved PP works": {
+  "tr": "Ayrılan PP nasıl çalışır?",
+  "el": "Πώς λειτουργούν τα δεσμευμένα PP"
+ },
+ "100 PP balance − 40 PP leading bid = 60 PP available. Win at 40 PP? Your balance becomes 60 PP. Lose? Your reservation is released.": {
+  "tr": "100 PP bakiye − 40 PP en yüksek teklif = 60 PP kullanılabilir. 40 PP ile kazanırsan bakiyen 60 PP olur. Kaybedersen ayrılan PP serbest kalır.",
+  "el": "100 PP υπόλοιπο − 40 PP υψηλότερη προσφορά = 60 PP διαθέσιμα. Αν κερδίσεις με 40 PP, μένουν 60 PP. Αν χάσεις, τα PP αποδεσμεύονται."
+ },
+ "PP & weekly contribution": {
+  "tr": "PP ve Haftalık Ödeme",
+  "el": "PP & Εβδομαδιαία Συνεισφορά"
+ },
+ "Balance, deposits & weekly quest": {
+  "tr": "Bakiye, ödemeler ve haftalık görev",
+  "el": "Υπόλοιπο, καταθέσεις & εβδομαδιαία αποστολή"
+ },
+ "Give 500,000 Yang in game": {
+  "tr": "Oyunda 500.000 Yang ver",
+  "el": "Δώσε 500.000 Yang στο παιχνίδι"
+ },
+ "Give it to <b>GuildBanker</b> at the <b>CH-3 Blacksmith</b>. The payment must be added to the Deposit Log.": {
+  "tr": "<b>CH-3 Demirci</b> konumunda <b>GuildBanker</b> oyuncusuna ver. Ödeme, lonca ödeme kaydına eklenmeli.",
+  "el": "Δώσε τα στον <b>GuildBanker</b> στον <b>Σιδερά στο CH-3</b>. Η πληρωμή πρέπει να καταχωριστεί στο αρχείο καταθέσεων."
+ },
+ "Weekly contribution marked Completed after 500,000 Yang": {
+  "tr": "500.000 Yang ödemesinden sonra tamamlanan haftalık görev",
+  "el": "Εβδομαδιαία συνεισφορά ολοκληρωμένη μετά από 500.000 Yang"
+ },
+ "Weekly Quest · in game": {
+  "tr": "Haftalık Görev · Oyun içinde",
+  "el": "Εβδομαδιαία Αποστολή · Στο παιχνίδι"
+ },
+ "Wait for Completed": {
+  "tr": "Tamamlandı durumunu bekle",
+  "el": "Περίμενε την ολοκλήρωση"
+ },
+ "The site checks the log every <b>5 minutes</b>. Your Home card becomes <b>Completed</b> and awards <b>20 PP</b> once that week.": {
+  "tr": "Site kaydı her <b>5 dakikada</b> kontrol eder. Ana sayfadaki kartın <b>Tamamlandı</b> olur ve o hafta bir kez <b>20 PP</b> verir.",
+  "el": "Η ιστοσελίδα ελέγχει το αρχείο κάθε <b>5 λεπτά</b>. Η κάρτα γίνεται <b>Ολοκληρώθηκε</b> και αποδίδει <b>20 PP</b> μία φορά εκείνη την εβδομάδα."
+ },
+ "Automatic weekly contribution marked Completed": {
+  "tr": "Otomatik olarak tamamlanan haftalık ödeme",
+  "el": "Αυτόματη εβδομαδιαία συνεισφορά ολοκληρωμένη"
+ },
+ "No manual submission. The guild week resets on Monday in Istanbul time.": {
+  "tr": "Manuel gönderim yok. Lonca haftası İstanbul saatine göre pazartesi yenilenir.",
+  "el": "Χωρίς χειροκίνητη υποβολή. Η εβδομάδα ανανεώνεται τη Δευτέρα με ώρα Κωνσταντινούπολης."
+ },
+ "Check your profile": {
+  "tr": "Profilini kontrol et",
+  "el": "Έλεγξε το προφίλ σου"
+ },
+ "Open <b>Profile</b>. See your PP history, available balance and total Yang deposits. <b>Deposit History</b> lists the largest amounts first.": {
+  "tr": "<b>Profil</b> sayfasını aç. PP geçmişini, kullanılabilir bakiyeni ve toplam Yang ödemelerini gör. <b>Ödeme Geçmişi</b> en yüksek tutarları önce gösterir.",
+  "el": "Άνοιξε το <b>Προφίλ</b>. Δες ιστορικό PP, διαθέσιμο υπόλοιπο και σύνολο καταθέσεων Yang. Το <b>Ιστορικό Καταθέσεων</b> δείχνει πρώτα τα μεγαλύτερα ποσά."
+ },
+ "Available PP = balance − reserved PP.": {
+  "tr": "Kullanılabilir PP = bakiye − ayrılan PP.",
+  "el": "Διαθέσιμα PP = υπόλοιπο − δεσμευμένα PP."
+ },
+ "Missing an older payment?": {
+  "tr": "Eski bir ödeme eksik mi?",
+  "el": "Λείπει παλαιότερη πληρωμή;"
+ },
+ "Historical deposits earn 20 PP per 500,000 Yang, rounded down to whole PP. Ask an admin to check your character name in the log.": {
+  "tr": "Geçmiş ödemeler 500.000 Yang başına 20 PP kazandırır; tam PP’ye aşağı yuvarlanır. Bir yöneticiye kayıttaki karakter adını kontrol ettir.",
+  "el": "Οι παλιές καταθέσεις αποδίδουν 20 PP ανά 500.000 Yang, με στρογγυλοποίηση προς τα κάτω. Ζήτησε από διαχειριστή να ελέγξει το όνομα χαρακτήρα στο αρχείο."
+ },
+ "Admin tools": {
+  "tr": "Yönetici Araçları",
+  "el": "Εργαλεία Διαχειριστή"
+ },
+ "Approve PP & manage auctions": {
+  "tr": "PP onayı ve açık artırma yönetimi",
+  "el": "Έγκριση PP & διαχείριση δημοπρασιών"
+ },
+ "Approve event rewards": {
+  "tr": "Event ödüllerini onayla",
+  "el": "Έγκρινε ανταμοιβές εκδηλώσεων"
+ },
+ "Open <b>Events</b> → <b>Review</b>. Check the proof, uncheck anyone who should get no PP, then tap <b>Approve Selected</b>.": {
+  "tr": "<b>Eventler</b> → <b>İnceleme</b>. Kanıtı kontrol et, PP almaması gerekenlerin seçimini kaldır ve <b>Seçilenleri Onayla</b> seç.",
+  "el": "Άνοιξε <b>Εκδηλώσεις</b> → <b>Έλεγχος</b>. Έλεγξε τα αποδεικτικά, αποεπίλεξε όσους δεν πρέπει να πάρουν PP και πάτησε <b>Έγκριση Επιλεγμένων</b>."
+ },
+ "Admin review with individual creator and participant choices": {
+  "tr": "Oluşturan ve katılımcıların ayrı seçildiği yönetici incelemesi",
+  "el": "Έλεγχος διαχειριστή με ξεχωριστές επιλογές δημιουργού και συμμετεχόντων"
+ },
+ "Administrators only": {
+  "tr": "Sadece yöneticiler",
+  "el": "Μόνο διαχειριστές"
+ },
+ "The creator can also be excluded. Rejecting the whole event requires a reason.": {
+  "tr": "Oluşturan da hariç tutulabilir. Tüm eventi reddetmek için sebep gerekir.",
+  "el": "Μπορεί να εξαιρεθεί και ο δημιουργός. Η απόρριψη όλης της εκδήλωσης απαιτεί αιτία."
+ },
+ "Add or remove PP": {
+  "tr": "PP ekle veya sil",
+  "el": "Πρόσθεσε ή αφαίρεσε PP"
+ },
+ "Account menu → <b>Admin Panel</b>. Select a player, choose <b>Add PP</b> or <b>Remove PP</b>, enter the amount and reason → save.": {
+  "tr": "Hesap menüsü → <b>Admin Paneli</b>. Oyuncu seç, <b>PP Ekle</b> veya <b>PP Sil</b> seç, miktarı ve sebebi gir → kaydet.",
+  "el": "Μενού λογαριασμού → <b>Πίνακας Διαχειριστή</b>. Επίλεξε παίκτη, <b>Προσθήκη PP</b> ή <b>Αφαίρεση PP</b>, βάλε ποσό και αιτία → αποθήκευση."
+ },
+ "PP adjustment with player, action, amount and reason": {
+  "tr": "Oyuncu, işlem, miktar ve sebep alanlarıyla PP düzenleme",
+  "el": "Προσαρμογή PP με παίκτη, ενέργεια, ποσό και αιτία"
+ },
+ "Removal needs <b>Confirm Removal</b>. Reserved PP cannot be deducted.": {
+  "tr": "Silme işlemi <b>PP Silmeyi Onayla</b> ile doğrulanır. Ayrılan PP silinemez.",
+  "el": "Η αφαίρεση χρειάζεται <b>Επιβεβαίωση Αφαίρεσης</b>. Τα δεσμευμένα PP δεν αφαιρούνται."
+ },
+ "Start an auction": {
+  "tr": "Açık artırma başlat",
+  "el": "Ξεκίνα δημοπρασία"
+ },
+ "Open <b>Auctions</b> → <b>Manage Auctions</b>. Add an item screenshot and name, set the minimum, increment and duration → <b>Start Auction</b>.": {
+  "tr": "<b>Açık Artırmalar</b> → <b>Açık Artırmaları Yönet</b>. Item görseli ve adı ekle, minimum teklifi, artışı ve süreyi gir → <b>Açık Artırmayı Başlat</b>.",
+  "el": "Άνοιξε <b>Δημοπρασίες</b> → <b>Διαχείριση Δημοπρασιών</b>. Πρόσθεσε στιγμιότυπο και όνομα, όρισε ελάχιστο, βήμα και διάρκεια → <b>Έναρξη Δημοπρασίας</b>."
+ },
+ "Auction creation with screenshot, name and bidding settings": {
+  "tr": "Görsel, ad ve teklif ayarlarıyla açık artırma oluşturma",
+  "el": "Δημιουργία δημοπρασίας με στιγμιότυπο, όνομα και ρυθμίσεις προσφορών"
+ },
+ "Cancelling an auction releases its reserved PP.": {
+  "tr": "Açık artırma iptal edilince ayrılan PP serbest kalır.",
+  "el": "Η ακύρωση δημοπρασίας αποδεσμεύει τα PP της."
+ },
+ "Home": {
+  "tr": "Ana Sayfa",
+  "el": "Αρχική"
+ },
+ "Guild Home": {
+  "tr": "Lonca Ana Sayfası",
+  "el": "Αρχική Συντεχνίας"
+ },
+ "Auctions": {
+  "tr": "Açık Artırmalar",
+  "el": "Δημοπρασίες"
+ },
+ "Auction House": {
+  "tr": "Açık Artırmalar",
+  "el": "Δημοπρασίες"
+ },
+ "Profile": {
+  "tr": "Profil",
+  "el": "Προφίλ"
+ },
+ "My Profile": {
+  "tr": "Profilim",
+  "el": "Το Προφίλ μου"
+ },
+ "Manage Auctions": {
+  "tr": "Açık Artırmaları Yönet",
+  "el": "Διαχείριση Δημοπρασιών"
+ },
+ "View Auctions": {
+  "tr": "Açık Artırmaları Gör",
+  "el": "Προβολή Δημοπρασιών"
+ },
+ "All": {
+  "tr": "Tümü",
+  "el": "Όλα"
+ },
+ "Help": {
+  "tr": "Yardım",
+  "el": "Βοήθεια"
+ },
+ "Custom": {
+  "tr": "Özel",
+  "el": "Προσαρμοσμένο"
+ },
+ "Open PvP": {
+  "tr": "Açık PvP",
+  "el": "Ανοιχτό PvP"
+ },
+ "Guild War": {
+  "tr": "Lonca Savaşı",
+  "el": "Πόλεμος Συντεχνιών"
+ },
+ "World Boss": {
+  "tr": "Dünya Bossu",
+  "el": "Παγκόσμιος Αρχηγός"
+ },
+ "Deposits": {
+  "tr": "Ödemeler",
+  "el": "Καταθέσεις"
+ },
+ "Manual": {
+  "tr": "Manuel",
+  "el": "Χειροκίνητα"
+ },
+ "Created": {
+  "tr": "Oluşturduklarım",
+  "el": "Δημιουργημένες"
+ },
+ "Attended": {
+  "tr": "Katıldıklarım",
+  "el": "Παρουσίες"
+ },
+ "Completed": {
+  "tr": "Tamamlandı",
+  "el": "Ολοκληρώθηκε"
+ },
+ "Not Completed": {
+  "tr": "Tamamlanmadı",
+  "el": "Δεν Ολοκληρώθηκε"
+ },
+ "Syncing": {
+  "tr": "Eşitleniyor",
+  "el": "Συγχρονισμός"
+ },
+ "Awaiting Approval": {
+  "tr": "Onay Bekliyor",
+  "el": "Αναμονή Έγκρισης"
+ },
+ "Upcoming": {
+  "tr": "Yaklaşan",
+  "el": "Προσεχώς"
+ },
+ "Ongoing": {
+  "tr": "Devam Ediyor",
+  "el": "Σε Εξέλιξη"
+ },
+ "Awaiting Completion": {
+  "tr": "Bitirilmeyi Bekliyor",
+  "el": "Αναμονή Ολοκλήρωσης"
+ },
+ "Confirming Attendance": {
+  "tr": "Katılım Doğrulanıyor",
+  "el": "Επιβεβαίωση Παρουσιών"
+ },
+ "Schedule": {
+  "tr": "Takvim",
+  "el": "Πρόγραμμα"
+ },
+ "History": {
+  "tr": "Geçmiş",
+  "el": "Ιστορικό"
+ },
+ "Review": {
+  "tr": "İnceleme",
+  "el": "Έλεγχος"
+ },
+ "Event History": {
+  "tr": "Event Geçmişi",
+  "el": "Ιστορικό Εκδηλώσεων"
+ },
+ "Ended": {
+  "tr": "Bitti",
+  "el": "Έληξε"
+ },
+ "approved": {
+  "tr": "onaylandı",
+  "el": "εγκρίθηκε"
+ },
+ "pending": {
+  "tr": "bekliyor",
+  "el": "εκκρεμεί"
+ },
+ "rejected": {
+  "tr": "reddedildi",
+  "el": "απορρίφθηκε"
+ },
+ "cancelled": {
+  "tr": "iptal edildi",
+  "el": "ακυρώθηκε"
+ },
+ "completed": {
+  "tr": "tamamlandı",
+  "el": "ολοκληρώθηκε"
+ },
+ "upcoming": {
+  "tr": "yaklaşan",
+  "el": "προσεχώς"
+ },
+ "Warrior": {
+  "tr": "Savaşçı",
+  "el": "Πολεμιστής"
+ },
+ "Ninja": {
+  "tr": "Ninja",
+  "el": "Νίντζα"
+ },
+ "Shaman": {
+  "tr": "Şaman",
+  "el": "Σαμάνος"
+ },
+ "Sura": {
+  "tr": "Sura",
+  "el": "Σούρα"
+ },
+ "Lycan": {
+  "tr": "Lycan",
+  "el": "Λυκάνθρωπος"
+ },
+ "Member": {
+  "tr": "Üye",
+  "el": "Μέλος"
+ },
+ "Towns": {
+  "tr": "Şehirler",
+  "el": "Πόλεις"
+ },
+ "Guild Zones": {
+  "tr": "Lonca Bölgeleri",
+  "el": "Περιοχές Συντεχνίας"
+ },
+ "Open World": {
+  "tr": "Açık Dünya",
+  "el": "Ανοιχτός Κόσμος"
+ },
+ "Ape Dungeons": {
+  "tr": "Maymun Zindanları",
+  "el": "Μπουντρούμια Πιθήκων"
+ },
+ "Spider Dungeons": {
+  "tr": "Örümcek Zindanları",
+  "el": "Μπουντρούμια Αραχνών"
+ },
+ "Grotto of Exile": {
+  "tr": "Sürgün Mağarası",
+  "el": "Σπηλιά της Εξορίας"
+ },
+ "Grotto of Exile V2": {
+  "tr": "Sürgün Mağarası 2",
+  "el": "Σπηλιά της Εξορίας 2"
+ },
+ "PvP & Meeting Areas": {
+  "tr": "PvP ve Buluşma Alanları",
+  "el": "Περιοχές PvP & Συνάντησης"
+ },
+ "Valley of Seungryong": {
+  "tr": "Seungryong Vadisi",
+  "el": "Κοιλάδα Seungryong"
+ },
+ "Yongbi Desert": {
+  "tr": "Yongbi Çölü",
+  "el": "Έρημος Yongbi"
+ },
+ "Mount Sohan": {
+  "tr": "Sohan Dağı",
+  "el": "Όρος Sohan"
+ },
+ "Fireland": {
+  "tr": "Ateş Diyarı",
+  "el": "Χώρα της Φωτιάς"
+ },
+ "Hwang Temple": {
+  "tr": "Hwang Tapınağı",
+  "el": "Ναός Hwang"
+ },
+ "Ghost Forest": {
+  "tr": "Hayalet Ormanı",
+  "el": "Δάσος Φαντασμάτων"
+ },
+ "Red Forest": {
+  "tr": "Kızıl Orman",
+  "el": "Κόκκινο Δάσος"
+ },
+ "Snakefield": {
+  "tr": "Yılan Vadisi",
+  "el": "Πεδίο Φιδιών"
+ },
+ "Land of Giants": {
+  "tr": "Devler Diyarı",
+  "el": "Χώρα Γιγάντων"
+ },
+ "Spider Dungeon 1": {
+  "tr": "Örümcek Zindanı 1",
+  "el": "Μπουντρούμι Αραχνών 1"
+ },
+ "Spider Dungeon 2": {
+  "tr": "Örümcek Zindanı 2",
+  "el": "Μπουντρούμι Αραχνών 2"
+ },
+ "Spider Dungeon 3": {
+  "tr": "Örümcek Zindanı 3",
+  "el": "Μπουντρούμι Αραχνών 3"
+ },
+ "Spider Queen's Nest": {
+  "tr": "Örümcek Kraliçesinin Yuvası",
+  "el": "Φωλιά της Βασίλισσας Αράχνης"
+ },
+ "Dragon's Temple": {
+  "tr": "Ejderha Tapınağı",
+  "el": "Ναός του Δράκου"
+ },
+ "Guild War Area": {
+  "tr": "Lonca Savaşı Alanı",
+  "el": "Περιοχή Πολέμου Συντεχνιών"
+ },
+ "Arena": {
+  "tr": "Arena",
+  "el": "Αρένα"
+ },
+ "OX-Competition": {
+  "tr": "OX Yarışması",
+  "el": "Διαγωνισμός OX"
+ },
+ "Wedding Map": {
+  "tr": "Düğün Haritası",
+  "el": "Χάρτης Γάμου"
+ },
+ "Castle Gate": {
+  "tr": "Kale Kapısı",
+  "el": "Πύλη Κάστρου"
+ },
+ "No created events yet.": {
+  "tr": "Henüz oluşturduğun event yok.",
+  "el": "Δεν έχεις δημιουργήσει εκδηλώσεις ακόμα."
+ },
+ "No joined events yet.": {
+  "tr": "Henüz başvurduğun event yok.",
+  "el": "Δεν έχεις δηλώσει συμμετοχή σε εκδηλώσεις ακόμα."
+ },
+ "No attended events yet.": {
+  "tr": "Henüz katıldığın event yok.",
+  "el": "Δεν έχεις παρευρεθεί σε εκδηλώσεις ακόμα."
+ },
+ "No {type} events right now.": {
+  "tr": "Şu anda {type} eventi yok.",
+  "el": "Δεν υπάρχουν εκδηλώσεις {type} αυτή τη στιγμή."
+ },
+ "Step {current} of {total}": {
+  "tr": "Adım {current} / {total}",
+  "el": "Βήμα {current} από {total}"
+ },
+ "{amount} Yang to GuildBanker at the Ch-3 Blacksmith.": {
+  "tr": "CH-3 Demirci’de GuildBanker’a {amount} Yang ver.",
+  "el": "Δώσε {amount} Yang στον GuildBanker στον Σιδερά στο CH-3."
+ },
+ "{amount} PP added to {name}.": {
+  "tr": "{name} için {amount} PP eklendi.",
+  "el": "Προστέθηκαν {amount} PP στον/στην {name}."
+ },
+ "{amount} PP removed from {name}.": {
+  "tr": "{name} için {amount} PP silindi.",
+  "el": "Αφαιρέθηκαν {amount} PP από τον/την {name}."
+ },
+ "{count} Open Auctions": {
+  "tr": "{count} Açık Artırma",
+  "el": "{count} Ανοιχτές Δημοπρασίες"
+ },
+ "{current}–{end} of {total}": {
+  "tr": "{current}–{end} / {total}",
+  "el": "{current}–{end} από {total}"
+ },
+ "{count} total": {
+  "tr": "toplam {count}",
+  "el": "{count} συνολικά"
+ },
+ "{count} selected": {
+  "tr": "{count} seçildi",
+  "el": "{count} επιλεγμένα"
+ },
+ "{count} participants": {
+  "tr": "{count} katılımcı",
+  "el": "{count} συμμετέχοντες"
+ },
+ "{count} players": {
+  "tr": "{count} oyuncu",
+  "el": "{count} παίκτες"
+ },
+ "Confirm removing {amount} PP from {name}?": {
+  "tr": "{name} için {amount} PP silinsin mi?",
+  "el": "Επιβεβαιώνεις την αφαίρεση {amount} PP από τον/την {name};"
+ },
+ "Balance: {before} → {after} PP.": {
+  "tr": "Bakiye: {before} → {after} PP.",
+  "el": "Υπόλοιπο: {before} → {after} PP."
+ },
+ "Discord sign-in is awaiting guild configuration.": {
+  "tr": "Discord girişi lonca ayarlarını bekliyor.",
+  "el": "Η σύνδεση μέσω Discord αναμένει ρυθμίσεις συντεχνίας."
+ },
+ "Could not load Paragon.": {
+  "tr": "Paragon yüklenemedi.",
+  "el": "Δεν ήταν δυνατή η φόρτωση του Paragon."
+ },
+ "This action could not be completed.": {
+  "tr": "İşlem tamamlanamadı.",
+  "el": "Η ενέργεια δεν μπόρεσε να ολοκληρωθεί."
+ },
+ "Please try again.": {
+  "tr": "Lütfen tekrar dene.",
+  "el": "Δοκίμασε ξανά."
+ },
+ "Notifications are awaiting server configuration.": {
+  "tr": "Bildirimler sunucu ayarını bekliyor.",
+  "el": "Οι ειδοποιήσεις αναμένουν ρύθμιση διακομιστή."
+ },
+ "On iPhone, add Paragon to your Home Screen, open it there and try again.": {
+  "tr": "iPhone’da Paragon’u ana ekranına ekle, oradan açıp tekrar dene.",
+  "el": "Σε iPhone, πρόσθεσε το Paragon στην Αρχική Οθόνη, άνοιξέ το από εκεί και δοκίμασε ξανά."
+ },
+ "Notifications were not enabled. Change the permission in your browser or phone settings.": {
+  "tr": "Bildirimler açılmadı. Tarayıcı veya telefon ayarlarından izni değiştir.",
+  "el": "Οι ειδοποιήσεις δεν ενεργοποιήθηκαν. Άλλαξε την άδεια στις ρυθμίσεις του προγράμματος περιήγησης ή του τηλεφώνου."
+ },
+ "Guild member demo opened.": {
+  "tr": "Lonca üyesi demosu açıldı.",
+  "el": "Άνοιξε η δοκιμή μέλους συντεχνίας."
+ },
+ "Guild leader demo opened.": {
+  "tr": "Lonca lideri demosu açıldı.",
+  "el": "Άνοιξε η δοκιμή αρχηγού συντεχνίας."
+ },
+ "Welcome to Paragon. Join guild events and earn Participation Points.": {
+  "tr": "Paragon’a hoş geldin. Lonca eventlerine katıl ve Katılım Puanı kazan.",
+  "el": "Καλώς ήρθες στο Paragon. Συμμετείχε σε εκδηλώσεις και κέρδισε Πόντους Συμμετοχής."
+ },
+ "Donation submitted for administrator approval.": {
+  "tr": "Bağış yönetici onayına gönderildi.",
+  "el": "Η δωρεά υποβλήθηκε για έγκριση διαχειριστή."
+ },
+ "Notification preferences saved.": {
+  "tr": "Bildirim tercihleri kaydedildi.",
+  "el": "Οι προτιμήσεις ειδοποιήσεων αποθηκεύτηκαν."
+ },
+ "Notifications disabled on this device.": {
+  "tr": "Bu cihazda bildirimler kapatıldı.",
+  "el": "Οι ειδοποιήσεις απενεργοποιήθηκαν σε αυτή τη συσκευή."
+ },
+ "Notifications enabled on this device.": {
+  "tr": "Bu cihazda bildirimler açıldı.",
+  "el": "Οι ειδοποιήσεις ενεργοποιήθηκαν σε αυτή τη συσκευή."
+ },
+ "Enable notifications on this device first.": {
+  "tr": "Önce bu cihazda bildirimleri aç.",
+  "el": "Ενεργοποίησε πρώτα τις ειδοποιήσεις σε αυτή τη συσκευή."
+ },
+ "Test notification accepted by the push service.": {
+  "tr": "Bildirim servisi test bildirimini kabul etti.",
+  "el": "Η υπηρεσία ειδοποιήσεων δέχτηκε τη δοκιμαστική ειδοποίηση."
+ },
+ "Auction started.": {
+  "tr": "Açık artırma başlatıldı.",
+  "el": "Η δημοπρασία ξεκίνησε."
+ },
+ "Signed out.": {
+  "tr": "Çıkış yapıldı.",
+  "el": "Έγινε αποσύνδεση."
+ },
+ "Action completed.": {
+  "tr": "İşlem tamamlandı.",
+  "el": "Η ενέργεια ολοκληρώθηκε."
+ },
+ "Bid placed. Your PP reservation has been updated.": {
+  "tr": "Teklif verildi. Ayrılan PP güncellendi.",
+  "el": "Η προσφορά υποβλήθηκε. Τα δεσμευμένα PP ενημερώθηκαν."
+ },
+ "Event reminder saved.": {
+  "tr": "Event hatırlatıcısı kaydedildi.",
+  "el": "Η υπενθύμιση εκδήλωσης αποθηκεύτηκε."
+ },
+ "No ongoing or upcoming events.": {
+  "tr": "Devam eden veya yaklaşan event yok.",
+  "el": "Δεν υπάρχουν εκδηλώσεις σε εξέλιξη ή προσεχώς."
+ },
+ "Event created.": {
+  "tr": "Event oluşturuldu.",
+  "el": "Η εκδήλωση δημιουργήθηκε."
+ },
+ "Screenshot uploaded.": {
+  "tr": "Ekran görüntüsü yüklendi.",
+  "el": "Το στιγμιότυπο ανέβηκε."
+ },
+ "No events awaiting approval.": {
+  "tr": "Onay bekleyen event yok.",
+  "el": "Δεν υπάρχουν εκδηλώσεις προς έγκριση."
+ },
+ "You have not created or joined any events.": {
+  "tr": "Henüz event oluşturmadın veya katılmadın.",
+  "el": "Δεν έχεις δημιουργήσει ή δηλώσει συμμετοχή σε εκδηλώσεις."
+ },
+ "No completed events yet.": {
+  "tr": "Henüz tamamlanan event yok.",
+  "el": "Δεν υπάρχουν ολοκληρωμένες εκδηλώσεις."
+ },
+ "No active or upcoming events.": {
+  "tr": "Aktif veya yaklaşan event yok.",
+  "el": "Δεν υπάρχουν ενεργές ή προσεχείς εκδηλώσεις."
+ },
+ "Give a reason for rejecting this event.": {
+  "tr": "Bu eventi reddetmek için bir sebep yaz.",
+  "el": "Γράψε αιτία για την απόρριψη αυτής της εκδήλωσης."
+ },
+ "Event review saved.": {
+  "tr": "Event incelemesi kaydedildi.",
+  "el": "Ο έλεγχος της εκδήλωσης αποθηκεύτηκε."
+ },
+ "You left the event.": {
+  "tr": "Eventten ayrıldın.",
+  "el": "Αποχώρησες από την εκδήλωση."
+ },
+ "You joined the event.": {
+  "tr": "Evente katıldın.",
+  "el": "Δήλωσες συμμετοχή στην εκδήλωση."
+ },
+ "Event ended. Confirm the participants before submitting for approval.": {
+  "tr": "Event bitti. Onaya göndermeden önce katılanları doğrula.",
+  "el": "Η εκδήλωση έληξε. Επιβεβαίωσε τους συμμετέχοντες πριν την υποβολή για έγκριση."
+ },
+ "Event cancelled.": {
+  "tr": "Event iptal edildi.",
+  "el": "Η εκδήλωση ακυρώθηκε."
+ },
+ "Submitted for administrator review. PP has not been awarded yet.": {
+  "tr": "Yönetici incelemesine gönderildi. Henüz PP verilmedi.",
+  "el": "Υποβλήθηκε για έλεγχο διαχειριστή. Δεν έχουν αποδοθεί PP ακόμα."
+ },
+ "Upload an item screenshot.": {
+  "tr": "Item ekran görüntüsü yükle.",
+  "el": "Ανέβασε στιγμιότυπο αντικειμένου."
+ },
+ "The auction could not be created.": {
+  "tr": "Açık artırma oluşturulamadı.",
+  "el": "Δεν ήταν δυνατή η δημιουργία της δημοπρασίας."
+ },
+ "Choose a PNG, JPEG or WebP screenshot smaller than 8 MB.": {
+  "tr": "8 MB’den küçük PNG, JPEG veya WebP ekran görüntüsü seç.",
+  "el": "Επίλεξε στιγμιότυπο PNG, JPEG ή WebP μικρότερο από 8 MB."
+ },
+ "PP updated. Refresh to see the updated balance.": {
+  "tr": "PP güncellendi. Yeni bakiyeyi görmek için yenile.",
+  "el": "Τα PP ενημερώθηκαν. Ανανέωσε για να δεις το νέο υπόλοιπο."
+ },
+ "Transfer submitted for administrator approval.": {
+  "tr": "Ödeme yönetici onayına gönderildi.",
+  "el": "Η μεταφορά υποβλήθηκε για έγκριση διαχειριστή."
+ },
+ "Could not load bids. Close and reopen the history to try again.": {
+  "tr": "Teklifler yüklenemedi. Tekrar denemek için geçmişi kapatıp aç.",
+  "el": "Δεν ήταν δυνατή η φόρτωση προσφορών. Κλείσε και άνοιξε ξανά το ιστορικό."
+ },
+ "Discord sign-in has not been configured.": {
+  "tr": "Discord girişi henüz ayarlanmadı.",
+  "el": "Η σύνδεση μέσω Discord δεν έχει ρυθμιστεί."
+ },
+ "Discord is temporarily unavailable. Please try again shortly.": {
+  "tr": "Discord geçici olarak kullanılamıyor. Biraz sonra tekrar dene.",
+  "el": "Το Discord δεν είναι προσωρινά διαθέσιμο. Δοκίμασε ξανά σε λίγο."
+ },
+ "Discord verification failed: connection timeout.": {
+  "tr": "Discord doğrulaması başarısız: bağlantı zaman aşımı.",
+  "el": "Η επαλήθευση Discord απέτυχε: λήξη χρόνου σύνδεσης."
+ },
+ "seconds.": {
+  "tr": "saniye.",
+  "el": "δευτερόλεπτα."
+ },
+ "Guild member access has not been configured.": {
+  "tr": "Lonca üye erişimi ayarlanmadı.",
+  "el": "Η πρόσβαση μελών συντεχνίας δεν έχει ρυθμιστεί."
+ },
+ "You must be a member of the Paragon Discord server.": {
+  "tr": "Paragon Discord sunucusuna üye olmalısın.",
+  "el": "Πρέπει να είσαι μέλος του διακομιστή Discord του Paragon."
+ },
+ "Discord account could not be verified.": {
+  "tr": "Discord hesabı doğrulanamadı.",
+  "el": "Ο λογαριασμός Discord δεν μπόρεσε να επαληθευτεί."
+ },
+ "Sign in with Discord to continue.": {
+  "tr": "Devam etmek için Discord ile giriş yap.",
+  "el": "Συνδέσου μέσω Discord για να συνεχίσεις."
+ },
+ "Sign in again to refresh your Discord session.": {
+  "tr": "Discord oturumunu yenilemek için tekrar giriş yap.",
+  "el": "Συνδέσου ξανά για να ανανεώσεις τη συνεδρία Discord."
+ },
+ "Your session has expired. Sign in again.": {
+  "tr": "Oturumun sona erdi. Tekrar giriş yap.",
+  "el": "Η συνεδρία σου έληξε. Συνδέσου ξανά."
+ },
+ "Account was not found.": {
+  "tr": "Hesap bulunamadı.",
+  "el": "Ο λογαριασμός δεν βρέθηκε."
+ },
+ "Administrator access is required.": {
+  "tr": "Yönetici yetkisi gerekir.",
+  "el": "Απαιτείται πρόσβαση διαχειριστή."
+ },
+ "This request must come from the guild application.": {
+  "tr": "Bu istek lonca uygulamasından gelmeli.",
+  "el": "Το αίτημα πρέπει να προέρχεται από την εφαρμογή συντεχνίας."
+ },
+ "Request is too large.": {
+  "tr": "İstek çok büyük.",
+  "el": "Το αίτημα είναι πολύ μεγάλο."
+ },
+ "Choose a screenshot.": {
+  "tr": "Ekran görüntüsü seç.",
+  "el": "Επίλεξε στιγμιότυπο."
+ },
+ "Choose a screenshot smaller than 8 MB.": {
+  "tr": "8 MB’den küçük ekran görüntüsü seç.",
+  "el": "Επίλεξε στιγμιότυπο μικρότερο από 8 MB."
+ },
+ "Upload a screenshot using the file field.": {
+  "tr": "Dosya alanından ekran görüntüsü yükle.",
+  "el": "Ανέβασε στιγμιότυπο από το πεδίο αρχείου."
+ },
+ "Event was not found.": {
+  "tr": "Event bulunamadı.",
+  "el": "Η εκδήλωση δεν βρέθηκε."
+ },
+ "Only the event creator can manage attendance and evidence.": {
+  "tr": "Katılımı ve kanıtları yalnızca eventi oluşturan yönetebilir.",
+  "el": "Μόνο ο δημιουργός διαχειρίζεται παρουσίες και αποδεικτικά."
+ },
+ "Choose the PP reward for this Custom event.": {
+  "tr": "Bu özel eventin PP ödülünü belirle.",
+  "el": "Όρισε την ανταμοιβή PP για αυτή την προσαρμοσμένη εκδήλωση."
+ },
+ "The reward for this event type is fixed.": {
+  "tr": "Bu event türünün ödülü sabittir.",
+  "el": "Η ανταμοιβή αυτού του τύπου εκδήλωσης είναι σταθερή."
+ },
+ "Choose a map from the location list.": {
+  "tr": "Konum listesinden bir harita seç.",
+  "el": "Επίλεξε χάρτη από τη λίστα τοποθεσιών."
+ },
+ "Demon Tower events take place at Demon Tower.": {
+  "tr": "Şeytan Kulesi eventleri Şeytan Kulesi’nde yapılır.",
+  "el": "Οι εκδηλώσεις Πύργου Δαιμόνων γίνονται στον Πύργο Δαιμόνων."
+ },
+ "Help events start now. Choose a duration between 1 and 1,440 minutes.": {
+  "tr": "Yardım eventleri hemen başlar. 1 ile 1.440 dakika arasında süre seç.",
+  "el": "Η βοήθεια ξεκινά τώρα. Επίλεξε διάρκεια από 1 έως 1.440 λεπτά."
+ },
+ "Choose a start time for this event.": {
+  "tr": "Bu event için başlangıç saati seç.",
+  "el": "Επίλεξε ώρα έναρξης για αυτή την εκδήλωση."
+ },
+ "The Experienced Discord role is required.": {
+  "tr": "Experienced Discord rolü gerekir.",
+  "el": "Απαιτείται ο ρόλος Experienced στο Discord."
+ },
+ "This request ID was already used.": {
+  "tr": "Bu işlem kimliği daha önce kullanıldı.",
+  "el": "Αυτό το αναγνωριστικό αιτήματος έχει ήδη χρησιμοποιηθεί."
+ },
+ "Choose the current time or a future event time.": {
+  "tr": "Şu anı veya gelecekte bir saat seç.",
+  "el": "Επίλεξε την τρέχουσα ώρα ή μελλοντική ώρα εκδήλωσης."
+ },
+ "Screenshot was not found.": {
+  "tr": "Ekran görüntüsü bulunamadı.",
+  "el": "Το στιγμιότυπο δεν βρέθηκε."
+ },
+ "Only the event creator and administrators can view evidence.": {
+  "tr": "Kanıtları yalnızca oluşturan ve yöneticiler görebilir.",
+  "el": "Μόνο ο δημιουργός και οι διαχειριστές μπορούν να δουν αποδεικτικά."
+ },
+ "Submit attendance with the event for approval.": {
+  "tr": "Katılımı eventle birlikte onaya gönder.",
+  "el": "Υπέβαλε τις παρουσίες μαζί με την εκδήλωση για έγκριση."
+ },
+ "Legacy events are managed by an administrator.": {
+  "tr": "Eski eventleri bir yönetici yönetir.",
+  "el": "Οι παλιές εκδηλώσεις διαχειρίζονται από διαχειριστή."
+ },
+ "This event is no longer ongoing.": {
+  "tr": "Bu event artık devam etmiyor.",
+  "el": "Αυτή η εκδήλωση δεν είναι πλέον σε εξέλιξη."
+ },
+ "This event has not started": {
+  "tr": "Bu event henüz başlamadı",
+  "el": "Αυτή η εκδήλωση δεν έχει ξεκινήσει"
+ },
+ "Upload a screenshot before ending this Help event.": {
+  "tr": "Bu yardım eventini bitirmeden önce ekran görüntüsü yükle.",
+  "el": "Ανέβασε στιγμιότυπο πριν λήξεις αυτή την εκδήλωση βοήθειας."
+ },
+ "Attendance can only be confirmed after the event ends and before submission.": {
+  "tr": "Katılım yalnızca event bittikten sonra, onaya gönderilmeden önce doğrulanabilir.",
+  "el": "Οι παρουσίες επιβεβαιώνονται μόνο μετά τη λήξη και πριν την υποβολή."
+ },
+ "Choose a participant to confirm.": {
+  "tr": "Doğrulanacak katılımcıyı seç.",
+  "el": "Επίλεξε συμμετέχοντα για επιβεβαίωση."
+ },
+ "The creator is included automatically on approval.": {
+  "tr": "Oluşturan kişi onayda otomatik dahil edilir.",
+  "el": "Ο δημιουργός περιλαμβάνεται αυτόματα στην έγκριση."
+ },
+ "Participant was not found.": {
+  "tr": "Katılımcı bulunamadı.",
+  "el": "Ο συμμετέχων δεν βρέθηκε."
+ },
+ "This event is not ready for submission.": {
+  "tr": "Bu event onaya gönderilmeye hazır değil.",
+  "el": "Αυτή η εκδήλωση δεν είναι έτοιμη για υποβολή."
+ },
+ "Upload a screenshot before submitting for administrator approval.": {
+  "tr": "Yönetici onayına göndermeden önce ekran görüntüsü yükle.",
+  "el": "Ανέβασε στιγμιότυπο πριν την υποβολή για έγκριση διαχειριστή."
+ },
+ "Choose only participants who joined this event.": {
+  "tr": "Yalnızca bu evente katılanları seç.",
+  "el": "Επίλεξε μόνο όσους δήλωσαν συμμετοχή σε αυτή την εκδήλωση."
+ },
+ "This event cannot be cancelled.": {
+  "tr": "Bu event iptal edilemez.",
+  "el": "Αυτή η εκδήλωση δεν μπορεί να ακυρωθεί."
+ },
+ "Upload evidence while the event is ongoing or confirming attendance.": {
+  "tr": "Event devam ederken veya katılım doğrulanırken kanıt yükle.",
+  "el": "Ανέβασε αποδεικτικά όσο η εκδήλωση είναι σε εξέλιξη ή επιβεβαιώνονται παρουσίες."
+ },
+ "A maximum of 3 screenshots can be uploaded per event.": {
+  "tr": "Bir evente en fazla 3 ekran görüntüsü yüklenebilir.",
+  "el": "Μέχρι 3 στιγμιότυπα μπορούν να ανέβουν ανά εκδήλωση."
+ },
+ "Upload a PNG, JPEG or WebP screenshot.": {
+  "tr": "PNG, JPEG veya WebP ekran görüntüsü yükle.",
+  "el": "Ανέβασε στιγμιότυπο PNG, JPEG ή WebP."
+ },
+ "Evidence storage is unavailable.": {
+  "tr": "Kanıt depolama alanı kullanılamıyor.",
+  "el": "Ο χώρος αποθήκευσης αποδεικτικών δεν είναι διαθέσιμος."
+ },
+ "This event has already been reviewed or has not been submitted.": {
+  "tr": "Bu event zaten incelendi veya henüz onaya gönderilmedi.",
+  "el": "Η εκδήλωση έχει ήδη ελεγχθεί ή δεν έχει υποβληθεί."
+ },
+ "Choose only the creator and confirmed participants.": {
+  "tr": "Yalnızca oluşturanı ve doğrulanan katılımcıları seç.",
+  "el": "Επίλεξε μόνο τον δημιουργό και τους επιβεβαιωμένους συμμετέχοντες."
+ },
+ "Rejected events cannot award PP.": {
+  "tr": "Reddedilen eventler PP veremez.",
+  "el": "Οι απορριφθείσες εκδηλώσεις δεν αποδίδουν PP."
+ },
+ "Select at least one member to award PP.": {
+  "tr": "PP vermek için en az bir üye seç.",
+  "el": "Επίλεξε τουλάχιστον ένα μέλος για απόδοση PP."
+ },
+ "This event has already been reviewed.": {
+  "tr": "Bu event zaten incelendi.",
+  "el": "Αυτή η εκδήλωση έχει ήδη ελεγχθεί."
+ },
+ "Choose an active guild player.": {
+  "tr": "Aktif bir lonca oyuncusu seç.",
+  "el": "Επίλεξε ενεργό παίκτη συντεχνίας."
+ },
+ "Not enough available PP. Points reserved for auctions cannot be removed.": {
+  "tr": "Kullanılabilir PP yetersiz. Açık artırmaya ayrılan PP silinemez.",
+  "el": "Δεν υπάρχουν αρκετά διαθέσιμα PP. Τα δεσμευμένα PP δημοπρασιών δεν αφαιρούνται."
+ },
+ "Enter an item name and upload its screenshot.": {
+  "tr": "Item adını gir ve ekran görüntüsünü yükle.",
+  "el": "Γράψε όνομα αντικειμένου και ανέβασε το στιγμιότυπό του."
+ },
+ "Upload the item screenshot again.": {
+  "tr": "Item ekran görüntüsünü tekrar yükle.",
+  "el": "Ανέβασε ξανά το στιγμιότυπο αντικειμένου."
+ },
+ "Upload an item screenshot smaller than 8 MB.": {
+  "tr": "8 MB’den küçük item ekran görüntüsü yükle.",
+  "el": "Ανέβασε στιγμιότυπο αντικειμένου μικρότερο από 8 MB."
+ },
+ "Upload a PNG, JPEG or WebP item screenshot.": {
+  "tr": "PNG, JPEG veya WebP item ekran görüntüsü yükle.",
+  "el": "Ανέβασε στιγμιότυπο αντικειμένου PNG, JPEG ή WebP."
+ },
+ "Screenshot storage is unavailable.": {
+  "tr": "Ekran görüntüsü depolama alanı kullanılamıyor.",
+  "el": "Ο χώρος αποθήκευσης στιγμιότυπων δεν είναι διαθέσιμος."
+ },
+ "This request ID was already used for a different auction.": {
+  "tr": "Bu işlem kimliği başka bir açık artırmada kullanıldı.",
+  "el": "Αυτό το αναγνωριστικό έχει χρησιμοποιηθεί για άλλη δημοπρασία."
+ },
+ "Choose a valid event date and time.": {
+  "tr": "Geçerli bir event tarihi ve saati seç.",
+  "el": "Επίλεξε έγκυρη ημερομηνία και ώρα εκδήλωσης."
+ },
+ "That local time does not exist in your time zone. Choose another time.": {
+  "tr": "Bu saat, saat diliminde mevcut değil. Başka saat seç.",
+  "el": "Αυτή η τοπική ώρα δεν υπάρχει στη ζώνη ώρας σου. Επίλεξε άλλη ώρα."
+ },
+ "Class role settings are invalid.": {
+  "tr": "Sınıf rolü ayarları geçersiz.",
+  "el": "Οι ρυθμίσεις ρόλων κλάσης δεν είναι έγκυρες."
+ },
+ "A class role cannot represent multiple classes.": {
+  "tr": "Bir sınıf rolü birden fazla sınıfı temsil edemez.",
+  "el": "Ένας ρόλος κλάσης δεν μπορεί να αντιστοιχεί σε πολλές κλάσεις."
+ },
+ "Guild role settings are invalid.": {
+  "tr": "Lonca rolü ayarları geçersiz.",
+  "el": "Οι ρυθμίσεις ρόλων συντεχνίας δεν είναι έγκυρες."
+ },
+ "Discord membership roles could not be verified.": {
+  "tr": "Discord üyelik rolleri doğrulanamadı.",
+  "el": "Οι ρόλοι μέλους Discord δεν μπόρεσαν να επαληθευτούν."
+ },
+ "Your Discord account does not have a guild member role.": {
+  "tr": "Discord hesabında lonca üyesi rolü yok.",
+  "el": "Ο λογαριασμός σου στο Discord δεν έχει ρόλο μέλους συντεχνίας."
+ },
+ "Ask a guild administrator to assign exactly one Arthion class in Discord.": {
+  "tr": "Bir lonca yöneticisinden Discord’da tek bir Arthion sınıfı atamasını iste.",
+  "el": "Ζήτησε από διαχειριστή να σου ορίσει μία κλάση Arthion στο Discord."
+ },
+ "Discord membership connection is unavailable.": {
+  "tr": "Discord üyelik bağlantısı kullanılamıyor.",
+  "el": "Η σύνδεση μελών Discord δεν είναι διαθέσιμη."
+ },
+ "Discord membership could not be verified.": {
+  "tr": "Discord üyeliği doğrulanamadı.",
+  "el": "Η ιδιότητα μέλους Discord δεν μπόρεσε να επαληθευτεί."
+ },
+ "Discord membership changed; retry verification.": {
+  "tr": "Discord üyeliği değişti; tekrar doğrula.",
+  "el": "Η ιδιότητα μέλους Discord άλλαξε· δοκίμασε ξανά την επαλήθευση."
+ },
+ "Not found.": {
+  "tr": "Bulunamadı.",
+  "el": "Δεν βρέθηκε."
+ },
+ "Auction was not found.": {
+  "tr": "Açık artırma bulunamadı.",
+  "el": "Η δημοπρασία δεν βρέθηκε."
+ },
+ "This event is no longer open.": {
+  "tr": "Bu event artık katılıma açık değil.",
+  "el": "Αυτή η εκδήλωση δεν είναι πλέον ανοιχτή."
+ },
+ "The event creator manages the event and cannot join as a participant.": {
+  "tr": "Oluşturan kişi eventi yönetir; ayrıca katılımcı olarak katılamaz.",
+  "el": "Ο δημιουργός διαχειρίζεται την εκδήλωση και δεν μπορεί να δηλώσει ως συμμετέχων."
+ },
+ "Weekly contributions are tracked automatically from the guild spreadsheet.": {
+  "tr": "Haftalık ödemeler lonca tablosundan otomatik takip edilir.",
+  "el": "Οι εβδομαδιαίες συνεισφορές παρακολουθούνται αυτόματα από το φύλλο συντεχνίας."
+ },
+ "This deposit exceeds the maximum PP reward. Contact an administrator.": {
+  "tr": "Bu ödeme maksimum PP ödülünü aşıyor. Bir yöneticiye danış.",
+  "el": "Αυτή η κατάθεση ξεπερνά τη μέγιστη ανταμοιβή PP. Επικοινώνησε με διαχειριστή."
+ },
+ "Notifications are not configured yet.": {
+  "tr": "Bildirimler henüz ayarlanmadı.",
+  "el": "Οι ειδοποιήσεις δεν έχουν ρυθμιστεί ακόμα."
+ },
+ "This device subscription is invalid. Enable notifications again.": {
+  "tr": "Cihaz bildirim kaydı geçersiz. Bildirimleri tekrar aç.",
+  "el": "Η εγγραφή ειδοποιήσεων συσκευής δεν είναι έγκυρη. Ενεργοποίησέ τις ξανά."
+ },
+ "Notifications are enabled on this device.": {
+  "tr": "Bu cihazda bildirimler açık.",
+  "el": "Οι ειδοποιήσεις είναι ενεργές σε αυτή τη συσκευή."
+ },
+ "This device subscription expired. Disable and enable notifications again.": {
+  "tr": "Cihaz bildirim kaydı sona erdi. Bildirimleri kapatıp tekrar aç.",
+  "el": "Η εγγραφή ειδοποιήσεων έληξε. Απενεργοποίησε και ενεργοποίησε ξανά τις ειδοποιήσεις."
+ },
+ "The push service could not accept the test notification. Try again.": {
+  "tr": "Bildirim servisi test bildirimini kabul edemedi. Tekrar dene.",
+  "el": "Η υπηρεσία δεν δέχτηκε τη δοκιμαστική ειδοποίηση. Δοκίμασε ξανά."
+ },
+ "Image was not found.": {
+  "tr": "Görsel bulunamadı.",
+  "el": "Η εικόνα δεν βρέθηκε."
+ },
+ "Weekly contributions are verified automatically from the guild spreadsheet.": {
+  "tr": "Haftalık ödemeler lonca tablosundan otomatik doğrulanır.",
+  "el": "Οι εβδομαδιαίες συνεισφορές επαληθεύονται αυτόματα από το φύλλο συντεχνίας."
+ },
+ "This deposit has already been reviewed.": {
+  "tr": "Bu ödeme zaten incelendi.",
+  "el": "Αυτή η κατάθεση έχει ήδη ελεγχθεί."
+ },
+ "Create an event using its fixed reward type.": {
+  "tr": "Sabit ödüllü türlerden bir event oluştur.",
+  "el": "Δημιούργησε εκδήλωση με τον σταθερό τύπο ανταμοιβής της."
+ },
+ "The creator must confirm attendance before review.": {
+  "tr": "İncelemeden önce oluşturan kişi katılımı doğrulamalı.",
+  "el": "Ο δημιουργός πρέπει να επιβεβαιώσει παρουσίες πριν τον έλεγχο."
+ },
+ "Review the submitted evidence to finalize this event.": {
+  "tr": "Bu eventi sonuçlandırmak için gönderilen kanıtı incele.",
+  "el": "Έλεγξε τα υποβληθέντα αποδεικτικά για να οριστικοποιήσεις την εκδήλωση."
+ },
+ "This event has already been finalized.": {
+  "tr": "Bu event zaten sonuçlandı.",
+  "el": "Αυτή η εκδήλωση έχει ήδη οριστικοποιηθεί."
+ },
+ "This auction has already ended.": {
+  "tr": "Bu açık artırma zaten bitti.",
+  "el": "Αυτή η δημοπρασία έχει ήδη λήξει."
+ },
+ "Check the form fields.": {
+  "tr": "Form alanlarını kontrol et.",
+  "el": "Έλεγξε τα πεδία της φόρμας."
+ },
+ "This auction has ended": {
+  "tr": "Bu açık artırma bitti",
+  "el": "Αυτή η δημοπρασία έληξε"
+ },
+ "Not enough available PP": {
+  "tr": "Kullanılabilir PP yetersiz",
+  "el": "Δεν υπάρχουν αρκετά διαθέσιμα PP"
+ },
+ "Bid is below the minimum or uses an invalid increment": {
+  "tr": "Teklif minimumun altında veya artış miktarı geçersiz",
+  "el": "Η προσφορά είναι κάτω από το ελάχιστο ή έχει μη έγκυρο βήμα"
+ },
+ "This event has already been finalized": {
+  "tr": "Bu event zaten sonuçlandı",
+  "el": "Αυτή η εκδήλωση έχει ήδη οριστικοποιηθεί"
+ },
+ "Attendance for a finalized event cannot change": {
+  "tr": "Sonuçlanan eventin katılımı değiştirilemez",
+  "el": "Οι παρουσίες οριστικοποιημένης εκδήλωσης δεν αλλάζουν"
+ },
+ "You can create 2 Help events per guild day": {
+  "tr": "Lonca gününde en fazla 2 yardım eventi oluşturabilirsin",
+  "el": "Μπορείς να δημιουργήσεις έως 2 εκδηλώσεις βοήθειας ανά ημέρα συντεχνίας"
+ },
+ "A screenshot is required before review": {
+  "tr": "İncelemeden önce ekran görüntüsü gerekir",
+  "el": "Απαιτείται στιγμιότυπο πριν τον έλεγχο"
+ },
+ "Upload a screenshot before ending this Help event": {
+  "tr": "Bu yardım eventini bitirmeden önce ekran görüntüsü yükle",
+  "el": "Ανέβασε στιγμιότυπο πριν λήξεις την εκδήλωση βοήθειας"
+ },
+ "The creator is included automatically on approval": {
+  "tr": "Oluşturan kişi onayda otomatik dahil edilir",
+  "el": "Ο δημιουργός περιλαμβάνεται αυτόματα στην έγκριση"
+ },
+ "An event organizer Discord role is required": {
+  "tr": "Event düzenleyici Discord rolü gerekir",
+  "el": "Απαιτείται ρόλος διοργανωτή εκδηλώσεων στο Discord"
+ },
+ "A guild administrator must review this event": {
+  "tr": "Bu eventi bir lonca yöneticisi incelemeli",
+  "el": "Ένας διαχειριστής συντεχνίας πρέπει να ελέγξει αυτή την εκδήλωση"
+ },
+ "Administrator approval is required before PP is awarded": {
+  "tr": "PP verilmeden önce yönetici onayı gerekir",
+  "el": "Απαιτείται έγκριση διαχειριστή πριν την απόδοση PP"
+ },
+ "Your weekly deposit has already been submitted.": {
+  "tr": "Haftalık ödemen zaten gönderildi.",
+  "el": "Η εβδομαδιαία κατάθεσή σου έχει ήδη υποβληθεί."
+ },
+ "The request could not be completed. Please try again.": {
+  "tr": "İstek tamamlanamadı. Lütfen tekrar dene.",
+  "el": "Το αίτημα δεν μπόρεσε να ολοκληρωθεί. Δοκίμασε ξανά."
+ },
+ "Minimum bid:": {
+  "tr": "Minimum teklif:",
+  "el": "Ελάχιστη προσφορά:"
+ },
+ "Made by {name} with love": {
+  "tr": "{name} tarafından sevgiyle yapıldı",
+  "el": "Δημιουργήθηκε με αγάπη από τον {name}"
+ },
+ "Sign in with Discord. Your account needs the guild’s Member role.": {
+  "tr": "Discord ile giriş yap. Hesabında loncanın Member rolü olmalı.",
+  "el": "Συνδέσου μέσω Discord. Ο λογαριασμός σου χρειάζεται τον ρόλο Member της συντεχνίας."
+ },
+ "Member access could not be verified. Please try again shortly.": {
+  "tr": "Üye erişimi doğrulanamadı. Biraz sonra tekrar dene.",
+  "el": "Η πρόσβαση μέλους δεν μπόρεσε να επαληθευτεί. Δοκίμασε ξανά σε λίγο."
+ },
+ "Approve Deposit": {
+  "tr": "Ödemeyi Onayla",
+  "el": "Έγκριση Κατάθεσης"
+ },
+ "Reject Deposit": {
+  "tr": "Ödemeyi Reddet",
+  "el": "Απόρριψη Κατάθεσης"
+ },
+ "Cancel Auction & Release PP": {
+  "tr": "Açık Artırmayı İptal Et ve PP’yi Serbest Bırak",
+  "el": "Ακύρωση Δημοπρασίας & Αποδέσμευση PP"
+ },
+ "Guild Members": {
+  "tr": "Lonca Üyeleri",
+  "el": "Μέλη Συντεχνίας"
+ },
+ "min": {
+  "tr": "dk",
+  "el": "λεπ"
+ },
+ "hr": {
+  "tr": "sa",
+  "el": "ώρ"
+ },
+ "Unassigned": {
+  "tr": "Atanmadı",
+  "el": "Δεν Ορίστηκε"
+ },
+ "The weekly deposit is {amount} Yang.": {
+  "tr": "Haftalık ödeme {amount} Yang.",
+  "el": "Η εβδομαδιαία κατάθεση είναι {amount} Yang."
+ },
+ "Invalid input": {
+  "tr": "Geçersiz değer",
+  "el": "Μη έγκυρη τιμή"
+ },
+ "Participation": {
+  "tr": "Katılım",
+  "el": "Συμμετοχή"
+ },
+ "Auction Won": {
+  "tr": "Açık Artırma Kazanıldı",
+  "el": "Κερδισμένη Δημοπρασία"
+ },
+ "Historical Contributions": {
+  "tr": "Geçmiş Ödemeler",
+  "el": "Ιστορικές Συνεισφορές"
+ },
+ "Weekly Contribution / Guild Bank": {
+  "tr": "Haftalık Ödeme / Lonca Bankası",
+  "el": "Εβδομαδιαία Συνεισφορά / Ταμείο Συντεχνίας"
+ }
+}
