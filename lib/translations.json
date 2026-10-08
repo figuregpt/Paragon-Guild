@@ -15,10 +15,6 @@
   "tr": "1 saat önce",
   "el": "1 ώρα πριν"
  },
- "100 PP = 1 cm. Just a guild joke.": {
-  "tr": "100 PP = 1 cm. Sadece bir lonca şakası.",
-  "el": "100 PP = 1 cm. Απλώς ένα αστείο της συντεχνίας."
- },
  "15 minutes before": {
   "tr": "15 dakika önce",
   "el": "15 λεπτά πριν"
@@ -3154,5 +3150,17 @@
  "See a marked map ↗": {
   "tr": "İşaretli harita örneği ↗",
   "el": "Παράδειγμα σημειωμένου χάρτη ↗"
+ },
+ "Random daily size, unrelated to PP. Resets at 01:00 Türkiye time.": {
+  "tr": "PP’den bağımsız günlük rastgele boyut. Türkiye saatiyle 01:00’da yenilenir.",
+  "el": "Τυχαίο ημερήσιο μέγεθος, ανεξάρτητο από τα PP. Ανανεώνεται στις 01:00 ώρα Τουρκίας."
+ },
+ "Random · resets at 01:00 TR": {
+  "tr": "Rastgele · TR 01:00’da yenilenir",
+  "el": "Τυχαίο · ανανέωση 01:00 TR"
+ },
+ "Refreshing…": {
+  "tr": "Yenileniyor…",
+  "el": "Ανανέωση…"
  }
 }

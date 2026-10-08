@@ -5,7 +5,7 @@ export type Auction=Item&{id:string;item_id:string;upgrade:number;quantity:numbe
 export type Ledger={id:string;amount:number;category:string;label:string;created:number};
 export type Deposit={id:string;member_id:string;member_name?:string;yang:number;pp:number;kind:string;week:string|null;note:string;status:string;created:number};
 export type Contribution={total_yang:number;weekly_yang:number;checked:number;stale:boolean;error:boolean;entries:{row:number;date:string;yang:number;note:string}[]};
-export type GuildData={contribution:Contribution|null;member:Member;events:Event[];my_events:Event[];week:string;eventPolicy:{helpDailyLimit:number;dayZone:string;organizerConfigured:boolean};auctions:Auction[];ledger:Ledger[];deposits:Deposit[];settings:{weekly:number;rate:number;notice:string};pending:Deposit[];participants:{event_id:string;member_id:string;name:string;joined:number;attended:number}[];pushReady:boolean;vapidPublicKey:string|null;schedulerReady:boolean;localPreview:boolean;demo?:boolean};
+export type GuildData={dailyCm?:import('./daily-cm').DailyCm;contribution:Contribution|null;member:Member;events:Event[];my_events:Event[];week:string;eventPolicy:{helpDailyLimit:number;dayZone:string;organizerConfigured:boolean};auctions:Auction[];ledger:Ledger[];deposits:Deposit[];settings:{weekly:number;rate:number;notice:string};pending:Deposit[];participants:{event_id:string;member_id:string;name:string;joined:number;attended:number}[];pushReady:boolean;vapidPublicKey:string|null;schedulerReady:boolean;localPreview:boolean;demo?:boolean};
 export const CLASSES=['Warrior','Ninja','Sura','Shaman','Lycan'] as const;
 export const now=()=>Math.floor(Date.now()/1000);
 export const id=()=>crypto.randomUUID();

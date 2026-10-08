@@ -9,6 +9,7 @@ import {memberEventRoute} from '@/lib/member-events';
 import {createScreenshotAuction} from '@/lib/auction-create';
 import {contributionsEnabled,readContribution} from '@/lib/contributions';
 import {sendPush,validatePushSubscription} from '@/lib/web-push';
+import {dailyCm} from '@/lib/daily-cm';
 const json=(data:unknown,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff'}});
 const pathOf=(r:Request)=>new URL(r.url).pathname.slice(5);
 const num=(min=0,max=1000000)=>z.number().int().min(min).max(max);
@@ -35,6 +36,7 @@ async function handle(request:Request){
   const key=request.headers.get('authorization');if(!env.SCHEDULER_SECRET||key!==`Bearer ${env.SCHEDULER_SECRET}`)throw new HttpError(403,'Scheduler authorization is required.');await processJobs();return json({ok:true});
  }
  const admin=path.startsWith('admin/');const m=await requireMember(request,admin,method==='POST'||path.startsWith('event-evidence/'));
+ if(method==='GET'&&path==='daily-cm')return json(await dailyCm(m.id,env.SESSION_SECRET||''));
  const pointsResponse=await adminPointsRoute(request,path,m);if(pointsResponse)return pointsResponse;
  const eventResponse=await memberEventRoute(request,path,m);if(eventResponse)return eventResponse;
  if(method==='GET'&&path==='auction-bids'){const url=new URL(request.url);const auctionId=uuid.parse(url.searchParams.get('id'));const page=num(0,500).parse(Number(url.searchParams.get('page')||0));const auction=await first('SELECT id FROM auctions WHERE id=?',auctionId);if(!auction)throw new HttpError(404,'Auction was not found.');const [rows,total]=await Promise.all([all('SELECT b.id,b.amount,b.created,m.name FROM bids b JOIN members m ON m.id=b.member_id WHERE auction_id=? ORDER BY b.amount DESC,b.created DESC LIMIT 20 OFFSET ?',auctionId,page*20),first<any>('SELECT COUNT(*) total FROM bids WHERE auction_id=?',auctionId)]);return json({bids:rows,total:total?.total||0});}
@@ -49,7 +51,7 @@ async function handle(request:Request){
    m.admin?all("SELECT em.*,m.name FROM event_members em JOIN members m ON m.id=em.member_id JOIN events e ON e.id=em.event_id WHERE e.status='upcoming'"):[]
   ]);
   const myEvents=await all("SELECT e.*,creator.name creator_name,CASE WHEN e.created_by=em.member_id THEN 0 ELSE COALESCE(em.joined,0) END joined,CASE WHEN e.created_by=em.member_id THEN 0 ELSE COALESCE(em.attended,0) END attended,em.reminder,(SELECT COUNT(*) FROM event_members WHERE event_id=e.id AND joined=1 AND member_id<>e.created_by) signups FROM events e JOIN members creator ON creator.id=e.created_by LEFT JOIN event_members em ON em.event_id=e.id AND em.member_id=? WHERE e.created_by=? OR em.joined=1 OR em.attended=1 ORDER BY e.created DESC LIMIT 200",m.id,m.id);
-  return json({member,contribution,events:e,my_events:myEvents,week:weekKey(),eventPolicy:{helpDailyLimit:2,dayZone:'Europe/Istanbul',organizerConfigured:Boolean(env.DISCORD_EVENT_CREATOR_ROLE_IDS)},auctions:a,ledger:l,deposits:d,settings:s,pending,participants,pushReady:Boolean(env.VAPID_PUBLIC_KEY&&env.VAPID_PRIVATE_KEY&&env.VAPID_SUBJECT&&env.SCHEDULER_SECRET&&env.SCHEDULER_ENABLED==='true'),vapidPublicKey:env.VAPID_PUBLIC_KEY||null,schedulerReady:env.SCHEDULER_ENABLED==='true',localPreview:localRequest(request),demo:Boolean(env.DEMO_SESSION)});
+  return json({member,dailyCm:await dailyCm(m.id,env.SESSION_SECRET||''),contribution,events:e,my_events:myEvents,week:weekKey(),eventPolicy:{helpDailyLimit:2,dayZone:'Europe/Istanbul',organizerConfigured:Boolean(env.DISCORD_EVENT_CREATOR_ROLE_IDS)},auctions:a,ledger:l,deposits:d,settings:s,pending,participants,pushReady:Boolean(env.VAPID_PUBLIC_KEY&&env.VAPID_PRIVATE_KEY&&env.VAPID_SUBJECT&&env.SCHEDULER_SECRET&&env.SCHEDULER_ENABLED==='true'),vapidPublicKey:env.VAPID_PUBLIC_KEY||null,schedulerReady:env.SCHEDULER_ENABLED==='true',localPreview:localRequest(request),demo:Boolean(env.DEMO_SESSION)});
  }
  if(method==='POST'&&path==='logout'){await run('DELETE FROM sessions WHERE token=?',await hash(cookies(request)[sessionCookieName()]||''));const headers=new Headers({'Content-Type':'application/json','Cache-Control':'no-store'});headers.append('Set-Cookie',cookie(sessionCookieName(),'',0,request));if(env.DEMO_SESSION)headers.append('Set-Cookie',cookie('pg_demo','',0,request));return new Response(JSON.stringify({ok:true}),{headers});}
  if(method==='POST'&&path==='bid'){

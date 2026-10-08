@@ -164,3 +164,5 @@
 #paragon-design .pg-map-caption button.pg-text-link{background:transparent;border:0;padding:8px 0;color:var(--pg-text);cursor:pointer;text-decoration:underline;text-underline-offset:3px;font-size:12px;line-height:1.7;transform:none}
 #paragon-design .pg-map-canvas img{image-rendering:pixelated}
 #paragon-design .pg-map-canvas:active{transform:none}
+
+#paragon-design .pg-cm-reset{display:block;margin-top:2px;font-size:10px;line-height:1.5;color:var(--pg-muted)}

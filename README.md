@@ -131,3 +131,7 @@ Event creators can expand “Mark Meeting Point” after choosing a map, click/t
 40 unchanged original Wiki map images cover 36 map locations. `public/maps/SOURCES.md` and `lib/event-map-assets.json` record their provenance. Castle Gate is an NPC appearing in several areas: choose the actual map to place a marker. Positions are relative image coordinates, independent of device size, and do not claim to be in-game X/Y coordinates.
 
 Migration `0016_event_map_pins.sql` adds three nullable columns without rebuilding tables or altering existing records/reward triggers. API validation checks the asset/location association, integer bounds and retry payload; SQLite triggers reject partial/out-of-range pins. `tests/event-map-pins.mjs` verifies assets and migration preservation; `tests/event-map-pins-ui.mjs` runs all 40 assets and three-language mobile/desktop pointer, keyboard, reset, retry and persistence flows against an isolated local demo server.
+
+## Daily CM joke
+
+The PP card shows an independent daily random value from 0.00 to 100.00 cm. A domain-separated server-side HMAC derives each member’s value from their stable member ID and the current Türkiye 01:00-to-01:00 period. Reloads, devices and server restarts keep the same daily value. Open pages refresh at the next boundary and after returning from the background; temporary failures retry without showing an expired value. Actual PP balances, reservations and history are unaffected. No database migration or extra scheduler is needed.
