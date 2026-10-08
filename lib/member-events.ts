@@ -37,8 +37,7 @@ export async function memberEventRoute(request:Request,path:string,m:Member):Pro
   const pp=b.kind==='Custom'?b.pp!:EVENT_REWARDS[b.kind];
   await database().batch([
    database().prepare("INSERT INTO events(id,title,type,starts,pp,description,created_by,created,kind,phase,creation_day,duration_minutes,location,game_channel) VALUES(?,?,?,?,?,?,?,?,?,'open',?,?,?,?)").bind(b.id,b.title,type,starts,pp,b.description,m.id,now(),b.kind,guildDay(),b.durationMinutes??null,b.location,b.gameChannel),
-   database().prepare("INSERT INTO notifications(id,member_id,event_id,kind,created) SELECT 'new:'||?||':'||id,id,?,'new',? FROM members WHERE active=1 AND new_events=1").bind(b.id,b.id,now()),
-   ...(!env.DEMO_SESSION&&env.DISCORD_EVENT_CHANNEL_ID?[database().prepare("INSERT INTO discord_announcements(event_id,channel_id,created) VALUES(?,?,?)").bind(b.id,env.DISCORD_EVENT_CHANNEL_ID,now())]:[])
+   database().prepare("INSERT INTO notifications(id,member_id,event_id,kind,created) SELECT 'new:'||?||':'||id,id,?,'new',? FROM members WHERE active=1 AND new_events=1").bind(b.id,b.id,now())
   ]);await audit(m,'event-created',b.id);return json({ok:true});
  }
  if(request.method==='GET'&&path==='events/detail'){

@@ -109,3 +109,9 @@ The Member role is the access requirement. Accounts whose class has not been ass
 Event policy checks: `node tests/event-policy-migration.mjs` verifies old rewards remain unchanged, new rewards and custom bounds are enforced in SQLite, and administrators cannot bypass the Experienced role. `TEST_BASE_URL=http://127.0.0.1:3107 node tests/experienced-events-ui.mjs` checks member/Experienced forms at mobile and desktop sizes, custom PP/location validation, device-local start times and manual ending.
 
 Visual guide verification: `GUIDE_TEST_ORIGIN=http://127.0.0.1:3107 node tests/how-to-use.mjs` checks all 28 steps at 320/390/768/1440 px, all 16 screenshots, keyboard focus, direct links, browser back/reload, invalid hashes and zero private API requests. Use the Playwright setup above; `PLAYWRIGHT_MODULE` and `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` can select an existing installation.
+
+## Discord event and auction notifications
+
+Configure `DISCORD_NOTIFICATION_CHANNELS` and `DISCORD_NOTIFICATION_ROLE_ID` as described in [DISCORD_SETUP.md](DISCORD_SETUP.md). One announcement per event/auction is edited as its state changes. Initial announcements and final result cards ping Member; final results also mention affected participants or the winning bidder. Intermediate edits are quiet. Event result values come from the immutable PP ledger, so per-person rejection and creator rewards are reflected correctly. Auction settlement still charges only the winner. The minute scheduler processes a transactional queue with leases, bounded retries and duplicate recovery. Demo data never sends Discord notifications.
+
+Run `node tests/discord-event-cards.mjs` and `node tests/discord-card-delivery.mjs` to verify the notification workflow without any real Discord sends.
