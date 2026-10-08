@@ -123,3 +123,11 @@ The application and visual guide support English, Turkish and Greek. The native 
 Translations live in `lib/translations.json`; all languages use the same API identifiers, rewards and membership checks. Guide screenshots in `public/guide/tr` and `public/guide/el` use fictional local demo accounts.
 
 `node tests/i18n.mjs` checks translation coverage, interpolation, markup and notification language preferences. Run `TEST_BASE_URL=http://127.0.0.1:3190 node tests/i18n-ui.mjs` against an isolated demo server to verify all three languages at 320/390/1440 px, draft preservation, event creation, bids, admin adjustments and every guide step. The existing Playwright environment overrides apply.
+
+## Optional event map markers
+
+Event creators can expand “Mark Meeting Point” after choosing a map, click/tap a spot, use arrow keys to adjust it, or remove the marker. The saved spot is visible to all members in event details; during review/completion the map starts collapsed. Guild War Area offers five battle-map variants. Changing map/type/variant clears a stale marker; custom freeform locations remain usable without a marker.
+
+40 unchanged original Wiki map images cover 36 map locations. `public/maps/SOURCES.md` and `lib/event-map-assets.json` record their provenance. Castle Gate is an NPC appearing in several areas: choose the actual map to place a marker. Positions are relative image coordinates, independent of device size, and do not claim to be in-game X/Y coordinates.
+
+Migration `0016_event_map_pins.sql` adds three nullable columns without rebuilding tables or altering existing records/reward triggers. API validation checks the asset/location association, integer bounds and retry payload; SQLite triggers reject partial/out-of-range pins. `tests/event-map-pins.mjs` verifies assets and migration preservation; `tests/event-map-pins-ui.mjs` runs all 40 assets and three-language mobile/desktop pointer, keyboard, reset, retry and persistence flows against an isolated local demo server.

@@ -1,5 +1,5 @@
 export type Member={id:string;name:string;class:string;avatar:string|null;admin:number;balance:number;reserved:number;new_events:number;can_host:number};
-export type Event={id:string;title:string;type:'PvE'|'PvP';kind:string;phase:string;created_by:string;creator_name:string;attended:number;review_note:string;starts:number;duration_minutes:number|null;location:string;game_channel:number|null;pp:number;description:string;status:string;joined:number;reminder:number|null;signups:number};
+export type Event={id:string;title:string;type:'PvE'|'PvP';kind:string;phase:string;created_by:string;creator_name:string;attended:number;review_note:string;starts:number;duration_minutes:number|null;location:string;game_channel:number|null;map_asset?:string|null;map_x?:number|null;map_y?:number|null;pp:number;description:string;status:string;joined:number;reminder:number|null;signups:number};
 export type Item={id:string;name:string;icon:string;height:number;level:number|null;classes:string};
 export type Auction=Item&{id:string;item_id:string;upgrade:number;quantity:number;source:string;bonuses:string;minimum:number;increment:number;current:number;winner:string|null;winner_name:string|null;ends:number;starts:number;status:string};
 export type Ledger={id:string;amount:number;category:string;label:string;created:number};

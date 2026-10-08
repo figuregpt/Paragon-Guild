@@ -3062,5 +3062,97 @@
  "Weekly Contribution / Guild Bank": {
   "tr": "Haftalık Ödeme / Lonca Bankası",
   "el": "Εβδομαδιαία Συνεισφορά / Ταμείο Συντεχνίας"
+ },
+ "Map position: X {x}%, Y {y}%": {
+  "tr": "Haritadaki konum: X %{x}, Y %{y}",
+  "el": "Θέση στον χάρτη: X {x}%, Y {y}%"
+ },
+ "No marker selected.": {
+  "tr": "Henüz nokta işaretlenmedi.",
+  "el": "Δεν έχει επιλεγεί σημείο."
+ },
+ "Mark the meeting point on {map}": {
+  "tr": "{map} haritasında buluşma noktasını işaretle",
+  "el": "Σημείωσε το σημείο συνάντησης στον χάρτη {map}"
+ },
+ "The map could not load. Try again.": {
+  "tr": "Harita yüklenemedi. Tekrar dene.",
+  "el": "Ο χάρτης δεν φορτώθηκε. Δοκίμασε ξανά."
+ },
+ "Retry Map": {
+  "tr": "Haritayı Yeniden Yükle",
+  "el": "Επαναφόρτωση Χάρτη"
+ },
+ "Loading map…": {
+  "tr": "Harita yükleniyor…",
+  "el": "Φόρτωση χάρτη…"
+ },
+ "Tap or click the meeting spot. Use arrow keys to move the marker.": {
+  "tr": "Buluşma noktasına dokun veya tıkla. İşareti ok tuşlarıyla da taşıyabilirsin.",
+  "el": "Πάτησε το σημείο συνάντησης. Μετακίνησε τον δείκτη με τα βελάκια."
+ },
+ "Remove Marker": {
+  "tr": "İşareti Kaldır",
+  "el": "Αφαίρεση Δείκτη"
+ },
+ "Map source: Metin2 Wiki": {
+  "tr": "Harita kaynağı: Metin2 Wiki",
+  "el": "Πηγή χάρτη: Metin2 Wiki"
+ },
+ "Castle Gate appears in several areas. Choose the actual map to mark a meeting point.": {
+  "tr": "Kale Kapısı birden fazla bölgede bulunur. Nokta işaretlemek için bulunduğu haritayı seç.",
+  "el": "Η Πύλη Κάστρου βρίσκεται σε διάφορες περιοχές. Επίλεξε τον πραγματικό χάρτη για να σημειώσεις το σημείο."
+ },
+ "Mark Meeting Point (optional)": {
+  "tr": "Buluşma Noktası İşaretle (isteğe bağlı)",
+  "el": "Σημείο Συνάντησης (προαιρετικό)"
+ },
+ "Marked": {
+  "tr": "İşaretlendi",
+  "el": "Σημειώθηκε"
+ },
+ "Battle Map": {
+  "tr": "Savaş Haritası",
+  "el": "Χάρτης Μάχης"
+ },
+ "Meeting Point": {
+  "tr": "Buluşma Noktası",
+  "el": "Σημείο Συνάντησης"
+ },
+ "Choose a marker on the selected map.": {
+  "tr": "Seçilen harita üzerinde bir nokta işaretle.",
+  "el": "Σημείωσε ένα σημείο στον επιλεγμένο χάρτη."
+ },
+ "Invalid event map marker": {
+  "tr": "Geçersiz harita işareti",
+  "el": "Μη έγκυρος δείκτης χάρτη"
+ },
+ "Flag": {
+  "tr": "Bayrak Kapma",
+  "el": "Κατάκτηση Σημαίας"
+ },
+ "Annihilation": {
+  "tr": "Yıkım",
+  "el": "Εξόντωση"
+ },
+ "Time Attack": {
+  "tr": "Zamana Karşı",
+  "el": "Επίθεση Χρόνου"
+ },
+ "Shield Battle": {
+  "tr": "Kalkan Savaşı",
+  "el": "Μάχη Ασπίδας"
+ },
+ "Choose an exact meeting point": {
+  "tr": "Tam buluşma noktasını seç",
+  "el": "Επίλεξε το ακριβές σημείο συνάντησης"
+ },
+ "Optional: open Mark Meeting Point, then tap the spot on the map. Remove Marker clears it. Everyone can see the saved spot in the event details. X/Y percentages refer to the map image.": {
+  "tr": "İsteğe bağlı: Buluşma Noktası İşaretle bölümünü açıp haritadaki noktaya dokun. İşareti Kaldır ile silebilirsin. Kaydedilen noktayı herkes event detayında görür. X/Y yüzdeleri harita görselindeki konumu gösterir.",
+  "el": "Προαιρετικά: άνοιξε το Σημείο Συνάντησης και πάτησε το σημείο στον χάρτη. Η Αφαίρεση Δείκτη το διαγράφει. Όλοι βλέπουν το αποθηκευμένο σημείο στις λεπτομέρειες της εκδήλωσης. Τα ποσοστά X/Y αναφέρονται στην εικόνα του χάρτη."
+ },
+ "See a marked map ↗": {
+  "tr": "İşaretli harita örneği ↗",
+  "el": "Παράδειγμα σημειωμένου χάρτη ↗"
  }
 }

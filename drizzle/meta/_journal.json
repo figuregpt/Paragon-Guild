@@ -113,6 +113,13 @@
       "when": 1791460743248,
       "tag": "0015_discord_lifecycle_cards",
       "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "6",
+      "when": 1791472806625,
+      "tag": "0016_event_map_pins",
+      "breakpoints": true
     }
   ]
 }
