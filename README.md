@@ -7,11 +7,11 @@ This initial source snapshot is based on deployment source commit `20a1817`. Run
 ## Features
 
 - Home: weekly Yang contribution quest, ongoing/upcoming events and auctions.
-- How to Use: a public visual guide at `/how-to-use`, linked from every screen and the sign-in gateway. Seven expandable topics pair short steps with 13 real UI screenshots using fictional accounts. Covers iPhone Home Screen setup, notifications, reminders, PP, contributions, events, auctions and administrator workflows. Images open at full resolution; no Chrome installation instructions or private guild data.
+- How to Use: a public visual guide at `/how-to-use`, linked from every screen and the sign-in gateway. Seven expandable topics pair short steps with 14 real UI screenshots using fictional accounts. Covers iPhone Home Screen setup, notifications, reminders, PP, contributions, events, auctions and administrator workflows. Images open at full resolution; no Chrome installation instructions or private guild data.
 - Discord sign-in: server nickname, class roles, guild membership, organizer roles and administrator allowlists are enforced on the server. A connected bot follows membership/role changes; OAuth verification is the fallback.
 - Participation Points: immutable transaction history, available and reserved balances, and administrator Add PP / Remove PP adjustments with a reason and audit record. Deductions cannot consume auction reservations or make available PP negative.
 - Auctions: only administrators create them, using an item name and screenshot. Bids reserve PP. Outbidding or cancellation releases reservations; settlement deducts PP from the winner once.
-- Events: Help (25 PP), PvE (35 PP), PvP (75 PP), World Boss (100 PP). Help starts immediately and is limited to two creations per guild day; other types require organizer access. Locations include maps through Grotto of Exile and CH-1–CH-6.
+- Events: Help (10 PP), Demon Tower (10 PP), PvE (35 PP), Open PvP (100 PP), Guild War (100 PP), World Boss (75 PP), and Custom (chosen PP). Help starts immediately and is limited to two creations per guild day. Every other type requires the Experienced Discord role, has a device-local start time and ends manually. Custom supports a title, CH-1–CH-6, a map or free-text location and 1–1,000,000 whole PP. Existing events retain their stored reward.
 - Attendance: the creator uploads mandatory screenshot evidence, selects confirmed participants, and submits for administrator review. Administrators select individual recipients; the creator and selected confirmed participants receive the event reward once.
 - Contributions: a configured guild spreadsheet is checked server-side every five minutes. Weekly Deposit Log entries verify the 500,000 Yang quest and award its PP once; profiles show recorded deposit history.
 - Notifications: optional Web Push, event reminders and Discord event cards with a location/channel and an Open Event link. Dates display in the viewer's timezone.
@@ -49,7 +49,7 @@ The source also retains the optional Cloudflare/Sites adapter. `.openai/hosting.
 
 - Set `APP_ORIGIN` to your exact HTTPS domain.
 - Register `APP_ORIGIN/auth/discord/callback` in Discord Developer Portal.
-- Configure guild/member/class roles and administrator/organizer allowlists. See [DISCORD_SETUP.md](DISCORD_SETUP.md).
+- Configure guild/member/class roles and administrator allowlists and Experienced role IDs. See [DISCORD_SETUP.md](DISCORD_SETUP.md).
 - Set `SESSION_SECRET`; add bot, spreadsheet and Web Push settings only as needed.
 - The Railway launcher runs protected jobs once per minute when `SCHEDULER_ENABLED=true` and `SCHEDULER_SECRET` is configured. Other hosts must schedule `POST /api/jobs/tick` with the scheduler bearer secret themselves.
 - Keep one application replica when using the single SQLite volume. Whole migration files, checksums, transactional batches and SQLite triggers are preserved.
@@ -105,3 +105,5 @@ A reset requires maintenance mode, creates a complete SQLite backup, archives pr
 Production uses `MEMBERS_ONLY=true` and `DEMO_ENABLED=false`. The server verifies the current Discord Member role before rendering the application, including direct view links; visitors see the Discord sign-in gateway, with a link to the public `/how-to-use` guide. HTML is private and uncached. Missing member-role configuration fails closed, and administrators also require the Member role.
 
 The Member role is the access requirement. Accounts whose class has not been assigned yet appear as `Unassigned` and can still enter; class roles do not grant administrator or organizer permissions.
+
+Event policy checks: `node tests/event-policy-migration.mjs` verifies old rewards remain unchanged, new rewards and custom bounds are enforced in SQLite, and administrators cannot bypass the Experienced role. `TEST_BASE_URL=http://127.0.0.1:3107 node tests/experienced-events-ui.mjs` checks member/Experienced forms at mobile and desktop sizes, custom PP/location validation, device-local start times and manual ending.

@@ -5,5 +5,7 @@ export function shouldDeliverNotification(n:NotificationEvent,time:number):boole
  if(!n.new_events||n.created<time-86400)return false;
  // Help starts immediately; it remains announceable while its chosen duration is running.
  if(n.event_kind==='Help')return n.starts+(n.duration_minutes||60)*60>time;
- return n.starts>=time;
+ // Scheduled member events remain ongoing until the creator ends them.
+ // A newly published event can already have started when the worker picks it up.
+ return n.starts>=time||n.event_phase==='open';
 }

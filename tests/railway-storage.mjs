@@ -5,7 +5,7 @@ import path from 'node:path';
 import assert from 'node:assert/strict';
 const directory=mkdtempSync(path.join(tmpdir(),'paragon-storage-')),db=new NodeDatabase(path.join(directory,'guild.sqlite'));
 try{
- migrate(db);migrate(db);assert.equal((await db.prepare('SELECT COUNT(*) n FROM railway_migrations').first()).n,14);
+ migrate(db);migrate(db);assert.equal((await db.prepare('SELECT COUNT(*) n FROM railway_migrations').first()).n,15);
  for(const id of ['a','b'])await db.prepare("INSERT INTO members(id,name,class,created) VALUES(?,?,'Warrior',unixepoch())").bind(id,id).run();
  const channelEvent=(id,channel)=>db.prepare("INSERT INTO events(id,title,type,starts,pp,description,created_by,created,game_channel) VALUES(?,'Channel Test','PvE',unixepoch()+3600,0,'','a',unixepoch(),?)").bind(id,channel);
  await channelEvent('channel-good',6).run();await channelEvent('channel-unknown',null).run();await assert.rejects(channelEvent('channel-invalid',7).run());await assert.rejects(channelEvent('channel-fraction',1.5).run());await assert.rejects(db.prepare("UPDATE events SET game_channel=5 WHERE id='channel-good'").run());assert.equal((await db.prepare("SELECT game_channel FROM events WHERE id='channel-unknown'").first()).game_channel,null);

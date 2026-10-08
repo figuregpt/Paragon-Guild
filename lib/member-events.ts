@@ -4,7 +4,8 @@ import {HttpError} from './auth';
 import {all,first,run,database} from './database';
 import {id,now,type Member} from './domain';
 import {EVENT_MAP_NAMES} from './event-locations';
-export const EVENT_REWARDS={Help:25,PvE:35,PvP:75,'World Boss':100} as const;
+import {EVENT_KINDS,EVENT_REWARDS,MAX_EVENT_PP} from './event-types';
+export {EVENT_REWARDS} from './event-types';
 export const guildDay=(seconds=now())=>new Date((seconds+3*3600)*1000).toISOString().slice(0,10);
 const json=(value:unknown)=>Response.json(value,{headers:{'Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff'}});
 const uuid=z.string().uuid();
@@ -21,16 +22,21 @@ function owner(e:any,m:Member){if(e.created_by!==m.id)throw new HttpError(403,'O
 async function audit(m:Member,action:string,eventId:string){await run('INSERT INTO audit(id,member_id,action,target,created) VALUES(?,?,?,?,?)',id(),m.id,action,eventId,now());}
 export async function memberEventRoute(request:Request,path:string,m:Member):Promise<Response|null>{
  if(request.method==='POST'&&path==='events/create'){
-  const b=z.object({id:uuid,title:z.string().trim().min(1).max(80),kind:z.enum(['Help','PvE','PvP','World Boss']),starts:z.number().int().min(1).max(4102444800).optional(),durationMinutes:z.number().int().min(1).max(1440).optional(),gameChannel:z.number().int().min(1).max(6).default(1),location:z.string().refine(value=>EVENT_MAP_NAMES.includes(value),'Choose a map from the location list.'),description:z.string().trim().max(500)}).strict().parse(await body(request));
+  const b=z.object({id:uuid,title:z.string().trim().min(1).max(80),kind:z.enum(EVENT_KINDS),starts:z.number().int().min(1).max(4102444800).optional(),durationMinutes:z.number().int().min(1).max(1440).optional(),gameChannel:z.number().int().min(1).max(6).default(1),location:z.string().trim().min(1).max(80),pp:z.number().int().min(1).max(MAX_EVENT_PP).optional(),description:z.string().trim().max(500)}).strict().parse(await body(request));
+  if(b.kind==='Custom'&&b.pp===undefined)throw new HttpError(400,'Choose the PP reward for this Custom event.');
+  if(b.kind!=='Custom'&&b.pp!==undefined)throw new HttpError(400,'The reward for this event type is fixed.');
+  if(b.kind!=='Custom'&&!EVENT_MAP_NAMES.includes(b.location))throw new HttpError(400,'Choose a map from the location list.');
+  if(b.kind==='Demon Tower'&&b.location!=='Demon Tower')throw new HttpError(400,'Demon Tower events take place at Demon Tower.');
   if(b.kind==='Help'&&(!b.durationMinutes||b.starts!==undefined))throw new HttpError(400,'Help events start now. Choose a duration between 1 and 1,440 minutes.');
   if(b.kind!=='Help'&&(b.starts===undefined||b.durationMinutes!==undefined))throw new HttpError(400,'Choose a start time for this event.');
-  const old=await first<any>('SELECT * FROM events WHERE id=?',b.id);if(old){if(old.created_by!==m.id||old.title!==b.title||old.kind!==b.kind||old.location!==b.location||old.game_channel!==b.gameChannel||(b.kind==='Help'?old.duration_minutes!==b.durationMinutes:old.starts!==b.starts)||old.description!==b.description)throw new HttpError(409,'This request ID was already used.');return json({ok:true});}
-  if(b.kind!=='Help'&&!m.can_host)throw new HttpError(403,'An event organizer Discord role is required.');
+  if(b.kind!=='Help'&&!m.can_host)throw new HttpError(403,'The Experienced Discord role is required.');
+  const old=await first<any>('SELECT * FROM events WHERE id=?',b.id);if(old){if(old.created_by!==m.id||old.title!==b.title||old.kind!==b.kind||old.location!==b.location||old.game_channel!==b.gameChannel||(b.kind==='Help'?old.duration_minutes!==b.durationMinutes:old.starts!==b.starts)||old.description!==b.description||(b.kind==='Custom'&&old.pp!==b.pp))throw new HttpError(409,'This request ID was already used.');return json({ok:true});}
   const starts=b.kind==='Help'?now():b.starts!;
   if(starts<now()-60)throw new HttpError(400,'Choose the current time or a future event time.');
-  const type=b.kind==='PvP'?'PvP':'PvE';
+  const type=b.kind==='PvP'||b.kind==='Guild War'?'PvP':'PvE';
+  const pp=b.kind==='Custom'?b.pp!:EVENT_REWARDS[b.kind];
   await database().batch([
-   database().prepare("INSERT INTO events(id,title,type,starts,pp,description,created_by,created,kind,phase,creation_day,duration_minutes,location,game_channel) VALUES(?,?,?,?,?,?,?,?,?,'open',?,?,?,?)").bind(b.id,b.title,type,starts,EVENT_REWARDS[b.kind],b.description,m.id,now(),b.kind,guildDay(),b.durationMinutes??null,b.location,b.gameChannel),
+   database().prepare("INSERT INTO events(id,title,type,starts,pp,description,created_by,created,kind,phase,creation_day,duration_minutes,location,game_channel) VALUES(?,?,?,?,?,?,?,?,?,'open',?,?,?,?)").bind(b.id,b.title,type,starts,pp,b.description,m.id,now(),b.kind,guildDay(),b.durationMinutes??null,b.location,b.gameChannel),
    database().prepare("INSERT INTO notifications(id,member_id,event_id,kind,created) SELECT 'new:'||?||':'||id,id,?,'new',? FROM members WHERE active=1 AND new_events=1").bind(b.id,b.id,now()),
    ...(!env.DEMO_SESSION&&env.DISCORD_EVENT_CHANNEL_ID?[database().prepare("INSERT INTO discord_announcements(event_id,channel_id,created) VALUES(?,?,?)").bind(b.id,env.DISCORD_EVENT_CHANNEL_ID,now())]:[])
   ]);await audit(m,'event-created',b.id);return json({ok:true});

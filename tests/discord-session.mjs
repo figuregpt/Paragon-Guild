@@ -33,13 +33,13 @@ try{
  roles=[memberRole,ninja,shaman];request=await login();user=await auth.requireMember(request,false,true);assert.equal(user.class,'Unassigned');assert.equal(user.admin,0);
  // Member role removal also expires a periodically refreshed read-only session.
  roles=[ninja];db.connection.prepare('UPDATE sessions SET verified=?').run(seconds()-31);await assert.rejects(auth.requireMember(request),e=>e.status===403);
- identity=yigo;roles=[memberRole,shaman];request=await login();user=await auth.requireMember(request,false,true);assert.equal(user.admin,1);assert.equal(user.can_host,1);
+ identity=yigo;roles=[memberRole,shaman];request=await login();user=await auth.requireMember(request,false,true);assert.equal(user.admin,1);assert.equal(user.can_host,0);
  // The explicit admin identity never bypasses the guild membership gate.
  roles=[shaman];await assert.rejects(auth.requireMember(request,true),e=>e.status===403);
  roles=[memberRole,shaman];request=await login();let before=fetches;delay=20;await Promise.all(Array.from({length:5},()=>auth.requireMember(request,false,true)));delay=0;assert.equal(fetches-before,2);
  limited=true;db.connection.prepare('UPDATE sessions SET verified=?').run(seconds()-31);await assert.rejects(auth.requireMember(request),e=>e.status===503);before=fetches;await assert.rejects(auth.requireMember(request),e=>e.status===503);assert.equal(fetches,before);assert.equal(db.connection.prepare('SELECT COUNT(*) n FROM sessions').get().n,1);limited=false;
  env.DISCORD_BOT={ready:true,getMember:async()=>({id:identity,name:'Test Member',roles,avatar:null})};before=fetches;roles=[memberRole,ninja,organizerRole];user=await auth.requireMember(request);assert.equal(user.class,'Ninja');assert.equal(user.can_host,1);assert.equal(fetches,before);
- roles=[memberRole,ninja];user=await auth.requireMember(request,false,true);assert.equal(user.can_host,1); // YIGO identity allowlist remains.
+ roles=[memberRole,ninja];user=await auth.requireMember(request,false,true);assert.equal(user.can_host,0); // Admin and legacy user allowlists do not bypass Experienced.
  roles=[ninja];await assert.rejects(auth.requireMember(request),e=>e.status===403);assert.equal(db.connection.prepare('SELECT COUNT(*) n FROM sessions').get().n,0);
  assert.ok(fetches>=12);console.log('PASS: live-role refresh changes class/organizer access, removed Member roles revoke sessions before writes and periodic reads, rejoining restores access, and explicit YIGO admin requires Member role; simultaneous checks deduplicate, 429 respects Retry-After without logout and connected bot checks revoke roles immediately.');
 }finally{db.close();}
