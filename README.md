@@ -7,7 +7,7 @@ This initial source snapshot is based on deployment source commit `20a1817`. Run
 ## Features
 
 - Home: weekly Yang contribution quest, ongoing/upcoming events and auctions.
-- How to Use: a public step-by-step guide at `/how-to-use`, linked from every screen and the sign-in gateway. Covers phone installation, notifications, reminders, PP, contributions, events, auctions and administrator workflows without fetching private guild data.
+- How to Use: a public visual guide at `/how-to-use`, linked from every screen and the sign-in gateway. Seven expandable topics pair short steps with 13 real UI screenshots using fictional accounts. Covers iPhone Home Screen setup, notifications, reminders, PP, contributions, events, auctions and administrator workflows. Images open at full resolution; no Chrome installation instructions or private guild data.
 - Discord sign-in: server nickname, class roles, guild membership, organizer roles and administrator allowlists are enforced on the server. A connected bot follows membership/role changes; OAuth verification is the fallback.
 - Participation Points: immutable transaction history, available and reserved balances, and administrator Add PP / Remove PP adjustments with a reason and audit record. Deductions cannot consume auction reservations or make available PP negative.
 - Auctions: only administrators create them, using an item name and screenshot. Bids reserve PP. Outbidding or cancellation releases reservations; settlement deducts PP from the winner once.
