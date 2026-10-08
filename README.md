@@ -7,7 +7,7 @@ This initial source snapshot is based on deployment source commit `20a1817`. Run
 ## Features
 
 - Home: weekly Yang contribution quest, ongoing/upcoming events and auctions.
-- How to Use: a public visual guide at `/how-to-use`, linked from every screen and the sign-in gateway. Seven expandable topics pair short steps with 14 real UI screenshots using fictional accounts. Covers iPhone Home Screen setup, notifications, reminders, PP, contributions, events, auctions and administrator workflows. Images open at full resolution; no Chrome installation instructions or private guild data.
+- How to Use: a public visual guide at `/how-to-use`, linked from every screen and the sign-in gateway. Eight topics show one illustrated step at a time, with Back/Next controls, direct topic/step links and 16 real UI screenshots using fictional accounts. Covers iPhone Home Screen setup, notifications, reminders, PP, contributions, events (including Demon Tower and Custom), auctions and administrator workflows. Images open at full resolution; no Chrome installation instructions or private guild data.
 - Discord sign-in: server nickname, class roles, guild membership, organizer roles and administrator allowlists are enforced on the server. A connected bot follows membership/role changes; OAuth verification is the fallback.
 - Participation Points: immutable transaction history, available and reserved balances, and administrator Add PP / Remove PP adjustments with a reason and audit record. Deductions cannot consume auction reservations or make available PP negative.
 - Auctions: only administrators create them, using an item name and screenshot. Bids reserve PP. Outbidding or cancellation releases reservations; settlement deducts PP from the winner once.
@@ -107,3 +107,5 @@ Production uses `MEMBERS_ONLY=true` and `DEMO_ENABLED=false`. The server verifie
 The Member role is the access requirement. Accounts whose class has not been assigned yet appear as `Unassigned` and can still enter; class roles do not grant administrator or organizer permissions.
 
 Event policy checks: `node tests/event-policy-migration.mjs` verifies old rewards remain unchanged, new rewards and custom bounds are enforced in SQLite, and administrators cannot bypass the Experienced role. `TEST_BASE_URL=http://127.0.0.1:3107 node tests/experienced-events-ui.mjs` checks member/Experienced forms at mobile and desktop sizes, custom PP/location validation, device-local start times and manual ending.
+
+Visual guide verification: `GUIDE_TEST_ORIGIN=http://127.0.0.1:3107 node tests/how-to-use.mjs` checks all 28 steps at 320/390/768/1440 px, all 16 screenshots, keyboard focus, direct links, browser back/reload, invalid hashes and zero private API requests. Use the Playwright setup above; `PLAYWRIGHT_MODULE` and `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` can select an existing installation.
