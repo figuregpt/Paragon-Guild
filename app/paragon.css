@@ -114,3 +114,6 @@
 #paragon-design .pg-entry-app>.pg-login{flex:1;width:100%}
 @media(max-width:700px){#paragon-design .pg-footer-links{justify-content:flex-start;gap:6px 16px}#paragon-design .pg-footer-standalone{padding-bottom:max(18px,env(safe-area-inset-bottom))}}
 #paragon-design .pg-fixed-location{display:flex;align-items:center;min-height:46px;font-size:14px;font-weight:500;padding:11px 12px;border:1px solid #3a4250;border-radius:5px;background:#0d1016}
+
+#paragon-design .pg-pp-meme{margin:-8px 0 14px;font-size:11px;line-height:1.6;color:var(--pg-muted)}
+#paragon-design .pg-pp-meme>span:first-child{color:#e8ebf1;font-variant-numeric:tabular-nums}
