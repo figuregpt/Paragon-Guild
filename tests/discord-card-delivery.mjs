@@ -23,18 +23,19 @@ try{
  const evidence=['png','jpg','webp'].map((extension,i)=>({name:`evidence-proof-${i}.${extension}`,bytes:new Uint8Array([1,2,3])}));
  const reviewed={...entity,phase:'approved',review_note:'Confirmed by admin.'};
  await bot.deliverCard(reviewed,channelId,'https://paragon.example',{messageId:id,evidence:evidence.slice(0,1)});assert.equal(uploads,1);
- await bot.deliverCard(reviewed,channelId,'https://paragon.example',{messageId:id,evidence});assert.equal(uploads,3);assert.equal(stored.get(id).attachments.size,3);assert.equal(stored.get(id).embeds.length,3);
- for(let i=0;i<3;i++)assert.ok(stored.get(id).embeds[i].image.url.endsWith(evidence[i].name));
+ await bot.deliverCard(reviewed,channelId,'https://paragon.example',{messageId:id,evidence});assert.equal(uploads,3);assert.equal(stored.get(id).attachments.size,3);assert.equal(stored.get(id).embeds.length,1);assert.equal(stored.get(id).embeds[0].image,undefined);
+ for(const proof of evidence)assert.ok([...stored.get(id).attachments.values()].some(a=>a.name===proof.name));
  await bot.deliverCard(reviewed,channelId,'https://paragon.example',{messageId:id,evidence});assert.equal(uploads,3);assert.equal(stored.get(id).attachments.size,3);
- // Discord returns embedded media without normal attachment records: retain their CDN URLs.
- stored.get(id).embeds=stored.get(id).embeds.map((embed,i)=>({...embed,image:{url:'https://cdn.discordapp.com/attachments/channel/file/'+evidence[i].name}}));stored.get(id).attachments.clear();
- await bot.deliverCard(reviewed,channelId,'https://paragon.example',{messageId:id,evidence});assert.equal(uploads,3);assert.equal(stored.get(id).attachments.size,0);assert.ok(stored.get(id).embeds.every(e=>e.image.url.startsWith('https://cdn.discordapp.com/')));
+ // Convert legacy embedded media into standalone files once, then keep the files on retries.
+ stored.get(id).embeds=evidence.map(proof=>({image:{url:'https://cdn.discordapp.com/attachments/channel/file/'+proof.name}}));stored.get(id).attachments.clear();
+ await bot.deliverCard(reviewed,channelId,'https://paragon.example',{messageId:id,evidence});assert.equal(uploads,6);assert.equal(stored.get(id).attachments.size,3);assert.equal(stored.get(id).embeds.length,1);assert.equal(stored.get(id).embeds[0].image,undefined);
+ await bot.deliverCard(reviewed,channelId,'https://paragon.example',{messageId:id,evidence});assert.equal(uploads,6);assert.equal(stored.get(id).attachments.size,3);
  // A result sent successfully with a lost response recovers the existing files without uploading them again.
- loseResponse=true;await assert.rejects(bot.deliverCard(reviewed,channelId,'https://paragon.example',{purpose:'result',evidence}));assert.equal(posts,2);assert.equal(uploads,6);
- await bot.deliverCard(reviewed,channelId,'https://paragon.example',{purpose:'result',evidence});assert.equal(posts,2);assert.equal(uploads,6);
+ loseResponse=true;await assert.rejects(bot.deliverCard(reviewed,channelId,'https://paragon.example',{purpose:'result',evidence}));assert.equal(posts,2);assert.equal(uploads,9);
+ await bot.deliverCard(reviewed,channelId,'https://paragon.example',{purpose:'result',evidence});assert.equal(posts,2);assert.equal(uploads,9);
  await assert.rejects(bot.deliverCard(reviewed,channelId,'https://paragon.example',{messageId:id,evidence:[{name:'../private.png',bytes:new Uint8Array([1])}]}));
  const editCount=edits;
  stored.get(id).author.id='100000000000000008';await assert.rejects(bot.deliverCard(entity,channelId,'https://paragon.example',{messageId:id}));assert.equal(edits,editCount);
  process.env.DISCORD_NOTIFICATION_CHANNELS='{"Help":"bad"}';await assert.rejects(bot.deliverCard(entity,channelId,'https://paragon.example'));
- console.log('PASS: configured channels only, same-guild check, own-message edits only, lost-response recovery without duplicate posts, recovered card updated to latest state and edits suppress all pings. Three screenshot attachments, partial attachment retention, quiet retries without reuploads, and result recovery verified. All Discord operations mocked.');
+ console.log('PASS: configured channels only, same-guild check, own-message edits only, lost-response recovery without duplicate posts, recovered card updated to latest state and edits suppress all pings. Standalone screenshot attachments with no embed images, one-time legacy media conversion, partial attachment retention, quiet retries without reuploads, and result recovery verified. All Discord operations mocked.');
 }finally{for(const [key,value] of [['DISCORD_NOTIFICATION_CHANNELS',saved.routes],['DISCORD_NOTIFICATION_ROLE_ID',saved.role]]){if(value===undefined)delete process.env[key];else process.env[key]=value;}}
