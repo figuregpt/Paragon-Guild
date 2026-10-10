@@ -7,7 +7,7 @@ const saved={routes:process.env.DISCORD_NOTIFICATION_CHANNELS,role:process.env.D
 process.env.DISCORD_NOTIFICATION_CHANNELS=JSON.stringify({Help:channelId,Auction:channelId});process.env.DISCORD_NOTIFICATION_ROLE_ID=role;
 const client=new EventEmitter();client.user={id:botId};client.isReady=()=>true;client.ws={status:Status.Ready};client.guilds={cache:new Map([[guild,{}]])};
 let posts=0,edits=0,uploads=0,loseResponse=false,wrongGuild=false;const stored=new Map();
-const addFiles=(message,payload)=>{if(payload.attachments)message.attachments=new Map([...message.attachments].filter(([id])=>payload.attachments.some(a=>a.id===id)));for(const file of payload.files||[]){uploads++;const id=String(100000000000002000n+BigInt(uploads));message.attachments.set(id,{id,name:file.name,url:'https://cdn.example/'+file.name});}};
+const addFiles=(message,payload)=>{if(payload.attachments)message.attachments=new Map([...message.attachments].filter(([id])=>payload.attachments.some(a=>a.id===id)));for(const file of payload.files||[]){uploads++;const id=String(100000000000002000n+BigInt(uploads));message.attachments.set(id,{id,name:file.name,url:'https://cdn.discordapp.com/attachments/channel/file/'+file.name});}};
 const channel={guildId:guild,isTextBased:()=>true,messages:{fetch:async key=>typeof key==='string'?stored.get(key):{find:predicate=>[...stored.values()].find(predicate)}},send:async payload=>{
  posts++;const id=String(100000000000000100n+BigInt(posts)),message={id,author:{id:botId},content:payload.content,components:payload.components,embeds:payload.embeds,attachments:new Map(),edit:async value=>{edits++;assert.equal(value.allowedMentions.roles.length,0);assert.equal(value.allowedMentions.users.length,0);assert.equal(value.content,message.content);message.components=value.components;message.embeds=value.embeds;addFiles(message,value);return message;}};addFiles(message,payload);stored.set(id,message);if(loseResponse){loseResponse=false;throw new Error('lost response');}return message;
 }};
@@ -24,8 +24,11 @@ try{
  const reviewed={...entity,phase:'approved',review_note:'Confirmed by admin.'};
  await bot.deliverCard(reviewed,channelId,'https://paragon.example',{messageId:id,evidence:evidence.slice(0,1)});assert.equal(uploads,1);
  await bot.deliverCard(reviewed,channelId,'https://paragon.example',{messageId:id,evidence});assert.equal(uploads,3);assert.equal(stored.get(id).attachments.size,3);assert.equal(stored.get(id).embeds.length,3);
- for(let i=0;i<3;i++)assert.equal(stored.get(id).embeds[i].image.url,'attachment://'+evidence[i].name);
+ for(let i=0;i<3;i++)assert.ok(stored.get(id).embeds[i].image.url.endsWith(evidence[i].name));
  await bot.deliverCard(reviewed,channelId,'https://paragon.example',{messageId:id,evidence});assert.equal(uploads,3);assert.equal(stored.get(id).attachments.size,3);
+ // Discord returns embedded media without normal attachment records: retain their CDN URLs.
+ stored.get(id).embeds=stored.get(id).embeds.map((embed,i)=>({...embed,image:{url:'https://cdn.discordapp.com/attachments/channel/file/'+evidence[i].name}}));stored.get(id).attachments.clear();
+ await bot.deliverCard(reviewed,channelId,'https://paragon.example',{messageId:id,evidence});assert.equal(uploads,3);assert.equal(stored.get(id).attachments.size,0);assert.ok(stored.get(id).embeds.every(e=>e.image.url.startsWith('https://cdn.discordapp.com/')));
  // A result sent successfully with a lost response recovers the existing files without uploading them again.
  loseResponse=true;await assert.rejects(bot.deliverCard(reviewed,channelId,'https://paragon.example',{purpose:'result',evidence}));assert.equal(posts,2);assert.equal(uploads,6);
  await bot.deliverCard(reviewed,channelId,'https://paragon.example',{purpose:'result',evidence});assert.equal(posts,2);assert.equal(uploads,6);
