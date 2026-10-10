@@ -20,3 +20,12 @@ for(const review_note of [undefined,null,'','  \n\t  ',42])assert.equal(field(ev
 for(const phase of ['open','confirming','pending','cancelled'])assert.equal(field(eventCard({...event,kind:'Help',phase,review_note:'Not a completed admin review'},origin)),undefined);
 assert.equal(field(notificationCard({...event,entity_type:'auction',status:'closed',item_name:'Test item',review_note:note},origin)),undefined);
 console.log('PASS admin notes: all 7 event types, main/result cards and paginated results, approved/rejected reviews, blank/pre-review omission, complete 500-character notes, escaped Markdown, preserved Unicode/newlines, Discord embed limits and unchanged mentions.');
+
+// Evidence stays private until review; all three images share the existing card and event link.
+for(const phase of ['open','confirming','pending','approved','rejected','cancelled'])for(const purpose of ['card','result']){
+ const entity={entity_type:'event',id:'proof-test',kind:'Help',title:'Proof test',pp:10,phase,starts:1700000000,created:1700000000};
+ const card=notificationCard(entity,'https://paragon.example',{purpose,evidenceNames:['evidence-one.png','evidence-two.jpg','evidence-three.webp']});
+ const visible=['approved','rejected'].includes(phase);assert.equal(card.embeds.length,visible?3:1);assert.equal(Boolean(card.embeds[0].image),visible);
+ if(visible)for(let i=0;i<3;i++){assert.equal(card.embeds[i].url,card.embeds[0].url);assert.ok(card.embeds[i].image.url.startsWith('attachment://evidence-'));}
+}
+console.log('PASS: all three screenshot formats shown only after review on main and result cards.');

@@ -36,11 +36,23 @@ export async function announceEvents(){
   if(!claim.meta.changes)continue;
   try{
    let image: {bytes:Uint8Array;extension:string}|undefined;
+   const evidence: {name:string;bytes:Uint8Array}[]=[];
+   if(entity.entity_type==='event'&&['approved','rejected'].includes(entity.phase)){
+    const proofs=await all<{filename:string}>('SELECT filename FROM event_evidence WHERE event_id=? ORDER BY created,id LIMIT 3',entity.id);
+    for(const proof of proofs){
+     if(!/^[a-zA-Z0-9-]+\.(png|jpg|webp)$/.test(proof.filename))throw new Error('Invalid evidence filename.');
+     const file=await env.BUCKET?.get('evidence/'+proof.filename);
+     if(!file)throw new Error('Screenshot evidence is unavailable.');
+     const bytes=new Uint8Array(await new Response(file.body).arrayBuffer());
+     if(!bytes.length||bytes.length>8000000)throw new Error('Invalid evidence size.');
+     evidence.push({name:'evidence-'+proof.filename,bytes});
+    }
+   }
    if(entity.entity_type==='auction'&&!row.message_id&&row.purpose==='card'&&/^\/api\/images\/[a-zA-Z0-9-]+\.(png|jpg|webp)$/.test(entity.icon)){
     const filename=entity.icon.slice('/api/images/'.length),file=await env.BUCKET?.get('icons/'+filename);
     if(file){const bytes=new Uint8Array(await new Response(file.body).arrayBuffer());if(bytes.length<=8000000)image={bytes,extension:filename.split('.').at(-1)!};}
    }
-   const messageId=await env.DISCORD_BOT.deliverCard(entity,channelId,env.APP_ORIGIN,{messageId:row.message_id||undefined,purpose:row.purpose,part:row.part,image});
+   const messageId=await env.DISCORD_BOT.deliverCard(entity,channelId,env.APP_ORIGIN,{messageId:row.message_id||undefined,purpose:row.purpose,part:row.part,image,evidence});
    let refresh:null|number=null;
    if(row.purpose==='card'&&entity.entity_type==='event'&&entity.phase==='open'){
     if(entity.starts>time)refresh=entity.starts;
