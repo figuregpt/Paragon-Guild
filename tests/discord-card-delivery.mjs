@@ -18,7 +18,7 @@ try{
  loseResponse=true;await assert.rejects(bot.deliverCard(entity,channelId,'https://paragon.example'));assert.equal(posts,1);
  // A later retry locates the existing own card, updates its latest status quietly and does not resend.
  const id=await bot.deliverCard({...entity,phase:'pending'},channelId,'https://paragon.example');assert.equal(posts,1);assert.equal(edits,1);assert.equal(stored.get(id).embeds[0].fields[0].value,'Awaiting admin approval');
- await bot.deliverCard({...entity,phase:'approved'},channelId,'https://paragon.example',{messageId:id});assert.equal(posts,1);assert.equal(edits,2);
+ await bot.deliverCard({...entity,phase:'approved',review_note:'Confirmed by admin.'},channelId,'https://paragon.example',{messageId:id});assert.equal(posts,1);assert.equal(edits,2);assert.equal(stored.get(id).embeds[0].fields.find(f=>f.name==='Admin Note').value,'Confirmed by admin.');
  stored.get(id).author.id='100000000000000008';await assert.rejects(bot.deliverCard(entity,channelId,'https://paragon.example',{messageId:id}));assert.equal(edits,2);
  process.env.DISCORD_NOTIFICATION_CHANNELS='{"Help":"bad"}';await assert.rejects(bot.deliverCard(entity,channelId,'https://paragon.example'));
  console.log('PASS: configured channels only, same-guild check, own-message edits only, lost-response recovery without duplicate posts, recovered card updated to latest state and edits suppress all pings. All Discord operations mocked.');
