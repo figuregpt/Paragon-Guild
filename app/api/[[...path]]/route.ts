@@ -9,6 +9,7 @@ import {memberEventRoute} from '@/lib/member-events';
 import {createScreenshotAuction} from '@/lib/auction-create';
 import {contributionsEnabled,readContribution} from '@/lib/contributions';
 import {sendPush,validatePushSubscription} from '@/lib/web-push';
+import {memberProfileRoute} from '@/lib/member-profiles';
 import {dailyCm} from '@/lib/daily-cm';
 const json=(data:unknown,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff'}});
 const pathOf=(r:Request)=>new URL(r.url).pathname.slice(5);
@@ -27,7 +28,7 @@ async function handle(request:Request){
   if(!env.DEMO_RUNTIME?.enabled)throw new HttpError(404,'Not found.');
   return env.DEMO_RUNTIME.login(request,role);
  }
- if(method==='POST'&&path==='preview-login'){
+ if(import.meta.env.DEV&&method==='POST'&&path==='preview-login'){
   if(!localRequest(request))throw new HttpError(404,'Not found.');
   const {role}=z.object({role:z.enum(['admin','member'])}).parse(await body(request));const m=await first<any>('SELECT id FROM members WHERE id=?',role==='admin'?'preview-admin':'preview-member');if(!m)throw new HttpError(503,'Local preview data is not installed.');
   return new Response(JSON.stringify({ok:true}),{headers:{'Content-Type':'application/json','Cache-Control':'no-store','Set-Cookie':await createSession(m.id,request)}});
@@ -37,6 +38,7 @@ async function handle(request:Request){
  }
  const admin=path.startsWith('admin/');const m=await requireMember(request,admin,method==='POST'||path.startsWith('event-evidence/'));
  if(method==='GET'&&path==='daily-cm')return json(await dailyCm(m.id,env.SESSION_SECRET||''));
+ const profileResponse=await memberProfileRoute(request,path,m);if(profileResponse)return profileResponse;
  const pointsResponse=await adminPointsRoute(request,path,m);if(pointsResponse)return pointsResponse;
  const eventResponse=await memberEventRoute(request,path,m);if(eventResponse)return eventResponse;
  if(method==='GET'&&path==='auction-bids'){const url=new URL(request.url);const auctionId=uuid.parse(url.searchParams.get('id'));const page=num(0,500).parse(Number(url.searchParams.get('page')||0));const auction=await first('SELECT id FROM auctions WHERE id=?',auctionId);if(!auction)throw new HttpError(404,'Auction was not found.');const [rows,total]=await Promise.all([all('SELECT b.id,b.amount,b.created,m.name FROM bids b JOIN members m ON m.id=b.member_id WHERE auction_id=? ORDER BY b.amount DESC,b.created DESC LIMIT 20 OFFSET ?',auctionId,page*20),first<any>('SELECT COUNT(*) total FROM bids WHERE auction_id=?',auctionId)]);return json({bids:rows,total:total?.total||0});}

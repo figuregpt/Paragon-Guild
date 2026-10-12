@@ -1,6 +1,7 @@
 import {env} from 'cloudflare:workers';
 import {first,run} from './database';
 import {CLASSES,now,id,type Member} from './domain';
+import {memberClassRoles} from './member-class-roles';
 import {DiscordRoleError,parseClassRoles,parseRoleList,resolveDiscordRoles,matchesDiscordAccess} from './discord-roles';
 export class HttpError extends Error{constructor(public status:number,message:string){super(message);}}
 export const cookieName='pg_session';
@@ -24,10 +25,10 @@ async function discordFetch(url:string,options:RequestInit,key:string){
  if(response.status>=500){console.warn('Discord verification failed: HTTP',response.status);throw unavailable();}
  return response;
 }
-export function identityPermissions(value:{id:string;name:string;roles:unknown;avatar:string|null},allowUnassigned=true){
+export function identityPermissions(value:{id:string;name:string;roles:unknown;roleNames?:Record<string,string>;avatar:string|null},allowUnassigned=true){
  let permissions:{class:string;admin:number};let canHost=0;
  try{const memberRoles=parseRoleList(env.DISCORD_MEMBER_ROLE_IDS);if(env.MEMBERS_ONLY==='true'&&!memberRoles.length)throw new HttpError(503,'Guild member access has not been configured.');permissions=resolveDiscordRoles(value.roles,parseClassRoles(env.DISCORD_CLASS_ROLES,CLASSES),memberRoles,parseRoleList(env.DISCORD_ADMIN_ROLE_IDS),allowUnassigned);canHost=matchesDiscordAccess(value.roles as string[],value.id,parseRoleList(env.DISCORD_EVENT_CREATOR_ROLE_IDS),[])?1:0;if(parseRoleList(env.DISCORD_ADMIN_USER_IDS).includes(value.id))permissions.admin=1;}catch(error){if(error instanceof DiscordRoleError)throw new HttpError(error.status,error.message);throw error;}
- return {id:value.id,name:value.name.slice(0,80),class:permissions.class,avatar:value.avatar,admin:permissions.admin,can_host:canHost};
+ return {id:value.id,name:value.name.slice(0,80),class:permissions.class,avatar:value.avatar,admin:permissions.admin,can_host:canHost,class_roles:JSON.stringify(memberClassRoles(value.roles,env.DISCORD_CLASS_ROLES,value.roleNames))};
 }
 export async function botMemberIdentity(memberId:string,allowUnassigned=true){
  const bot=env.DISCORD_BOT;if(!bot?.ready)throw unavailable();
@@ -43,7 +44,7 @@ export async function discordIdentity(access:string){
  const u:any=await ur.json(),m:any=await mr.json();
  return identityPermissions({id:String(u.id),name:String(m.nick||u.global_name||u.username),roles:m.roles,avatar:u.avatar?`https://cdn.discordapp.com/avatars/${u.id}/${u.avatar}.png`:null});
 }
-export async function upsertMember(m:{id:string;name:string;class:string;avatar:string|null;admin:number;can_host:number}){await run('INSERT INTO members(id,name,class,avatar,admin,can_host,created) VALUES(?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET name=excluded.name,class=excluded.class,avatar=excluded.avatar,admin=excluded.admin,can_host=excluded.can_host,active=1',m.id,m.name,m.class,m.avatar,m.admin,m.can_host,now());}
+export async function upsertMember(m:{id:string;name:string;class:string;avatar:string|null;admin:number;can_host:number;class_roles?:string}){await run('INSERT INTO members(id,name,class,avatar,admin,can_host,class_roles,created) VALUES(?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET name=excluded.name,class=excluded.class,avatar=excluded.avatar,admin=excluded.admin,can_host=excluded.can_host,class_roles=excluded.class_roles,active=1',m.id,m.name,m.class,m.avatar,m.admin,m.can_host,m.class_roles||'[]',now());}
 export async function createSession(memberId:string,request:Request,oauth?:unknown){const token=id()+id();await run('INSERT INTO sessions(token,member_id,expires,verified,oauth) VALUES(?,?,?,?,?)',await hash(token),memberId,now()+7*86400,now(),oauth?await seal(oauth):null);return cookie(cookieName,token,7*86400,request);}
 const verifications=new Map<string,Promise<void>>();
 async function verifySession(hashed:string,memberId:string){

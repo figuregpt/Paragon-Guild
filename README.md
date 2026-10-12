@@ -1,6 +1,6 @@
 # Paragon Guild
 
-Source for the Paragon guild web app and installable PWA at [paragonguild.xyz](https://paragonguild.xyz/). The current application is written in English for Arthion, with a dark silver/crimson guild theme.
+Source for the Paragon guild web app and installable PWA at [paragonguild.xyz](https://paragonguild.xyz/). The application supports English, Turkish and Greek for Arthion, with a dark silver/crimson guild theme.
 
 This initial source snapshot is based on deployment source commit `20a1817`. Runtime credentials, member/payment records, uploaded screenshots and local development history are not included. Documentation, example configuration and developer test paths have been prepared for public use; the application and financial logic are the deployed implementation.
 
@@ -135,3 +135,16 @@ Migration `0016_event_map_pins.sql` adds three nullable columns without rebuildi
 ## Daily CM joke
 
 The PP card shows an independent daily random value from 0.00 to 100.00 cm. A domain-separated server-side HMAC derives each member’s value from their stable member ID and the current Türkiye 01:00-to-01:00 period. Reloads, devices and server restarts keep the same daily value. Open pages refresh at the next boundary and after returning from the background; temporary failures retry without showing an expired value. Actual PP balances, reservations and history are unaffected. No database migration or extra scheduler is needed.
+
+
+## Member profiles and PvP groups
+
+Members opens your own profile and bonus editor first, with other guild members below. Players enter their own equipment totals; everyone in the guild can view categorized bonuses, while profile and directory responses exclude PP, bank records and transaction history. The 49 translated bonuses retain the supplied reference order and per-item maxima do not cap combined totals. Editing starts with one bonus, with Previous/Next controls and a separate percentage unit.
+
+Administrators create and manage PvP groups. Search, Discord role and assignment filters, 20-member pages and bulk selection support larger rosters. Selecting a member in another group moves them atomically when saved. Members can view all groups. Profile and group revisions reject conflicting edits; changes are recorded in the audit log.
+
+Administrators can cancel unfinished events, including events awaiting review. A final confirmation and optional note precede cancellation. Cancelled events award no PP; approved/rejected events remain finalized. Discord cards show the cancellation state and note.
+
+Migrations `0017_member_profiles_groups.sql` and `0018_member_class_roles.sql` add profile/group storage, cancellation metadata and Discord specialization labels. They preserve existing members, PP, auctions, events and migration history.
+
+For isolated browser checks, install Playwright separately and run `node scripts/private-member-preview.mjs --test` in one terminal. This loopback-only development environment uses 80 fictional members in the OS temporary directory and disables real Discord, spreadsheets, push and scheduled jobs. Run the following tests sequentially against port 3193: `node tests/member-community-api.mjs`, `node tests/member-bonus-picker-ui.mjs`, `node tests/member-community-ui.mjs`, and `node tests/member-suggestions-ui.mjs`. Production builds remove the fixture login branch and never seed these accounts.

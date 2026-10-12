@@ -22,6 +22,20 @@ async function eventFor(eventId:string){const e=await first<any>('SELECT * FROM 
 function owner(e:any,m:Member){if(e.created_by!==m.id)throw new HttpError(403,'Only the event creator can manage attendance and evidence.');}
 async function audit(m:Member,action:string,eventId:string){await run('INSERT INTO audit(id,member_id,action,target,created) VALUES(?,?,?,?,?)',id(),m.id,action,eventId,now());}
 export async function memberEventRoute(request:Request,path:string,m:Member):Promise<Response|null>{
+ if(request.method==='POST'&&path==='admin/cancel-event'){
+  if(!m.admin)throw new HttpError(403,'Administrator access is required.');
+  const b=z.object({eventId:uuid,note:z.string().trim().max(500)}).strict().parse(await body(request));
+  const e=await eventFor(b.eventId);
+  if(e.status!=='upcoming'||!['legacy','open','confirming','pending'].includes(e.phase))throw new HttpError(409,'This event has already been finalized');
+  const db=database();try{await db.batch([
+   db.prepare("UPDATE events SET phase='cancelled',status='cancelled',cancelled_by=?,cancelled_at=?,cancel_note=? WHERE id=? AND status='upcoming' AND phase IN ('legacy','open','confirming','pending')").bind(m.id,now(),b.note,e.id),
+   db.prepare('INSERT INTO profile_write_guards(expected,actual) VALUES(1,changes())'),
+   db.prepare('DELETE FROM profile_write_guards'),
+   db.prepare("UPDATE notifications SET status='skipped' WHERE event_id=? AND status='pending'").bind(e.id),
+   db.prepare('INSERT INTO audit(id,member_id,action,target,created) VALUES(?,?,?,?,?)').bind(id(),m.id,'admin-event-cancelled',e.id,now())
+  ]);}catch(error){if(String(error).includes('profile_write_guards'))throw new HttpError(409,'This event has already been finalized');throw error;}
+  return json({ok:true});
+ }
  if(request.method==='POST'&&path==='events/create'){
   const b=z.object({id:uuid,title:z.string().trim().min(1).max(80),kind:z.enum(EVENT_KINDS),starts:z.number().int().min(1).max(4102444800).optional(),durationMinutes:z.number().int().min(1).max(1440).optional(),gameChannel:z.number().int().min(1).max(6).default(1),mapPin:z.object({asset:z.string().min(1).max(80),x:z.number().int().min(0).max(MAP_POSITION_MAX),y:z.number().int().min(0).max(MAP_POSITION_MAX)}).strict().optional(),location:z.string().trim().min(1).max(80),pp:z.number().int().min(1).max(MAX_EVENT_PP).optional(),description:z.string().trim().max(500)}).strict().parse(await body(request));
   if(b.kind==='Custom'&&b.pp===undefined)throw new HttpError(400,'Choose the PP reward for this Custom event.');

@@ -2389,7 +2389,7 @@
  },
  "{count} selected": {
   "tr": "{count} seçildi",
-  "el": "{count} επιλεγμένα"
+  "el": "Επιλέχθηκαν {count}"
  },
  "{count} participants": {
   "tr": "{count} katılımcı",
@@ -3032,8 +3032,8 @@
   "el": "ώρ"
  },
  "Unassigned": {
-  "tr": "Atanmadı",
-  "el": "Δεν Ορίστηκε"
+  "tr": "Grupsuz",
+  "el": "Χωρίς Ομάδα"
  },
  "The weekly deposit is {amount} Yang.": {
   "tr": "Haftalık ödeme {amount} Yang.",
@@ -3162,5 +3162,437 @@
  "Refreshing…": {
   "tr": "Yenileniyor…",
   "el": "Ανανέωση…"
+ },
+ "Members": {
+  "tr": "Üyeler",
+  "el": "Μέλη"
+ },
+ "Member Profile": {
+  "tr": "Üye Profili",
+  "el": "Προφίλ Μέλους"
+ },
+ "PvP Groups": {
+  "tr": "PvP Grupları",
+  "el": "Ομάδες PvP"
+ },
+ "PvP Group": {
+  "tr": "PvP Grubu",
+  "el": "Ομάδα PvP"
+ },
+ "No PvP Group": {
+  "tr": "PvP grubu yok",
+  "el": "Χωρίς ομάδα PvP"
+ },
+ "All Groups": {
+  "tr": "Tüm Gruplar",
+  "el": "Όλες οι Ομάδες"
+ },
+ "Profiles & equipment bonuses": {
+  "tr": "Profiller ve ekipman bonusları",
+  "el": "Προφίλ & μπόνους εξοπλισμού"
+ },
+ "View Profile": {
+  "tr": "Profili Gör",
+  "el": "Προβολή Προφίλ"
+ },
+ "Back to Members": {
+  "tr": "Üyelere Dön",
+  "el": "Επιστροφή στα Μέλη"
+ },
+ "Loading members…": {
+  "tr": "Üyeler yükleniyor…",
+  "el": "Φόρτωση μελών…"
+ },
+ "Loading profile…": {
+  "tr": "Profil yükleniyor…",
+  "el": "Φόρτωση προφίλ…"
+ },
+ "Edit My Bonuses": {
+  "tr": "Bonuslarımı Düzenle",
+  "el": "Επεξεργασία Μπόνους μου"
+ },
+ "Total Bonuses": {
+  "tr": "Toplam Bonuslar",
+  "el": "Συνολικά Μπόνους"
+ },
+ "Enter your combined bonuses from all equipment. Max / item is a reference, not a limit on your total.": {
+  "tr": "Tüm ekipmanlarından gelen toplam bonusları gir. Eşya başına maksimum, referans içindir; toplamına sınır koymaz.",
+  "el": "Καταχώρισε τα συνολικά μπόνους από όλο τον εξοπλισμό. Το μέγιστο ανά αντικείμενο είναι αναφορά, όχι όριο στο σύνολο."
+ },
+ "Equipment totals entered by the player.": {
+  "tr": "Oyuncunun girdiği toplam ekipman bonusları.",
+  "el": "Συνολικά μπόνους εξοπλισμού που καταχώρισε ο παίκτης."
+ },
+ "Updated {date}": {
+  "tr": "Güncelleme: {date}",
+  "el": "Ενημέρωση: {date}"
+ },
+ "Find a Bonus": {
+  "tr": "Bonus Ara",
+  "el": "Αναζήτηση Μπόνους"
+ },
+ "Bonus name…": {
+  "tr": "Bonus adı…",
+  "el": "Όνομα μπόνους…"
+ },
+ "Category": {
+  "tr": "Kategori",
+  "el": "Κατηγορία"
+ },
+ "All Bonuses": {
+  "tr": "Tüm Bonuslar",
+  "el": "Όλα τα Μπόνους"
+ },
+ "Max / item: {value}": {
+  "tr": "Eşya başına maks.: {value}",
+  "el": "Μέγ. ανά αντικείμενο: {value}"
+ },
+ "Max / item: not specified": {
+  "tr": "Eşya başına maks.: belirtilmedi",
+  "el": "Μέγ. ανά αντικείμενο: δεν ορίζεται"
+ },
+ "No bonuses match your search.": {
+  "tr": "Aramana uygun bonus yok.",
+  "el": "Δεν βρέθηκαν αντίστοιχα μπόνους."
+ },
+ "No bonuses added yet.": {
+  "tr": "Henüz bonus eklenmedi.",
+  "el": "Δεν έχουν προστεθεί μπόνους ακόμα."
+ },
+ "{count} bonuses entered": {
+  "tr": "{count} bonus girildi",
+  "el": "{count} μπόνους καταχωρίστηκαν"
+ },
+ "Save Bonuses": {
+  "tr": "Bonusları Kaydet",
+  "el": "Αποθήκευση Μπόνους"
+ },
+ "Bonuses saved.": {
+  "tr": "Bonuslar kaydedildi.",
+  "el": "Τα μπόνους αποθηκεύτηκαν."
+ },
+ "Discard Changes": {
+  "tr": "Değişiklikleri İptal Et",
+  "el": "Απόρριψη Αλλαγών"
+ },
+ "Discard unsaved changes?": {
+  "tr": "Kaydedilmemiş değişiklikler iptal edilsin mi?",
+  "el": "Να απορριφθούν οι μη αποθηκευμένες αλλαγές;"
+ },
+ "Reload Profile": {
+  "tr": "Profili Yenile",
+  "el": "Ανανέωση Προφίλ"
+ },
+ "Your bonuses changed in another tab. Reload before saving.": {
+  "tr": "Bonusların başka bir sekmede değişti. Kaydetmeden önce profili yenile.",
+  "el": "Τα μπόνους σου άλλαξαν σε άλλη καρτέλα. Ανανέωσε το προφίλ πριν αποθηκεύσεις."
+ },
+ "Choose bonuses from the bonus list.": {
+  "tr": "Bonus listesinden seçim yap.",
+  "el": "Επίλεξε μπόνους από τη λίστα."
+ },
+ "Immunity must be yes or no.": {
+  "tr": "Bağışıklık için evet veya hayır seç.",
+  "el": "Επίλεξε ναι ή όχι για την ανοσία."
+ },
+ "Use at most 2 decimal places for bonus totals.": {
+  "tr": "Toplam bonuslarda en fazla 2 ondalık basamak kullan.",
+  "el": "Χρησιμοποίησε έως 2 δεκαδικά ψηφία στα συνολικά μπόνους."
+ },
+ "Member was not found.": {
+  "tr": "Üye bulunamadı.",
+  "el": "Το μέλος δεν βρέθηκε."
+ },
+ "{count} members shown": {
+  "tr": "{count} üye gösteriliyor",
+  "el": "Εμφανίζονται {count} μέλη"
+ },
+ "Show More Members": {
+  "tr": "Daha Fazla Üye Göster",
+  "el": "Περισσότερα Μέλη"
+ },
+ "Guild members can see every group. Administrators manage assignments.": {
+  "tr": "Tüm üyeler grupları görebilir. Atamaları adminler yönetir.",
+  "el": "Όλα τα μέλη βλέπουν τις ομάδες. Οι διαχειριστές διαχειρίζονται τις αναθέσεις."
+ },
+ "Create Group": {
+  "tr": "Grup Oluştur",
+  "el": "Δημιουργία Ομάδας"
+ },
+ "Edit Group": {
+  "tr": "Grubu Düzenle",
+  "el": "Επεξεργασία Ομάδας"
+ },
+ "Delete Group": {
+  "tr": "Grubu Sil",
+  "el": "Διαγραφή Ομάδας"
+ },
+ "Edit group {name}": {
+  "tr": "{name} grubunu düzenle",
+  "el": "Επεξεργασία ομάδας {name}"
+ },
+ "{count} members": {
+  "tr": "{count} üye",
+  "el": "{count} μέλη"
+ },
+ "Class Composition": {
+  "tr": "Sınıf Dağılımı",
+  "el": "Σύνθεση Κλάσεων"
+ },
+ "No members assigned.": {
+  "tr": "Henüz üye atanmadı.",
+  "el": "Δεν έχουν ανατεθεί μέλη."
+ },
+ "No PvP groups yet.": {
+  "tr": "Henüz PvP grubu yok.",
+  "el": "Δεν υπάρχουν ομάδες PvP ακόμα."
+ },
+ "Unassigned Members": {
+  "tr": "Grupsuz Üyeler",
+  "el": "Μέλη χωρίς Ομάδα"
+ },
+ "Group Name": {
+  "tr": "Grup Adı",
+  "el": "Όνομα Ομάδας"
+ },
+ "Group Note (optional)": {
+  "tr": "Grup Notu (isteğe bağlı)",
+  "el": "Σημείωση Ομάδας (προαιρετικό)"
+ },
+ "Group name…": {
+  "tr": "Grup adı…",
+  "el": "Όνομα ομάδας…"
+ },
+ "Role or instructions…": {
+  "tr": "Görev veya talimatlar…",
+  "el": "Ρόλος ή οδηγίες…"
+ },
+ "Assign Members": {
+  "tr": "Üyeleri Ata",
+  "el": "Ανάθεση Μελών"
+ },
+ "Select Visible": {
+  "tr": "Görünenleri Seç",
+  "el": "Επιλογή Εμφανιζόμενων"
+ },
+ "From {group}": {
+  "tr": "Mevcut: {group}",
+  "el": "Από: {group}"
+ },
+ "Selecting a member in another group moves them to this group when you save.": {
+  "tr": "Başka gruptaki bir üyeyi seçersen, kaydettiğinde bu gruba taşınır.",
+  "el": "Αν επιλέξεις μέλος άλλης ομάδας, μεταφέρεται σε αυτή την ομάδα όταν αποθηκεύσεις."
+ },
+ "Delete this group? Members will become unassigned. Their profiles and bonuses will stay unchanged.": {
+  "tr": "Bu grup silinsin mi? Üyeler grupsuz kalır. Profilleri ve bonusları korunur.",
+  "el": "Να διαγραφεί αυτή η ομάδα; Τα μέλη μένουν χωρίς ομάδα. Τα προφίλ και τα μπόνους τους διατηρούνται."
+ },
+ "Confirm Deletion": {
+  "tr": "Silmeyi Onayla",
+  "el": "Επιβεβαίωση Διαγραφής"
+ },
+ "Save Group": {
+  "tr": "Grubu Kaydet",
+  "el": "Αποθήκευση Ομάδας"
+ },
+ "Group saved.": {
+  "tr": "Grup kaydedildi.",
+  "el": "Η ομάδα αποθηκεύτηκε."
+ },
+ "Group deleted.": {
+  "tr": "Grup silindi.",
+  "el": "Η ομάδα διαγράφηκε."
+ },
+ "Reload Groups": {
+  "tr": "Grupları Yenile",
+  "el": "Ανανέωση Ομάδων"
+ },
+ "This group changed. Reload before saving.": {
+  "tr": "Bu grup değişti. Kaydetmeden önce grupları yenile.",
+  "el": "Η ομάδα άλλαξε. Ανανέωσε πριν αποθηκεύσεις."
+ },
+ "Group was not found.": {
+  "tr": "Grup bulunamadı.",
+  "el": "Η ομάδα δεν βρέθηκε."
+ },
+ "Choose each member once.": {
+  "tr": "Her üyeyi yalnızca bir kez seç.",
+  "el": "Επίλεξε κάθε μέλος μόνο μία φορά."
+ },
+ "A maximum of 30 groups can be created.": {
+  "tr": "En fazla 30 grup oluşturulabilir.",
+  "el": "Μπορούν να δημιουργηθούν έως 30 ομάδες."
+ },
+ "A group with this name already exists.": {
+  "tr": "Bu isimde bir grup zaten var.",
+  "el": "Υπάρχει ήδη ομάδα με αυτό το όνομα."
+ },
+ "Choose only active guild members.": {
+  "tr": "Yalnızca aktif lonca üyelerini seç.",
+  "el": "Επίλεξε μόνο ενεργά μέλη της συντεχνίας."
+ },
+ "Admin Cancellation": {
+  "tr": "Admin İptali",
+  "el": "Ακύρωση από Διαχειριστή"
+ },
+ "Cancel Event as Admin": {
+  "tr": "Etkinliği Admin Olarak İptal Et",
+  "el": "Ακύρωση ως Διαχειριστής"
+ },
+ "Cancel this event? No PP will be awarded and attendance will stay in the history.": {
+  "tr": "Etkinlik iptal edilsin mi? PP dağıtılmaz; katılım kayıtları geçmişte kalır.",
+  "el": "Να ακυρωθεί η εκδήλωση; Δεν θα δοθούν PP και οι συμμετοχές θα παραμείνουν στο ιστορικό."
+ },
+ "Cancellation Note (optional)": {
+  "tr": "İptal Notu (isteğe bağlı)",
+  "el": "Σημείωση Ακύρωσης (προαιρετικό)"
+ },
+ "Cancellation Note: ": {
+  "tr": "İptal Notu: ",
+  "el": "Σημείωση Ακύρωσης: "
+ },
+ "Keep Event": {
+  "tr": "Etkinliği Koru",
+  "el": "Διατήρηση Εκδήλωσης"
+ },
+ "Event cancelled by administrator.": {
+  "tr": "Etkinlik admin tarafından iptal edildi.",
+  "el": "Η εκδήλωση ακυρώθηκε από διαχειριστή."
+ },
+ "No fixed item maximum": {
+  "tr": "Sabit eşya maksimumu yok",
+  "el": "Χωρίς σταθερό μέγιστο ανά αντικείμενο"
+ },
+ "Yes": {
+  "tr": "Var",
+  "el": "Ναι"
+ },
+ "Warrior - Mental": {
+  "tr": "Savaşçı - Zihinsel",
+  "el": "Πολεμιστής - Πνευματικός"
+ },
+ "Warrior - Aura (Body)": {
+  "tr": "Savaşçı - Bedensel",
+  "el": "Πολεμιστής - Σωματικός"
+ },
+ "Ninja - Dagger": {
+  "tr": "Ninja - Yakın Dövüş",
+  "el": "Νίντζα - Στιλέτο"
+ },
+ "Ninja - Archer": {
+  "tr": "Ninja - Okçu",
+  "el": "Νίντζα - Τοξότης"
+ },
+ "Sura - Weapon": {
+  "tr": "Sura - Büyülü Silah",
+  "el": "Σούρα - Όπλο"
+ },
+ "Sura - BM": {
+  "tr": "Sura - Kara Büyü",
+  "el": "Σούρα - Μαύρη Μαγεία"
+ },
+ "Shaman - Healer": {
+  "tr": "Şaman - İyileştirme",
+  "el": "Σαμάνος - Θεραπεία"
+ },
+ "Shaman - Dragon": {
+  "tr": "Şaman - Ejderha",
+  "el": "Σαμάνος - Δράκος"
+ },
+ "Member Suggestions": {
+  "tr": "Üye Önerileri",
+  "el": "Προτάσεις Μελών"
+ },
+ "No matching members.": {
+  "tr": "Eşleşen üye yok.",
+  "el": "Δεν βρέθηκαν αντίστοιχα μέλη."
+ },
+ "Role Composition": {
+  "tr": "Rol Dağılımı",
+  "el": "Σύνθεση Ρόλων"
+ },
+ "All Guild Members": {
+  "tr": "Tüm Lonca Üyeleri",
+  "el": "Όλα τα Μέλη της Συντεχνίας"
+ },
+ "Selected Members": {
+  "tr": "Seçilen Üyeler",
+  "el": "Επιλεγμένα Μέλη"
+ },
+ "Select Results": {
+  "tr": "Sonuçları Seç",
+  "el": "Επιλογή Αποτελεσμάτων"
+ },
+ "Show All Members": {
+  "tr": "Tüm Üyeleri Göster",
+  "el": "Εμφάνιση Όλων των Μελών"
+ },
+ "Choose members from the list.": {
+  "tr": "Listeden üye seç.",
+  "el": "Επίλεξε μέλη από τη λίστα."
+ },
+ "Remove {name} from selection": {
+  "tr": "{name} seçimini kaldır",
+  "el": "Αφαίρεση του {name} από την επιλογή"
+ },
+ "Member List": {
+  "tr": "Üye Listesi",
+  "el": "Λίστα Μελών"
+ },
+ "Discord Role": {
+  "tr": "Discord Rolü",
+  "el": "Ρόλος Discord"
+ },
+ "All Roles": {
+  "tr": "Tüm Roller",
+  "el": "Όλοι οι Ρόλοι"
+ },
+ "Any Group": {
+  "tr": "Tüm Gruplar",
+  "el": "Όλες οι Ομάδες"
+ },
+ "This Group": {
+  "tr": "Bu Grup",
+  "el": "Αυτή η Ομάδα"
+ },
+ "{start}–{end} of {count}": {
+  "tr": "{count} üyeden {start}–{end}",
+  "el": "{start}–{end} από {count}"
+ },
+ "All Members": {
+  "tr": "Tüm Üyeler",
+  "el": "Όλα τα Μέλη"
+ },
+ "Selected": {
+  "tr": "Seçilenler",
+  "el": "Επιλεγμένα"
+ },
+ "Group": {
+  "tr": "Grup",
+  "el": "Ομάδα"
+ },
+ "Filters": {
+  "tr": "Filtreler",
+  "el": "Φίλτρα"
+ },
+ "Select a Bonus": {
+  "tr": "Bonus Seç",
+  "el": "Επίλεξε Μπόνους"
+ },
+ "This bonus has not been added yet.": {
+  "tr": "Bu bonus henüz eklenmedi.",
+  "el": "Αυτό το μπόνους δεν έχει προστεθεί ακόμα."
+ },
+ "Other Guild Members": {
+  "tr": "Diğer Lonca Üyeleri",
+  "el": "Άλλα Μέλη της Συντεχνίας"
+ },
+ "Previous Bonus": {
+  "tr": "Önceki Bonus",
+  "el": "Προηγούμενο Μπόνους"
+ },
+ "Next Bonus": {
+  "tr": "Sonraki Bonus",
+  "el": "Επόμενο Μπόνους"
  }
 }
