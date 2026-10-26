@@ -1,0 +1,549 @@
+{
+ "partisan": {
+  "name": "Partisan",
+  "source": "https://en-wiki.metin2.gameforge.com/images/c/c1/Partisan.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "battle-sword": {
+  "name": "Battle Sword",
+  "source": "https://en-wiki.metin2.gameforge.com/images/0/05/Battle_Sword.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "ghost-fang-blade": {
+  "name": "Ghost Fang Blade",
+  "source": "https://en-wiki.metin2.gameforge.com/images/d/dd/Ghost_Fang_Blade.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "yellow-dragon-bow": {
+  "name": "Yellow Dragon Bow",
+  "source": "https://en-wiki.metin2.gameforge.com/images/6/6f/Yellow_Dragon_Bow.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "dragon-knife": {
+  "name": "Dragon Knife",
+  "source": "https://en-wiki.metin2.gameforge.com/images/6/6d/Dragon_Knife.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "heaven-and-earth-bell": {
+  "name": "Heaven and Earth Bell",
+  "source": "https://en-wiki.metin2.gameforge.com/images/9/99/Heaven_and_Earth_Bell.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "eyebrow-fan": {
+  "name": "Eyebrow Fan",
+  "source": "https://en-wiki.metin2.gameforge.com/images/5/58/Eyebrow_Fan.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "grudge-sword": {
+  "name": "Grudge Sword",
+  "source": "https://en-wiki.metin2.gameforge.com/images/f/fa/Grudge_Sword.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "poison-sword": {
+  "name": "Poison Sword",
+  "source": "https://en-wiki.metin2.gameforge.com/images/4/4f/Poison_Sword.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "lion-sword": {
+  "name": "Lion Sword",
+  "source": "https://en-wiki.metin2.gameforge.com/images/0/0c/Lion_Sword.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "crow-steel-bow": {
+  "name": "Crow Steel Bow",
+  "source": "https://en-wiki.metin2.gameforge.com/images/0/0c/Crow_Steel_Bow.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "devil-wing-chakram": {
+  "name": "Devil Wing Chakram",
+  "source": "https://en-wiki.metin2.gameforge.com/images/b/b6/Devil_Wing_Chakram.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "bamboo-bell": {
+  "name": "Bamboo Bell",
+  "source": "https://en-wiki.metin2.gameforge.com/images/9/9a/Bamboo_Bell.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "lying-dragon-fan": {
+  "name": "Lying Dragon Fan",
+  "source": "https://en-wiki.metin2.gameforge.com/images/d/da/Lying_Dragon_Fan.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "lion-slayer": {
+  "name": "Lion Slayer",
+  "source": "https://en-wiki.metin2.gameforge.com/images/9/98/Lion_Slayer.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "half-moon-sword": {
+  "name": "Half Moon Sword",
+  "source": "https://en-wiki.metin2.gameforge.com/images/4/44/Half_Moon_Sword.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "giant-wing-bow": {
+  "name": "Giant Wing Bow",
+  "source": "https://en-wiki.metin2.gameforge.com/images/9/9a/Giant_Wing_Bow.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "chakram": {
+  "name": "Chakram",
+  "source": "https://en-wiki.metin2.gameforge.com/images/c/c4/Chakram.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "steel-bug-bell": {
+  "name": "Steel Bug Bell",
+  "source": "https://en-wiki.metin2.gameforge.com/images/5/55/Steel_Bug_Bell.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "sun-fan": {
+  "name": "Sun Fan",
+  "source": "https://en-wiki.metin2.gameforge.com/images/5/55/Sun_Fan.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "salvation-blade": {
+  "name": "Salvation Blade",
+  "source": "https://en-wiki.metin2.gameforge.com/images/d/d0/Salvation_Blade.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "flying-wizard-sword": {
+  "name": "Flying Wizard Sword",
+  "source": "https://en-wiki.metin2.gameforge.com/images/7/75/Flying_Wizard_Sword.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "unicorn-bow": {
+  "name": "Unicorn Bow",
+  "source": "https://en-wiki.metin2.gameforge.com/images/f/f1/Unicorn_Bow.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "dragon-god-armour": {
+  "name": "Dragon God Armour",
+  "source": "https://en-wiki.metin2.gameforge.com/images/a/a3/Dragon_God_Armour.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "fuchsia-suit": {
+  "name": "Fuchsia Suit",
+  "source": "https://en-wiki.metin2.gameforge.com/images/4/4c/Fuchsia_Suit.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "spirit-plate-armour": {
+  "name": "Spirit Plate Armour",
+  "source": "https://en-wiki.metin2.gameforge.com/images/d/db/Spirit_Plate_Armour.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "baroness-dress": {
+  "name": "Baroness Dress",
+  "source": "https://en-wiki.metin2.gameforge.com/images/2/24/Baroness_Dress.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "gold-plate-armour": {
+  "name": "Gold Plate Armour",
+  "source": "https://en-wiki.metin2.gameforge.com/images/c/ca/Gold_Plate_Armour.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "killer-wind-suit": {
+  "name": "Killer Wind Suit",
+  "source": "https://en-wiki.metin2.gameforge.com/images/b/b9/Killer_Wind_Suit.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "fog-plate-armour": {
+  "name": "Fog Plate Armour",
+  "source": "https://en-wiki.metin2.gameforge.com/images/8/89/Fog_Plate_Armour.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "orange-cat-dress": {
+  "name": "Orange Cat Dress",
+  "source": "https://en-wiki.metin2.gameforge.com/images/c/c7/Orange_Cat_Dress.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "scale-plate-armour": {
+  "name": "Scale Plate Armour",
+  "source": "https://en-wiki.metin2.gameforge.com/images/9/90/Scale_Plate_Armour.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "young-dragon-suit": {
+  "name": "Young Dragon Suit",
+  "source": "https://en-wiki.metin2.gameforge.com/images/c/cc/Young_Dragon_Suit.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "ghost-plate-armour": {
+  "name": "Ghost Plate Armour",
+  "source": "https://en-wiki.metin2.gameforge.com/images/0/0c/Ghost_Plate_Armour.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "sun-clothing": {
+  "name": "Sun Clothing",
+  "source": "https://en-wiki.metin2.gameforge.com/images/3/3f/Sun_Clothing.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "heaven-s-tear-bracelet": {
+  "name": "Heaven's Tear Bracelet",
+  "source": "https://en-wiki.metin2.gameforge.com/images/6/6f/Heaven%27s_Tear_Bracelet.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "heaven-s-tear-necklace": {
+  "name": "Heaven's Tear Necklace",
+  "source": "https://en-wiki.metin2.gameforge.com/images/2/2b/Heaven%27s_Tear_Necklace.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "heaven-s-tear-earrings": {
+  "name": "Heaven's Tear Earrings",
+  "source": "https://en-wiki.metin2.gameforge.com/images/a/a2/Heaven%27s_Tear_Earrings.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "nimbus-boots": {
+  "name": "Nimbus Boots",
+  "source": "https://en-wiki.metin2.gameforge.com/images/0/08/Nimbus_Boots.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "phoenix-shoes": {
+  "name": "Phoenix Shoes",
+  "source": "https://en-wiki.metin2.gameforge.com/images/8/8c/Phoenix_Shoes.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "fire-bird-shoes": {
+  "name": "Fire Bird Shoes",
+  "source": "https://en-wiki.metin2.gameforge.com/images/f/f2/Fire_Bird_Shoes.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "falcon-shield": {
+  "name": "Falcon Shield",
+  "source": "https://en-wiki.metin2.gameforge.com/images/b/b8/Falcon_Shield.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "tiger-shield": {
+  "name": "Tiger Shield",
+  "source": "https://en-wiki.metin2.gameforge.com/images/f/f8/Tiger_Shield.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "lion-edge-shield": {
+  "name": "Lion Edge Shield",
+  "source": "https://en-wiki.metin2.gameforge.com/images/d/db/Lion_Edge_Shield.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "dragon-scale-shield": {
+  "name": "Dragon Scale Shield",
+  "source": "https://en-wiki.metin2.gameforge.com/images/2/23/Dragon_Scale_Shield.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "crystal-bracelet": {
+  "name": "Crystal Bracelet",
+  "source": "https://en-wiki.metin2.gameforge.com/images/1/11/Crystal_Bracelet.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "crystal-necklace": {
+  "name": "Crystal Necklace",
+  "source": "https://en-wiki.metin2.gameforge.com/images/3/3e/Crystal_Necklace.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "crystal-earrings": {
+  "name": "Crystal Earrings",
+  "source": "https://en-wiki.metin2.gameforge.com/images/7/77/Crystal_Earrings.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "white-pearl": {
+  "name": "White Pearl",
+  "source": "https://en-wiki.metin2.gameforge.com/images/e/e2/White_Pearl.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "blue-pearl": {
+  "name": "Blue Pearl",
+  "source": "https://en-wiki.metin2.gameforge.com/images/8/80/Blue_Pearl.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "blood-red-pearl": {
+  "name": "Blood-Red Pearl",
+  "source": "https://en-wiki.metin2.gameforge.com/images/5/50/Blood-Red_Pearl.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "experience-ring": {
+  "name": "Experience Ring",
+  "source": "https://en-wiki.metin2.gameforge.com/images/6/6a/Experience_Ring.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "thief-s-gloves": {
+  "name": "Thief's Gloves",
+  "source": "https://en-wiki.metin2.gameforge.com/images/e/eb/Thief%27s_Gloves.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "zen-bean": {
+  "name": "Zen Bean",
+  "source": "https://en-wiki.metin2.gameforge.com/images/c/c0/Zen_Bean.png",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "blessing-marble": {
+  "name": "Blessing Marble",
+  "source": "https://arthion.to/presentation_new/icon_blessing_marble.webp",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "passage-ticket": {
+  "name": "Passage Ticket",
+  "source": "https://arthion.to/presentation_new/icon_passage_ticket.webp",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "bravery-cape": {
+  "name": "Bravery Cape",
+  "source": "https://arthion.to/presentation_new/icon_bravery_cape.webp",
+  "usage": "Icon/name identification only. Chest inclusion is transcribed from user screenshots."
+ },
+ "soul-stone-plus": {
+  "name": "Soul Stone+",
+  "source": "https://en-wiki.metin2.gameforge.com/images/0/0b/Soul_Stone%2B.png",
+  "usage": "Icon and name matched to screenshot; not a generic loot-table import."
+ },
+ "soul-stone": {
+  "name": "Soul Stone",
+  "source": "https://en-wiki.metin2.gameforge.com/images/1/12/Soul_Stone.png",
+  "usage": "Icon and name matched to screenshot; not a generic loot-table import."
+ },
+ "stone-of-the-blacksmith": {
+  "name": "Stone of the Blacksmith",
+  "icon": {
+   "src": "/guide/loot/red-tree-reference.png",
+   "sheetWidth": 498,
+   "sheetHeight": 373,
+   "x": 143,
+   "y": 218,
+   "width": 30,
+   "height": 30
+  },
+  "identification": "User supplied Turkish name in numbered order, 26 October 2026. English label uses the listed primary reference when available; otherwise a translation.",
+  "englishReference": "https://en-wiki.metin2.gameforge.com/index.php/Stone_of_the_Blacksmith"
+ },
+ "stone-handbook": {
+  "name": "Stone Handbook",
+  "icon": {
+   "src": "/guide/loot/red-tree-reference.png",
+   "sheetWidth": 498,
+   "sheetHeight": 373,
+   "x": 176,
+   "y": 218,
+   "width": 30,
+   "height": 30
+  },
+  "identification": "User supplied Turkish name in numbered order, 26 October 2026. English label uses the listed primary reference when available; otherwise a translation.",
+  "englishReference": "https://en-wiki.metin2.gameforge.com/index.php/Stone_Handbook"
+ },
+ "enchant-fragment": {
+  "name": "Enchant Fragment",
+  "icon": {
+   "src": "/guide/loot/red-tree-reference.png",
+   "sheetWidth": 498,
+   "sheetHeight": 373,
+   "x": 208,
+   "y": 218,
+   "width": 30,
+   "height": 30
+  },
+  "identification": "User supplied Turkish name in numbered order, 26 October 2026. English label uses the listed primary reference when available; otherwise a translation.",
+  "englishReference": null
+ },
+ "empty-bottle": {
+  "name": "Empty Bottle",
+  "icon": {
+   "src": "/guide/loot/red-tree-reference.png",
+   "sheetWidth": 498,
+   "sheetHeight": 373,
+   "x": 47,
+   "y": 250,
+   "width": 30,
+   "height": 30
+  },
+  "identification": "User supplied Turkish name in numbered order, 26 October 2026. English label uses the listed primary reference when available; otherwise a translation.",
+  "englishReference": "https://en-wiki.metin2.gameforge.com/index.php/Empty_Bottle_(Quest_Item)"
+ },
+ "reinforce-core": {
+  "name": "Reinforce Core",
+  "icon": {
+   "src": "/guide/loot/red-tree-reference.png",
+   "sheetWidth": 498,
+   "sheetHeight": 373,
+   "x": 79,
+   "y": 250,
+   "width": 30,
+   "height": 30
+  },
+  "identification": "User supplied Turkish name in numbered order, 26 October 2026. English label uses the listed primary reference when available; otherwise a translation.",
+  "englishReference": "https://arthion.to/forum/patch-notes/123-patch-notes-1-3-0"
+ },
+ "mysterious-quill": {
+  "name": "Mysterious Quill",
+  "icon": {
+   "src": "/guide/loot/red-tree-reference.png",
+   "sheetWidth": 498,
+   "sheetHeight": 373,
+   "x": 400,
+   "y": 218,
+   "width": 30,
+   "height": 30
+  },
+  "identification": "User supplied Turkish name in numbered order, 26 October 2026. English label uses the listed primary reference when available; otherwise a translation.",
+  "englishReference": null
+ },
+ "hermit-s-feather": {
+  "name": "Hermit's Feather",
+  "icon": {
+   "src": "/guide/loot/red-tree-reference.png",
+   "sheetWidth": 498,
+   "sheetHeight": 373,
+   "x": 432,
+   "y": 218,
+   "width": 30,
+   "height": 30
+  },
+  "identification": "User supplied Turkish name in numbered order, 26 October 2026. English label uses the listed primary reference when available; otherwise a translation.",
+  "englishReference": null
+ },
+ "language-ring": {
+  "name": "Language Ring",
+  "icon": {
+   "src": "/guide/loot/flame-reference.png",
+   "sheetWidth": 507,
+   "sheetHeight": 124,
+   "x": 304,
+   "y": 89,
+   "width": 30,
+   "height": 30
+  },
+  "identification": "User supplied Turkish name in numbered order, 26 October 2026. English label uses the listed primary reference when available; otherwise a translation.",
+  "englishReference": "https://en-wiki.metin2.gameforge.com/index.php/Language_Ring"
+ },
+ "boss-summoning-medal": {
+  "name": "Boss Summoning Medal",
+  "icon": {
+   "src": "/guide/loot/flame-reference.png",
+   "sheetWidth": 507,
+   "sheetHeight": 124,
+   "x": 369,
+   "y": 89,
+   "width": 30,
+   "height": 30
+  },
+  "identification": "User supplied Turkish name in numbered order, 26 October 2026. English label uses the listed primary reference when available; otherwise a translation.",
+  "englishReference": null
+ },
+ "medal-of-the-dragon": {
+  "name": "Medal of the Dragon",
+  "icon": {
+   "src": "/guide/loot/flame-reference.png",
+   "sheetWidth": 507,
+   "sheetHeight": 124,
+   "x": 208,
+   "y": 57,
+   "width": 30,
+   "height": 30
+  },
+  "identification": "User supplied Turkish name in numbered order, 26 October 2026. English label uses the listed primary reference when available; otherwise a translation.",
+  "englishReference": "https://en-wiki.metin2.gameforge.com/index.php/Medal_of_the_Dragon"
+ },
+ "scroll-of-the-location": {
+  "name": "Scroll of the Location",
+  "icon": {
+   "src": "/guide/loot/flame-reference.png",
+   "sheetWidth": 507,
+   "sheetHeight": 124,
+   "x": 144,
+   "y": 57,
+   "width": 30,
+   "height": 30
+  },
+  "identification": "User supplied Turkish name in numbered order, 26 October 2026. English label uses the listed primary reference when available; otherwise a translation.",
+  "englishReference": "https://en-wiki.metin2.gameforge.com/index.php/Scroll_of_the_Location"
+ },
+ "blacksmith-s-memo": {
+  "name": "Blacksmith's Memo",
+  "icon": {
+   "src": "/guide/loot/flame-reference.png",
+   "sheetWidth": 507,
+   "sheetHeight": 124,
+   "x": 176,
+   "y": 57,
+   "width": 30,
+   "height": 30
+  },
+  "identification": "User supplied Turkish name in numbered order, 26 October 2026. English label uses the listed primary reference when available; otherwise a translation.",
+  "englishReference": "https://forum.metin2sg.com/thread/8389-patch-notes-07-04-2022/"
+ },
+ "wise-man-s-memo": {
+  "name": "Wise Man's Memo",
+  "icon": {
+   "src": "/guide/loot/red-tree-reference.png",
+   "sheetWidth": 498,
+   "sheetHeight": 373,
+   "x": 464,
+   "y": 186,
+   "width": 30,
+   "height": 30
+  },
+  "identification": "User supplied Turkish name in numbered order, 26 October 2026. English label uses the listed primary reference when available; otherwise a translation.",
+  "englishReference": "https://forum.metin2sg.com/thread/8389-patch-notes-07-04-2022/"
+ },
+ "ghost-mask-sallet": {
+  "name": "Ghost Mask Sallet",
+  "icon": {
+   "src": "/guide/loot/yellow-tiger-reference.png",
+   "sheetWidth": 517,
+   "sheetHeight": 359,
+   "x": 341,
+   "y": 175,
+   "width": 30,
+   "height": 30
+  },
+  "identification": "User supplied Turkish name in numbered order, 26 October 2026. English label uses the listed primary reference when available; otherwise a translation.",
+  "englishReference": "https://en-wiki.metin2.gameforge.com/index.php/Ghost_Mask_Sallet"
+ },
+ "steel-hood": {
+  "name": "Steel Hood",
+  "icon": {
+   "src": "/guide/loot/yellow-tiger-reference.png",
+   "sheetWidth": 517,
+   "sheetHeight": 359,
+   "x": 373,
+   "y": 175,
+   "width": 30,
+   "height": 30
+  },
+  "identification": "User supplied Turkish name in numbered order, 26 October 2026. English label uses the listed primary reference when available; otherwise a translation.",
+  "englishReference": "https://en-wiki.metin2.gameforge.com/index.php/Steel_Hood"
+ },
+ "inventory-expansion": {
+  "name": "Inventory Expansion",
+  "icon": {
+   "src": "/guide/loot/flame-reference.png",
+   "sheetWidth": 507,
+   "sheetHeight": 124,
+   "x": 400,
+   "y": 57,
+   "width": 30,
+   "height": 30
+  },
+  "identification": "User supplied Turkish name in numbered order, 26 October 2026. English label uses the listed primary reference when available; otherwise a translation.",
+  "englishReference": "https://arthion.to/presentation"
+ },
+ "sunlight-hat": {
+  "name": "Sunlight Hat",
+  "icon": {
+   "src": "/guide/loot/yellow-tiger-reference.png",
+   "sheetWidth": 517,
+   "sheetHeight": 359,
+   "x": 437,
+   "y": 175,
+   "width": 30,
+   "height": 30
+  },
+  "identification": "User supplied Turkish name in numbered order, 26 October 2026. English label uses the listed primary reference when available; otherwise a translation.",
+  "englishReference": "https://en-wiki.metin2.gameforge.com/index.php/Sunlight_Hat"
+ },
+ "book-of-the-leader": {
+  "name": "Book of the Leader",
+  "icon": {
+   "src": "/guide/loot/red-tree-reference.png",
+   "sheetWidth": 498,
+   "sheetHeight": 373,
+   "x": 208,
+   "y": 250,
+   "width": 30,
+   "height": 30
+  },
+  "identification": "User supplied Turkish name in numbered order, 26 October 2026. English label uses the listed primary reference when available; otherwise a translation.",
+  "englishReference": "https://en-wiki.metin2.gameforge.com/index.php/Book_of_the_Leader"
+ }
+}

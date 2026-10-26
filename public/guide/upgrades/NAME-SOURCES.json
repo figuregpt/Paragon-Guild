@@ -1,0 +1,388 @@
+{
+ "Ball": {
+  "gr": "Κουβάρι",
+  "tr": "Çile"
+ },
+ "Bear Foot Skin": {
+  "gr": "Δέρμα Ποδιού Αρκούδας",
+  "tr": "Ayı Ayak Derisi"
+ },
+ "Bear Foot Skin+": {
+  "gr": "Δέρμα Ποδιού Αρκούδας+",
+  "tr": "Ayı Ayak Derisi+"
+ },
+ "Bear Gall": {
+  "gr": "Κύστη Αρκούδας",
+  "tr": "Ayı Safrası"
+ },
+ "Bear Gall+": {
+  "gr": "Κύστη Αρκούδας+",
+  "tr": "Ayı Safrası+"
+ },
+ "Broken Porcelain": {
+  "gr": "Σπασμένη Πορσελάνη"
+ },
+ "Clam": {
+  "gr": "Όστρακο",
+  "tr": "İstridye"
+ },
+ "Face Cream": {
+  "gr": "Κρέμα Προσώπου",
+  "tr": "Yüz Kremi"
+ },
+ "Fishbones": {
+  "gr": "Ψαροκόκκαλο",
+  "tr": "Kılçık"
+ },
+ "Ornamental Hairpin": {
+  "gr": "Διακοσμητικό Τσιμπιδάκι",
+  "tr": "Süslü Saç Tokası"
+ },
+ "Piece of Broken Armour": {
+  "gr": "Κομμάτι από Πανοπλία",
+  "tr": "Kırık Zırh Parçası"
+ },
+ "Rusty Blade": {
+  "gr": "Σκουριασμένη Λεπίδα",
+  "tr": "Paslı Bıçak"
+ },
+ "Scorpion Tail": {
+  "tr": "Akrep Kuyruğu"
+ },
+ "Shiriken+": {
+  "gr": "Shiriken+",
+  "tr": "Shirken+"
+ },
+ "Snake Tail": {
+  "gr": "Ουρά Φιδιού",
+  "tr": "Yılan Kuyruğu"
+ },
+ "Tiger Hide": {
+  "gr": "Δέρμα Λευκής Τίγρης",
+  "tr": "Kaplan Postu"
+ },
+ "White Hairband": {
+  "gr": "Άσπρη Κορδέλα Μαλλιών",
+  "tr": "Beyaz Domuz Kuyruğu Kurdele"
+ },
+ "White Hairband+": {
+  "gr": "Άσπρη Κορδέλα Μαλλιών+",
+  "tr": "Beyaz Domuz Kuyruğu Kurdele+"
+ },
+ "White Tiger Hide": {
+  "gr": "Δέρμα Τίγρης",
+  "tr": "Beyaz Kaplan Postu"
+ },
+ "Wolf Fur": {
+  "gr": "Γούνα Λύκου",
+  "tr": "Kurt Postu"
+ },
+ "Black Uniform": {
+  "gr": "Ξεθωριασμένη Μαύρη Φόρμα",
+  "tr": "Yıpranmış Siyah Üniforma"
+ },
+ "Blood-Red Pearl": {},
+ "Blue Pearl": {
+  "gr": "Μπλε Μαργαριτάρι",
+  "tr": "Mavi İnci"
+ },
+ "Curse Book": {
+  "gr": "Βιβλίο με Κατάρες",
+  "tr": "Lanet Kitabı"
+ },
+ "Curse Book+": {
+  "gr": "Βιβλίο με Κατάρες+",
+  "tr": "Lanet Kitabı+"
+ },
+ "Demon's Gem+": {
+  "gr": "Πετράδι του Δαίμονα+",
+  "tr": "Şeytan Mücevheri+"
+ },
+ "Esoteric Primer+": {
+  "gr": "Εγχειρίδιο Εσωτερισμού+",
+  "tr": "Başlangıç El Kitabı+"
+ },
+ "Frog's Legs": {
+  "gr": "Πόδια Βατράχου",
+  "tr": "Kurbağa Arka Bacakları"
+ },
+ "Frog Tongue": {
+  "gr": "Γλώσσα Βατράχου",
+  "tr": "Kurbağa Dili"
+ },
+ "Ice Killer Whale Horn": {
+  "tr": "Katil Buz Balina Boynuzu"
+ },
+ "Piece of Gem": {
+  "gr": "Κομμάτι Πετραδιού",
+  "tr": "Değerli Taş Parçası"
+ },
+ "Shiriken": {},
+ "Snake Tail+": {
+  "tr": "Yılan Kuyruğu+"
+ },
+ "Spider's Poison Sack": {},
+ "Spider Egg Sack": {
+  "gr": "Αυγά Αράχνης",
+  "tr": "Örümcek Yumurta Kesesi"
+ },
+ "Spider Web": {
+  "gr": "Ιστός Αράχνης",
+  "tr": "Örümcek Ağı"
+ },
+ "Unknown Talisman": {},
+ "Unknown Talisman+": {
+  "tr": "Bilinmeyen Tılsım+"
+ },
+ "White Pearl": {
+  "gr": "Άσπρο Μαργαριτάρι",
+  "tr": "Beyaz İnci"
+ },
+ "Yeti Fur+": {
+  "gr": "Γούνα Γιέτι+",
+  "tr": "Yeti Postu+"
+ },
+ "Demon's Gem": {
+  "gr": "Πετράδι Δαίμονα",
+  "tr": "Şeytan Mücevheri"
+ },
+ "Demon's Keepsake": {},
+ "Demon's Keepsake+": {},
+ "Esoteric Primer": {
+  "gr": "Εγχειρίδιο Εσωτερισμού",
+  "tr": "Başlangıç El Kitabı"
+ },
+ "Finger Bones": {
+  "gr": "Κόκκαλα Δακτύλου",
+  "tr": "Parmak Kemikleri"
+ },
+ "Flag": {
+  "gr": "Σημαία",
+  "tr": "Bayrak"
+ },
+ "Flaming Mane": {
+  "gr": "Φλεγόμενη Χαίτη",
+  "tr": "Alev Yelesi"
+ },
+ "Ice Marble": {
+  "gr": "Βόλος Πάγου"
+ },
+ "Leaf": {
+  "gr": "Φύλλο",
+  "tr": "Yaprak"
+ },
+ "Orc Tooth": {
+  "tr": "Ork Dişi"
+ },
+ "Orc Tooth+": {
+  "gr": "Δόντι Όρκ+",
+  "tr": "Ork Dişi+"
+ },
+ "Scorpion Claw": {
+  "gr": "Νύχι Σκορπιού",
+  "tr": "Akrep Kıskacı"
+ },
+ "Scorpion Needle": {
+  "gr": "Βελόνα Σκορπιού",
+  "tr": "Akrep İğnesi"
+ },
+ "Scorpion Tail+": {
+  "gr": "Ουρά Σκορπιού+",
+  "tr": "Akrep Kuyruğu+"
+ },
+ "Snakeskin": {},
+ "Spider Legs": {},
+ "Tiger Fang": {
+  "gr": "Δόντι Μαχόμενης Τίγρης",
+  "tr": "Saldırgan Kaplanın Dişi"
+ },
+ "Unknown Medicine": {
+  "gr": "Άγνωστο Φάρμακο",
+  "tr": "Bilinmeyen İlaç"
+ },
+ "Warrior's Symbol": {
+  "gr": "Σύμβολο του Πολεμιστή",
+  "tr": "Savaşçı Sembolü"
+ },
+ "Yeti Fur": {
+  "gr": "Γούνα Γιέτι",
+  "tr": "Yeti Postu"
+ },
+ "Amethyst Earrings": {
+  "gr": "Σκουλαρίκια Αμέθυστου",
+  "tr": "Ametist Küpe"
+ },
+ "Copper Earrings": {
+  "gr": "Χάλκινα Σκουλαρίκια",
+  "tr": "Bakır Küpe"
+ },
+ "Crystal Earrings": {
+  "gr": "Σκουλαρίκια Κρυστάλλου",
+  "tr": "Kristal Küpe"
+ },
+ "Ebony Earrings": {
+  "gr": "Εβένινα Σκουλαρίκια",
+  "tr": "Abanoz Küpe"
+ },
+ "Ice Marble+": {
+  "gr": "Βόλος Πάγου+",
+  "tr": "Buz Küresi+"
+ },
+ "Jade Earrings": {
+  "gr": "Σκουλαρίκια Νεφρίτη",
+  "tr": "Yeşim Taşı Küpe"
+ },
+ "Orc Amulet": {
+  "tr": "Ork Muskası"
+ },
+ "Orc Amulet+": {
+  "tr": "Ork Muskası+"
+ },
+ "Ornament": {
+  "gr": "Κόσμημα",
+  "tr": "Süs Eşyası"
+ },
+ "Pearl Earrings": {
+  "gr": "Μαργαριτ. Σκουλαρίκια",
+  "tr": "İnci Küpe"
+ },
+ "Piece of Fabric": {},
+ "Piece of Fabric+": {},
+ "Piece of Ice+": {},
+ "Savage's Booty": {},
+ "Silver Earrings": {},
+ "Spider Eyes": {
+  "gr": "Μάτια Αράχνης",
+  "tr": "Örümcek Gözleri"
+ },
+ "White Gold Earrings": {
+  "gr": "Λευκόχρυσα Σκουλαρίκια",
+  "tr": "Beyaz Altın Küpe"
+ },
+ "Wolf Claw": {},
+ "Wolf Claw+": {},
+ "Amethyst Bracelet": {
+  "gr": "Βραχιόλι Αμέθυστου",
+  "tr": "Mor Yakut Bilezik"
+ },
+ "Amethyst Necklace": {
+  "gr": "Περιδέραιο Αμέθυστου",
+  "tr": "Mor Yakut Kolye"
+ },
+ "Copper Bracelet": {
+  "gr": "Χάλκινο Βραχιόλι",
+  "tr": "Bakır Bilezik"
+ },
+ "Copper Necklace": {
+  "gr": "Χάλκινο Περιδέραιο",
+  "tr": "Bakır Kolye"
+ },
+ "Crystal Bracelet": {
+  "gr": "Κρυστάλλινο Βραχιόλι",
+  "tr": "Kristal Bilezik"
+ },
+ "Crystal Necklace": {
+  "gr": "Κρυστάλλινο Περιδέραιο",
+  "tr": "Kristal Kolye"
+ },
+ "Ebony Bracelet": {
+  "gr": "Εβένινο Βραχιόλι",
+  "tr": "Abanoz Bilezik"
+ },
+ "Ebony Necklace": {
+  "gr": "Εβένινο Περιδέραιο",
+  "tr": "Abanoz Kolye"
+ },
+ "Gold Bracelet": {
+  "gr": "Χρυσό Βραχιόλι",
+  "tr": "Altın Bilezik"
+ },
+ "Heaven's Tear Earrings": {
+  "gr": "Σκουλαρ. Ουρ. Δακρύων",
+  "tr": "Cennetin Gözü Küpe"
+ },
+ "Heaven's Tear Necklace": {
+  "gr": "Περιδέραιο Ουρ. Δάκρυα",
+  "tr": "Cennetin Gözü Kolye"
+ },
+ "Jade Bracelet": {
+  "gr": "Βραχιόλι Νεφρίτη",
+  "tr": "YeşimTaşı Bilezik"
+ },
+ "Jade Necklace": {
+  "gr": "Περιδέραιο Νεφρίτη",
+  "tr": "Yeşimtaşı Kolye"
+ },
+ "Pearl Bracelet": {
+  "gr": "Μαργαριταρ. Βραχιόλι",
+  "tr": "İnci Bilezik"
+ },
+ "Pearl Necklace": {
+  "gr": "Περιδέραιο Μαργαριτ.",
+  "tr": "İnci Kolye"
+ },
+ "Silver Bracelet": {
+  "gr": "Ασημένιο Βραχιόλι",
+  "tr": "Gümüş Bilezik"
+ },
+ "Silver Necklace": {
+  "gr": "Ασημένιο Περιδέραιο",
+  "tr": "Gümüş Kolye"
+ },
+ "White Gold Bracelet": {
+  "gr": "Βραχιόλι Λευκόχρυσου",
+  "tr": "Beyaz Altın Bilezik"
+ },
+ "White Gold Necklace": {
+  "gr": "Περιδέραιο Λευκόχρυσου",
+  "tr": "Beyaz Altın Kolye"
+ },
+ "Bamboo Skin Shoes": {
+  "gr": "Παπούτσια μπαμπού",
+  "tr": "Bambu Derisi Ayakkabı"
+ },
+ "Battle Shield": {
+  "gr": "Ασπίδα Μάχης"
+ },
+ "Black Round Shield": {
+  "gr": "Στρογγυλή Ασπίδα"
+ },
+ "Bronze Boots": {
+  "gr": "Μπρούτζινες Μπότες"
+ },
+ "Ecstasy Shoes": {
+  "gr": "Παπούτσια της Έκστασης"
+ },
+ "Fire Bird Shoes": {
+  "gr": "Παπούτσια Αmakir",
+  "tr": "Ateş Kuşu Çizmesi"
+ },
+ "Gold Threaded Shoes": {
+  "gr": "Χρυσόκλωστα παπούτσια"
+ },
+ "Golden Shoes": {
+  "gr": "Χρυσά Παπούτσια"
+ },
+ "Heaven's Tear Bracelet": {
+  "tr": "Cennetin Gözü Bilezik"
+ },
+ "Jade Shoes": {
+  "gr": "Παπούτσια Νεφρίτη"
+ },
+ "Leather Boots": {
+  "gr": "Δερμάτινες Μπότες"
+ },
+ "Nimbus Boots": {
+  "gr": "Μπότες των Νεφών",
+  "tr": "Işık Saçan Çizme"
+ },
+ "Pentagon Shield": {
+  "gr": "Πεντάγωνη Ασπίδα"
+ },
+ "Phoenix Shoes": {
+  "gr": "Παπούτσια Φοίνικα"
+ },
+ "Wooden Shoes": {
+  "gr": "Ξύλινα Παπούτσια"
+ }
+}

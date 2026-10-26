@@ -1,0 +1,310 @@
+[
+ {
+  "name": "Peach Blossom",
+  "images": [
+   [
+    "Peach Blossom.png",
+    "/images/b/b5/Peach_Blossom.png"
+   ],
+   [
+    "Peach Blossom Juice.png",
+    "/images/2/21/Peach_Blossom_Juice.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Peach_Blossom"
+ },
+ {
+  "name": "Bellflower",
+  "images": [
+   [
+    "Bellflower Juice.png",
+    "/images/d/dd/Bellflower_Juice.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Bellflower"
+ },
+ {
+  "name": "Kaki Blossom",
+  "images": [
+   [
+    "Kaki Blossom.png",
+    "/images/c/ce/Kaki_Blossom.png"
+   ],
+   [
+    "Kaki Blossom Juice.png",
+    "/images/8/84/Kaki_Blossom_Juice.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Kaki_Blossom"
+ },
+ {
+  "name": "Gango Root",
+  "images": [
+   [
+    "Gango Root.png",
+    "/images/8/8b/Gango_Root.png"
+   ],
+   [
+    "Gango Root Juice.png",
+    "/images/e/e2/Gango_Root_Juice.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Gango_Root"
+ },
+ {
+  "name": "Lilac",
+  "images": [
+   [
+    "Lilac.png",
+    "/images/5/5f/Lilac.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Lilac"
+ },
+ {
+  "name": "Tue Fungus",
+  "images": [
+   [
+    "Tue Fungus.png",
+    "/images/0/09/Tue_Fungus.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Tue_Fungus"
+ },
+ {
+  "name": "Alpine Rose",
+  "images": [
+   [
+    "Alpine Rose.png",
+    "/images/2/26/Alpine_Rose.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Alpine_Rose"
+ },
+ {
+  "name": "Mulberry",
+  "images": [
+   [
+    "Mulberry.png",
+    "/images/8/83/Mulberry.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Mulberry"
+ },
+ {
+  "name": "Red Dew",
+  "images": [
+   [
+    "Red Dew.png",
+    "/images/b/b7/Red_Dew.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Red_Dew"
+ },
+ {
+  "name": "Orange Dew",
+  "images": [
+   [
+    "Orange Dew.png",
+    "/images/1/11/Orange_Dew.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Orange_Dew"
+ },
+ {
+  "name": "Yellow Dew",
+  "images": [
+   [
+    "Yellow Dew.png",
+    "/images/a/a2/Yellow_Dew.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Yellow_Dew"
+ },
+ {
+  "name": "Green Dew",
+  "images": [
+   [
+    "Green Dew.png",
+    "/images/6/68/Green_Dew.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Green_Dew"
+ },
+ {
+  "name": "Blue Dew",
+  "images": [
+   [
+    "Blue Dew.png",
+    "/images/d/d0/Blue_Dew.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Blue_Dew"
+ },
+ {
+  "name": "White Dew",
+  "images": [
+   [
+    "White Dew.png",
+    "/images/9/9f/White_Dew.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/White_Dew"
+ },
+ {
+  "name": "Purple Potion",
+  "images": [
+   [
+    "Purple Potion(S).png",
+    "/images/9/9f/Purple_Potion%28S%29.png"
+   ],
+   [
+    "Purple Potion(M).png",
+    "/images/a/aa/Purple_Potion%28M%29.png"
+   ],
+   [
+    "Purple Potion(L).png",
+    "/images/8/8e/Purple_Potion%28L%29.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Purple_Potion"
+ },
+ {
+  "name": "Green Potion",
+  "images": [
+   [
+    "Green Potion(S).png",
+    "/images/3/31/Green_Potion%28S%29.png"
+   ],
+   [
+    "Green Potion(M).png",
+    "/images/0/09/Green_Potion%28M%29.png"
+   ],
+   [
+    "Green Potion(L).png",
+    "/images/e/e1/Green_Potion%28L%29.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Green_Potion"
+ },
+ {
+  "name": "Peach Blossom Juice",
+  "images": [
+   [
+    "Peach Blossom Juice.png",
+    "/images/2/21/Peach_Blossom_Juice.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Peach_Blossom_Juice"
+ },
+ {
+  "name": "Bellflower Juice",
+  "images": [
+   [
+    "Bellflower Juice.png",
+    "/images/d/dd/Bellflower_Juice.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Bellflower_Juice"
+ },
+ {
+  "name": "Kaki Blossom Juice",
+  "images": [
+   [
+    "Kaki Blossom Juice.png",
+    "/images/8/84/Kaki_Blossom_Juice.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Kaki_Blossom_Juice"
+ },
+ {
+  "name": "Gango Root Juice",
+  "images": [
+   [
+    "Gango Root Juice.png",
+    "/images/e/e2/Gango_Root_Juice.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Gango_Root_Juice"
+ },
+ {
+  "name": "Sim Water",
+  "images": [
+   [
+    "Sim Water.png",
+    "/images/f/fc/Sim_Water.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Sim_Water"
+ },
+ {
+  "name": "Dok Water",
+  "images": [
+   [
+    "Dok Water.png",
+    "/images/6/68/Dok_Water.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Dok_Water"
+ },
+ {
+  "name": "Bo Water",
+  "images": [
+   [
+    "Bo Water.png",
+    "/images/b/b1/Bo_Water.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Bo_Water"
+ },
+ {
+  "name": "Young Water",
+  "images": [
+   [
+    "Young Water.png",
+    "/images/9/97/Young_Water.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Young_Water"
+ },
+ {
+  "name": "Zin Water",
+  "images": [
+   [
+    "Zin Water.png",
+    "/images/0/00/Zin_Water.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Zin_Water"
+ },
+ {
+  "name": "SamBo Water",
+  "images": [
+   [
+    "SamBo Water.png",
+    "/images/4/4b/SamBo_Water.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/SamBo_Water"
+ },
+ {
+  "name": "Mong Water",
+  "images": [
+   [
+    "Mong Water.png",
+    "/images/3/3d/Mong_Water.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Mong_Water"
+ },
+ {
+  "name": "Hwal Water",
+  "images": [
+   [
+    "Hwal Water.png",
+    "/images/8/8e/Hwal_Water.png"
+   ]
+  ],
+  "page": "https://en-wiki.metin2.gameforge.com/index.php/Hwal_Water"
+ }
+]

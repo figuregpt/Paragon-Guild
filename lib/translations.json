@@ -3594,5 +3594,1685 @@
  "Next Bonus": {
   "tr": "Sonraki Bonus",
   "el": "Επόμενο Μπόνους"
+ },
+ "Game Guide": {
+  "tr": "Oyun Rehberi",
+  "el": "Οδηγός Παιχνιδιού"
+ },
+ "Guide": {
+  "tr": "Rehber",
+  "el": "Οδηγός"
+ },
+ "Guild knowledge": {
+  "tr": "Lonca bilgileri",
+  "el": "Γνώσεις συντεχνίας"
+ },
+ "Pick a map. Find your next boss.": {
+  "tr": "Haritanı seç. Bossun yerini bul.",
+  "el": "Διάλεξε χάρτη. Βρες το επόμενο boss."
+ },
+ "{maps} maps · {bosses} bosses": {
+  "tr": "{maps} harita · {bosses} boss",
+  "el": "{maps} χάρτες · {bosses} bosses"
+ },
+ "Boss Spawns": {
+  "tr": "Boss Konumları",
+  "el": "Τοποθεσίες Boss"
+ },
+ "Boss Drops": {
+  "tr": "Boss Dropları",
+  "el": "Λεία Boss"
+ },
+ "Chest Drops": {
+  "tr": "Sandık İçerikleri",
+  "el": "Περιεχόμενα Σεντουκιών"
+ },
+ "Dew Crafting": {
+  "tr": "Şebnem Yapımı",
+  "el": "Παρασκευή Δροσιάς"
+ },
+ "Arthion map": {
+  "tr": "Arthion haritası",
+  "el": "Χάρτης Arthion"
+ },
+ "Zoom out": {
+  "tr": "Uzaklaştır",
+  "el": "Σμίκρυνση"
+ },
+ "Zoom in": {
+  "tr": "Yakınlaştır",
+  "el": "Μεγέθυνση"
+ },
+ "Reset map": {
+  "tr": "Haritayı sıfırla",
+  "el": "Επαναφορά χάρτη"
+ },
+ "Spawn map for {boss}": {
+  "tr": "{boss} çıkış haritası",
+  "el": "Χάρτης εμφάνισης για {boss}"
+ },
+ "{boss} · Spawn {number}": {
+  "tr": "{boss} · Konum {number}",
+  "el": "{boss} · Σημείο {number}"
+ },
+ "Expand map": {
+  "tr": "Haritayı büyüt",
+  "el": "Πλήρης χάρτης"
+ },
+ "Select a numbered point to inspect a spawn.": {
+  "tr": "Konumu incelemek için haritadaki numaraya dokun.",
+  "el": "Πάτησε έναν αριθμό για να δεις το σημείο."
+ },
+ "Spawn {number} selected": {
+  "tr": "Konum {number} seçili",
+  "el": "Επιλέχθηκε το σημείο {number}"
+ },
+ "{count} possible spawn points": {
+  "tr": "{count} olası çıkış noktası",
+  "el": "{count} πιθανά σημεία εμφάνισης"
+ },
+ "Spawn points": {
+  "tr": "Çıkış noktaları",
+  "el": "Σημεία εμφάνισης"
+ },
+ "Previous spawn": {
+  "tr": "Önceki konum",
+  "el": "Προηγούμενο σημείο"
+ },
+ "Next spawn": {
+  "tr": "Sonraki konum",
+  "el": "Επόμενο σημείο"
+ },
+ "Approximate spawn areas from guild references. These are not live boss locations or in-game coordinates.": {
+  "tr": "Noktalar, loncanın paylaştığı görsellerden aktarılmış yaklaşık çıkış alanlarıdır. Anlık boss takibi veya oyun koordinatı değildir.",
+  "el": "Πιθανές περιοχές εμφάνισης από τις εικόνες της συντεχνίας. Δεν είναι ζωντανές θέσεις boss ή συντεταγμένες παιχνιδιού."
+ },
+ "Arthion has a different Ghost Forest. This preview uses the terrain from the supplied reference; a clean map is still needed.": {
+  "tr": "Arthion’da Hayalet Orman farklı. Bu önizlemede gönderilen haritanın zemini kullanılıyor; temiz harita dosyası hâlâ gerekli.",
+  "el": "Το Δάσος Φαντασμάτων στο Arthion είναι διαφορετικό. Η προεπισκόπηση χρησιμοποιεί το έδαφος της δοσμένης εικόνας· χρειάζεται ακόμη καθαρός χάρτης."
+ },
+ "Base map: Metin2 Wiki": {
+  "tr": "Harita zemini: Metin2 Wiki",
+  "el": "Βασικός χάρτης: Metin2 Wiki"
+ },
+ "Recipes will be added when the guild supplies the ingredients and quantities.": {
+  "tr": "Malzemeler ve miktarlar paylaşıldığında şebnem tarifleri burada yer alacak.",
+  "el": "Οι συνταγές θα προστεθούν όταν δοθούν τα υλικά και οι ποσότητες."
+ },
+ "Ingredients · Quantities · Crafting steps": {
+  "tr": "Malzemeler · Miktarlar · Yapım adımları",
+  "el": "Υλικά · Ποσότητες · Βήματα παρασκευής"
+ },
+ "Choose a map": {
+  "tr": "Harita seç",
+  "el": "Επιλογή χάρτη"
+ },
+ "{count} bosses": {
+  "tr": "{count} boss",
+  "el": "{count} bosses"
+ },
+ "Find a boss or map…": {
+  "tr": "Boss veya harita bul…",
+  "el": "Βρες boss ή χάρτη…"
+ },
+ "Find a boss or map": {
+  "tr": "Boss veya harita bul",
+  "el": "Αναζήτηση boss ή χάρτη"
+ },
+ "Bosses": {
+  "tr": "Bosslar",
+  "el": "Bosses"
+ },
+ "{count} spawn points": {
+  "tr": "{count} çıkış noktası",
+  "el": "{count} σημεία εμφάνισης"
+ },
+ "No bosses found.": {
+  "tr": "Boss bulunamadı.",
+  "el": "Δεν βρέθηκαν bosses."
+ },
+ "Clear search": {
+  "tr": "Aramayı temizle",
+  "el": "Εκκαθάριση αναζήτησης"
+ },
+ "Spawn points are always available. Loot lists are being collected separately.": {
+  "tr": "Boss konumlarını buradan inceleyebilirsin. Drop listeleri ayrı olarak hazırlanıyor.",
+  "el": "Δες εδώ τις τοποθεσίες των boss. Οι λίστες λείας ετοιμάζονται ξεχωριστά."
+ },
+ "Direct boss drops have not been added yet.": {
+  "tr": "Bossun doğrudan düşürdüğü eşyalar henüz eklenmedi.",
+  "el": "Τα αντικείμενα που πέφτουν από το boss δεν έχουν προστεθεί ακόμη."
+ },
+ "Chest contents have not been added yet.": {
+  "tr": "Sandıktan çıkan eşyalar henüz eklenmedi.",
+  "el": "Τα περιεχόμενα του σεντουκιού δεν έχουν προστεθεί ακόμη."
+ },
+ "Boss loot and chest loot are recorded separately.": {
+  "tr": "Boss drop’u ve sandık içeriği ayrı gösterilir.",
+  "el": "Η λεία του boss και του σεντουκιού εμφανίζονται ξεχωριστά."
+ },
+ "View spawn map": {
+  "tr": "Çıkış haritasını gör",
+  "el": "Προβολή χάρτη εμφάνισης"
+ },
+ "Guide sections": {
+  "tr": "Rehber bölümleri",
+  "el": "Ενότητες οδηγού"
+ },
+ "Spawn locations pending": {
+  "tr": "Konumlar bekleniyor",
+  "el": "Αναμένονται τοποθεσίες"
+ },
+ "The previous reference was incorrect. Spawn points will appear after the corrected map is supplied.": {
+  "tr": "Önceki görsel hatalıydı. Doğru görsel paylaşıldığında çıkış noktaları eklenecek.",
+  "el": "Η προηγούμενη εικόνα ήταν λανθασμένη. Τα σημεία θα προστεθούν μόλις δοθεί ο σωστός χάρτης."
+ },
+ "1 boss": {
+  "tr": "1 boss",
+  "el": "1 boss"
+ },
+ "Item #{number}": {
+  "tr": "Eşya #{number}",
+  "el": "Αντικείμενο #{number}"
+ },
+ "Item names to confirm": {
+  "tr": "Adı doğrulanacak eşyalar",
+  "el": "Ονόματα αντικειμένων προς επιβεβαίωση"
+ },
+ "Numbers stay the same in every chest.": {
+  "tr": "Numaralar tüm sandıklarda aynıdır.",
+  "el": "Οι αριθμοί είναι ίδιοι σε όλα τα σεντούκια."
+ },
+ "{count} listed items": {
+  "tr": "Listede {count} eşya",
+  "el": "{count} καταχωρισμένα αντικείμενα"
+ },
+ "Possible contents from the supplied Arthion notebook. Drop chances and equipment upgrade levels are not shown in these references.": {
+  "tr": "İçerikler gönderdiğin Arthion not defterinden aktarıldı. Bu görsellerde düşme oranları ve ekipmanların + seviyeleri belirtilmiyor.",
+  "el": "Πιθανά περιεχόμενα από το σημειωματάριο του Arthion. Οι πιθανότητες και τα επίπεδα αναβάθμισης εξοπλισμού δεν αναφέρονται στις εικόνες."
+ },
+ "Find an item in this chest": {
+  "tr": "Bu sandıkta eşya ara",
+  "el": "Αναζήτηση αντικειμένου σε αυτό το σεντούκι"
+ },
+ "Find an item…": {
+  "tr": "Eşya ara…",
+  "el": "Αναζήτηση αντικειμένου…"
+ },
+ "Loot category": {
+  "tr": "Eşya kategorisi",
+  "el": "Κατηγορία λείας"
+ },
+ "All items": {
+  "tr": "Tüm eşyalar",
+  "el": "Όλα τα αντικείμενα"
+ },
+ "{count} item names need confirmation. Their original icons are preserved.": {
+  "tr": "{count} eşyanın adı doğrulanacak. Orijinal ikonları gösteriliyor.",
+  "el": "Χρειάζεται επιβεβαίωση για {count} ονόματα. Εμφανίζονται τα αρχικά εικονίδια."
+ },
+ "See numbered items": {
+  "tr": "Numaralı eşyaları gör",
+  "el": "Δες τα αριθμημένα αντικείμενα"
+ },
+ "{count} items shown": {
+  "tr": "{count} eşya gösteriliyor",
+  "el": "Εμφανίζονται {count} αντικείμενα"
+ },
+ "Name pending": {
+  "tr": "Adı bekleniyor",
+  "el": "Αναμένεται όνομα"
+ },
+ "No items match these filters.": {
+  "tr": "Bu filtrelere uygun eşya yok.",
+  "el": "Δεν υπάρχουν αντικείμενα με αυτά τα φίλτρα."
+ },
+ "Clear filters": {
+  "tr": "Filtreleri temizle",
+  "el": "Εκκαθάριση φίλτρων"
+ },
+ "Chest contents only. Direct boss drops are separate.": {
+  "tr": "Yalnızca sandık içeriği. Bossun doğrudan dropları ayrıdır.",
+  "el": "Μόνο περιεχόμενα σεντουκιού. Η απευθείας λεία του boss είναι ξεχωριστή."
+ },
+ "The item is visible in the reference, but its Arthion name has not been confirmed.": {
+  "tr": "Eşya görselde var, ancak Arthion’daki adı henüz doğrulanmadı.",
+  "el": "Το αντικείμενο υπάρχει στην εικόνα, αλλά το όνομά του στο Arthion δεν έχει επιβεβαιωθεί."
+ },
+ "Found in": {
+  "tr": "Bulunduğu sandık",
+  "el": "Περιέχεται σε"
+ },
+ "Visible quantity": {
+  "tr": "Görünen adet",
+  "el": "Αναγραφόμενη ποσότητα"
+ },
+ "Not specified": {
+  "tr": "Belirtilmemiş",
+  "el": "Δεν αναφέρεται"
+ },
+ "Drop chance": {
+  "tr": "Düşme oranı",
+  "el": "Πιθανότητα πτώσης"
+ },
+ "Find a chest": {
+  "tr": "Sandık ara",
+  "el": "Αναζήτηση σεντουκιού"
+ },
+ "Find a chest…": {
+  "tr": "Sandık ara…",
+  "el": "Αναζήτηση σεντουκιού…"
+ },
+ "Boss chests": {
+  "tr": "Boss sandıkları",
+  "el": "Σεντούκια boss"
+ },
+ "No chests found.": {
+  "tr": "Sandık bulunamadı.",
+  "el": "Δεν βρέθηκαν σεντούκια."
+ },
+ "Six unique chests. Repeated screenshots are kept as one record.": {
+  "tr": "Altı farklı sandık. Tekrar gönderilen görseller tek kayıt olarak tutulur.",
+  "el": "Έξι διαφορετικά σεντούκια. Οι επαναλαμβανόμενες εικόνες κρατούνται ως μία καταχώριση."
+ },
+ "Weapons": {
+  "tr": "Silahlar",
+  "el": "Όπλα"
+ },
+ "Armours": {
+  "tr": "Zırhlar",
+  "el": "Πανοπλίες"
+ },
+ "Accessories": {
+  "tr": "Takı ve ekipman",
+  "el": "Κοσμήματα και εξοπλισμός"
+ },
+ "Materials": {
+  "tr": "Malzemeler",
+  "el": "Υλικά"
+ },
+ "Utility": {
+  "tr": "Yardımcı eşyalar",
+  "el": "Χρήσιμα αντικείμενα"
+ },
+ "Unconfirmed": {
+  "tr": "Doğrulanacak",
+  "el": "Προς επιβεβαίωση"
+ },
+ "White rough material": {
+  "tr": "Beyaz pürüzlü malzeme",
+  "el": "Λευκό τραχύ υλικό"
+ },
+ "Gold pointed item": {
+  "tr": "Altın sivri eşya",
+  "el": "Χρυσό μυτερό αντικείμενο"
+ },
+ "Purple crystals": {
+  "tr": "Mor kristaller",
+  "el": "Μοβ κρύσταλλοι"
+ },
+ "Grey and purple bottle": {
+  "tr": "Gri-mor şişe",
+  "el": "Γκρι-μοβ μπουκάλι"
+ },
+ "Gold scroll with a star": {
+  "tr": "Yıldızlı altın parşömen",
+  "el": "Χρυσός πάπυρος με αστέρι"
+ },
+ "Orange curved item": {
+  "tr": "Turuncu kıvrık eşya",
+  "el": "Πορτοκαλί καμπύλο αντικείμενο"
+ },
+ "Silver-green leaf": {
+  "tr": "Gümüş-yeşil yaprak",
+  "el": "Ασημοπράσινο φύλλο"
+ },
+ "Brown ring": {
+  "tr": "Kahverengi yüzük",
+  "el": "Καφέ δαχτυλίδι"
+ },
+ "Pink and gold crystal": {
+  "tr": "Pembe-altın kristal",
+  "el": "Ροζ-χρυσός κρύσταλλος"
+ },
+ "Gold and white crystal": {
+  "tr": "Altın-beyaz kristal",
+  "el": "Χρυσόλευκος κρύσταλλος"
+ },
+ "Round engraved medal": {
+  "tr": "Yuvarlak işlemeli madalya",
+  "el": "Στρογγυλό χαραγμένο μετάλλιο"
+ },
+ "Brown figure coin": {
+  "tr": "Figürlü kahverengi para",
+  "el": "Καφέ νόμισμα με μορφή"
+ },
+ "Red rolled scroll": {
+  "tr": "Kırmızı rulo parşömen",
+  "el": "Κόκκινος τυλιγμένος πάπυρος"
+ },
+ "White paper stack": {
+  "tr": "Beyaz kağıt yığını",
+  "el": "Στοίβα λευκών χαρτιών"
+ },
+ "Curved white ornament": {
+  "tr": "Kıvrık beyaz süs",
+  "el": "Καμπύλο λευκό στολίδι"
+ },
+ "Plain gold scroll": {
+  "tr": "Düz altın parşömen",
+  "el": "Απλός χρυσός πάπυρος"
+ },
+ "Blue stacked item": {
+  "tr": "Mavi biriken eşya",
+  "el": "Μπλε αντικείμενο σε στοίβα"
+ },
+ "Grey square item": {
+  "tr": "Gri kare eşya",
+  "el": "Γκρι τετράγωνο αντικείμενο"
+ },
+ "Gold linked loops": {
+  "tr": "Altın iç içe halkalar",
+  "el": "Χρυσοί συνδεδεμένοι κρίκοι"
+ },
+ "Orange and grey item": {
+  "tr": "Turuncu-gri eşya",
+  "el": "Πορτοκαλί-γκρι αντικείμενο"
+ },
+ "Small brown book": {
+  "tr": "Küçük kahverengi kitap",
+  "el": "Μικρό καφέ βιβλίο"
+ },
+ "Giant Ghost Red Tree's Chest": {
+  "tr": "Dev Kızıl Hayalet Ağaç Sandığı",
+  "el": "Σεντούκι Γιγάντιου Κόκκινου Δέντρου Φάντασμα"
+ },
+ "Grim Reaper's Chest": {
+  "tr": "Lusifer Sandığı",
+  "el": "Σεντούκι του Χάρου"
+ },
+ "Flame King's Chest": {
+  "tr": "Alev Kralı Sandığı",
+  "el": "Σεντούκι Βασιλιά της Φλόγας"
+ },
+ "Nine Tails' Chest": {
+  "tr": "Dokuz Kuyruk Sandığı",
+  "el": "Σεντούκι Εννιά Ουρών"
+ },
+ "Yellow Tiger's Chest": {
+  "tr": "Sarı Kaplan Sandığı",
+  "el": "Σεντούκι Κίτρινου Τίγρη"
+ },
+ "Queen Spider Box": {
+  "tr": "Kraliçe Örümcek Sandığı",
+  "el": "Σεντούκι Βασίλισσας Αράχνης"
+ },
+ "Choose a chest. Explore its contents.": {
+  "tr": "Sandığı seç. İçindeki eşyaları incele.",
+  "el": "Διάλεξε σεντούκι. Δες τα περιεχόμενά του."
+ },
+ "{count} chests": {
+  "tr": "{count} sandık",
+  "el": "{count} σεντούκια"
+ },
+ "Stone of the Blacksmith": {
+  "tr": "Demirci Taşı",
+  "el": "Πέτρα του Σιδερά"
+ },
+ "Stone Handbook": {
+  "tr": "Taş Sanatı Kitabı",
+  "el": "Βιβλίο της Πέτρας"
+ },
+ "Enchant Fragment": {
+  "tr": "Efsun Parçaları",
+  "el": "Θραύσματα Μαγείας"
+ },
+ "Empty Bottle": {
+  "tr": "Boş İksir",
+  "el": "Άδειο Μπουκάλι"
+ },
+ "Reinforce Core": {
+  "tr": "Güçlendirme Özü",
+  "el": "Πυρήνας Ενίσχυσης"
+ },
+ "Mysterious Quill": {
+  "tr": "Gizemli Tüy Kalem",
+  "el": "Μυστηριώδης Γραφίδα"
+ },
+ "Hermit's Feather": {
+  "tr": "Münzevinin Tüyü",
+  "el": "Φτερό του Ερημίτη"
+ },
+ "Language Ring": {
+  "tr": "Lisan Yüzüğü",
+  "el": "Δαχτυλίδι Γλωσσών"
+ },
+ "Boss Summoning Medal": {
+  "tr": "Boss Çağırma Madalyası",
+  "el": "Μετάλλιο Επίκλησης Boss"
+ },
+ "Medal of the Dragon": {
+  "tr": "Ejderha Madalyası",
+  "el": "Μετάλλιο του Δράκου"
+ },
+ "Scroll of the Location": {
+  "tr": "Geri Dönüş Kağıdı",
+  "el": "Πάπυρος Επιστροφής"
+ },
+ "Blacksmith's Memo": {
+  "tr": "Demircinin İltifatı",
+  "el": "Σημείωμα του Σιδερά"
+ },
+ "Wise Man's Memo": {
+  "tr": "Erdemli Adamın Notu",
+  "el": "Σημείωμα του Σοφού"
+ },
+ "Ghost Mask Sallet": {
+  "tr": "Hayalet Maske Başlık",
+  "el": "Μάσκα Φαντάσματος"
+ },
+ "Steel Hood": {
+  "tr": "Çelik Kapüşon",
+  "el": "Ατσάλινο Κράνος"
+ },
+ "Inventory Expansion": {
+  "tr": "Envanter Genişletme",
+  "el": "Επέκταση Αποθήκης Αντικειμένων"
+ },
+ "Sunlight Hat": {
+  "tr": "Günışığı Şapka",
+  "el": "Καπέλο Ηλιακού Φωτός"
+ },
+ "Book of the Leader": {
+  "tr": "Liderin Kitabı",
+  "el": "Βιβλίο του Αρχηγού"
+ },
+ "English name to verify": {
+  "tr": "İngilizce adı teyit ediliyor",
+  "el": "Επιβεβαίωση αγγλικού ονόματος"
+ },
+ "The Turkish name is confirmed. The exact English client name is still being verified.": {
+  "tr": "Türkçe adı doğrulandı. Oyundaki tam İngilizce adı kontrol ediliyor.",
+  "el": "Το τουρκικό όνομα επιβεβαιώθηκε. Το ακριβές αγγλικό όνομα του παιχνιδιού ελέγχεται ακόμη."
+ },
+ "Summons {boss}.": {
+  "tr": "{boss} çağırır.",
+  "el": "Καλεί το boss {boss}."
+ },
+ "Different quantities of the same item are grouped together.": {
+  "tr": "Aynı eşyanın farklı adetleri tek kartta gösterilir.",
+  "el": "Διαφορετικές ποσότητες του ίδιου αντικειμένου εμφανίζονται σε μία κάρτα."
+ },
+ "Partisan": {
+  "tr": "Partizan",
+  "el": "Παρτιζάνα"
+ },
+ "Battle Sword": {
+  "tr": "Muharebe Kılıcı",
+  "el": "Σπάθα Μάχης"
+ },
+ "Ghost Fang Blade": {
+  "tr": "Hortlak Dişi Kılıcı",
+  "el": "Λεπίδα Φάντασμα"
+ },
+ "Yellow Dragon Bow": {
+  "tr": "Sarı Ejderha Yayı",
+  "el": "Τόξο Κίτρινου Δράκου"
+ },
+ "Dragon Knife": {
+  "tr": "Ejderha Bıçağı",
+  "el": "Μαχαίρι Δράκου"
+ },
+ "Heaven and Earth Bell": {
+  "tr": "Cennet Ve Dünya Çanı",
+  "el": "Καμπάνα Γη και Ουρανός"
+ },
+ "Eyebrow Fan": {
+  "tr": "Kaş Yelpaze",
+  "el": "Βεντάλια φρυδιών"
+ },
+ "Grudge Sword": {
+  "tr": "Kin Kılıcı",
+  "el": "Σπαθί της Μνησικακίας"
+ },
+ "Poison Sword": {
+  "tr": "Zehir Kılıcı",
+  "el": "Δηλητηριώδες Σπαθί"
+ },
+ "Lion Sword": {
+  "tr": "Aslan Kılıcı",
+  "el": "Ξίφος του Λέοντα"
+ },
+ "Crow Steel Bow": {
+  "tr": "Çelik Karga Yayı",
+  "el": "Ατσάλινο Τόξο"
+ },
+ "Devil Wing Chakram": {
+  "tr": "Şeytan Kanadı Çakram",
+  "el": "Τσάκραμ Διαβολικών Φτερών"
+ },
+ "Bamboo Bell": {
+  "tr": "Orkide Çan",
+  "el": "Καμπάνα Μπαμπού"
+ },
+ "Lying Dragon Fan": {
+  "tr": "Uyuyan Ejder Yelpazesi",
+  "el": "Βεντάλια Ξαπλωμένου Δράκου"
+ },
+ "Lion Slayer": {
+  "tr": "Aslan Katleden",
+  "el": "Φονιάς Λεόντων"
+ },
+ "Half Moon Sword": {
+  "tr": "Yarım Ay Kılıcı",
+  "el": "Σπαθί Μισοφέγγαρου"
+ },
+ "Giant Wing Bow": {
+  "tr": "Dev Kanatlı Yay",
+  "el": "Τόξο Γιγάντιων Φτερών"
+ },
+ "Chakram": {
+  "tr": "Çakram",
+  "el": "Κοφτερός Δίσκος"
+ },
+ "Steel Bug Bell": {
+  "tr": "Çelik Böcek Çan",
+  "el": "Καμπάνα Ατσάλ. Εντόμου"
+ },
+ "Sun Fan": {
+  "tr": "Güneş Yelpazesi",
+  "el": "Βεντάλια Ήλιου"
+ },
+ "Salvation Blade": {
+  "tr": "Kurtuluş Palası",
+  "el": "Λεπίδα της Σωτηρίας"
+ },
+ "Flying Wizard Sword": {
+  "tr": "Uçan Büyücü Kılıcı",
+  "el": "Ξίφος του Μάγου"
+ },
+ "Unicorn Bow": {
+  "tr": "Tek Boynuzlu Yay",
+  "el": "Τόξο Μονόκερου"
+ },
+ "Dragon God Armour": {
+  "tr": "Ejderha Tanrısı Zırh",
+  "el": "Πανοπλία του Δρακοθεού"
+ },
+ "Fuchsia Suit": {
+  "tr": "Küpe Çiceği Takım",
+  "el": "Φούξια Κουστούμι"
+ },
+ "Spirit Plate Armour": {
+  "tr": "Ruh Plaka Zırh",
+  "el": "Πανοπλία των Πνευμάτων"
+ },
+ "Baroness Dress": {
+  "tr": "Soylu Kadın Elbisesi",
+  "el": "Φόρεμα Βαρόνης"
+ },
+ "Gold Plate Armour": {
+  "tr": "Altın Taş Zırh",
+  "el": "Χρυσή Πανοπλία"
+ },
+ "Killer Wind Suit": {
+  "tr": "Öldürücü Rüzgar Takımı",
+  "el": "Κουστούμι της Θύελλας"
+ },
+ "Fog Plate Armour": {
+  "tr": "Belirsiz Plaka Zırh",
+  "el": "Νεφελώδης Πανοπλία"
+ },
+ "Orange Cat Dress": {
+  "tr": "Turuncu Kedi Elbisesi",
+  "el": "Φόρεμα Natulcien"
+ },
+ "Scale Plate Armour": {
+  "tr": "Mavi Taş Zırh",
+  "el": "Μπλε Πανοπλία"
+ },
+ "Young Dragon Suit": {
+  "tr": "Genç Ejderha Takım",
+  "el": "Κουστούμι Νέου Δράκου"
+ },
+ "Ghost Plate Armour": {
+  "tr": "Hayalet Plaka Zırh",
+  "el": "Πανοπλία Φαντασμάτων"
+ },
+ "Sun Clothing": {
+  "tr": "Güneş Elbisesi",
+  "el": "Ηλιακό Φόρεμα"
+ },
+ "Heaven's Tear Bracelet": {
+  "tr": "Cennetin Gözü Bilezik",
+  "el": "Βραχιόλι Δακρύου του Ουρανού"
+ },
+ "Heaven's Tear Necklace": {
+  "tr": "Cennetin Gözü Kolye",
+  "el": "Περιδέραιο Ουρ. Δάκρυα"
+ },
+ "Heaven's Tear Earrings": {
+  "tr": "Cennetin Gözü Küpe",
+  "el": "Σκουλαρ. Ουρ. Δακρύων"
+ },
+ "Nimbus Boots": {
+  "tr": "Işık Saçan Çizme",
+  "el": "Μπότες των Νεφών"
+ },
+ "Phoenix Shoes": {
+  "tr": "Anka Ayakkabı",
+  "el": "Παπούτσια Φοίνικα"
+ },
+ "Fire Bird Shoes": {
+  "tr": "Ateş Kuşu Çizmesi",
+  "el": "Παπούτσια Αmakir"
+ },
+ "Falcon Shield": {
+  "tr": "Şahin Kalkan",
+  "el": "Ασπίδα Γερακιού"
+ },
+ "Tiger Shield": {
+  "tr": "Kaplan Kalkanı",
+  "el": "Ασπίδα Τίγρης"
+ },
+ "Lion Edge Shield": {
+  "tr": "Aslan Ağzı Kalkanı",
+  "el": "Ασπίδα Λιονταριού"
+ },
+ "Dragon Scale Shield": {
+  "tr": "Ejderha Pulu Kalkan",
+  "el": "Ασπίδα Δράκου"
+ },
+ "Crystal Bracelet": {
+  "tr": "Kristal Bilezik",
+  "el": "Κρυστάλλινο Βραχιόλι"
+ },
+ "Crystal Necklace": {
+  "tr": "Kristal Kolye",
+  "el": "Κρυστάλλινο Περιδέραιο"
+ },
+ "Crystal Earrings": {
+  "tr": "Kristal Küpe",
+  "el": "Σκουλαρίκια Κρυστάλλου"
+ },
+ "White Pearl": {
+  "tr": "Beyaz İnci",
+  "el": "Άσπρο Μαργαριτάρι"
+ },
+ "Blue Pearl": {
+  "tr": "Mavi İnci",
+  "el": "Μπλε Μαργαριτάρι"
+ },
+ "Blood-Red Pearl": {
+  "tr": "Kırmızı İnci",
+  "el": "Κόκκινο Μαργαριτάρι"
+ },
+ "Experience Ring": {
+  "tr": "Tecrübe Yüzüğü",
+  "el": "Δαχτυλίδι Εμπειρίας"
+ },
+ "Thief's Gloves": {
+  "tr": "Hırsız Eldiveni",
+  "el": "Γάντια του Κλέφτη"
+ },
+ "Zen Bean": {
+  "tr": "Zen Fasulyesi",
+  "el": "Φασόλι Ζεν"
+ },
+ "Blessing Marble": {
+  "tr": "Kutsama Küresi",
+  "el": "Βόλος Ευλογίας"
+ },
+ "Passage Ticket": {
+  "tr": "Geçit Bileti",
+  "el": "Εισιτήριο Διέλευσης"
+ },
+ "Bravery Cape": {
+  "tr": "Cesaret Pelerini",
+  "el": "Κάπα της Γενναιότητας"
+ },
+ "Soul Stone+": {
+  "tr": "Ruh Taşı+",
+  "el": "Λίθος Ψυχής+"
+ },
+ "Soul Stone": {
+  "tr": "Ruh Taşı",
+  "el": "Λίθος Ψυχής"
+ },
+ "Display": {
+  "tr": "Görünüm",
+  "el": "Προβολή"
+ },
+ "Item display": {
+  "tr": "Eşya görünümü",
+  "el": "Προβολή αντικειμένων"
+ },
+ "Compact": {
+  "tr": "Kompakt",
+  "el": "Συνοπτική"
+ },
+ "Detailed": {
+  "tr": "Ayrıntılı",
+  "el": "Αναλυτική"
+ },
+ "Representative artwork for {boss}": {
+  "tr": "{boss} için temsili görsel",
+  "el": "Ενδεικτική εικόνα για {boss}"
+ },
+ "Representative artwork": {
+  "tr": "Temsili görsel",
+  "el": "Ενδεικτική εικόνα"
+ },
+ "Boss image pending": {
+  "tr": "Boss görseli bekleniyor",
+  "el": "Αναμένεται εικόνα boss"
+ },
+ "All bosses": {
+  "tr": "Tüm bosslar",
+  "el": "Όλα τα bosses"
+ },
+ "Base map reference": {
+  "tr": "Temel harita bilgisi",
+  "el": "Βασική αναφορά χάρτη"
+ },
+ "Map & Spawn Points": {
+  "tr": "Harita ve Çıkış Noktaları",
+  "el": "Χάρτης και Σημεία Εμφάνισης"
+ },
+ "{count} points": {
+  "tr": "{count} nokta",
+  "el": "{count} σημεία"
+ },
+ "Points pending": {
+  "tr": "Noktalar bekleniyor",
+  "el": "Αναμένονται σημεία"
+ },
+ "The Arthion spawn points for this boss have not been supplied yet.": {
+  "tr": "Bu bossun Arthion çıkış noktaları henüz paylaşılmadı.",
+  "el": "Δεν έχουν δοθεί ακόμη τα σημεία εμφάνισης αυτού του boss στο Arthion."
+ },
+ "Shown separately from chest contents.": {
+  "tr": "Sandık içeriğinden ayrı gösterilir.",
+  "el": "Εμφανίζεται ξεχωριστά από τα περιεχόμενα του σεντουκιού."
+ },
+ "Chest contents for this boss have not been supplied yet.": {
+  "tr": "Bu bossun sandık içeriği henüz paylaşılmadı.",
+  "el": "Δεν έχουν δοθεί ακόμη τα περιεχόμενα του σεντουκιού αυτού του boss."
+ },
+ "Choose a boss to see its map, drops and chest contents together.": {
+  "tr": "Boss seç; haritasını, droplarını ve sandık içeriğini aynı yerde gör.",
+  "el": "Διάλεξε boss για να δεις μαζί τον χάρτη, τη λεία και το σεντούκι του."
+ },
+ "Filter by map": {
+  "tr": "Haritaya göre filtrele",
+  "el": "Φιλτράρισμα ανά χάρτη"
+ },
+ "All maps": {
+  "tr": "Tüm haritalar",
+  "el": "Όλοι οι χάρτες"
+ },
+ "{count} bosses shown": {
+  "tr": "{count} boss gösteriliyor",
+  "el": "Εμφανίζονται {count} bosses"
+ },
+ "Chest loot available": {
+  "tr": "Sandık içeriği mevcut",
+  "el": "Διαθέσιμα περιεχόμενα σεντουκιού"
+ },
+ "Locations pending": {
+  "tr": "Konumlar bekleniyor",
+  "el": "Αναμένονται τοποθεσίες"
+ },
+ "Ingredients and recipes will be added here.": {
+  "tr": "Malzemeler ve tarifler burada yer alacak.",
+  "el": "Εδώ θα προστεθούν τα υλικά και οι συνταγές."
+ },
+ "Map": {
+  "tr": "Harita",
+  "el": "Χάρτης"
+ },
+ "Search & filter items": {
+  "tr": "Eşya ara ve filtrele",
+  "el": "Αναζήτηση και φίλτρα αντικειμένων"
+ },
+ "Peach Blossom": {
+  "tr": "Şeftali Çiçeği",
+  "el": "Άνθος Ροδακινιάς"
+ },
+ "Bellflower": {
+  "tr": "Çançiçeği",
+  "el": "Καμπανούλα"
+ },
+ "Kaki Blossom": {
+  "tr": "Kaki Çiçeği",
+  "el": "Άνθος Λωτού"
+ },
+ "Gango Root": {
+  "tr": "Gango Kökü",
+  "el": "Ρίζα Gango"
+ },
+ "Lilac": {
+  "tr": "Leylak",
+  "el": "Πασχαλιά"
+ },
+ "Tue Fungus": {
+  "tr": "Tue Mantarı",
+  "el": "Μανιτάρι Tue"
+ },
+ "Alpine Rose": {
+  "tr": "Alp Gülü",
+  "el": "Αλπικό Τριαντάφυλλο"
+ },
+ "Mulberry": {
+  "tr": "Dut",
+  "el": "Μουριά"
+ },
+ "White Dew": {
+  "tr": "Beyaz Şebnem",
+  "el": "Λευκή Δροσιά"
+ },
+ "Blue Dew": {
+  "tr": "Mavi Şebnem",
+  "el": "Μπλε Δροσιά"
+ },
+ "Green Dew": {
+  "tr": "Yeşil Şebnem",
+  "el": "Πράσινη Δροσιά"
+ },
+ "Yellow Dew": {
+  "tr": "Sarı Şebnem",
+  "el": "Κίτρινη Δροσιά"
+ },
+ "Orange Dew": {
+  "tr": "Turuncu Şebnem",
+  "el": "Πορτοκαλί Δροσιά"
+ },
+ "Red Dew": {
+  "tr": "Kırmızı Şebnem",
+  "el": "Κόκκινη Δροσιά"
+ },
+ "Purple Potion": {
+  "tr": "Mor İksir",
+  "el": "Μωβ Φίλτρο"
+ },
+ "Green Potion": {
+  "tr": "Yeşil İksir",
+  "el": "Πράσινο Φίλτρο"
+ },
+ "Turquoise potion": {
+  "tr": "Turkuaz iksir",
+  "el": "Τυρκουάζ φίλτρο"
+ },
+ "Violet potion": {
+  "tr": "Eflatun iksir",
+  "el": "Ιώδες φίλτρο"
+ },
+ "Black potion": {
+  "tr": "Siyah iksir",
+  "el": "Μαύρο φίλτρο"
+ },
+ "White potion": {
+  "tr": "Beyaz iksir",
+  "el": "Λευκό φίλτρο"
+ },
+ "Yellow flower": {
+  "tr": "Sarı çiçek",
+  "el": "Κίτρινο λουλούδι"
+ },
+ "Bottled ingredient": {
+  "tr": "Şişeli malzeme",
+  "el": "Συστατικό σε μπουκάλι"
+ },
+ "Dews & Potions": {
+  "tr": "Şebnem ve İksirler",
+  "el": "Δροσιές & Φίλτρα"
+ },
+ "{count} recipes · ingredients and Yang costs": {
+  "tr": "{count} tarif · malzemeler ve Yang bedelleri",
+  "el": "{count} συνταγές · υλικά και κόστος Yang"
+ },
+ "Every recipe makes {count} items.": {
+  "tr": "Her tarif {count} adet üretir.",
+  "el": "Κάθε συνταγή παράγει {count} τεμάχια."
+ },
+ "Ingredients": {
+  "tr": "Malzemeler",
+  "el": "Υλικά"
+ },
+ "Crafting cost": {
+  "tr": "Üretim bedeli",
+  "el": "Κόστος παρασκευής"
+ },
+ "Makes {count}": {
+  "tr": "{count} adet üretir",
+  "el": "Παράγει {count}"
+ },
+ "Recipe {number}": {
+  "tr": "Tarif {number}",
+  "el": "Συνταγή {number}"
+ },
+ "Name to confirm": {
+  "tr": "İsim teyidi bekliyor",
+  "el": "Αναμένεται επιβεβαίωση ονόματος"
+ },
+ "All recipes": {
+  "tr": "Tüm tarifler",
+  "el": "Όλες οι συνταγές"
+ },
+ "Recipes from the supplied Arthion crafting screen.": {
+  "tr": "Tarifler gönderdiğin Arthion üretim ekranından aktarıldı.",
+  "el": "Οι συνταγές προέρχονται από την οθόνη παρασκευής του Arthion."
+ },
+ "Cyan": {
+  "tr": "Turkuaz",
+  "el": "Κυανό"
+ },
+ "Purple": {
+  "tr": "Mor",
+  "el": "Μωβ"
+ },
+ "Black": {
+  "tr": "Siyah",
+  "el": "Μαύρο"
+ },
+ "White": {
+  "tr": "Beyaz",
+  "el": "Λευκό"
+ },
+ "Dandelion": {
+  "tr": "Karahindiba",
+  "el": "Πικραλίδα"
+ },
+ "Thistle": {
+  "tr": "Devedikeni",
+  "el": "Γαϊδουράγκαθο"
+ },
+ "View recipe": {
+  "tr": "Tarifi gör",
+  "el": "Προβολή συνταγής"
+ },
+ "Recipe details": {
+  "tr": "Tarif ayrıntıları",
+  "el": "Λεπτομέρειες συνταγής"
+ },
+ "Wolf Fur": {
+  "tr": "Kurt Postu",
+  "el": "Γούνα Λύκου"
+ },
+ "Bear Gall+": {
+  "tr": "Ayı Safrası+",
+  "el": "Κύστη Αρκούδας+"
+ },
+ "Ball": {
+  "tr": "Çile",
+  "el": "Κουβάρι"
+ },
+ "Bear Gall": {
+  "tr": "Ayı Safrası",
+  "el": "Κύστη Αρκούδας"
+ },
+ "Bear Foot Skin+": {
+  "tr": "Ayı Ayak Derisi+",
+  "el": "Δέρμα Ποδιού Αρκούδας+"
+ },
+ "White Hairband+": {
+  "tr": "Beyaz Domuz Kuyruğu Kurdele+",
+  "el": "Άσπρη Κορδέλα Μαλλιών+"
+ },
+ "Tiger Hide": {
+  "tr": "Kaplan Postu",
+  "el": "Δέρμα Λευκής Τίγρης"
+ },
+ "White Hairband": {
+  "tr": "Beyaz Domuz Kuyruğu Kurdele",
+  "el": "Άσπρη Κορδέλα Μαλλιών"
+ },
+ "Ornamental Hairpin": {
+  "tr": "Süslü Saç Tokası",
+  "el": "Διακοσμητικό Τσιμπιδάκι"
+ },
+ "Bear Foot Skin": {
+  "tr": "Ayı Ayak Derisi",
+  "el": "Δέρμα Ποδιού Αρκούδας"
+ },
+ "White Tiger Hide": {
+  "tr": "Beyaz Kaplan Postu",
+  "el": "Δέρμα Τίγρης"
+ },
+ "Face Cream": {
+  "tr": "Yüz Kremi",
+  "el": "Κρέμα Προσώπου"
+ },
+ "Piece of Broken Armour": {
+  "tr": "Kırık Zırh Parçası",
+  "el": "Κομμάτι από Πανοπλία"
+ },
+ "Broken Porcelain": {
+  "tr": "Kırık Porselen",
+  "el": "Σπασμένη Πορσελάνη"
+ },
+ "Shiriken+": {
+  "tr": "Shirken+",
+  "el": "Shiriken+"
+ },
+ "Fishbones": {
+  "tr": "Kılçık",
+  "el": "Ψαροκόκκαλο"
+ },
+ "Scorpion Tail": {
+  "tr": "Akrep Kuyruğu",
+  "el": "Ουρά Σκορπιού"
+ },
+ "Snake Tail": {
+  "tr": "Yılan Kuyruğu",
+  "el": "Ουρά Φιδιού"
+ },
+ "Clam": {
+  "tr": "İstridye",
+  "el": "Όστρακο"
+ },
+ "Rusty Blade": {
+  "tr": "Paslı Bıçak",
+  "el": "Σκουριασμένη Λεπίδα"
+ },
+ "Esoteric Primer+": {
+  "tr": "Başlangıç El Kitabı+",
+  "el": "Εγχειρίδιο Εσωτερισμού+"
+ },
+ "Spider Web": {
+  "tr": "Örümcek Ağı",
+  "el": "Ιστός Αράχνης"
+ },
+ "Spider's Poison Sack": {
+  "tr": "Örümcek Zehir Kesesi",
+  "el": "Σάκος Δηλητηρίου Αράχνης"
+ },
+ "Spider Egg Sack": {
+  "tr": "Örümcek Yumurta Kesesi",
+  "el": "Αυγά Αράχνης"
+ },
+ "Piece of Gem": {
+  "tr": "Değerli Taş Parçası",
+  "el": "Κομμάτι Πετραδιού"
+ },
+ "Shiriken": {
+  "tr": "Shirken",
+  "el": "Shiriken"
+ },
+ "Black Uniform": {
+  "tr": "Yıpranmış Siyah Üniforma",
+  "el": "Ξεθωριασμένη Μαύρη Φόρμα"
+ },
+ "Unknown Talisman": {
+  "tr": "Bilinmeyen Tılsım",
+  "el": "Άγνωστο Φυλαχτό"
+ },
+ "Curse Book": {
+  "tr": "Lanet Kitabı",
+  "el": "Βιβλίο με Κατάρες"
+ },
+ "Unknown Talisman+": {
+  "tr": "Bilinmeyen Tılsım+",
+  "el": "Άγνωστο Φυλαχτό+"
+ },
+ "Curse Book+": {
+  "tr": "Lanet Kitabı+",
+  "el": "Βιβλίο με Κατάρες+"
+ },
+ "Demon's Gem+": {
+  "tr": "Şeytan Mücevheri+",
+  "el": "Πετράδι του Δαίμονα+"
+ },
+ "Ice Killer Whale Horn": {
+  "tr": "Katil Buz Balina Boynuzu",
+  "el": "Κέρατο Παγωμένης Όρκας"
+ },
+ "Yeti Fur+": {
+  "tr": "Yeti Postu+",
+  "el": "Γούνα Γιέτι+"
+ },
+ "Snake Tail+": {
+  "tr": "Yılan Kuyruğu+",
+  "el": "Ουρά Φιδιού+"
+ },
+ "Frog Tongue": {
+  "tr": "Kurbağa Dili",
+  "el": "Γλώσσα Βατράχου"
+ },
+ "Frog's Legs": {
+  "tr": "Kurbağa Arka Bacakları",
+  "el": "Πόδια Βατράχου"
+ },
+ "Ice Marble": {
+  "tr": "Buz Küresi",
+  "el": "Βόλος Πάγου"
+ },
+ "Flaming Mane": {
+  "tr": "Alev Yelesi",
+  "el": "Φλεγόμενη Χαίτη"
+ },
+ "Scorpion Tail+": {
+  "tr": "Akrep Kuyruğu+",
+  "el": "Ουρά Σκορπιού+"
+ },
+ "Demon's Keepsake": {
+  "tr": "Şeytan Hatırası",
+  "el": "Αναμνηστικό Δαίμονα"
+ },
+ "Leaf": {
+  "tr": "Yaprak",
+  "el": "Φύλλο"
+ },
+ "Yeti Fur": {
+  "tr": "Yeti Postu",
+  "el": "Γούνα Γιέτι"
+ },
+ "Tiger Fang": {
+  "tr": "Saldırgan Kaplanın Dişi",
+  "el": "Δόντι Μαχόμενης Τίγρης"
+ },
+ "Spider Legs": {
+  "tr": "Örümcek Bacakları",
+  "el": "Πόδια Αράχνης"
+ },
+ "Demon's Gem": {
+  "tr": "Şeytan Mücevheri",
+  "el": "Πετράδι Δαίμονα"
+ },
+ "Demon's Keepsake+": {
+  "tr": "Şeytan Hatırası+",
+  "el": "Αναμνηστικό Δαίμονα+"
+ },
+ "Finger Bones": {
+  "tr": "Parmak Kemikleri",
+  "el": "Κόκκαλα Δακτύλου"
+ },
+ "Warrior's Symbol": {
+  "tr": "Savaşçı Sembolü",
+  "el": "Σύμβολο του Πολεμιστή"
+ },
+ "Esoteric Primer": {
+  "tr": "Başlangıç El Kitabı",
+  "el": "Εγχειρίδιο Εσωτερισμού"
+ },
+ "Scorpion Needle": {
+  "tr": "Akrep İğnesi",
+  "el": "Βελόνα Σκορπιού"
+ },
+ "Scorpion Claw": {
+  "tr": "Akrep Kıskacı",
+  "el": "Νύχι Σκορπιού"
+ },
+ "Snakeskin": {
+  "tr": "Yılan Derisi",
+  "el": "Δέρμα Φιδιού"
+ },
+ "Orc Tooth": {
+  "tr": "Ork Dişi",
+  "el": "Δόντι Όρκ"
+ },
+ "Orc Tooth+": {
+  "tr": "Ork Dişi+",
+  "el": "Δόντι Όρκ+"
+ },
+ "Unknown Medicine": {
+  "tr": "Bilinmeyen İlaç",
+  "el": "Άγνωστο Φάρμακο"
+ },
+ "Piece of Fabric": {
+  "tr": "Kumaş Parçası",
+  "el": "Κομμάτι Ύφασμα"
+ },
+ "Piece of Fabric+": {
+  "tr": "Kumaş Parçası+",
+  "el": "Κομμάτι Ύφασμα+"
+ },
+ "Piece of Ice+": {
+  "tr": "Buz Parçası+",
+  "el": "Κομμάτι Πάγου+"
+ },
+ "Ice Marble+": {
+  "tr": "Buz Küresi+",
+  "el": "Βόλος Πάγου+"
+ },
+ "Wolf Claw": {
+  "tr": "Kurt Pençesi",
+  "el": "Νύχι Λύκου"
+ },
+ "Wolf Claw+": {
+  "tr": "Kurt Pençesi+",
+  "el": "Νύχι Λύκου+"
+ },
+ "Ornament": {
+  "tr": "Süs Eşyası",
+  "el": "Κόσμημα"
+ },
+ "Savage's Booty": {
+  "tr": "Vahşi Ganimeti",
+  "el": "Λεία Αγρίων"
+ },
+ "Orc Amulet": {
+  "tr": "Ork Muskası",
+  "el": "Φυλαχτό Όρκ"
+ },
+ "Orc Amulet+": {
+  "tr": "Ork Muskası+",
+  "el": "Φυλαχτό Όρκ+"
+ },
+ "Spider Eyes": {
+  "tr": "Örümcek Gözleri",
+  "el": "Μάτια Αράχνης"
+ },
+ "Copper Earrings": {
+  "tr": "Bakır Küpe",
+  "el": "Χάλκινα Σκουλαρίκια"
+ },
+ "Silver Earrings": {
+  "tr": "Gümüş Küpe",
+  "el": "Ασημένια Σκουλαρίκια"
+ },
+ "Golden Earrings": {
+  "tr": "Altın Küpe",
+  "el": "Χρυσά Σκουλαρίκια"
+ },
+ "Jade Earrings": {
+  "tr": "Yeşim Taşı Küpe",
+  "el": "Σκουλαρίκια Νεφρίτη"
+ },
+ "Ebony Earrings": {
+  "tr": "Abanoz Küpe",
+  "el": "Εβένινα Σκουλαρίκια"
+ },
+ "Pearl Earrings": {
+  "tr": "İnci Küpe",
+  "el": "Μαργαριτ. Σκουλαρίκια"
+ },
+ "White Gold Earrings": {
+  "tr": "Beyaz Altın Küpe",
+  "el": "Λευκόχρυσα Σκουλαρίκια"
+ },
+ "Amethyst Earrings": {
+  "tr": "Ametist Küpe",
+  "el": "Σκουλαρίκια Αμέθυστου"
+ },
+ "Copper Necklace": {
+  "tr": "Bakır Kolye",
+  "el": "Χάλκινο Περιδέραιο"
+ },
+ "Silver Necklace": {
+  "tr": "Gümüş Kolye",
+  "el": "Ασημένιο Περιδέραιο"
+ },
+ "Golden Necklace": {
+  "tr": "Altın Kolye",
+  "el": "Χρυσό Περιδέραιο"
+ },
+ "Jade Necklace": {
+  "tr": "Yeşimtaşı Kolye",
+  "el": "Περιδέραιο Νεφρίτη"
+ },
+ "Ebony Necklace": {
+  "tr": "Abanoz Kolye",
+  "el": "Εβένινο Περιδέραιο"
+ },
+ "Pearl Necklace": {
+  "tr": "İnci Kolye",
+  "el": "Περιδέραιο Μαργαριτ."
+ },
+ "White Gold Necklace": {
+  "tr": "Beyaz Altın Kolye",
+  "el": "Περιδέραιο Λευκόχρυσου"
+ },
+ "Amethyst Necklace": {
+  "tr": "Mor Yakut Kolye",
+  "el": "Περιδέραιο Αμέθυστου"
+ },
+ "Copper Bracelet": {
+  "tr": "Bakır Bilezik",
+  "el": "Χάλκινο Βραχιόλι"
+ },
+ "Silver Bracelet": {
+  "tr": "Gümüş Bilezik",
+  "el": "Ασημένιο Βραχιόλι"
+ },
+ "Gold Bracelet": {
+  "tr": "Altın Bilezik",
+  "el": "Χρυσό Βραχιόλι"
+ },
+ "Jade Bracelet": {
+  "tr": "YeşimTaşı Bilezik",
+  "el": "Βραχιόλι Νεφρίτη"
+ },
+ "Ebony Bracelet": {
+  "tr": "Abanoz Bilezik",
+  "el": "Εβένινο Βραχιόλι"
+ },
+ "Pearl Bracelet": {
+  "tr": "İnci Bilezik",
+  "el": "Μαργαριταρ. Βραχιόλι"
+ },
+ "White Gold Bracelet": {
+  "tr": "Beyaz Altın Bilezik",
+  "el": "Βραχιόλι Λευκόχρυσου"
+ },
+ "Amethyst Bracelet": {
+  "tr": "Mor Yakut Bilezik",
+  "el": "Βραχιόλι Αμέθυστου"
+ },
+ "Bamboo Skin Shoes": {
+  "tr": "Bambu Derisi Ayakkabı",
+  "el": "Παπούτσια μπαμπού"
+ },
+ "Wooden Shoes": {
+  "tr": "Tahta Ayakkabı",
+  "el": "Ξύλινα Παπούτσια"
+ },
+ "Gold Threaded Shoes": {
+  "tr": "Altın İşlemeli Ayakkabı",
+  "el": "Χρυσόκλωστα παπούτσια"
+ },
+ "Leather Boots": {
+  "tr": "Deri Çizme",
+  "el": "Δερμάτινες Μπότες"
+ },
+ "Golden Shoes": {
+  "tr": "Altın Ayakkabı",
+  "el": "Χρυσά Παπούτσια"
+ },
+ "Bronze Boots": {
+  "tr": "Tunç Ayakkabı",
+  "el": "Μπρούτζινες Μπότες"
+ },
+ "Jade Shoes": {
+  "tr": "Yeşim Taşı Ayakkabı",
+  "el": "Παπούτσια Νεφρίτη"
+ },
+ "Ecstasy Shoes": {
+  "tr": "Mest Eden Ayakkabı",
+  "el": "Παπούτσια της Έκστασης"
+ },
+ "Class Helmet": {
+  "tr": "Sınıf Miğferi",
+  "el": "Κράνος Κλάσης"
+ },
+ "Battle Shield": {
+  "tr": "Savaş Kalkanı",
+  "el": "Ασπίδα Μάχης"
+ },
+ "Pentagon Shield": {
+  "tr": "Beşgen Kalkan",
+  "el": "Πεντάγωνη Ασπίδα"
+ },
+ "Black Round Shield": {
+  "tr": "Siyah Yuvarlak Kalkan",
+  "el": "Στρογγυλή Ασπίδα"
+ },
+ "Class Shield": {
+  "tr": "Sınıf Kalkanı",
+  "el": "Ασπίδα Κλάσης"
+ },
+ "Class Armour": {
+  "tr": "Sınıf Zırhı",
+  "el": "Πανοπλία Κλάσης"
+ },
+ "Class Weapon": {
+  "tr": "Sınıf Silahı",
+  "el": "Όπλο Κλάσης"
+ },
+ "Item Upgrades": {
+  "tr": "Eşya Geliştirme",
+  "el": "Αναβάθμιση Εξοπλισμού"
+ },
+ "{count} item types · +5–+9 materials": {
+  "tr": "{count} eşya türü · +5–+9 malzemeleri",
+  "el": "{count} τύποι εξοπλισμού · υλικά +5–+9"
+ },
+ "Choose an item and upgrade level to see its materials.": {
+  "tr": "Eşyanı ve geliştirme seviyesini seç; gereken malzemeleri gör.",
+  "el": "Διάλεξε αντικείμενο και επίπεδο αναβάθμισης για να δεις τα υλικά."
+ },
+ "Equipment type": {
+  "tr": "Eşya türü",
+  "el": "Τύπος εξοπλισμού"
+ },
+ "Choose an item": {
+  "tr": "Eşya seç",
+  "el": "Επιλογή αντικειμένου"
+ },
+ "Level {level}": {
+  "tr": "{level}. Seviye",
+  "el": "Επίπεδο {level}"
+ },
+ "Bonus at +9": {
+  "tr": "+9 bonusu",
+  "el": "Μπόνους στο +9"
+ },
+ "Target upgrade": {
+  "tr": "Hedef geliştirme",
+  "el": "Επιθυμητή αναβάθμιση"
+ },
+ "Materials for +{level}": {
+  "tr": "+{level} için malzemeler",
+  "el": "Υλικά για +{level}"
+ },
+ "From +{from} to +{to}": {
+  "tr": "+{from} → +{to}",
+  "el": "+{from} → +{to}"
+ },
+ "No materials listed for this stage.": {
+  "tr": "Bu aşama için malzeme listelenmemiş.",
+  "el": "Δεν αναφέρονται υλικά για αυτό το στάδιο."
+ },
+ "Requirements not yet confirmed.": {
+  "tr": "Gereken malzemeler henüz doğrulanmamış.",
+  "el": "Τα απαιτούμενα υλικά δεν έχουν επιβεβαιωθεί."
+ },
+ "Quantity not confirmed": {
+  "tr": "Adet doğrulanmamış",
+  "el": "Μη επιβεβαιωμένη ποσότητα"
+ },
+ "The source marks this quantity with question marks.": {
+  "tr": "Tabloda bu adedin yanında soru işaretleri var.",
+  "el": "Η πηγή επισημαίνει αυτή την ποσότητα με ερωτηματικά."
+ },
+ "Value not provided": {
+  "tr": "Değer belirtilmemiş",
+  "el": "Δεν αναφέρεται τιμή"
+ },
+ "Class items at this level share this row in the source.": {
+  "tr": "Tabloda bu seviyedeki sınıf eşyaları ortak satırda verilmiş.",
+  "el": "Στην πηγή τα αντικείμενα κλάσεων αυτού του επιπέδου μοιράζονται την ίδια γραμμή."
+ },
+ "Yang costs and success rates are not provided in this reference.": {
+  "tr": "Bu tabloda Yang bedelleri ve başarı oranları yer almıyor.",
+  "el": "Αυτή η πηγή δεν αναφέρει κόστος Yang ή πιθανότητες επιτυχίας."
+ },
+ "Earrings": {
+  "tr": "Küpeler",
+  "el": "Σκουλαρίκια"
+ },
+ "Necklaces": {
+  "tr": "Kolyeler",
+  "el": "Περιδέραια"
+ },
+ "Bracelets": {
+  "tr": "Bilezikler",
+  "el": "Βραχιόλια"
+ },
+ "Shoes": {
+  "tr": "Ayakkabılar",
+  "el": "Παπούτσια"
+ },
+ "Helmets": {
+  "tr": "Miğferler",
+  "el": "Κράνη"
+ },
+ "Shields": {
+  "tr": "Kalkanlar",
+  "el": "Ασπίδες"
+ },
+ "Adaptation": {
+  "tr": "Kararlılık",
+  "el": "Προσαρμογή"
+ },
+ "Defence": {
+  "tr": "Savunma",
+  "el": "Άμυνα"
+ },
+ "Average Attack Value": {
+  "tr": "Ortalama Saldırı Değeri",
+  "el": "Μέση Τιμή Επίθεσης"
+ },
+ "Average Skill Attack": {
+  "tr": "Ortalama Beceri Saldırısı",
+  "el": "Μέση Επίθεση Δεξιοτήτων"
+ },
+ "Skill Attack Value": {
+  "tr": "Beceri Saldırı Değeri",
+  "el": "Τιμή Επίθεσης Δεξιοτήτων"
+ },
+ "Attack Speed": {
+  "tr": "Saldırı Hızı",
+  "el": "Ταχύτητα Επίθεσης"
+ },
+ "HP": {
+  "tr": "HP",
+  "el": "HP"
+ },
+ "Opponent Average Attack Value": {
+  "tr": "Rakibin Ortalama Saldırı Değeri",
+  "el": "Μέση Τιμή Επίθεσης Αντιπάλου"
+ },
+ "Movement Speed": {
+  "tr": "Hareket Hızı",
+  "el": "Ταχύτητα Κίνησης"
+ },
+ "Critical Hit Chance": {
+  "tr": "Kritik Vuruş Şansı",
+  "el": "Πιθανότητα Κρίσιμου Χτυπήματος"
+ },
+ "Arrow Defence": {
+  "tr": "Ok Savunması",
+  "el": "Άμυνα Βελών"
+ },
+ "Skill Duration": {
+  "tr": "Beceri Süresi",
+  "el": "Διάρκεια Δεξιοτήτων"
+ },
+ "Healing Power": {
+  "tr": "İyileştirme Gücü",
+  "el": "Ισχύς Θεραπείας"
+ },
+ "Critical Hit Power": {
+  "tr": "Kritik Vuruş Gücü",
+  "el": "Ισχύς Κρίσιμου Χτυπήματος"
+ },
+ "Tenacity": {
+  "tr": "Metanet",
+  "el": "Αντοχή"
+ },
+ "Piercing Hit Chance": {
+  "tr": "Delici Vuruş Şansı",
+  "el": "Πιθανότητα Διαπεραστικού Χτυπήματος"
+ },
+ "Poison Chance": {
+  "tr": "Zehirleme Şansı",
+  "el": "Πιθανότητα Δηλητηρίασης"
+ },
+ "Swift Skill Recovery": {
+  "tr": "Hızlı Beceri Yenilenmesi",
+  "el": "Ταχεία Ανάκτηση Δεξιοτήτων"
+ },
+ "HP Restored on Kill": {
+  "tr": "Öldürmede HP Yenileme",
+  "el": "Ανάκτηση HP σε Εξόντωση"
+ },
+ "Max HP (base HP)": {
+  "tr": "Maks. HP (temel HP)",
+  "el": "Μέγ. HP (βασικό HP)"
+ },
+ "Opponent Skill Attack Value": {
+  "tr": "Rakibin Beceri Saldırı Değeri",
+  "el": "Τιμή Επίθεσης Δεξιοτήτων Αντιπάλου"
+ },
+ "Mount Movement Speed": {
+  "tr": "Binek Hareket Hızı",
+  "el": "Ταχύτητα Κίνησης Ιππεύματος"
+ },
+ "Mount Attack Speed": {
+  "tr": "Binek Saldırı Hızı",
+  "el": "Ταχύτητα Επίθεσης Ιππεύματος"
+ },
+ "Yang Drop Rate": {
+  "tr": "Yang Düşürme Oranı",
+  "el": "Ποσοστό Πτώσης Yang"
+ },
+ "Item Drop Rate": {
+  "tr": "Eşya Düşürme Oranı",
+  "el": "Ποσοστό Πτώσης Αντικειμένων"
+ },
+ "EXP Bonus": {
+  "tr": "EXP Bonusu",
+  "el": "Μπόνους EXP"
+ },
+ "Casting Speed": {
+  "tr": "Büyü Hızı",
+  "el": "Ταχύτητα Μαγείας"
+ },
+ "Magic Attack Block Chance": {
+  "tr": "Büyülü Saldırı Bloklama Şansı",
+  "el": "Πιθανότητα Μπλοκαρίσματος Μαγικής Επίθεσης"
+ },
+ "Physical Attack Block Chance": {
+  "tr": "Fiziksel Saldırı Bloklama Şansı",
+  "el": "Πιθανότητα Μπλοκαρίσματος Φυσικής Επίθεσης"
+ },
+ "Magic Defence": {
+  "tr": "Büyü Savunması",
+  "el": "Μαγική Άμυνα"
+ },
+ "Average Damage vs Monsters": {
+  "tr": "Canavarlara Karşı Ortalama Hasar",
+  "el": "Μέση Ζημιά σε Τέρατα"
+ },
+ "PvP Flat": {
+  "tr": "Sabit PvP Bonusu",
+  "el": "Σταθερό Μπόνους PvP"
+ },
+ "Compare every item and its +5–+9 materials in one list.": {
+  "tr": "Tüm eşyaları ve +5–+9 malzemelerini tek listede karşılaştır.",
+  "el": "Σύγκρινε όλα τα αντικείμενα και τα υλικά +5–+9 σε μία λίστα."
+ },
+ "Find an item": {
+  "tr": "Eşya bul",
+  "el": "Εύρεση αντικειμένου"
+ },
+ "Name or level…": {
+  "tr": "İsim veya seviye…",
+  "el": "Όνομα ή επίπεδο…"
+ },
+ "No materials listed": {
+  "tr": "Malzeme listelenmemiş",
+  "el": "Δεν αναφέρονται υλικά"
+ },
+ "Upgrade materials": {
+  "tr": "Geliştirme malzemeleri",
+  "el": "Υλικά αναβάθμισης"
+ },
+ "Upgrade": {
+  "tr": "Geliştirme",
+  "el": "Αναβάθμιση"
+ },
+ "Material {number}": {
+  "tr": "Malzeme {number}",
+  "el": "Υλικό {number}"
+ },
+ "No additional material": {
+  "tr": "Ek malzeme yok",
+  "el": "Δεν υπάρχει επιπλέον υλικό"
+ },
+ "Equipment": {
+  "tr": "Eşya",
+  "el": "Εξοπλισμός"
  }
 }

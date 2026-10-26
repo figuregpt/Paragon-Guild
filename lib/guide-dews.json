@@ -1,0 +1,399 @@
+{
+ "reference": "/guide/dews/recipes-reference.png",
+ "items": {
+  "peach-blossom": {
+   "id": "peach-blossom",
+   "name": "Peach Blossom",
+   "icon": {
+    "src": "/guide/dews/peach-blossom.png"
+   }
+  },
+  "bellflower": {
+   "id": "bellflower",
+   "name": "Bellflower",
+   "icon": {
+    "src": "/guide/dews/bellflower.png"
+   }
+  },
+  "kaki-blossom": {
+   "id": "kaki-blossom",
+   "name": "Kaki Blossom",
+   "icon": {
+    "src": "/guide/dews/kaki-blossom.png"
+   }
+  },
+  "gango-root": {
+   "id": "gango-root",
+   "name": "Gango Root",
+   "icon": {
+    "src": "/guide/dews/gango-root.png"
+   }
+  },
+  "lilac": {
+   "id": "lilac",
+   "name": "Lilac",
+   "icon": {
+    "src": "/guide/dews/lilac.png"
+   }
+  },
+  "tue-fungus": {
+   "id": "tue-fungus",
+   "name": "Tue Fungus",
+   "icon": {
+    "src": "/guide/dews/tue-fungus.png"
+   }
+  },
+  "alpine-rose": {
+   "id": "alpine-rose",
+   "name": "Alpine Rose",
+   "icon": {
+    "src": "/guide/dews/alpine-rose.png"
+   }
+  },
+  "mulberry": {
+   "id": "mulberry",
+   "name": "Mulberry",
+   "icon": {
+    "src": "/guide/dews/mulberry.png"
+   }
+  },
+  "white-dew": {
+   "id": "white-dew",
+   "name": "White Dew",
+   "icon": {
+    "src": "/guide/dews/white-dew.png"
+   }
+  },
+  "blue-dew": {
+   "id": "blue-dew",
+   "name": "Blue Dew",
+   "icon": {
+    "src": "/guide/dews/blue-dew.png"
+   }
+  },
+  "green-dew": {
+   "id": "green-dew",
+   "name": "Green Dew",
+   "icon": {
+    "src": "/guide/dews/green-dew.png"
+   }
+  },
+  "yellow-dew": {
+   "id": "yellow-dew",
+   "name": "Yellow Dew",
+   "icon": {
+    "src": "/guide/dews/yellow-dew.png"
+   }
+  },
+  "orange-dew": {
+   "id": "orange-dew",
+   "name": "Orange Dew",
+   "icon": {
+    "src": "/guide/dews/orange-dew.png"
+   }
+  },
+  "red-dew": {
+   "id": "red-dew",
+   "name": "Red Dew",
+   "icon": {
+    "src": "/guide/dews/red-dew.png"
+   }
+  },
+  "purple-potion": {
+   "id": "purple-potion",
+   "name": "Purple Potion",
+   "icon": {
+    "src": "/guide/dews/purple-potion.png"
+   }
+  },
+  "green-potion": {
+   "id": "green-potion",
+   "name": "Green Potion",
+   "icon": {
+    "src": "/guide/dews/green-potion.png"
+   }
+  },
+  "turquoise-potion": {
+   "id": "turquoise-potion",
+   "name": "Cyan",
+   "icon": {
+    "src": "/guide/dews/recipes-reference.png",
+    "sheetWidth": 1052,
+    "sheetHeight": 352,
+    "x": 27,
+    "y": 8,
+    "width": 32,
+    "height": 32
+   },
+   "identification": "user-confirmed"
+  },
+  "violet-potion": {
+   "id": "violet-potion",
+   "name": "Purple",
+   "icon": {
+    "src": "/guide/dews/recipes-reference.png",
+    "sheetWidth": 1052,
+    "sheetHeight": 352,
+    "x": 211,
+    "y": 8,
+    "width": 32,
+    "height": 32
+   },
+   "identification": "user-confirmed"
+  },
+  "black-potion": {
+   "id": "black-potion",
+   "name": "Black",
+   "icon": {
+    "src": "/guide/dews/recipes-reference.png",
+    "sheetWidth": 1052,
+    "sheetHeight": 352,
+    "x": 387,
+    "y": 8,
+    "width": 32,
+    "height": 32
+   },
+   "identification": "user-confirmed"
+  },
+  "white-potion": {
+   "id": "white-potion",
+   "name": "White",
+   "icon": {
+    "src": "/guide/dews/recipes-reference.png",
+    "sheetWidth": 1052,
+    "sheetHeight": 352,
+    "x": 536,
+    "y": 179,
+    "width": 32,
+    "height": 32
+   },
+   "identification": "colour-label"
+  },
+  "dandelion": {
+   "id": "dandelion",
+   "name": "Dandelion",
+   "icon": {
+    "src": "/guide/dews/recipes-reference.png",
+    "sheetWidth": 1052,
+    "sheetHeight": 352,
+    "x": 447,
+    "y": 8,
+    "width": 32,
+    "height": 22
+   },
+   "identification": "user-confirmed"
+  },
+  "thistle": {
+   "id": "thistle",
+   "name": "Thistle",
+   "icon": {
+    "src": "/guide/dews/recipes-reference.png",
+    "sheetWidth": 1052,
+    "sheetHeight": 352,
+    "x": 665,
+    "y": 8,
+    "width": 32,
+    "height": 22
+   },
+   "identification": "user-confirmed"
+  }
+ },
+ "recipes": [
+  {
+   "id": "turquoise-potion",
+   "output": "turquoise-potion",
+   "quantity": 10,
+   "yang": 80000,
+   "referenceOrder": 1,
+   "ingredients": [
+    {
+     "item": "peach-blossom",
+     "quantity": 20
+    },
+    {
+     "item": "gango-root",
+     "quantity": 20
+    }
+   ]
+  },
+  {
+   "id": "violet-potion",
+   "output": "violet-potion",
+   "quantity": 10,
+   "yang": 80000,
+   "referenceOrder": 2,
+   "ingredients": [
+    {
+     "item": "bellflower",
+     "quantity": 20
+    },
+    {
+     "item": "kaki-blossom",
+     "quantity": 20
+    }
+   ]
+  },
+  {
+   "id": "black-potion",
+   "output": "black-potion",
+   "quantity": 10,
+   "yang": 80000,
+   "referenceOrder": 3,
+   "ingredients": [
+    {
+     "item": "dandelion",
+     "quantity": 20
+    },
+    {
+     "item": "kaki-blossom",
+     "quantity": 20
+    }
+   ]
+  },
+  {
+   "id": "white-dew",
+   "output": "white-dew",
+   "quantity": 10,
+   "yang": 125000,
+   "referenceOrder": 4,
+   "ingredients": [
+    {
+     "item": "alpine-rose",
+     "quantity": 20
+    },
+    {
+     "item": "thistle",
+     "quantity": 20
+    }
+   ]
+  },
+  {
+   "id": "blue-dew",
+   "output": "blue-dew",
+   "quantity": 10,
+   "yang": 50000,
+   "referenceOrder": 5,
+   "ingredients": [
+    {
+     "item": "thistle",
+     "quantity": 20
+    },
+    {
+     "item": "gango-root",
+     "quantity": 20
+    }
+   ]
+  },
+  {
+   "id": "green-dew",
+   "output": "green-dew",
+   "quantity": 10,
+   "yang": 75000,
+   "referenceOrder": 6,
+   "ingredients": [
+    {
+     "item": "tue-fungus",
+     "quantity": 20
+    },
+    {
+     "item": "dandelion",
+     "quantity": 20
+    }
+   ]
+  },
+  {
+   "id": "yellow-dew",
+   "output": "yellow-dew",
+   "quantity": 10,
+   "yang": 50000,
+   "referenceOrder": 7,
+   "ingredients": [
+    {
+     "item": "mulberry",
+     "quantity": 20
+    },
+    {
+     "item": "lilac",
+     "quantity": 20
+    }
+   ]
+  },
+  {
+   "id": "orange-dew",
+   "output": "orange-dew",
+   "quantity": 10,
+   "yang": 25000,
+   "referenceOrder": 8,
+   "ingredients": [
+    {
+     "item": "lilac",
+     "quantity": 20
+    },
+    {
+     "item": "tue-fungus",
+     "quantity": 20
+    }
+   ]
+  },
+  {
+   "id": "red-dew",
+   "output": "red-dew",
+   "quantity": 10,
+   "yang": 50000,
+   "referenceOrder": 9,
+   "ingredients": [
+    {
+     "item": "mulberry",
+     "quantity": 20
+    },
+    {
+     "item": "alpine-rose",
+     "quantity": 20
+    }
+   ]
+  },
+  {
+   "id": "white-potion",
+   "output": "white-potion",
+   "quantity": 10,
+   "yang": 50000,
+   "referenceOrder": 10,
+   "ingredients": [
+    {
+     "item": "alpine-rose",
+     "quantity": 10
+    },
+    {
+     "item": "thistle",
+     "quantity": 10
+    }
+   ]
+  },
+  {
+   "id": "purple-potion",
+   "output": "purple-potion",
+   "quantity": 10,
+   "yang": 25000,
+   "referenceOrder": 11,
+   "ingredients": [
+    {
+     "item": "bellflower",
+     "quantity": 20
+    }
+   ]
+  },
+  {
+   "id": "green-potion",
+   "output": "green-potion",
+   "quantity": 10,
+   "yang": 25000,
+   "referenceOrder": 12,
+   "ingredients": [
+    {
+     "item": "peach-blossom",
+     "quantity": 20
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,692 @@
+[
+ {
+  "name": "Wolf Fur",
+  "image": "/guide/upgrades/icons/wolf-fur.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Wolf_Fur",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/f/f5/Wolf_Fur.png"
+ },
+ {
+  "name": "Bear Gall+",
+  "image": "/guide/upgrades/icons/bear-gall-plus.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Bear_Gall%2B",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/6/60/Bear_Gall%2B.png"
+ },
+ {
+  "name": "Ball",
+  "image": "/guide/upgrades/icons/ball.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Ball",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/7/7b/Ball.png"
+ },
+ {
+  "name": "Bear Gall",
+  "image": "/guide/upgrades/icons/bear-gall.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Bear_Gall",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/7/7f/Bear_Gall.png"
+ },
+ {
+  "name": "Bear Foot Skin+",
+  "image": "/guide/upgrades/icons/bear-foot-skin-plus.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Bear_Foot_Skin%2B",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/8/88/Bear_Foot_Skin%2B.png"
+ },
+ {
+  "name": "White Hairband+",
+  "image": "/guide/upgrades/icons/white-hairband-plus.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/White_Hairband%2B",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/c/ce/White_Hairband%2B.png"
+ },
+ {
+  "name": "Tiger Hide",
+  "image": "/guide/upgrades/icons/tiger-hide.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Tiger_Hide",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/3/30/Tiger_Hide.png"
+ },
+ {
+  "name": "White Hairband",
+  "image": "/guide/upgrades/icons/white-hairband.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/White_Hairband",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/e/ef/White_Hairband.png"
+ },
+ {
+  "name": "Ornamental Hairpin",
+  "image": "/guide/upgrades/icons/ornamental-hairpin.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Ornamental_Hairpin",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/7/7d/Ornamental_Hairpin.png"
+ },
+ {
+  "name": "Bear Foot Skin",
+  "image": "/guide/upgrades/icons/bear-foot-skin.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Bear_Foot_Skin",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/4/4f/Bear_Foot_Skin.png"
+ },
+ {
+  "name": "White Tiger Hide",
+  "image": "/guide/upgrades/icons/white-tiger-hide.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/White_Tiger_Hide",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/0/0c/White_Tiger_Hide.png"
+ },
+ {
+  "name": "Face Cream",
+  "image": "/guide/upgrades/icons/face-cream.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Face_Cream",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/3/37/Face_Cream.png"
+ },
+ {
+  "name": "Piece of Broken Armour",
+  "image": "/guide/upgrades/icons/piece-of-broken-armour.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Piece_of_Broken_Armour",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/6/67/Piece_of_Broken_Armour.png"
+ },
+ {
+  "name": "Broken Porcelain",
+  "image": "/guide/upgrades/icons/broken-porcelain.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Broken_Porcelain",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/1/11/Broken_Porcelain.png"
+ },
+ {
+  "name": "Shiriken+",
+  "image": "/guide/upgrades/icons/shiriken-plus.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Shiriken%2B",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/e/e4/Shiriken%2B.png"
+ },
+ {
+  "name": "Fishbones",
+  "image": "/guide/upgrades/icons/fishbones.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Fishbones",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/7/7c/Fishbones.png"
+ },
+ {
+  "name": "Scorpion Tail",
+  "image": "/guide/upgrades/icons/scorpion-tail.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Scorpion_Tail",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/1/12/Scorpion_Tail.png"
+ },
+ {
+  "name": "Snake Tail",
+  "image": "/guide/upgrades/icons/snake-tail.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Snake_Tail",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/6/6c/Snake_Tail.png"
+ },
+ {
+  "name": "Clam",
+  "image": "/guide/upgrades/icons/clam.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Clam",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/e/ed/Clam.png"
+ },
+ {
+  "name": "Rusty Blade",
+  "image": "/guide/upgrades/icons/rusty-blade.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Rusty_Blade",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/6/6d/Rusty_Blade.png"
+ },
+ {
+  "name": "Esoteric Primer+",
+  "image": "/guide/upgrades/icons/esoteric-primer-plus.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Esoteric_Primer%2B",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/c/c1/Esoteric_Primer%2B.png"
+ },
+ {
+  "name": "Spider Web",
+  "image": "/guide/upgrades/icons/spider-web.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Spider_Web",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/1/1d/Spider_Web.png"
+ },
+ {
+  "name": "Spider's Poison Sack",
+  "image": "/guide/upgrades/icons/spider-s-poison-sack.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Spider%27s_Poison_Sack",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/5/52/Spider%27s_Poison_Sack.png"
+ },
+ {
+  "name": "Spider Egg Sack",
+  "image": "/guide/upgrades/icons/spider-egg-sack.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Spider_Egg_Sack",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/a/af/Spider_Egg_Sack.png"
+ },
+ {
+  "name": "Piece of Gem",
+  "image": "/guide/upgrades/icons/piece-of-gem.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Piece_of_Gem",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/3/3d/Piece_of_Gem.png"
+ },
+ {
+  "name": "Shiriken",
+  "image": "/guide/upgrades/icons/shiriken.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Shiriken",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/f/fc/Shiriken.png"
+ },
+ {
+  "name": "Black Uniform",
+  "image": "/guide/upgrades/icons/black-uniform.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Black_Uniform",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/4/46/Black_Uniform.png"
+ },
+ {
+  "name": "Unknown Talisman",
+  "image": "/guide/upgrades/icons/unknown-talisman.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Unknown_Talisman",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/8/8b/Unknown_talisman.png"
+ },
+ {
+  "name": "Curse Book",
+  "image": "/guide/upgrades/icons/curse-book.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Curse_Book",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/6/6f/Curse_Book.png"
+ },
+ {
+  "name": "Unknown Talisman+",
+  "image": "/guide/upgrades/icons/unknown-talisman-plus.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Unknown_Talisman%2B",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/2/26/Unknown_Talisman%2B.png"
+ },
+ {
+  "name": "Curse Book+",
+  "image": "/guide/upgrades/icons/curse-book-plus.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Curse_Book%2B",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/1/14/Curse_Book%2B.png"
+ },
+ {
+  "name": "Demon's Gem+",
+  "image": "/guide/upgrades/icons/demon-s-gem-plus.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Demon%27s_Gem%2B",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/e/ec/Demon%27s_Gem%2B.png"
+ },
+ {
+  "name": "White Pearl",
+  "image": "/guide/upgrades/icons/white-pearl.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/White_Pearl",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/e/e2/White_Pearl.png"
+ },
+ {
+  "name": "Ice Killer Whale Horn",
+  "image": "/guide/upgrades/icons/ice-killer-whale-horn.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Ice_Killer_Whale_Horn",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/d/d3/Ice_Killer_Whale_Horn.png"
+ },
+ {
+  "name": "Blue Pearl",
+  "image": "/guide/upgrades/icons/blue-pearl.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Blue_Pearl",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/8/80/Blue_Pearl.png"
+ },
+ {
+  "name": "Yeti Fur+",
+  "image": "/guide/upgrades/icons/yeti-fur-plus.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Yeti_Fur%2B",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/e/ee/Yeti_Fur%2B.png"
+ },
+ {
+  "name": "Blood-Red Pearl",
+  "image": "/guide/upgrades/icons/blood-red-pearl.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Blood-Red_Pearl",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/5/50/Blood-Red_Pearl.png"
+ },
+ {
+  "name": "Snake Tail+",
+  "image": "/guide/upgrades/icons/snake-tail-plus.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Snake_Tail%2B",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/6/66/Snake_Tail%2B.png"
+ },
+ {
+  "name": "Frog Tongue",
+  "image": "/guide/upgrades/icons/frog-tongue.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Frog_Tongue",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/7/79/Frog_Tongue.png"
+ },
+ {
+  "name": "Frog's Legs",
+  "image": "/guide/upgrades/icons/frog-s-legs.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Frog%27s_Legs",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/1/15/Frog%27s_Legs.png"
+ },
+ {
+  "name": "Ice Marble",
+  "image": "/guide/upgrades/icons/ice-marble.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Ice_Marble",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/e/e6/Ice_Marble.png"
+ },
+ {
+  "name": "Flaming Mane",
+  "image": "/guide/upgrades/icons/flaming-mane.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Flaming_Mane",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/d/d4/Flaming_Mane.png"
+ },
+ {
+  "name": "Scorpion Tail+",
+  "image": "/guide/upgrades/icons/scorpion-tail-plus.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Scorpion_Tail%2B",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/6/69/Scorpion_Tail%2B.png"
+ },
+ {
+  "name": "Demon's Keepsake",
+  "image": "/guide/upgrades/icons/demon-s-keepsake.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Demon%27s_Keepsake",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/b/b1/Demon%27s_Keepsake.png"
+ },
+ {
+  "name": "Leaf",
+  "image": "/guide/upgrades/icons/leaf.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Leaf",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/a/a8/Leaf.png"
+ },
+ {
+  "name": "Yeti Fur",
+  "image": "/guide/upgrades/icons/yeti-fur.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Yeti_Fur",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/9/9c/Yeti_Fur.png"
+ },
+ {
+  "name": "Tiger Fang",
+  "image": "/guide/upgrades/icons/tiger-fang.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Tiger_Fang",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/2/2f/Tiger_Fang.png"
+ },
+ {
+  "name": "Spider Legs",
+  "image": "/guide/upgrades/icons/spider-legs.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Spider_Legs",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/f/f3/Spider_Legs.png"
+ },
+ {
+  "name": "Demon's Gem",
+  "image": "/guide/upgrades/icons/demon-s-gem.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Demon%27s_Gem",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/e/e5/Demon%27s_Gem.png"
+ },
+ {
+  "name": "Demon's Keepsake+",
+  "image": "/guide/upgrades/icons/demon-s-keepsake-plus.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Demon%27s_Keepsake%2B",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/e/e6/Demon%27s_Keepsake%2B.png"
+ },
+ {
+  "name": "Finger Bones",
+  "image": "/guide/upgrades/icons/finger-bones.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Finger_Bones",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/b/bc/Finger_Bones.png"
+ },
+ {
+  "name": "Warrior's Symbol",
+  "image": "/guide/upgrades/icons/warrior-s-symbol.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Warrior%27s_Symbol",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/2/21/Warrior%27s_Symbol.png"
+ },
+ {
+  "name": "Flag",
+  "image": "/guide/upgrades/icons/flag.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Flag",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/7/76/Flag.png"
+ },
+ {
+  "name": "Esoteric Primer",
+  "image": "/guide/upgrades/icons/esoteric-primer.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Esoteric_Primer",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/7/70/Esoteric_Primer.png"
+ },
+ {
+  "name": "Scorpion Needle",
+  "image": "/guide/upgrades/icons/scorpion-needle.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Scorpion_Needle",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/a/ab/Scorpion_Needle.png"
+ },
+ {
+  "name": "Scorpion Claw",
+  "image": "/guide/upgrades/icons/scorpion-claw.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Scorpion_Claw",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/b/b8/Scorpion_Claw.png"
+ },
+ {
+  "name": "Snakeskin",
+  "image": "/guide/upgrades/icons/snakeskin.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Snakeskin",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/9/90/Snakeskin.png"
+ },
+ {
+  "name": "Orc Tooth",
+  "image": "/guide/upgrades/icons/orc-tooth.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Orc_Tooth",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/2/21/Orc_Tooth.png"
+ },
+ {
+  "name": "Orc Tooth+",
+  "image": "/guide/upgrades/icons/orc-tooth-plus.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Orc_Tooth%2B",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/3/30/Orc_Tooth%2B.png"
+ },
+ {
+  "name": "Unknown Medicine",
+  "image": "/guide/upgrades/icons/unknown-medicine.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Unknown_Medicine",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/e/ef/Unknown_Medicine.png"
+ },
+ {
+  "name": "Piece of Fabric",
+  "image": "/guide/upgrades/icons/piece-of-fabric.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Piece_of_Fabric",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/2/22/Piece_of_Fabric.png"
+ },
+ {
+  "name": "Piece of Fabric+",
+  "image": "/guide/upgrades/icons/piece-of-fabric-plus.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Piece_of_Fabric%2B",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/e/e3/Piece_of_Fabric%2B.png"
+ },
+ {
+  "name": "Piece of Ice+",
+  "image": "/guide/upgrades/icons/piece-of-ice-plus.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Piece_of_Ice%2B",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/5/59/Piece_of_Ice%2B.png"
+ },
+ {
+  "name": "Ice Marble+",
+  "image": "/guide/upgrades/icons/ice-marble-plus.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Ice_Marble%2B",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/8/84/Ice_Marble%2B.png"
+ },
+ {
+  "name": "Wolf Claw",
+  "image": "/guide/upgrades/icons/wolf-claw.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Wolf_Claw",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/7/74/Wolf_Claw.png"
+ },
+ {
+  "name": "Wolf Claw+",
+  "image": "/guide/upgrades/icons/wolf-claw-plus.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Wolf_Claw%2B",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/1/18/Wolf_Claw%2B.png"
+ },
+ {
+  "name": "Ornament",
+  "image": "/guide/upgrades/icons/ornament.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Ornament",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/7/7f/Ornament.png"
+ },
+ {
+  "name": "Savage's Booty",
+  "image": "/guide/upgrades/icons/savage-s-booty.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Savage%27s_Booty",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/9/9a/Savage%27s_Booty.png"
+ },
+ {
+  "name": "Orc Amulet",
+  "image": "/guide/upgrades/icons/orc-amulet.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Orc_Amulet",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/7/75/Orc_Amulet.png"
+ },
+ {
+  "name": "Orc Amulet+",
+  "image": "/guide/upgrades/icons/orc-amulet-plus.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Orc_Amulet%2B",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/1/17/Orc_Amulet%2B.png"
+ },
+ {
+  "name": "Spider Eyes",
+  "image": "/guide/upgrades/icons/spider-eyes.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Spider_Eyes",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/7/7c/Spider_Eyes.png"
+ },
+ {
+  "name": "Copper Earrings",
+  "image": "/guide/upgrades/icons/copper-earrings.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Copper_Earrings",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/2/23/Copper_Earrings.png"
+ },
+ {
+  "name": "Silver Earrings",
+  "image": "/guide/upgrades/icons/silver-earrings.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Silver_Earrings",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/c/ce/Silver_Earrings.png"
+ },
+ {
+  "name": "Golden Earrings",
+  "image": "/guide/upgrades/icons/golden-earrings.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Golden_Earrings",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/7/7f/Golden_Earrings.png"
+ },
+ {
+  "name": "Jade Earrings",
+  "image": "/guide/upgrades/icons/jade-earrings.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Jade_Earrings",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/1/12/Jade_Earrings.png"
+ },
+ {
+  "name": "Ebony Earrings",
+  "image": "/guide/upgrades/icons/ebony-earrings.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Ebony_Earrings",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/e/e5/Ebony_Earrings.png"
+ },
+ {
+  "name": "Pearl Earrings",
+  "image": "/guide/upgrades/icons/pearl-earrings.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Pearl_Earrings",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/0/03/Pearl_Earrings.png"
+ },
+ {
+  "name": "White Gold Earrings",
+  "image": "/guide/upgrades/icons/white-gold-earrings.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/White_Gold_Earrings",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/7/7a/White_Gold_Earrings.png"
+ },
+ {
+  "name": "Crystal Earrings",
+  "image": "/guide/upgrades/icons/crystal-earrings.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Crystal_Earrings",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/7/77/Crystal_Earrings.png"
+ },
+ {
+  "name": "Amethyst Earrings",
+  "image": "/guide/upgrades/icons/amethyst-earrings.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Amethyst_Earrings",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/b/b1/Amethyst_Earrings.png"
+ },
+ {
+  "name": "Heaven's Tear Earrings",
+  "image": "/guide/upgrades/icons/heaven-s-tear-earrings.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Heaven%27s_Tear_Earrings",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/a/a2/Heaven%27s_Tear_Earrings.png"
+ },
+ {
+  "name": "Copper Necklace",
+  "image": "/guide/upgrades/icons/copper-necklace.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Copper_Necklace",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/9/99/Copper_Necklace.png"
+ },
+ {
+  "name": "Silver Necklace",
+  "image": "/guide/upgrades/icons/silver-necklace.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Silver_Necklace",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/8/8d/Silver_Necklace.png"
+ },
+ {
+  "name": "Golden Necklace",
+  "image": "/guide/upgrades/icons/golden-necklace.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Golden_Necklace",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/2/2c/Golden_Necklace.png"
+ },
+ {
+  "name": "Jade Necklace",
+  "image": "/guide/upgrades/icons/jade-necklace.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Jade_Necklace",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/b/b6/Jade_Necklace.png"
+ },
+ {
+  "name": "Ebony Necklace",
+  "image": "/guide/upgrades/icons/ebony-necklace.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Ebony_Necklace",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/d/d1/Ebony_Necklace.png"
+ },
+ {
+  "name": "Pearl Necklace",
+  "image": "/guide/upgrades/icons/pearl-necklace.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Pearl_Necklace",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/c/cf/Pearl_Necklace.png"
+ },
+ {
+  "name": "White Gold Necklace",
+  "image": "/guide/upgrades/icons/white-gold-necklace.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/White_Gold_Necklace",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/0/03/White_Gold_Necklace.png"
+ },
+ {
+  "name": "Crystal Necklace",
+  "image": "/guide/upgrades/icons/crystal-necklace.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Crystal_Necklace",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/3/3e/Crystal_Necklace.png"
+ },
+ {
+  "name": "Amethyst Necklace",
+  "image": "/guide/upgrades/icons/amethyst-necklace.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Amethyst_Necklace",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/6/6a/Amethyst_Necklace.png"
+ },
+ {
+  "name": "Heaven's Tear Necklace",
+  "image": "/guide/upgrades/icons/heaven-s-tear-necklace.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Heaven%27s_Tear_Necklace",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/2/2b/Heaven%27s_Tear_Necklace.png"
+ },
+ {
+  "name": "Copper Bracelet",
+  "image": "/guide/upgrades/icons/copper-bracelet.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Copper_Bracelet",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/d/d0/Copper_Bracelet.png"
+ },
+ {
+  "name": "Silver Bracelet",
+  "image": "/guide/upgrades/icons/silver-bracelet.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Silver_Bracelet",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/b/b5/Silver_Bracelet.png"
+ },
+ {
+  "name": "Gold Bracelet",
+  "image": "/guide/upgrades/icons/gold-bracelet.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Gold_Bracelet",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/5/56/Gold_Bracelet.png"
+ },
+ {
+  "name": "Jade Bracelet",
+  "image": "/guide/upgrades/icons/jade-bracelet.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Jade_Bracelet",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/2/23/Jade_Bracelet.png"
+ },
+ {
+  "name": "Ebony Bracelet",
+  "image": "/guide/upgrades/icons/ebony-bracelet.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Ebony_Bracelet",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/2/21/Ebony_Bracelet.png"
+ },
+ {
+  "name": "Pearl Bracelet",
+  "image": "/guide/upgrades/icons/pearl-bracelet.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Pearl_Bracelet",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/d/d4/Pearl_Bracelet.png"
+ },
+ {
+  "name": "White Gold Bracelet",
+  "image": "/guide/upgrades/icons/white-gold-bracelet.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/White_Gold_Bracelet",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/8/81/White_Gold_Bracelet.png"
+ },
+ {
+  "name": "Crystal Bracelet",
+  "image": "/guide/upgrades/icons/crystal-bracelet.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Crystal_Bracelet",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/1/11/Crystal_Bracelet.png"
+ },
+ {
+  "name": "Amethyst Bracelet",
+  "image": "/guide/upgrades/icons/amethyst-bracelet.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Amethyst_Bracelet",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/6/6e/Amethyst_Bracelet.png"
+ },
+ {
+  "name": "Heaven's Tear Bracelet",
+  "image": "/guide/upgrades/icons/heaven-s-tear-bracelet.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Heaven%27s_Tear_Bracelet",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/6/6f/Heaven%27s_Tear_Bracelet.png"
+ },
+ {
+  "name": "Bamboo Skin Shoes",
+  "image": "/guide/upgrades/icons/bamboo-skin-shoes.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Bamboo_Skin_Shoes",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/7/70/Bamboo_Skin_Shoes.png"
+ },
+ {
+  "name": "Wooden Shoes",
+  "image": "/guide/upgrades/icons/wooden-shoes.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Wooden_Shoes",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/d/d8/Wooden_Shoes.png"
+ },
+ {
+  "name": "Gold Threaded Shoes",
+  "image": "/guide/upgrades/icons/gold-threaded-shoes.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Gold_Threaded_Shoes",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/3/31/Gold_Threaded_Shoes.png"
+ },
+ {
+  "name": "Leather Boots",
+  "image": "/guide/upgrades/icons/leather-boots.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Leather_Boots",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/f/fd/Leather_Boots.png"
+ },
+ {
+  "name": "Golden Shoes",
+  "image": "/guide/upgrades/icons/golden-shoes.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Golden_Shoes",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/0/05/Golden_Shoes.png"
+ },
+ {
+  "name": "Bronze Boots",
+  "image": "/guide/upgrades/icons/bronze-boots.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Bronze_Boots",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/c/cd/Bronze_Boots.png"
+ },
+ {
+  "name": "Jade Shoes",
+  "image": "/guide/upgrades/icons/jade-shoes.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Jade_Shoes",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/8/8d/Jade_Shoes.png"
+ },
+ {
+  "name": "Ecstasy Shoes",
+  "image": "/guide/upgrades/icons/ecstasy-shoes.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Ecstasy_Shoes",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/a/a1/Ecstasy_Shoes.png"
+ },
+ {
+  "name": "Nimbus Boots",
+  "image": "/guide/upgrades/icons/nimbus-boots.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Nimbus_Boots",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/0/08/Nimbus_Boots.png"
+ },
+ {
+  "name": "Phoenix Shoes",
+  "image": "/guide/upgrades/icons/phoenix-shoes.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Phoenix_Shoes",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/8/8c/Phoenix_Shoes.png"
+ },
+ {
+  "name": "Fire Bird Shoes",
+  "image": "/guide/upgrades/icons/fire-bird-shoes.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Fire_Bird_Shoes",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/f/f2/Fire_Bird_Shoes.png"
+ },
+ {
+  "name": "Battle Shield",
+  "image": "/guide/upgrades/icons/battle-shield.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Battle_Shield",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/7/71/Battle_Shield.png"
+ },
+ {
+  "name": "Pentagon Shield",
+  "image": "/guide/upgrades/icons/pentagon-shield.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Pentagon_Shield",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/7/71/Pentagon_Shield.png"
+ },
+ {
+  "name": "Black Round Shield",
+  "image": "/guide/upgrades/icons/black-round-shield.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Black_Round_Shield",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/6/66/Black_Round_Shield.png"
+ }
+]

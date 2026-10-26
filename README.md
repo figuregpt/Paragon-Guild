@@ -148,3 +148,12 @@ Administrators can cancel unfinished events, including events awaiting review. A
 Migrations `0017_member_profiles_groups.sql` and `0018_member_class_roles.sql` add profile/group storage, cancellation metadata and Discord specialization labels. They preserve existing members, PP, auctions, events and migration history.
 
 For isolated browser checks, install Playwright separately and run `node scripts/private-member-preview.mjs --test` in one terminal. This loopback-only development environment uses 80 fictional members in the OS temporary directory and disables real Discord, spreadsheets, push and scheduled jobs. Run the following tests sequentially against port 3193: `node tests/member-community-api.mjs`, `node tests/member-bonus-picker-ui.mjs`, `node tests/member-community-ui.mjs`, and `node tests/member-suggestions-ui.mjs`. Production builds remove the fixture login branch and never seed these accounts.
+
+
+## In-app game guide
+
+The member-only Guide directory lists 13 bosses with maps and supplied spawn markers. Each boss opens its spawn map, a separate direct-drop status, and available chest contents. Six unique chest references contain 77 named items and 174 grouped chest entries, with compact inventory and detailed views. Missing references stay marked as pending; no generic Wiki drop chances are substituted for Arthion data.
+
+Dews & Potions contains 12 recipes transcribed from the supplied Arthion crafting screen, including output counts, ingredient quantities and Yang costs. Item Upgrades presents 68 equipment/level rows across eight categories as a notebook-style list, with all +5–+9 material columns visible together. Clicking a material opens its name, quantity and exact upgrade step. Unknown requirements and uncertain quantities remain explicit. The supplied Adaptation stat is translated as Kararlılık in Turkish.
+
+All guide sections support English, Turkish and Greek. Original image/name references are documented beneath `public/guide/bosses`, `public/guide/loot`, `public/guide/dews`, `public/guide/upgrades` and `public/maps/boss-guide`. Guide content does not change membership checks, rewards or production data.

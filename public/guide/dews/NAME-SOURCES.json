@@ -1,0 +1,1082 @@
+{
+ "batchcomplete": "",
+ "query": {
+  "pages": {
+   "3667": {
+    "pageid": 3667,
+    "ns": 0,
+    "title": "Alpine Rose",
+    "langlinks": [
+     {
+      "lang": "cz",
+      "*": "Rododendron"
+     },
+     {
+      "lang": "de",
+      "*": "Alpenrose"
+     },
+     {
+      "lang": "es",
+      "*": "Rosa Alpina"
+     },
+     {
+      "lang": "fr",
+      "*": "Rose des montagnes"
+     },
+     {
+      "lang": "hu",
+      "*": "Alpesi rózsa"
+     },
+     {
+      "lang": "it",
+      "*": "Rosa Alpina"
+     },
+     {
+      "lang": "nl",
+      "*": "Alpenrose"
+     },
+     {
+      "lang": "pl",
+      "*": "Róża Alpejska"
+     },
+     {
+      "lang": "ro",
+      "*": "Trandafir Alpin"
+     },
+     {
+      "lang": "tr",
+      "*": "Alp Gülü"
+     }
+    ]
+   },
+   "3674": {
+    "pageid": 3674,
+    "ns": 0,
+    "title": "Bellflower",
+    "langlinks": [
+     {
+      "lang": "cz",
+      "*": "Zvonek"
+     },
+     {
+      "lang": "de",
+      "*": "Glockenblume"
+     },
+     {
+      "lang": "es",
+      "*": "Campana las Liebres"
+     },
+     {
+      "lang": "fr",
+      "*": "Campanule"
+     },
+     {
+      "lang": "hu",
+      "*": "Harangvirág"
+     },
+     {
+      "lang": "it",
+      "*": "Campanula"
+     },
+     {
+      "lang": "pl",
+      "*": "Pokrzywa"
+     },
+     {
+      "lang": "pt",
+      "*": "Flor de Sino"
+     },
+     {
+      "lang": "ro",
+      "*": "Floare Clopoţel"
+     },
+     {
+      "lang": "tr",
+      "*": "Çançiçeği"
+     }
+    ]
+   },
+   "3658": {
+    "pageid": 3658,
+    "ns": 0,
+    "title": "Bellflower Juice",
+    "langlinks": [
+     {
+      "lang": "cz",
+      "*": "Zvonková šťáva"
+     },
+     {
+      "lang": "de",
+      "*": "Glockenblumensaft"
+     },
+     {
+      "lang": "hu",
+      "*": "Harangvirág lé"
+     },
+     {
+      "lang": "it",
+      "*": "Succo di Campanula"
+     },
+     {
+      "lang": "nl",
+      "*": "Glockenblumensaft"
+     },
+     {
+      "lang": "pl",
+      "*": "Sok Z Pokrzywy"
+     },
+     {
+      "lang": "ro",
+      "*": "Suc de Floare Clopoţel"
+     },
+     {
+      "lang": "tr",
+      "*": "Çançiçeği Suyu"
+     }
+    ]
+   },
+   "13404": {
+    "pageid": 13404,
+    "ns": 0,
+    "title": "Blue Dew",
+    "langlinks": [
+     {
+      "lang": "cz",
+      "*": "Modrá rosa"
+     },
+     {
+      "lang": "de",
+      "*": "Blauer Tau"
+     },
+     {
+      "lang": "fr",
+      "*": "Rosée bleue"
+     },
+     {
+      "lang": "hu",
+      "*": "Kék Harmat"
+     },
+     {
+      "lang": "it",
+      "*": "Rugiada Blu"
+     },
+     {
+      "lang": "nl",
+      "*": "Blauer Tau"
+     },
+     {
+      "lang": "pl",
+      "*": "Niebieska Rosa"
+     },
+     {
+      "lang": "ro",
+      "*": "Rouă Albastră"
+     },
+     {
+      "lang": "tr",
+      "*": "Mavi Şebnem"
+     }
+    ]
+   },
+   "3665": {
+    "pageid": 3665,
+    "ns": 0,
+    "title": "Bo Water",
+    "langlinks": [
+     {
+      "lang": "cz",
+      "*": "Voda Bo"
+     },
+     {
+      "lang": "de",
+      "*": "Bo-Wasser"
+     },
+     {
+      "lang": "fr",
+      "*": "Eau de Bo"
+     },
+     {
+      "lang": "gr",
+      "*": "Νερό Bo"
+     },
+     {
+      "lang": "hu",
+      "*": "Bo-víz"
+     },
+     {
+      "lang": "it",
+      "*": "Acqua Bo"
+     },
+     {
+      "lang": "pl",
+      "*": "Woda Bo"
+     },
+     {
+      "lang": "ro",
+      "*": "Apă Bo"
+     },
+     {
+      "lang": "tr",
+      "*": "Bo Suyu"
+     }
+    ]
+   },
+   "3659": {
+    "pageid": 3659,
+    "ns": 0,
+    "title": "Dok Water",
+    "langlinks": [
+     {
+      "lang": "cz",
+      "*": "Voda Dok"
+     },
+     {
+      "lang": "de",
+      "*": "Dok-Wasser"
+     },
+     {
+      "lang": "fr",
+      "*": "Eau de Dok"
+     },
+     {
+      "lang": "hu",
+      "*": "Dok-víz"
+     },
+     {
+      "lang": "it",
+      "*": "Acqua Dok"
+     },
+     {
+      "lang": "pl",
+      "*": "Woda Dok"
+     },
+     {
+      "lang": "ro",
+      "*": "Apă Dok"
+     },
+     {
+      "lang": "tr",
+      "*": "Dok Suyu"
+     }
+    ]
+   },
+   "3675": {
+    "pageid": 3675,
+    "ns": 0,
+    "title": "Gango Root",
+    "langlinks": [
+     {
+      "lang": "de",
+      "*": "Gango-Wurzel"
+     },
+     {
+      "lang": "fr",
+      "*": "Racine de Gango"
+     }
+    ]
+   },
+   "3661": {
+    "pageid": 3661,
+    "ns": 0,
+    "title": "Gango Root Juice",
+    "langlinks": [
+     {
+      "lang": "cz",
+      "*": "Gangokořenová šťáva"
+     },
+     {
+      "lang": "de",
+      "*": "Gango-Wurzelsaft"
+     },
+     {
+      "lang": "hu",
+      "*": "Gangó gyökér lé"
+     },
+     {
+      "lang": "it",
+      "*": "Succo di Radice di Gango"
+     },
+     {
+      "lang": "nl",
+      "*": "Gango-Wurzelsaft"
+     },
+     {
+      "lang": "pl",
+      "*": "Sok Z Korzenia Gango"
+     },
+     {
+      "lang": "ro",
+      "*": "Suc de Rădăcină de Gango"
+     },
+     {
+      "lang": "tr",
+      "*": "Gango Kökü Suyu"
+     }
+    ]
+   },
+   "13405": {
+    "pageid": 13405,
+    "ns": 0,
+    "title": "Green Dew",
+    "langlinks": [
+     {
+      "lang": "cz",
+      "*": "Zelená rosa"
+     },
+     {
+      "lang": "de",
+      "*": "Grüner Tau"
+     },
+     {
+      "lang": "fr",
+      "*": "Rosée verte"
+     },
+     {
+      "lang": "gr",
+      "*": "Πράσινη Δροσιά"
+     },
+     {
+      "lang": "hu",
+      "*": "Zöld Harmat"
+     },
+     {
+      "lang": "it",
+      "*": "Rugiada Verde"
+     },
+     {
+      "lang": "pl",
+      "*": "Zielona Rosa"
+     },
+     {
+      "lang": "ro",
+      "*": "Rouă Verde"
+     },
+     {
+      "lang": "tr",
+      "*": "Yeşil Şebnem"
+     }
+    ]
+   },
+   "10081": {
+    "pageid": 10081,
+    "ns": 0,
+    "title": "Green Potion",
+    "langlinks": [
+     {
+      "lang": "ae",
+      "*": "جرع خضراء"
+     },
+     {
+      "lang": "de",
+      "*": "Grüner Trank"
+     },
+     {
+      "lang": "gr",
+      "*": "Πράσινο Φίλτρο"
+     },
+     {
+      "lang": "pl",
+      "*": "Zielona Mikstura"
+     },
+     {
+      "lang": "pt",
+      "*": "Poção Verde"
+     },
+     {
+      "lang": "ro",
+      "*": "Licoare Verde"
+     },
+     {
+      "lang": "tr",
+      "*": "Yeşil İksir"
+     }
+    ]
+   },
+   "3663": {
+    "pageid": 3663,
+    "ns": 0,
+    "title": "Hwal Water",
+    "langlinks": [
+     {
+      "lang": "cz",
+      "*": "Voda Hwal"
+     },
+     {
+      "lang": "de",
+      "*": "Hwal-Wasser"
+     },
+     {
+      "lang": "fr",
+      "*": "Eau de Hwal"
+     },
+     {
+      "lang": "gr",
+      "*": "Νερό Hwal"
+     },
+     {
+      "lang": "it",
+      "*": "Acqua Hwal"
+     },
+     {
+      "lang": "pl",
+      "*": "Woda Hwal"
+     },
+     {
+      "lang": "ro",
+      "*": "Apă Hwal"
+     },
+     {
+      "lang": "tr",
+      "*": "Hwal Suyu"
+     }
+    ]
+   },
+   "3671": {
+    "pageid": 3671,
+    "ns": 0,
+    "title": "Kaki Blossom",
+    "langlinks": [
+     {
+      "lang": "de",
+      "*": "Kakiblüte"
+     },
+     {
+      "lang": "fr",
+      "*": "Fleur de kaki"
+     }
+    ]
+   },
+   "3664": {
+    "pageid": 3664,
+    "ns": 0,
+    "title": "Kaki Blossom Juice",
+    "langlinks": [
+     {
+      "lang": "cz",
+      "*": "Kakikvětová šťáva"
+     },
+     {
+      "lang": "de",
+      "*": "Kakiblütensaft"
+     },
+     {
+      "lang": "hu",
+      "*": "Datolyaszilva virág lé"
+     },
+     {
+      "lang": "it",
+      "*": "Succo di Fiori di Caco"
+     },
+     {
+      "lang": "nl",
+      "*": "Kakiblütensaft"
+     },
+     {
+      "lang": "pl",
+      "*": "Sok Z Kwiatu Kaki"
+     },
+     {
+      "lang": "ro",
+      "*": "Suc de Floare Kaki"
+     },
+     {
+      "lang": "tr",
+      "*": "Kaki Çiçeği Suyu"
+     }
+    ]
+   },
+   "3668": {
+    "pageid": 3668,
+    "ns": 0,
+    "title": "Lilac",
+    "langlinks": [
+     {
+      "lang": "cz",
+      "*": "Šeřík"
+     },
+     {
+      "lang": "de",
+      "*": "Flieder"
+     },
+     {
+      "lang": "es",
+      "*": "Lila"
+     },
+     {
+      "lang": "fr",
+      "*": "Lilas"
+     },
+     {
+      "lang": "gr",
+      "*": "Πασχαλιά"
+     },
+     {
+      "lang": "hu",
+      "*": "Orgona"
+     },
+     {
+      "lang": "it",
+      "*": "Lillà"
+     },
+     {
+      "lang": "nl",
+      "*": "Flieder"
+     },
+     {
+      "lang": "pl",
+      "*": "Bez"
+     },
+     {
+      "lang": "ro",
+      "*": "Liliac"
+     }
+    ]
+   },
+   "3666": {
+    "pageid": 3666,
+    "ns": 0,
+    "title": "Mong Water",
+    "langlinks": [
+     {
+      "lang": "cz",
+      "*": "Voda Mong"
+     },
+     {
+      "lang": "de",
+      "*": "Mong-Wasser"
+     },
+     {
+      "lang": "fr",
+      "*": "Eau de Mong"
+     },
+     {
+      "lang": "gr",
+      "*": "Νερό Mong"
+     },
+     {
+      "lang": "hu",
+      "*": "Mong-víz"
+     },
+     {
+      "lang": "it",
+      "*": "Acqua Mong"
+     },
+     {
+      "lang": "pl",
+      "*": "Woda Mong"
+     },
+     {
+      "lang": "ro",
+      "*": "Apă Mong"
+     },
+     {
+      "lang": "tr",
+      "*": "Mong Suyu"
+     }
+    ]
+   },
+   "3672": {
+    "pageid": 3672,
+    "ns": 0,
+    "title": "Mulberry",
+    "langlinks": [
+     {
+      "lang": "cz",
+      "*": "Moruše"
+     },
+     {
+      "lang": "de",
+      "*": "Maulbeeren"
+     },
+     {
+      "lang": "fr",
+      "*": "Baie"
+     },
+     {
+      "lang": "gr",
+      "*": "Μουριά"
+     },
+     {
+      "lang": "hu",
+      "*": "Szederfa"
+     },
+     {
+      "lang": "it",
+      "*": "Albero di More"
+     },
+     {
+      "lang": "pl",
+      "*": "Morwa"
+     },
+     {
+      "lang": "ro",
+      "*": "Dud"
+     },
+     {
+      "lang": "tr",
+      "*": "Dut"
+     }
+    ]
+   },
+   "20719": {
+    "pageid": 20719,
+    "ns": 0,
+    "title": "Orange Dew",
+    "langlinks": [
+     {
+      "lang": "ae",
+      "*": "ندى برتقالي"
+     },
+     {
+      "lang": "cz",
+      "*": "Růžová rosa"
+     },
+     {
+      "lang": "de",
+      "*": "Oranger Tau"
+     },
+     {
+      "lang": "fr",
+      "*": "Rosée orange"
+     },
+     {
+      "lang": "hu",
+      "*": "Rózsaszín Harmat"
+     },
+     {
+      "lang": "pl",
+      "*": "Pomarańczowa Rosa"
+     },
+     {
+      "lang": "pt",
+      "*": "Orvalho Laranja"
+     },
+     {
+      "lang": "ro",
+      "*": "Rouă Portocalie"
+     },
+     {
+      "lang": "tr",
+      "*": "Turuncu Şebnem"
+     }
+    ]
+   },
+   "3543": {
+    "pageid": 3543,
+    "ns": 0,
+    "title": "Peach Blossom",
+    "langlinks": [
+     {
+      "lang": "cz",
+      "*": "Broskvový květ"
+     },
+     {
+      "lang": "de",
+      "*": "Pfirsichblüte"
+     },
+     {
+      "lang": "es",
+      "*": "Flores Melocotón"
+     },
+     {
+      "lang": "fr",
+      "*": "Fleur de pêcher"
+     },
+     {
+      "lang": "hu",
+      "*": "Barackvirág"
+     },
+     {
+      "lang": "it",
+      "*": "Fiori di Pesco"
+     },
+     {
+      "lang": "pl",
+      "*": "Kwiat Brzoskwini"
+     },
+     {
+      "lang": "pt",
+      "*": "Flor de Pêssego"
+     },
+     {
+      "lang": "ro",
+      "*": "Floare de Piersic"
+     },
+     {
+      "lang": "tr",
+      "*": "Şeftali Çiçeği"
+     }
+    ]
+   },
+   "3655": {
+    "pageid": 3655,
+    "ns": 0,
+    "title": "Peach Blossom Juice",
+    "langlinks": [
+     {
+      "lang": "cz",
+      "*": "Šťáva z broskvových květů"
+     },
+     {
+      "lang": "de",
+      "*": "Pfirsichblütensaft"
+     },
+     {
+      "lang": "hu",
+      "*": "Barackvirág lé"
+     },
+     {
+      "lang": "it",
+      "*": "Succo di Fiori di Pesco"
+     },
+     {
+      "lang": "nl",
+      "*": "Pfirsichblütensaft"
+     },
+     {
+      "lang": "pl",
+      "*": "Sok Z Kwiatu Brzoskwini"
+     },
+     {
+      "lang": "ro",
+      "*": "Suc de Floare de Piersic"
+     },
+     {
+      "lang": "tr",
+      "*": "Şeftali Çiçeği Suyu"
+     }
+    ]
+   },
+   "10084": {
+    "pageid": 10084,
+    "ns": 0,
+    "title": "Purple Potion",
+    "langlinks": [
+     {
+      "lang": "de",
+      "*": "Violetter Trank"
+     },
+     {
+      "lang": "pl",
+      "*": "Fioletowa Mikstura"
+     },
+     {
+      "lang": "ro",
+      "*": "Licoare Violet"
+     }
+    ]
+   },
+   "13403": {
+    "pageid": 13403,
+    "ns": 0,
+    "title": "Red Dew",
+    "langlinks": [
+     {
+      "lang": "cz",
+      "*": "Červená rosa"
+     },
+     {
+      "lang": "de",
+      "*": "Roter Tau"
+     },
+     {
+      "lang": "fr",
+      "*": "Rosée rouge"
+     },
+     {
+      "lang": "gr",
+      "*": "Κόκκινη Δροσιά"
+     },
+     {
+      "lang": "hu",
+      "*": "Piros Harmat"
+     },
+     {
+      "lang": "it",
+      "*": "Rugiada Rossa"
+     },
+     {
+      "lang": "pl",
+      "*": "Czerwona Rosa"
+     },
+     {
+      "lang": "ro",
+      "*": "Rouă Roşie"
+     },
+     {
+      "lang": "tr",
+      "*": "Kırmızı Şebnem"
+     }
+    ]
+   },
+   "3660": {
+    "pageid": 3660,
+    "ns": 0,
+    "title": "SamBo Water",
+    "langlinks": [
+     {
+      "lang": "cz",
+      "*": "Voda SamBo"
+     },
+     {
+      "lang": "de",
+      "*": "SamBo-Wasser"
+     },
+     {
+      "lang": "fr",
+      "*": "Eau de SamBo"
+     },
+     {
+      "lang": "gr",
+      "*": "Νερό SamBo"
+     },
+     {
+      "lang": "hu",
+      "*": "SamBo-víz"
+     },
+     {
+      "lang": "it",
+      "*": "Acqua SamBo"
+     },
+     {
+      "lang": "pl",
+      "*": "Woda Sam-Bo"
+     },
+     {
+      "lang": "ro",
+      "*": "Apă SamBo"
+     },
+     {
+      "lang": "tr",
+      "*": "SamBo Suyu"
+     }
+    ]
+   },
+   "3656": {
+    "pageid": 3656,
+    "ns": 0,
+    "title": "Sim Water",
+    "langlinks": [
+     {
+      "lang": "cz",
+      "*": "Voda Sim"
+     },
+     {
+      "lang": "de",
+      "*": "Sim-Wasser"
+     },
+     {
+      "lang": "fr",
+      "*": "Eau de Sim"
+     },
+     {
+      "lang": "gr",
+      "*": "Νερό Sim"
+     },
+     {
+      "lang": "hu",
+      "*": "Sim-víz"
+     },
+     {
+      "lang": "it",
+      "*": "Acqua Sim"
+     },
+     {
+      "lang": "pl",
+      "*": "Woda Sim"
+     },
+     {
+      "lang": "ro",
+      "*": "Apă Sim"
+     },
+     {
+      "lang": "tr",
+      "*": "Sim Suyu"
+     }
+    ]
+   },
+   "3673": {
+    "pageid": 3673,
+    "ns": 0,
+    "title": "Tue Fungus",
+    "langlinks": [
+     {
+      "lang": "de",
+      "*": "Tue-Pilz"
+     },
+     {
+      "lang": "fr",
+      "*": "Champignon Tue"
+     }
+    ]
+   },
+   "10393": {
+    "pageid": 10393,
+    "ns": 0,
+    "title": "White Dew",
+    "langlinks": [
+     {
+      "lang": "cz",
+      "*": "Bílá rosa"
+     },
+     {
+      "lang": "de",
+      "*": "Weißer Tau"
+     },
+     {
+      "lang": "fr",
+      "*": "Rosée blanche"
+     },
+     {
+      "lang": "hu",
+      "*": "Fehér Harmat"
+     },
+     {
+      "lang": "it",
+      "*": "Rugiada Bianca"
+     },
+     {
+      "lang": "nl",
+      "*": "Weißer Tau"
+     },
+     {
+      "lang": "pl",
+      "*": "Biała Rosa"
+     },
+     {
+      "lang": "ro",
+      "*": "Rouă Albă"
+     },
+     {
+      "lang": "tr",
+      "*": "Beyaz Şebnem"
+     }
+    ]
+   },
+   "13406": {
+    "pageid": 13406,
+    "ns": 0,
+    "title": "Yellow Dew",
+    "langlinks": [
+     {
+      "lang": "cz",
+      "*": "Žlutá rosa"
+     },
+     {
+      "lang": "de",
+      "*": "Gelber Tau"
+     },
+     {
+      "lang": "fr",
+      "*": "Rosée jaune"
+     },
+     {
+      "lang": "gr",
+      "*": "Κίτρινη Δροσιά"
+     },
+     {
+      "lang": "hu",
+      "*": "Sárga Harmat"
+     },
+     {
+      "lang": "it",
+      "*": "Rugiada Gialla"
+     },
+     {
+      "lang": "pl",
+      "*": "Żółta Rosa"
+     },
+     {
+      "lang": "ro",
+      "*": "Rouă Galbenă"
+     },
+     {
+      "lang": "tr",
+      "*": "Sarı Şebnem"
+     }
+    ]
+   },
+   "3662": {
+    "pageid": 3662,
+    "ns": 0,
+    "title": "Young Water",
+    "langlinks": [
+     {
+      "lang": "cz",
+      "*": "Voda Young"
+     },
+     {
+      "lang": "de",
+      "*": "Young-Wasser"
+     },
+     {
+      "lang": "fr",
+      "*": "Eau de Yuong"
+     },
+     {
+      "lang": "hu",
+      "*": "Young-Víz"
+     },
+     {
+      "lang": "it",
+      "*": "Acqua Young"
+     },
+     {
+      "lang": "pl",
+      "*": "Woda Young"
+     },
+     {
+      "lang": "ro",
+      "*": "Apă Young"
+     },
+     {
+      "lang": "tr",
+      "*": "Yöng Suyu"
+     }
+    ]
+   },
+   "3657": {
+    "pageid": 3657,
+    "ns": 0,
+    "title": "Zin Water",
+    "langlinks": [
+     {
+      "lang": "cz",
+      "*": "Voda Zin"
+     },
+     {
+      "lang": "de",
+      "*": "Zin-Wasser"
+     },
+     {
+      "lang": "fr",
+      "*": "Eau de Zin"
+     },
+     {
+      "lang": "hu",
+      "*": "Zin-víz"
+     },
+     {
+      "lang": "it",
+      "*": "Acqua Zin"
+     },
+     {
+      "lang": "pl",
+      "*": "Woda Zin"
+     },
+     {
+      "lang": "ro",
+      "*": "Apă Zin"
+     },
+     {
+      "lang": "tr",
+      "*": "Zin Suyu"
+     }
+    ]
+   }
+  }
+ },
+ "limits": {
+  "langlinks": 500
+ }
+}

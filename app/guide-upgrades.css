@@ -1,0 +1,92 @@
+#paragon-design .gu-heading{display:flex;align-items:center;gap:18px;margin-bottom:24px}
+#paragon-design .gu-heading>svg{color:#d47585;flex-shrink:0}
+#paragon-design .gu-heading>div{min-width:0}
+#paragon-design .gu-heading h2{font-size:30px;line-height:1.2;letter-spacing:-.6px;margin:7px 0 10px}
+#paragon-design .gu-heading p{font-size:12px;color:var(--pg-muted)}
+#paragon-design .gu-list-controls{display:grid;grid-template-columns:260px minmax(0,1fr);gap:16px;padding:16px;background:#11161d;border:1px solid #303844;border-radius:7px}
+#paragon-design .gu-list-controls label{display:grid;gap:8px;font-size:11px;color:var(--pg-muted);min-width:0}
+#paragon-design .gu-category select{width:100%;min-width:0;min-height:46px;border:1px solid #414c5d;border-radius:5px;background:#0c1118;color:var(--pg-text);padding:10px 12px;font-size:13px}
+#paragon-design .gu-search>span:last-child{display:flex;align-items:center;gap:10px;padding-left:12px;border:1px solid #414c5d;border-radius:5px;background:#0c1118;min-width:0}
+#paragon-design .gu-search svg{flex-shrink:0}
+#paragon-design .gu-search input{border:0;min-width:0;width:100%;min-height:44px;padding:10px 12px 10px 0;background:transparent;color:var(--pg-text);font-size:13px}
+#paragon-design .gu-search>span:focus-within{outline:2px solid #ff7379;outline-offset:3px}
+#paragon-design .gu-search input:focus-visible{outline:none}
+#paragon-design .gu-list-meta{display:flex;justify-content:space-between;gap:14px;align-items:center;margin:16px 0 12px;font-size:10px;color:var(--pg-muted)}
+#paragon-design .gu-list-meta p{display:flex;align-items:center;gap:7px;flex-wrap:wrap;justify-content:flex-end}
+#paragon-design .gu-list-meta p>span{font-weight:700;color:#d0d8e3;margin-left:12px}
+#paragon-design .gu-equipment-list{display:grid;gap:16px}
+#paragon-design .gu-item-card{border:1px solid #303b49;border-radius:7px;overflow:hidden;background:#11161d;min-width:0;scroll-margin-top:20px}
+#paragon-design .gu-focused-item{border-color:#9e5868}
+#paragon-design .gu-item-header{display:flex;align-items:center;gap:14px;padding:10px 14px;min-height:72px;background:#141a23}
+#paragon-design .gu-equipment-art{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:44px;height:50px;background:#0b1017;border:1px solid #303b48;border-radius:4px;overflow:hidden}
+#paragon-design .gu-equipment-art>img{width:38px;height:50px;object-fit:contain}
+#paragon-design .gu-class-art{width:88px;gap:0}
+#paragon-design .gu-class-item{width:28px;height:50px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+#paragon-design .gu-class-item>img{width:28px;height:50px;object-fit:contain}
+#paragon-design .gu-item-heading{min-width:0;flex:1}
+#paragon-design .gu-item-heading>span{display:block;color:var(--pg-muted);font-size:10px;margin-bottom:5px}
+#paragon-design .gu-item-heading h3{font-size:16px;line-height:1.3;overflow-wrap:anywhere}
+#paragon-design .gu-item-heading small{display:block;color:var(--pg-muted);font-size:10px;margin-top:4px}
+#paragon-design .gu-card-bonuses{min-width:0;max-width:50%;font-size:10px}
+#paragon-design .gu-card-bonuses>span{display:block;color:var(--pg-muted);font-size:9px;margin-bottom:5px}
+#paragon-design .gu-card-bonuses dl{margin:0;display:flex;gap:6px 18px;flex-wrap:wrap;justify-content:flex-end}
+#paragon-design .gu-card-bonuses dl>div{display:flex;gap:7px;align-items:baseline;min-width:0}
+#paragon-design .gu-card-bonuses dt{color:#b9c4d4;overflow-wrap:anywhere}
+#paragon-design .gu-card-bonuses dd{margin:0;color:#f1f3f6;font-weight:700;flex-shrink:0;font-variant-numeric:tabular-nums}
+#paragon-design .gu-card-bonuses>p{color:var(--pg-muted)}
+#paragon-design .gu-upgrade-table{border-collapse:collapse;table-layout:fixed;width:100%;font-variant-numeric:tabular-nums;font-size:11px}
+#paragon-design .gu-row-label{width:90px}
+#paragon-design .gu-upgrade-table th,#paragon-design .gu-upgrade-table td{border-top:1px solid #2f3947;border-right:1px solid #29323f;text-align:center;padding:4px 6px}
+#paragon-design .gu-upgrade-table tr>:last-child{border-right:0}
+#paragon-design .gu-upgrade-table thead th{height:34px;font-size:11px;font-weight:600;color:#d9e0ea;background:#0e141d}
+#paragon-design .gu-upgrade-table thead th:first-child{font-weight:400;font-size:10px;color:var(--pg-muted);overflow-wrap:anywhere;line-height:1.25}
+#paragon-design .gu-upgrade-table tbody th{color:var(--pg-muted);font-weight:400;font-size:10px;background:#101620;line-height:1.4;overflow-wrap:anywhere}
+#paragon-design .gu-upgrade-table tbody td{height:54px;background:#0d1219}
+#paragon-design .gu-upgrade-table .gu-focused-stage{background:#302029}
+#paragon-design .gu-matrix-material{position:relative;display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;min-width:44px;min-height:44px;padding:2px;border:1px solid transparent;border-radius:4px;background:transparent;color:#f7f8fa;vertical-align:middle}
+#paragon-design .gu-matrix-material:hover{border-color:#ad6879;background:#25202b}
+#paragon-design .gu-matrix-material:focus-visible{outline-offset:0;background:#25202b}
+#paragon-design .gu-matrix-material>img{width:34px;height:40px;object-fit:contain}
+#paragon-design .gu-matrix-material>span:last-child:not(.gg-loot-sprite){position:absolute;right:0;bottom:0;padding:2px 3px;font-size:10px;font-weight:700;border-radius:3px;background:#0c111ae6;line-height:1;color:#f3d69f}
+#paragon-design .gu-matrix-material>span.gu-unconfirmed{color:#ffb57b}
+#paragon-design .gu-matrix-empty>span{font-size:15px;color:#7d899b}
+#paragon-design .gu-reference-note{font-size:10px;color:var(--pg-muted);margin-top:18px}
+#paragon-design .gu-no-results{display:grid;gap:14px;justify-items:start;padding:28px 4px;color:var(--pg-muted);font-size:13px}
+#paragon-design .gu-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+#paragon-design .gu-material-dialog{width:460px}
+#paragon-design .gu-detail-body{padding:24px;display:grid;gap:18px}
+#paragon-design .gu-detail-art{display:flex;align-items:center;justify-content:center;width:90px;height:90px;border:1px solid #3a4556;border-radius:6px;background:#0c1118}
+#paragon-design .gu-detail-art>img{width:55px;height:65px;object-fit:contain}
+#paragon-design .gu-detail-body>p{font-size:12px;color:var(--pg-muted)}
+#paragon-design .gu-detail-body dl{display:grid;gap:14px;margin:0}
+#paragon-design .gu-detail-body dl>div{display:grid;grid-template-columns:110px minmax(0,1fr);gap:16px;font-size:12px}
+#paragon-design .gu-detail-body dt{color:var(--pg-muted)}
+#paragon-design .gu-detail-body dd{margin:0;overflow-wrap:anywhere}
+#paragon-design .gu-detail-body .gu-detail-warning{padding:12px;border-left:2px solid #b78651;color:#edc294;background:#392c2033;font-size:11px;line-height:1.6}
+@media(max-width:700px){
+ #paragon-design .gu-heading{gap:12px;margin-bottom:20px}
+ #paragon-design .gu-heading h2{font-size:25px}
+ #paragon-design .gu-list-controls{grid-template-columns:1fr;padding:12px;gap:12px}
+ #paragon-design .gu-list-meta{align-items:flex-start;flex-direction:column;gap:8px}
+ #paragon-design .gu-list-meta p{justify-content:flex-start;gap:6px}
+ #paragon-design .gu-list-meta p>span:first-child{margin-left:0}
+ #paragon-design .gu-item-header{padding:12px;gap:10px;flex-wrap:wrap}
+ #paragon-design .gu-item-heading h3{font-size:14px}
+ #paragon-design .gu-equipment-art{width:44px;height:50px}
+ #paragon-design .gu-class-art{width:75px}
+ #paragon-design .gu-class-item{width:24px;height:45px}
+ #paragon-design .gu-class-item>img{width:24px;height:45px}
+ #paragon-design .gu-card-bonuses{flex-basis:100%;max-width:100%;display:flex;gap:12px;padding-top:9px;border-top:1px solid #2d3745}
+ #paragon-design .gu-card-bonuses>span{margin:0;flex-shrink:0}
+ #paragon-design .gu-card-bonuses dl{justify-content:flex-start;gap:5px 12px;min-width:0}
+ #paragon-design .gu-row-label{width:52px}
+ #paragon-design .gu-upgrade-table th,#paragon-design .gu-upgrade-table td{padding:3px 0}
+ #paragon-design .gu-upgrade-table tbody th{font-size:9px;padding:3px}
+ #paragon-design .gu-upgrade-table thead th:first-child{font-size:9px}
+ #paragon-design .gu-upgrade-table tbody td{height:54px}
+ #paragon-design .gu-matrix-material{width:44px;height:44px;padding:2px}
+ #paragon-design .gu-matrix-material>img{width:32px;height:36px}
+ #paragon-design .gu-detail-body{padding:18px}
+ #paragon-design .gu-detail-body dl>div{grid-template-columns:85px minmax(0,1fr);gap:10px}
+}
+@media(max-width:360px){#paragon-design .gu-row-label{width:42px}#paragon-design .gu-upgrade-table thead th:first-child{font-size:8px}}

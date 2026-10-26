@@ -1,0 +1,103 @@
+[
+ {
+  "id": "magma-golem",
+  "image": "/guide/bosses/magma-golem-arthion.png",
+  "source": "User-supplied Arthion image (2026-10-26)",
+  "referenceMonster": "Magma Golem",
+  "representative": false
+ },
+ {
+  "id": "flame-king",
+  "image": "/guide/bosses/flame-king.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Flame_King",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/3/3f/Flame_King.png",
+  "referenceMonster": "Flame King",
+  "representative": false
+ },
+ {
+  "id": "ember-tiger",
+  "image": "/guide/bosses/ember-tiger.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Fighting_Tiger",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/e/e6/Fighting_Tiger.png",
+  "referenceMonster": "Fighting Tiger",
+  "representative": true
+ },
+ {
+  "id": "thornspike-stump",
+  "image": "/guide/bosses/thornspike-stump.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Red_Ghost_Stump",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/5/5d/Ghost_Stump.png",
+  "referenceMonster": "Red Ghost Stump",
+  "representative": true
+ },
+ {
+  "id": "nightmare-tree",
+  "image": "/guide/bosses/nightmare-tree.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Red_Evil_Tree",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/4/49/Red_Evil_Tree.png",
+  "referenceMonster": "Red Evil Tree",
+  "representative": true
+ },
+ {
+  "id": "giant-red-tree-ghost",
+  "image": "/guide/bosses/giant-red-tree-ghost.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Giant_Ghost_Tree",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/1/16/Giant_Ghost_Tree.png",
+  "referenceMonster": "Giant Ghost Tree",
+  "representative": false
+ },
+ {
+  "id": "giant-ghost-tree",
+  "image": "/guide/bosses/giant-ghost-tree.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Giant_Ghost_Tree",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/1/16/Giant_Ghost_Tree.png",
+  "referenceMonster": "Giant Ghost Tree",
+  "representative": true
+ },
+ {
+  "id": "dark-crystal-golem",
+  "image": "/guide/bosses/dark-crystal-golem-arthion.png",
+  "source": "User-supplied Arthion image (2026-10-26)",
+  "referenceMonster": "Dark Crystal Golem",
+  "representative": false
+ },
+ {
+  "id": "plague-carrier",
+  "image": "/guide/bosses/plague-carrier-arthion.png",
+  "source": "User-supplied Arthion image (2026-10-26)",
+  "referenceMonster": "Plague Carrier",
+  "representative": false
+ },
+ {
+  "id": "grim-reaper",
+  "image": "/guide/bosses/grim-reaper.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Death_Reaper",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/4/43/Death_Reaper.png",
+  "referenceMonster": "Death Reaper",
+  "representative": false
+ },
+ {
+  "id": "nine-tails",
+  "image": "/guide/bosses/nine-tails.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Nine_Tails",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/8/83/Nine_Tails.png",
+  "referenceMonster": "Nine Tails",
+  "representative": false
+ },
+ {
+  "id": "yellow-tiger",
+  "image": "/guide/bosses/yellow-tiger.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Yellow_Tiger_Ghost",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/c/c3/Yellow_Tiger_Ghost.png",
+  "referenceMonster": "Yellow Tiger Ghost",
+  "representative": false
+ },
+ {
+  "id": "queen-spider",
+  "image": "/guide/bosses/queen-spider.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Queen_Spider",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/2/22/Queen_Spider.png",
+  "referenceMonster": "Queen Spider",
+  "representative": false
+ }
+]

@@ -1,0 +1,1658 @@
+{
+ "items": {
+  "partisan": {
+   "id": "partisan",
+   "name": "Partisan",
+   "category": "Weapons",
+   "icon": {
+    "src": "/guide/loot/partisan.png"
+   },
+   "status": "identified",
+   "slots": 3
+  },
+  "battle-sword": {
+   "id": "battle-sword",
+   "name": "Battle Sword",
+   "category": "Weapons",
+   "icon": {
+    "src": "/guide/loot/battle-sword.png"
+   },
+   "status": "identified",
+   "slots": 2
+  },
+  "ghost-fang-blade": {
+   "id": "ghost-fang-blade",
+   "name": "Ghost Fang Blade",
+   "category": "Weapons",
+   "icon": {
+    "src": "/guide/loot/ghost-fang-blade.png"
+   },
+   "status": "identified",
+   "slots": 2
+  },
+  "yellow-dragon-bow": {
+   "id": "yellow-dragon-bow",
+   "name": "Yellow Dragon Bow",
+   "category": "Weapons",
+   "icon": {
+    "src": "/guide/loot/yellow-dragon-bow.png"
+   },
+   "status": "identified",
+   "slots": 2
+  },
+  "dragon-knife": {
+   "id": "dragon-knife",
+   "name": "Dragon Knife",
+   "category": "Weapons",
+   "icon": {
+    "src": "/guide/loot/dragon-knife.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "heaven-and-earth-bell": {
+   "id": "heaven-and-earth-bell",
+   "name": "Heaven and Earth Bell",
+   "category": "Weapons",
+   "icon": {
+    "src": "/guide/loot/heaven-and-earth-bell.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "eyebrow-fan": {
+   "id": "eyebrow-fan",
+   "name": "Eyebrow Fan",
+   "category": "Weapons",
+   "icon": {
+    "src": "/guide/loot/eyebrow-fan.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "grudge-sword": {
+   "id": "grudge-sword",
+   "name": "Grudge Sword",
+   "category": "Weapons",
+   "icon": {
+    "src": "/guide/loot/grudge-sword.png"
+   },
+   "status": "identified",
+   "slots": 3
+  },
+  "poison-sword": {
+   "id": "poison-sword",
+   "name": "Poison Sword",
+   "category": "Weapons",
+   "icon": {
+    "src": "/guide/loot/poison-sword.png"
+   },
+   "status": "identified",
+   "slots": 2
+  },
+  "lion-sword": {
+   "id": "lion-sword",
+   "name": "Lion Sword",
+   "category": "Weapons",
+   "icon": {
+    "src": "/guide/loot/lion-sword.png"
+   },
+   "status": "identified",
+   "slots": 2
+  },
+  "crow-steel-bow": {
+   "id": "crow-steel-bow",
+   "name": "Crow Steel Bow",
+   "category": "Weapons",
+   "icon": {
+    "src": "/guide/loot/crow-steel-bow.png"
+   },
+   "status": "identified",
+   "slots": 2
+  },
+  "devil-wing-chakram": {
+   "id": "devil-wing-chakram",
+   "name": "Devil Wing Chakram",
+   "category": "Weapons",
+   "icon": {
+    "src": "/guide/loot/devil-wing-chakram.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "bamboo-bell": {
+   "id": "bamboo-bell",
+   "name": "Bamboo Bell",
+   "category": "Weapons",
+   "icon": {
+    "src": "/guide/loot/bamboo-bell.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "lying-dragon-fan": {
+   "id": "lying-dragon-fan",
+   "name": "Lying Dragon Fan",
+   "category": "Weapons",
+   "icon": {
+    "src": "/guide/loot/lying-dragon-fan.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "lion-slayer": {
+   "id": "lion-slayer",
+   "name": "Lion Slayer",
+   "category": "Weapons",
+   "icon": {
+    "src": "/guide/loot/lion-slayer.png"
+   },
+   "status": "identified",
+   "slots": 3
+  },
+  "half-moon-sword": {
+   "id": "half-moon-sword",
+   "name": "Half Moon Sword",
+   "category": "Weapons",
+   "icon": {
+    "src": "/guide/loot/half-moon-sword.png"
+   },
+   "status": "identified",
+   "slots": 2
+  },
+  "giant-wing-bow": {
+   "id": "giant-wing-bow",
+   "name": "Giant Wing Bow",
+   "category": "Weapons",
+   "icon": {
+    "src": "/guide/loot/giant-wing-bow.png"
+   },
+   "status": "identified",
+   "slots": 2
+  },
+  "chakram": {
+   "id": "chakram",
+   "name": "Chakram",
+   "category": "Weapons",
+   "icon": {
+    "src": "/guide/loot/chakram.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "steel-bug-bell": {
+   "id": "steel-bug-bell",
+   "name": "Steel Bug Bell",
+   "category": "Weapons",
+   "icon": {
+    "src": "/guide/loot/steel-bug-bell.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "sun-fan": {
+   "id": "sun-fan",
+   "name": "Sun Fan",
+   "category": "Weapons",
+   "icon": {
+    "src": "/guide/loot/sun-fan.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "salvation-blade": {
+   "id": "salvation-blade",
+   "name": "Salvation Blade",
+   "category": "Weapons",
+   "icon": {
+    "src": "/guide/loot/salvation-blade.png"
+   },
+   "status": "identified",
+   "slots": 3
+  },
+  "flying-wizard-sword": {
+   "id": "flying-wizard-sword",
+   "name": "Flying Wizard Sword",
+   "category": "Weapons",
+   "icon": {
+    "src": "/guide/loot/flying-wizard-sword.png"
+   },
+   "status": "identified",
+   "slots": 2
+  },
+  "unicorn-bow": {
+   "id": "unicorn-bow",
+   "name": "Unicorn Bow",
+   "category": "Weapons",
+   "icon": {
+    "src": "/guide/loot/unicorn-bow.png"
+   },
+   "status": "identified",
+   "slots": 2
+  },
+  "dragon-god-armour": {
+   "id": "dragon-god-armour",
+   "name": "Dragon God Armour",
+   "category": "Armours",
+   "icon": {
+    "src": "/guide/loot/dragon-god-armour.png"
+   },
+   "status": "identified",
+   "slots": 2
+  },
+  "fuchsia-suit": {
+   "id": "fuchsia-suit",
+   "name": "Fuchsia Suit",
+   "category": "Armours",
+   "icon": {
+    "src": "/guide/loot/fuchsia-suit.png"
+   },
+   "status": "identified",
+   "slots": 2
+  },
+  "spirit-plate-armour": {
+   "id": "spirit-plate-armour",
+   "name": "Spirit Plate Armour",
+   "category": "Armours",
+   "icon": {
+    "src": "/guide/loot/spirit-plate-armour.png"
+   },
+   "status": "identified",
+   "slots": 2
+  },
+  "baroness-dress": {
+   "id": "baroness-dress",
+   "name": "Baroness Dress",
+   "category": "Armours",
+   "icon": {
+    "src": "/guide/loot/baroness-dress.png"
+   },
+   "status": "identified",
+   "slots": 2
+  },
+  "gold-plate-armour": {
+   "id": "gold-plate-armour",
+   "name": "Gold Plate Armour",
+   "category": "Armours",
+   "icon": {
+    "src": "/guide/loot/gold-plate-armour.png"
+   },
+   "status": "identified",
+   "slots": 2
+  },
+  "killer-wind-suit": {
+   "id": "killer-wind-suit",
+   "name": "Killer Wind Suit",
+   "category": "Armours",
+   "icon": {
+    "src": "/guide/loot/killer-wind-suit.png"
+   },
+   "status": "identified",
+   "slots": 2
+  },
+  "fog-plate-armour": {
+   "id": "fog-plate-armour",
+   "name": "Fog Plate Armour",
+   "category": "Armours",
+   "icon": {
+    "src": "/guide/loot/fog-plate-armour.png"
+   },
+   "status": "identified",
+   "slots": 2
+  },
+  "orange-cat-dress": {
+   "id": "orange-cat-dress",
+   "name": "Orange Cat Dress",
+   "category": "Armours",
+   "icon": {
+    "src": "/guide/loot/orange-cat-dress.png"
+   },
+   "status": "identified",
+   "slots": 2
+  },
+  "scale-plate-armour": {
+   "id": "scale-plate-armour",
+   "name": "Scale Plate Armour",
+   "category": "Armours",
+   "icon": {
+    "src": "/guide/loot/scale-plate-armour.png"
+   },
+   "status": "identified",
+   "slots": 2
+  },
+  "young-dragon-suit": {
+   "id": "young-dragon-suit",
+   "name": "Young Dragon Suit",
+   "category": "Armours",
+   "icon": {
+    "src": "/guide/loot/young-dragon-suit.png"
+   },
+   "status": "identified",
+   "slots": 2
+  },
+  "ghost-plate-armour": {
+   "id": "ghost-plate-armour",
+   "name": "Ghost Plate Armour",
+   "category": "Armours",
+   "icon": {
+    "src": "/guide/loot/ghost-plate-armour.png"
+   },
+   "status": "identified",
+   "slots": 2
+  },
+  "sun-clothing": {
+   "id": "sun-clothing",
+   "name": "Sun Clothing",
+   "category": "Armours",
+   "icon": {
+    "src": "/guide/loot/sun-clothing.png"
+   },
+   "status": "identified",
+   "slots": 2
+  },
+  "heaven-s-tear-bracelet": {
+   "id": "heaven-s-tear-bracelet",
+   "name": "Heaven's Tear Bracelet",
+   "category": "Accessories",
+   "icon": {
+    "src": "/guide/loot/heaven-s-tear-bracelet.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "heaven-s-tear-necklace": {
+   "id": "heaven-s-tear-necklace",
+   "name": "Heaven's Tear Necklace",
+   "category": "Accessories",
+   "icon": {
+    "src": "/guide/loot/heaven-s-tear-necklace.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "heaven-s-tear-earrings": {
+   "id": "heaven-s-tear-earrings",
+   "name": "Heaven's Tear Earrings",
+   "category": "Accessories",
+   "icon": {
+    "src": "/guide/loot/heaven-s-tear-earrings.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "nimbus-boots": {
+   "id": "nimbus-boots",
+   "name": "Nimbus Boots",
+   "category": "Accessories",
+   "icon": {
+    "src": "/guide/loot/nimbus-boots.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "phoenix-shoes": {
+   "id": "phoenix-shoes",
+   "name": "Phoenix Shoes",
+   "category": "Accessories",
+   "icon": {
+    "src": "/guide/loot/phoenix-shoes.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "fire-bird-shoes": {
+   "id": "fire-bird-shoes",
+   "name": "Fire Bird Shoes",
+   "category": "Accessories",
+   "icon": {
+    "src": "/guide/loot/fire-bird-shoes.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "falcon-shield": {
+   "id": "falcon-shield",
+   "name": "Falcon Shield",
+   "category": "Accessories",
+   "icon": {
+    "src": "/guide/loot/falcon-shield.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "tiger-shield": {
+   "id": "tiger-shield",
+   "name": "Tiger Shield",
+   "category": "Accessories",
+   "icon": {
+    "src": "/guide/loot/tiger-shield.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "lion-edge-shield": {
+   "id": "lion-edge-shield",
+   "name": "Lion Edge Shield",
+   "category": "Accessories",
+   "icon": {
+    "src": "/guide/loot/lion-edge-shield.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "dragon-scale-shield": {
+   "id": "dragon-scale-shield",
+   "name": "Dragon Scale Shield",
+   "category": "Accessories",
+   "icon": {
+    "src": "/guide/loot/dragon-scale-shield.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "crystal-bracelet": {
+   "id": "crystal-bracelet",
+   "name": "Crystal Bracelet",
+   "category": "Accessories",
+   "icon": {
+    "src": "/guide/loot/crystal-bracelet.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "crystal-necklace": {
+   "id": "crystal-necklace",
+   "name": "Crystal Necklace",
+   "category": "Accessories",
+   "icon": {
+    "src": "/guide/loot/crystal-necklace.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "crystal-earrings": {
+   "id": "crystal-earrings",
+   "name": "Crystal Earrings",
+   "category": "Accessories",
+   "icon": {
+    "src": "/guide/loot/crystal-earrings.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "white-pearl": {
+   "id": "white-pearl",
+   "name": "White Pearl",
+   "category": "Materials",
+   "icon": {
+    "src": "/guide/loot/white-pearl.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "blue-pearl": {
+   "id": "blue-pearl",
+   "name": "Blue Pearl",
+   "category": "Materials",
+   "icon": {
+    "src": "/guide/loot/blue-pearl.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "blood-red-pearl": {
+   "id": "blood-red-pearl",
+   "name": "Blood-Red Pearl",
+   "category": "Materials",
+   "icon": {
+    "src": "/guide/loot/blood-red-pearl.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "experience-ring": {
+   "id": "experience-ring",
+   "name": "Experience Ring",
+   "category": "Utility",
+   "icon": {
+    "src": "/guide/loot/experience-ring.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "thief-s-gloves": {
+   "id": "thief-s-gloves",
+   "name": "Thief's Gloves",
+   "category": "Utility",
+   "icon": {
+    "src": "/guide/loot/thief-s-gloves.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "zen-bean": {
+   "id": "zen-bean",
+   "name": "Zen Bean",
+   "category": "Utility",
+   "icon": {
+    "src": "/guide/loot/zen-bean.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "blessing-marble": {
+   "id": "blessing-marble",
+   "name": "Blessing Marble",
+   "category": "Utility",
+   "icon": {
+    "src": "/guide/loot/blessing-marble.webp"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "passage-ticket": {
+   "id": "passage-ticket",
+   "name": "Passage Ticket",
+   "category": "Utility",
+   "icon": {
+    "src": "/guide/loot/passage-ticket.webp"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "bravery-cape": {
+   "id": "bravery-cape",
+   "name": "Bravery Cape",
+   "category": "Utility",
+   "icon": {
+    "src": "/guide/loot/bravery-cape.webp"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "soul-stone-plus": {
+   "id": "soul-stone-plus",
+   "name": "Soul Stone+",
+   "category": "Utility",
+   "icon": {
+    "src": "/guide/loot/soul-stone-plus.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "soul-stone": {
+   "id": "soul-stone",
+   "name": "Soul Stone",
+   "category": "Utility",
+   "icon": {
+    "src": "/guide/loot/soul-stone.png"
+   },
+   "status": "identified",
+   "slots": 1
+  },
+  "stone-of-the-blacksmith": {
+   "id": "stone-of-the-blacksmith",
+   "name": "Stone of the Blacksmith",
+   "category": "Materials",
+   "icon": {
+    "src": "/guide/loot/red-tree-reference.png",
+    "sheetWidth": 498,
+    "sheetHeight": 373,
+    "x": 143,
+    "y": 218,
+    "width": 30,
+    "height": 30
+   },
+   "status": "identified",
+   "identification": "user-confirmed",
+   "referenceNumber": 1,
+   "aliases": [
+    "Demirci Taşı"
+   ],
+   "nameReference": "https://en-wiki.metin2.gameforge.com/index.php/Stone_of_the_Blacksmith",
+   "slots": 1
+  },
+  "stone-handbook": {
+   "id": "stone-handbook",
+   "name": "Stone Handbook",
+   "category": "Utility",
+   "icon": {
+    "src": "/guide/loot/red-tree-reference.png",
+    "sheetWidth": 498,
+    "sheetHeight": 373,
+    "x": 176,
+    "y": 218,
+    "width": 30,
+    "height": 30
+   },
+   "status": "identified",
+   "identification": "user-confirmed",
+   "referenceNumber": 2,
+   "aliases": [
+    "Taş Sanatı Kitabı"
+   ],
+   "nameReference": "https://en-wiki.metin2.gameforge.com/index.php/Stone_Handbook",
+   "slots": 1
+  },
+  "enchant-fragment": {
+   "id": "enchant-fragment",
+   "name": "Enchant Fragment",
+   "category": "Materials",
+   "icon": {
+    "src": "/guide/loot/red-tree-reference.png",
+    "sheetWidth": 498,
+    "sheetHeight": 373,
+    "x": 208,
+    "y": 218,
+    "width": 30,
+    "height": 30
+   },
+   "status": "identified",
+   "identification": "user-confirmed",
+   "referenceNumber": 3,
+   "aliases": [
+    "Efsun Parçaları"
+   ],
+   "englishNamePending": true,
+   "slots": 1
+  },
+  "empty-bottle": {
+   "id": "empty-bottle",
+   "name": "Empty Bottle",
+   "category": "Materials",
+   "icon": {
+    "src": "/guide/loot/red-tree-reference.png",
+    "sheetWidth": 498,
+    "sheetHeight": 373,
+    "x": 47,
+    "y": 250,
+    "width": 30,
+    "height": 30
+   },
+   "status": "identified",
+   "identification": "user-confirmed",
+   "referenceNumber": 4,
+   "aliases": [
+    "Boş İksir"
+   ],
+   "nameReference": "https://en-wiki.metin2.gameforge.com/index.php/Empty_Bottle_(Quest_Item)",
+   "slots": 1
+  },
+  "reinforce-core": {
+   "id": "reinforce-core",
+   "name": "Reinforce Core",
+   "category": "Materials",
+   "icon": {
+    "src": "/guide/loot/red-tree-reference.png",
+    "sheetWidth": 498,
+    "sheetHeight": 373,
+    "x": 79,
+    "y": 250,
+    "width": 30,
+    "height": 30
+   },
+   "status": "identified",
+   "identification": "user-confirmed",
+   "referenceNumber": 5,
+   "aliases": [
+    "Güçlendirme Özü"
+   ],
+   "nameReference": "https://arthion.to/forum/patch-notes/123-patch-notes-1-3-0",
+   "slots": 1
+  },
+  "mysterious-quill": {
+   "id": "mysterious-quill",
+   "name": "Mysterious Quill",
+   "category": "Utility",
+   "icon": {
+    "src": "/guide/loot/red-tree-reference.png",
+    "sheetWidth": 498,
+    "sheetHeight": 373,
+    "x": 400,
+    "y": 218,
+    "width": 30,
+    "height": 30
+   },
+   "status": "identified",
+   "identification": "user-confirmed",
+   "referenceNumber": 6,
+   "aliases": [
+    "Gizemli Tüy Kalem"
+   ],
+   "slots": 1
+  },
+  "hermit-s-feather": {
+   "id": "hermit-s-feather",
+   "name": "Hermit's Feather",
+   "category": "Utility",
+   "icon": {
+    "src": "/guide/loot/red-tree-reference.png",
+    "sheetWidth": 498,
+    "sheetHeight": 373,
+    "x": 432,
+    "y": 218,
+    "width": 30,
+    "height": 30
+   },
+   "status": "identified",
+   "identification": "user-confirmed",
+   "referenceNumber": 7,
+   "aliases": [
+    "Münzevinin Tüyü"
+   ],
+   "slots": 1
+  },
+  "language-ring": {
+   "id": "language-ring",
+   "name": "Language Ring",
+   "category": "Accessories",
+   "icon": {
+    "src": "/guide/loot/flame-reference.png",
+    "sheetWidth": 507,
+    "sheetHeight": 124,
+    "x": 304,
+    "y": 89,
+    "width": 30,
+    "height": 30
+   },
+   "status": "identified",
+   "identification": "user-confirmed",
+   "referenceNumber": 8,
+   "aliases": [
+    "Lisan Yüzüğü"
+   ],
+   "nameReference": "https://en-wiki.metin2.gameforge.com/index.php/Language_Ring",
+   "slots": 1
+  },
+  "boss-summoning-medal": {
+   "id": "boss-summoning-medal",
+   "name": "Boss Summoning Medal",
+   "category": "Utility",
+   "icon": {
+    "src": "/guide/loot/flame-reference.png",
+    "sheetWidth": 507,
+    "sheetHeight": 124,
+    "x": 369,
+    "y": 89,
+    "width": 30,
+    "height": 30
+   },
+   "status": "identified",
+   "identification": "user-confirmed",
+   "referenceNumber": 11,
+   "aliases": [
+    "Boss Çağırma Madalyası"
+   ],
+   "slots": 1
+  },
+  "medal-of-the-dragon": {
+   "id": "medal-of-the-dragon",
+   "name": "Medal of the Dragon",
+   "category": "Utility",
+   "icon": {
+    "src": "/guide/loot/flame-reference.png",
+    "sheetWidth": 507,
+    "sheetHeight": 124,
+    "x": 208,
+    "y": 57,
+    "width": 30,
+    "height": 30
+   },
+   "status": "identified",
+   "identification": "user-confirmed",
+   "referenceNumber": 12,
+   "aliases": [
+    "Ejderha Madalyası"
+   ],
+   "nameReference": "https://en-wiki.metin2.gameforge.com/index.php/Medal_of_the_Dragon",
+   "slots": 1
+  },
+  "scroll-of-the-location": {
+   "id": "scroll-of-the-location",
+   "name": "Scroll of the Location",
+   "category": "Utility",
+   "icon": {
+    "src": "/guide/loot/flame-reference.png",
+    "sheetWidth": 507,
+    "sheetHeight": 124,
+    "x": 144,
+    "y": 57,
+    "width": 30,
+    "height": 30
+   },
+   "status": "identified",
+   "identification": "user-confirmed",
+   "referenceNumber": 13,
+   "aliases": [
+    "Geri Dönüş Kağıdı"
+   ],
+   "nameReference": "https://en-wiki.metin2.gameforge.com/index.php/Scroll_of_the_Location",
+   "slots": 1
+  },
+  "blacksmith-s-memo": {
+   "id": "blacksmith-s-memo",
+   "name": "Blacksmith's Memo",
+   "category": "Utility",
+   "icon": {
+    "src": "/guide/loot/flame-reference.png",
+    "sheetWidth": 507,
+    "sheetHeight": 124,
+    "x": 176,
+    "y": 57,
+    "width": 30,
+    "height": 30
+   },
+   "status": "identified",
+   "identification": "user-confirmed",
+   "referenceNumber": 14,
+   "aliases": [
+    "Demircinin İltifatı"
+   ],
+   "nameReference": "https://forum.metin2sg.com/thread/8389-patch-notes-07-04-2022/",
+   "slots": 1
+  },
+  "wise-man-s-memo": {
+   "id": "wise-man-s-memo",
+   "name": "Wise Man's Memo",
+   "category": "Utility",
+   "icon": {
+    "src": "/guide/loot/red-tree-reference.png",
+    "sheetWidth": 498,
+    "sheetHeight": 373,
+    "x": 464,
+    "y": 186,
+    "width": 30,
+    "height": 30
+   },
+   "status": "identified",
+   "identification": "user-confirmed",
+   "referenceNumber": 15,
+   "aliases": [
+    "Erdemli Adamın Notu"
+   ],
+   "nameReference": "https://forum.metin2sg.com/thread/8389-patch-notes-07-04-2022/",
+   "slots": 1
+  },
+  "ghost-mask-sallet": {
+   "id": "ghost-mask-sallet",
+   "name": "Ghost Mask Sallet",
+   "category": "Armours",
+   "icon": {
+    "src": "/guide/loot/yellow-tiger-reference.png",
+    "sheetWidth": 517,
+    "sheetHeight": 359,
+    "x": 341,
+    "y": 175,
+    "width": 30,
+    "height": 30
+   },
+   "status": "identified",
+   "identification": "user-confirmed",
+   "referenceNumber": 17,
+   "aliases": [
+    "Hayalet Maske Başlık"
+   ],
+   "nameReference": "https://en-wiki.metin2.gameforge.com/index.php/Ghost_Mask_Sallet",
+   "slots": 1
+  },
+  "steel-hood": {
+   "id": "steel-hood",
+   "name": "Steel Hood",
+   "category": "Armours",
+   "icon": {
+    "src": "/guide/loot/yellow-tiger-reference.png",
+    "sheetWidth": 517,
+    "sheetHeight": 359,
+    "x": 373,
+    "y": 175,
+    "width": 30,
+    "height": 30
+   },
+   "status": "identified",
+   "identification": "user-confirmed",
+   "referenceNumber": 18,
+   "aliases": [
+    "Çelik Kapüşon"
+   ],
+   "nameReference": "https://en-wiki.metin2.gameforge.com/index.php/Steel_Hood",
+   "slots": 1
+  },
+  "inventory-expansion": {
+   "id": "inventory-expansion",
+   "name": "Inventory Expansion",
+   "category": "Utility",
+   "icon": {
+    "src": "/guide/loot/flame-reference.png",
+    "sheetWidth": 507,
+    "sheetHeight": 124,
+    "x": 400,
+    "y": 57,
+    "width": 30,
+    "height": 30
+   },
+   "status": "identified",
+   "identification": "user-confirmed",
+   "referenceNumber": 19,
+   "aliases": [
+    "Envanter Genişletme"
+   ],
+   "nameReference": "https://arthion.to/presentation",
+   "slots": 1
+  },
+  "sunlight-hat": {
+   "id": "sunlight-hat",
+   "name": "Sunlight Hat",
+   "category": "Armours",
+   "icon": {
+    "src": "/guide/loot/yellow-tiger-reference.png",
+    "sheetWidth": 517,
+    "sheetHeight": 359,
+    "x": 437,
+    "y": 175,
+    "width": 30,
+    "height": 30
+   },
+   "status": "identified",
+   "identification": "user-confirmed",
+   "referenceNumber": 20,
+   "aliases": [
+    "Günışığı Şapka"
+   ],
+   "nameReference": "https://en-wiki.metin2.gameforge.com/index.php/Sunlight_Hat",
+   "slots": 1
+  },
+  "book-of-the-leader": {
+   "id": "book-of-the-leader",
+   "name": "Book of the Leader",
+   "category": "Utility",
+   "icon": {
+    "src": "/guide/loot/red-tree-reference.png",
+    "sheetWidth": 498,
+    "sheetHeight": 373,
+    "x": 208,
+    "y": 250,
+    "width": 30,
+    "height": 30
+   },
+   "status": "identified",
+   "identification": "user-confirmed",
+   "referenceNumber": 21,
+   "aliases": [
+    "Liderin Kitabı"
+   ],
+   "nameReference": "https://en-wiki.metin2.gameforge.com/index.php/Book_of_the_Leader",
+   "slots": 1
+  }
+ },
+ "chests": [
+  {
+   "id": "giant-red-tree-chest",
+   "name": "Giant Ghost Red Tree's Chest",
+   "icon": {
+    "src": "/guide/loot/red-tree-reference.png",
+    "sheetWidth": 498,
+    "sheetHeight": 373,
+    "x": 6,
+    "y": 45,
+    "width": 30,
+    "height": 30
+   },
+   "bossId": "giant-red-tree-ghost",
+   "aliases": [],
+   "reference": "red-tree",
+   "entries": [
+    {
+     "item": "partisan"
+    },
+    {
+     "item": "battle-sword"
+    },
+    {
+     "item": "ghost-fang-blade"
+    },
+    {
+     "item": "yellow-dragon-bow"
+    },
+    {
+     "item": "dragon-knife"
+    },
+    {
+     "item": "heaven-and-earth-bell"
+    },
+    {
+     "item": "eyebrow-fan"
+    },
+    {
+     "item": "dragon-god-armour"
+    },
+    {
+     "item": "fuchsia-suit"
+    },
+    {
+     "item": "spirit-plate-armour"
+    },
+    {
+     "item": "baroness-dress"
+    },
+    {
+     "item": "heaven-s-tear-bracelet"
+    },
+    {
+     "item": "heaven-s-tear-necklace"
+    },
+    {
+     "item": "heaven-s-tear-earrings"
+    },
+    {
+     "item": "wise-man-s-memo"
+    },
+    {
+     "item": "stone-of-the-blacksmith"
+    },
+    {
+     "item": "stone-handbook"
+    },
+    {
+     "item": "enchant-fragment",
+     "quantity": 4
+    },
+    {
+     "item": "reinforce-core",
+     "quantities": [
+      1,
+      2
+     ]
+    },
+    {
+     "item": "mysterious-quill"
+    },
+    {
+     "item": "hermit-s-feather"
+    },
+    {
+     "item": "blessing-marble"
+    },
+    {
+     "item": "empty-bottle"
+    },
+    {
+     "item": "white-pearl"
+    },
+    {
+     "item": "blue-pearl"
+    },
+    {
+     "item": "blood-red-pearl"
+    },
+    {
+     "item": "book-of-the-leader"
+    },
+    {
+     "item": "experience-ring"
+    },
+    {
+     "item": "thief-s-gloves"
+    }
+   ],
+   "referenceEntryCount": 30
+  },
+  {
+   "id": "grim-reaper-chest",
+   "name": "Grim Reaper's Chest",
+   "icon": {
+    "src": "/guide/loot/reaper-reference.png",
+    "sheetWidth": 517,
+    "sheetHeight": 138,
+    "x": 5,
+    "y": 61,
+    "width": 30,
+    "height": 30
+   },
+   "bossId": "grim-reaper",
+   "aliases": [
+    "Lusifer Sandığı",
+    "Azrail Sandığı"
+   ],
+   "reference": "reaper",
+   "entries": [
+    {
+     "item": "grudge-sword"
+    },
+    {
+     "item": "poison-sword"
+    },
+    {
+     "item": "lion-sword"
+    },
+    {
+     "item": "crow-steel-bow"
+    },
+    {
+     "item": "devil-wing-chakram"
+    },
+    {
+     "item": "bamboo-bell"
+    },
+    {
+     "item": "lying-dragon-fan"
+    },
+    {
+     "item": "dragon-god-armour"
+    },
+    {
+     "item": "fuchsia-suit"
+    },
+    {
+     "item": "spirit-plate-armour"
+    },
+    {
+     "item": "baroness-dress"
+    },
+    {
+     "item": "stone-of-the-blacksmith"
+    },
+    {
+     "item": "enchant-fragment",
+     "quantity": 5
+    },
+    {
+     "item": "reinforce-core",
+     "quantities": [
+      1,
+      2
+     ]
+    },
+    {
+     "item": "mysterious-quill"
+    },
+    {
+     "item": "hermit-s-feather"
+    },
+    {
+     "item": "blessing-marble"
+    },
+    {
+     "item": "soul-stone-plus"
+    },
+    {
+     "item": "white-pearl"
+    },
+    {
+     "item": "blue-pearl"
+    },
+    {
+     "item": "blood-red-pearl"
+    },
+    {
+     "item": "experience-ring"
+    },
+    {
+     "item": "thief-s-gloves"
+    }
+   ],
+   "referenceEntryCount": 24
+  },
+  {
+   "id": "flame-king-chest",
+   "name": "Flame King's Chest",
+   "icon": {
+    "src": "/guide/loot/flame-reference.png",
+    "sheetWidth": 507,
+    "sheetHeight": 124,
+    "x": 5,
+    "y": 56,
+    "width": 30,
+    "height": 30
+   },
+   "bossId": "flame-king",
+   "aliases": [],
+   "reference": "flame",
+   "entries": [
+    {
+     "item": "lion-slayer"
+    },
+    {
+     "item": "half-moon-sword"
+    },
+    {
+     "item": "giant-wing-bow"
+    },
+    {
+     "item": "chakram"
+    },
+    {
+     "item": "steel-bug-bell"
+    },
+    {
+     "item": "sun-fan"
+    },
+    {
+     "item": "dragon-god-armour"
+    },
+    {
+     "item": "fuchsia-suit"
+    },
+    {
+     "item": "spirit-plate-armour"
+    },
+    {
+     "item": "baroness-dress"
+    },
+    {
+     "item": "heaven-s-tear-bracelet"
+    },
+    {
+     "item": "heaven-s-tear-necklace"
+    },
+    {
+     "item": "heaven-s-tear-earrings"
+    },
+    {
+     "item": "bravery-cape",
+     "quantity": 10
+    },
+    {
+     "item": "scroll-of-the-location",
+     "quantity": 2
+    },
+    {
+     "item": "blacksmith-s-memo"
+    },
+    {
+     "item": "medal-of-the-dragon",
+     "quantity": 3
+    },
+    {
+     "item": "stone-handbook"
+    },
+    {
+     "item": "inventory-expansion"
+    },
+    {
+     "item": "enchant-fragment",
+     "quantity": 4
+    },
+    {
+     "item": "passage-ticket"
+    },
+    {
+     "item": "mysterious-quill"
+    },
+    {
+     "item": "hermit-s-feather"
+    },
+    {
+     "item": "blessing-marble"
+    },
+    {
+     "item": "empty-bottle"
+    },
+    {
+     "item": "reinforce-core",
+     "quantity": 1
+    },
+    {
+     "item": "book-of-the-leader"
+    },
+    {
+     "item": "experience-ring"
+    },
+    {
+     "item": "language-ring"
+    },
+    {
+     "item": "thief-s-gloves"
+    },
+    {
+     "item": "boss-summoning-medal",
+     "summonsBoss": "Flame King"
+    }
+   ],
+   "referenceEntryCount": 31
+  },
+  {
+   "id": "nine-tails-chest",
+   "name": "Nine Tails' Chest",
+   "icon": {
+    "src": "/guide/loot/nine-tails-reference.png",
+    "sheetWidth": 527,
+    "sheetHeight": 137,
+    "x": 6,
+    "y": 60,
+    "width": 30,
+    "height": 30
+   },
+   "bossId": "nine-tails",
+   "aliases": [
+    "Forziere del Nove Code"
+   ],
+   "reference": "nine-tails",
+   "entries": [
+    {
+     "item": "salvation-blade"
+    },
+    {
+     "item": "flying-wizard-sword"
+    },
+    {
+     "item": "giant-wing-bow"
+    },
+    {
+     "item": "unicorn-bow"
+    },
+    {
+     "item": "steel-bug-bell"
+    },
+    {
+     "item": "sun-fan"
+    },
+    {
+     "item": "gold-plate-armour"
+    },
+    {
+     "item": "killer-wind-suit"
+    },
+    {
+     "item": "fog-plate-armour"
+    },
+    {
+     "item": "orange-cat-dress"
+    },
+    {
+     "item": "nimbus-boots"
+    },
+    {
+     "item": "phoenix-shoes"
+    },
+    {
+     "item": "fire-bird-shoes"
+    },
+    {
+     "item": "medal-of-the-dragon",
+     "quantity": 3
+    },
+    {
+     "item": "blacksmith-s-memo"
+    },
+    {
+     "item": "stone-handbook"
+    },
+    {
+     "item": "enchant-fragment",
+     "quantity": 4
+    },
+    {
+     "item": "passage-ticket"
+    },
+    {
+     "item": "mysterious-quill"
+    },
+    {
+     "item": "hermit-s-feather"
+    },
+    {
+     "item": "blessing-marble"
+    },
+    {
+     "item": "empty-bottle"
+    },
+    {
+     "item": "reinforce-core",
+     "quantity": 1
+    },
+    {
+     "item": "book-of-the-leader"
+    },
+    {
+     "item": "experience-ring"
+    },
+    {
+     "item": "language-ring"
+    },
+    {
+     "item": "thief-s-gloves"
+    },
+    {
+     "item": "soul-stone"
+    },
+    {
+     "item": "boss-summoning-medal",
+     "summonsBoss": "Nine Tails"
+    }
+   ],
+   "referenceEntryCount": 29
+  },
+  {
+   "id": "yellow-tiger-chest",
+   "name": "Yellow Tiger's Chest",
+   "icon": {
+    "src": "/guide/loot/yellow-tiger-reference.png",
+    "sheetWidth": 517,
+    "sheetHeight": 359,
+    "x": 12,
+    "y": 34,
+    "width": 30,
+    "height": 30
+   },
+   "bossId": "yellow-tiger",
+   "aliases": [],
+   "reference": "yellow-tiger",
+   "entries": [
+    {
+     "item": "lion-slayer"
+    },
+    {
+     "item": "half-moon-sword"
+    },
+    {
+     "item": "giant-wing-bow"
+    },
+    {
+     "item": "chakram"
+    },
+    {
+     "item": "steel-bug-bell"
+    },
+    {
+     "item": "sun-fan"
+    },
+    {
+     "item": "gold-plate-armour"
+    },
+    {
+     "item": "killer-wind-suit"
+    },
+    {
+     "item": "fog-plate-armour"
+    },
+    {
+     "item": "orange-cat-dress"
+    },
+    {
+     "item": "ghost-mask-sallet"
+    },
+    {
+     "item": "steel-hood"
+    },
+    {
+     "item": "fire-bird-shoes"
+    },
+    {
+     "item": "sunlight-hat"
+    },
+    {
+     "item": "bravery-cape",
+     "quantity": 10
+    },
+    {
+     "item": "medal-of-the-dragon",
+     "quantity": 3
+    },
+    {
+     "item": "scroll-of-the-location",
+     "quantity": 2
+    },
+    {
+     "item": "stone-of-the-blacksmith"
+    },
+    {
+     "item": "stone-handbook"
+    },
+    {
+     "item": "inventory-expansion"
+    },
+    {
+     "item": "enchant-fragment",
+     "quantity": 4
+    },
+    {
+     "item": "passage-ticket"
+    },
+    {
+     "item": "mysterious-quill"
+    },
+    {
+     "item": "hermit-s-feather"
+    },
+    {
+     "item": "blessing-marble"
+    },
+    {
+     "item": "empty-bottle"
+    },
+    {
+     "item": "reinforce-core",
+     "quantity": 1
+    },
+    {
+     "item": "book-of-the-leader"
+    },
+    {
+     "item": "experience-ring"
+    },
+    {
+     "item": "language-ring"
+    },
+    {
+     "item": "thief-s-gloves"
+    },
+    {
+     "item": "boss-summoning-medal",
+     "summonsBoss": "Yellow Tiger"
+    }
+   ],
+   "referenceEntryCount": 32
+  },
+  {
+   "id": "queen-spider-box",
+   "name": "Queen Spider Box",
+   "icon": {
+    "src": "/guide/loot/queen-spider-reference.png",
+    "sheetWidth": 510,
+    "sheetHeight": 382,
+    "x": 8,
+    "y": 52,
+    "width": 30,
+    "height": 30
+   },
+   "bossId": "queen-spider",
+   "aliases": [],
+   "reference": "queen-spider",
+   "entries": [
+    {
+     "item": "salvation-blade"
+    },
+    {
+     "item": "flying-wizard-sword"
+    },
+    {
+     "item": "giant-wing-bow"
+    },
+    {
+     "item": "unicorn-bow"
+    },
+    {
+     "item": "steel-bug-bell"
+    },
+    {
+     "item": "sun-fan"
+    },
+    {
+     "item": "scale-plate-armour"
+    },
+    {
+     "item": "young-dragon-suit"
+    },
+    {
+     "item": "ghost-plate-armour"
+    },
+    {
+     "item": "sun-clothing"
+    },
+    {
+     "item": "falcon-shield"
+    },
+    {
+     "item": "tiger-shield"
+    },
+    {
+     "item": "lion-edge-shield"
+    },
+    {
+     "item": "dragon-scale-shield"
+    },
+    {
+     "item": "crystal-bracelet"
+    },
+    {
+     "item": "crystal-necklace"
+    },
+    {
+     "item": "crystal-earrings"
+    },
+    {
+     "item": "zen-bean"
+    },
+    {
+     "item": "stone-handbook"
+    },
+    {
+     "item": "inventory-expansion"
+    },
+    {
+     "item": "enchant-fragment",
+     "quantity": 3
+    },
+    {
+     "item": "passage-ticket"
+    },
+    {
+     "item": "mysterious-quill"
+    },
+    {
+     "item": "hermit-s-feather"
+    },
+    {
+     "item": "blessing-marble"
+    },
+    {
+     "item": "empty-bottle"
+    },
+    {
+     "item": "language-ring"
+    },
+    {
+     "item": "experience-ring"
+    },
+    {
+     "item": "thief-s-gloves"
+    },
+    {
+     "item": "boss-summoning-medal",
+     "summonsBoss": "Queen Spider"
+    }
+   ],
+   "referenceEntryCount": 30
+  }
+ ]
+}

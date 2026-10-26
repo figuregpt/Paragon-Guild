@@ -1,0 +1,229 @@
+{
+ "Bamboo Bell": {
+  "gr": "Καμπάνα Μπαμπού",
+  "tr": "Orkide Çan"
+ },
+ "Battle Sword": {
+  "gr": "Σπάθα Μάχης",
+  "tr": "Muharebe Kılıcı"
+ },
+ "Chakram": {
+  "gr": "Κοφτερός Δίσκος",
+  "tr": "Çakram"
+ },
+ "Crow Steel Bow": {
+  "gr": "Ατσάλινο Τόξο"
+ },
+ "Eyebrow Fan": {
+  "gr": "Βεντάλια φρυδιών",
+  "tr": "Kaş Yelpaze"
+ },
+ "Ghost Fang Blade": {
+  "gr": "Λεπίδα Φάντασμα",
+  "tr": "Hortlak Dişi Kılıcı"
+ },
+ "Giant Wing Bow": {
+  "tr": "Dev Kanatlı Yay"
+ },
+ "Grudge Sword": {
+  "gr": "Σπαθί της Μνησικακίας",
+  "tr": "Kin Kılıcı"
+ },
+ "Heaven and Earth Bell": {
+  "gr": "Καμπάνα Γη και Ουρανός",
+  "tr": "Cennet Ve Dünya Çanı"
+ },
+ "Lion Slayer": {
+  "gr": "Φονιάς Λεόντων",
+  "tr": "Aslan Katleden"
+ },
+ "Lion Sword": {
+  "gr": "Ξίφος του Λέοντα",
+  "tr": "Aslan Kılıcı"
+ },
+ "Lying Dragon Fan": {
+  "tr": "Uyuyan Ejder Yelpazesi"
+ },
+ "Partisan": {
+  "tr": "Partizan"
+ },
+ "Poison Sword": {
+  "gr": "Δηλητηριώδες Σπαθί",
+  "tr": "Zehir Kılıcı"
+ },
+ "Steel Bug Bell": {
+  "gr": "Καμπάνα Ατσάλ. Εντόμου",
+  "tr": "Çelik Böcek Çan"
+ },
+ "Yellow Dragon Bow": {
+  "tr": "Sarı Ejderha Yayı"
+ },
+ "Baroness Dress": {
+  "tr": "Soylu Kadın Elbisesi"
+ },
+ "Dragon God Armour": {
+  "gr": "Πανοπλία του Δρακοθεού",
+  "tr": "Ejderha Tanrısı Zırh"
+ },
+ "Flying Wizard Sword": {
+  "gr": "Ξίφος του Μάγου",
+  "tr": "Uçan Büyücü Kılıcı"
+ },
+ "Fog Plate Armour": {
+  "gr": "Νεφελώδης Πανοπλία",
+  "tr": "Belirsiz Plaka Zırh"
+ },
+ "Fuchsia Suit": {
+  "gr": "Φούξια Κουστούμι",
+  "tr": "Küpe Çiceği Takım"
+ },
+ "Ghost Plate Armour": {
+  "gr": "Πανοπλία Φαντασμάτων",
+  "tr": "Hayalet Plaka Zırh"
+ },
+ "Gold Plate Armour": {
+  "gr": "Χρυσή Πανοπλία",
+  "tr": "Altın Taş Zırh"
+ },
+ "Heaven's Tear Bracelet": {
+  "tr": "Cennetin Gözü Bilezik"
+ },
+ "Heaven's Tear Earrings": {
+  "gr": "Σκουλαρ. Ουρ. Δακρύων",
+  "tr": "Cennetin Gözü Küpe"
+ },
+ "Heaven's Tear Necklace": {
+  "gr": "Περιδέραιο Ουρ. Δάκρυα",
+  "tr": "Cennetin Gözü Kolye"
+ },
+ "Killer Wind Suit": {
+  "gr": "Κουστούμι της Θύελλας",
+  "tr": "Öldürücü Rüzgar Takımı"
+ },
+ "Nimbus Boots": {
+  "gr": "Μπότες των Νεφών",
+  "tr": "Işık Saçan Çizme"
+ },
+ "Orange Cat Dress": {
+  "gr": "Φόρεμα Natulcien",
+  "tr": "Turuncu Kedi Elbisesi"
+ },
+ "Phoenix Shoes": {
+  "gr": "Παπούτσια Φοίνικα"
+ },
+ "Salvation Blade": {
+  "gr": "Λεπίδα της Σωτηρίας",
+  "tr": "Kurtuluş Palası"
+ },
+ "Scale Plate Armour": {
+  "gr": "Μπλε Πανοπλία",
+  "tr": "Mavi Taş Zırh"
+ },
+ "Spirit Plate Armour": {
+  "gr": "Πανοπλία των Πνευμάτων",
+  "tr": "Ruh Plaka Zırh"
+ },
+ "Sun Clothing": {
+  "gr": "Ηλιακό Φόρεμα",
+  "tr": "Güneş Elbisesi"
+ },
+ "Unicorn Bow": {
+  "tr": "Tek Boynuzlu Yay"
+ },
+ "Young Dragon Suit": {
+  "gr": "Κουστούμι Νέου Δράκου",
+  "tr": "Genç Ejderha Takım"
+ },
+ "Blessing Marble": {
+  "gr": "Βόλος Ευλογίας",
+  "tr": "Kutsama Küresi"
+ },
+ "Blue Pearl": {
+  "gr": "Μπλε Μαργαριτάρι",
+  "tr": "Mavi İnci"
+ },
+ "Bravery Cape": {
+  "gr": "Κάπα της Γενναιότητας",
+  "tr": "Cesaret Pelerini"
+ },
+ "Crystal Bracelet": {
+  "gr": "Κρυστάλλινο Βραχιόλι",
+  "tr": "Kristal Bilezik"
+ },
+ "Crystal Earrings": {
+  "gr": "Σκουλαρίκια Κρυστάλλου",
+  "tr": "Kristal Küpe"
+ },
+ "Crystal Necklace": {
+  "gr": "Κρυστάλλινο Περιδέραιο",
+  "tr": "Kristal Kolye"
+ },
+ "Dragon Scale Shield": {
+  "gr": "Ασπίδα Δράκου",
+  "tr": "Ejderha Pulu Kalkan"
+ },
+ "Experience Ring": {
+  "tr": "Tecrübe Yüzüğü"
+ },
+ "Falcon Shield": {
+  "gr": "Ασπίδα Γερακιού",
+  "tr": "Şahin Kalkan"
+ },
+ "Fire Bird Shoes": {
+  "gr": "Παπούτσια Αmakir",
+  "tr": "Ateş Kuşu Çizmesi"
+ },
+ "Lion Edge Shield": {
+  "gr": "Ασπίδα Λιονταριού"
+ },
+ "Passage Ticket": {
+  "tr": "Geçit Bileti"
+ },
+ "Soul Stone": {
+  "tr": "Ruh Taşı"
+ },
+ "Soul Stone+": {
+  "tr": "Ruh Taşı+"
+ },
+ "Stone of the Blacksmith": {
+  "tr": "Demirci Taşı"
+ },
+ "Tiger Shield": {
+  "gr": "Ασπίδα Τίγρης"
+ },
+ "White Pearl": {
+  "gr": "Άσπρο Μαργαριτάρι",
+  "tr": "Beyaz İnci"
+ },
+ "Zen Bean": {
+  "tr": "Zen Fasulyesi"
+ },
+ "Book of the Leader": {
+  "tr": "Lider Kitabı"
+ },
+ "Ghost Mask Sallet": {
+  "gr": "Μάσκα Φαντάσματος",
+  "tr": "Hayalet Maske Başlık"
+ },
+ "Language Ring": {
+  "tr": "Lisan Yüzüğü"
+ },
+ "Medal of the Dragon": {
+  "tr": "Ejderha Madalyası"
+ },
+ "Scroll of the Location": {
+  "tr": "Geri Dönüş Kağıdı"
+ },
+ "Steel Hood": {
+  "gr": "Ατσάλινο Κράνος",
+  "tr": "Çelik Kapşon"
+ },
+ "Stone Handbook": {
+  "gr": "Βιβλίο της Πέτρας",
+  "tr": "Taş Sanatı Kitabı"
+ },
+ "Sunlight Hat": {
+  "gr": "Καπέλο Ηλιακού Φωτός",
+  "tr": "Günışığı Şapka"
+ }
+}

@@ -1,0 +1,13 @@
+# Arthion upgrade reference
+
+`reference.png` is the unchanged screenshot supplied by the user on 26 October 2026. The guide transcribes its 68 equipment rows in the supplied order: 10 earrings, 10 necklaces, 10 bracelets, 11 shoes, 3 class helmet rows, 4 shield rows, 10 class armour rows and 10 class weapon rows. Each row records the stated level, bonuses at +9, and materials for reaching +5, +6, +7, +8 and +9.
+
+The user confirmed **Adaptation → Kararlılık** for the abbreviated “Adap.” stat. Other abbreviated stat labels are translated without inventing effects. Bonus values are only claimed at +9. The two weapon rows at level 65 remain separate: the monster-damage row and the PvP Flat row. Unspecified PvP values and the level-66 armour / level-75 weapon bonuses remain unknown.
+
+Source slash (`/`) cells mean no materials are listed; question-mark (`?`) cells remain unknown. In Heaven's Tear Necklace +8 and Amethyst Bracelet +8, the Blue Pearl count is marked with question marks in the source, so its quantity is deliberately unknown. No quantity was inferred from neighbouring rows. Requirements for the same item can differ by row: e.g. Face Cream is ×1 for Wooden Shoes and Silver Bracelet, but ×2 for the level-1 helmet. Fishbones, Clam and pearl quantities, and the `+` suffixes of materials, are retained separately.
+
+Materials and individual equipment use original Metin2 item icons, without generated substitute images. `ICON-SOURCES.json` records Wiki references; `NAME-SOURCES.json` records official interlanguage titles. Missing language links use ordinary translated names. The 24 class-wide entries use a group of class-item illustrations; the source does not specify individual class models. Normalized spelling (e.g. Red Pearl / Blood Pearl → Blood-Red Pearl) does not change the material requirements.
+
+The normal Metin2 Wiki upgrade recipes, success rates and Yang costs were **not** imported. Arthion's supplied table is the authority for this guide. This screenshot does not cover upgrades below +5. The small Love Jewels crafting-bonus header is separate from item upgrading and contains no upgrade-material recipes; it is not presented as an equipment upgrade row.
+
+The guide presents one equipment category as a list of item cards. Every card shows +5–+9 columns together, one row per material slot, matching the notebook layout requested by the user. Original item/upgrade links still resolve to their category and highlight the requested entry. Clicking a material opens its localized name, quantity and exact upgrade step; the list never infers +1–+4 requirements or Yang fees from the layout-only notebook screenshot.

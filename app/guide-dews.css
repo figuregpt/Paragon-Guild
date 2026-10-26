@@ -1,0 +1,65 @@
+#paragon-design .gd-heading{display:flex;align-items:center;gap:18px;border-bottom:1px solid #303844;padding-bottom:24px;margin-bottom:24px}
+#paragon-design .gd-heading>svg{color:#d47585;flex-shrink:0}
+#paragon-design .gd-heading>div{min-width:0}
+#paragon-design .gd-heading h2{font-size:30px;line-height:1.2;letter-spacing:-.6px;margin:8px 0}
+#paragon-design .gd-heading p{font-size:12px;color:var(--pg-muted)}
+#paragon-design .gd-total{margin-left:auto;font-size:11px;color:var(--pg-muted);text-align:right;max-width:220px}
+#paragon-design .gd-recipes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+#paragon-design .gd-recipe{min-width:0;display:flex;flex-direction:column;border:1px solid #303844;border-radius:8px;background:#11161d;overflow:hidden}
+#paragon-design .gd-recipe>header{border-bottom:1px solid #29323e}
+#paragon-design .gd-recipe-open,#paragon-design .gd-recipe-heading{display:flex;align-items:center;gap:14px;padding:18px;width:100%;text-align:left;background:transparent;color:var(--pg-text);border:0;min-height:90px}
+#paragon-design .gd-recipe-open:hover{background:#1a202a}
+#paragon-design .gd-recipe-open:focus-visible{outline-offset:-3px}
+#paragon-design .gd-recipe-open>div,#paragon-design .gd-recipe-heading>div{min-width:0;flex:1}
+#paragon-design .gd-recipe-open>svg{flex-shrink:0;color:var(--pg-muted)}
+#paragon-design .gd-output-art{flex-shrink:0;display:grid;place-items:center;width:50px;height:58px;border:1px solid #384251;border-radius:5px;background:#0b1016}
+#paragon-design .gd-output-art img,#paragon-design .gd-ingredient-art img{width:32px;height:32px;object-fit:contain}
+#paragon-design .gd-recipe-number{display:block;color:var(--pg-muted);font-size:9px;letter-spacing:.5px;text-transform:uppercase}
+#paragon-design .gd-recipe h3{font-size:15px;line-height:1.4;margin:4px 0;overflow-wrap:anywhere}
+#paragon-design .gd-recipe header p{font-size:11px;color:#cbd3df}
+#paragon-design .gd-name-pending{display:block;font-size:9px;color:#d5b38b;margin-top:3px}
+#paragon-design .gd-ingredients{padding:14px 18px 18px;flex:1}
+#paragon-design .gd-ingredients h4{font-size:10px;font-weight:500;color:var(--pg-muted);margin-bottom:8px}
+#paragon-design .gd-ingredients ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+#paragon-design .gd-ingredients li{display:flex;align-items:center;gap:10px;min-height:40px;font-size:12px}
+#paragon-design .gd-ingredient-art{display:grid;place-items:center;width:40px;height:40px;background:#0c1117;border:1px solid #28313d;border-radius:4px;flex-shrink:0;overflow:hidden}
+#paragon-design .gd-ingredients li>span:nth-child(2){min-width:0;overflow-wrap:anywhere}
+#paragon-design .gd-ingredients li small{display:block;font-size:9px;color:#d5b38b;margin-top:3px}
+#paragon-design .gd-ingredients li>strong{margin-left:auto;flex-shrink:0;font-size:12px;font-variant-numeric:tabular-nums}
+#paragon-design .gd-recipe footer{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#0e131a;border-top:1px solid #29323e;padding:12px 18px}
+#paragon-design .gd-recipe footer>span{font-size:10px;color:var(--pg-muted)}
+#paragon-design .gd-recipe footer>strong{font-size:14px;font-variant-numeric:tabular-nums;color:#e8c486}
+#paragon-design .gd-recipe footer small{font-size:10px;font-weight:400}
+#paragon-design .gd-source-note{font-size:10px;color:var(--pg-muted);margin-top:20px}
+#paragon-design .gd-layout-tools{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
+#paragon-design .gd-layout-tools>span{color:var(--pg-muted);font-size:11px}
+#paragon-design .gd-recipes[data-layout=compact]{grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+#paragon-design .gd-recipes[data-layout=compact] .gd-recipe-open{padding:14px;gap:10px}
+#paragon-design .gd-recipes[data-layout=compact] .gd-output-art{width:40px;height:46px}
+#paragon-design .gd-recipes[data-layout=compact] h3{font-size:13px}
+#paragon-design .gd-recipes[data-layout=compact] .gd-recipe-number{display:none}
+#paragon-design .gd-recipes[data-layout=compact] .gd-ingredients{padding:12px 14px}
+#paragon-design .gd-recipes[data-layout=compact] .gd-ingredients h4{display:none}
+#paragon-design .gd-recipes[data-layout=compact] .gd-ingredients ul{display:flex;gap:14px;flex-wrap:wrap}
+#paragon-design .gd-recipes[data-layout=compact] .gd-ingredients li{gap:5px;position:relative}
+#paragon-design .gd-recipes[data-layout=compact] .gd-ingredient-art{border:0;background:none;width:32px;height:40px}
+#paragon-design .gd-recipes[data-layout=compact] .gd-ingredient-name{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+#paragon-design .gd-recipes[data-layout=compact] .gd-recipe footer{padding:10px 14px}
+#paragon-design .gd-recipes[data-layout=compact] .gd-recipe footer>span{display:none}
+#paragon-design .gd-recipes[data-layout=compact] .gd-recipe footer>strong{margin-left:auto;font-size:13px}
+#paragon-design .gd-recipe-dialog{width:440px}
+#paragon-design .gd-recipe-dialog>.gd-recipe{margin:16px;border-color:#3a4656}
+@media(max-width:1100px){#paragon-design .gd-recipes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:1100px){#paragon-design .gd-recipes[data-layout=compact]{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:800px){#paragon-design .gd-recipes[data-layout=compact]{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){
+ #paragon-design .gd-heading{flex-wrap:wrap;gap:12px;padding-bottom:20px;margin-bottom:18px}
+ #paragon-design .gd-heading h2{font-size:25px}
+ #paragon-design .gd-heading>svg{width:24px}
+ #paragon-design .gd-total{margin-left:36px;max-width:none;text-align:left}
+ #paragon-design .gd-recipes{grid-template-columns:minmax(0,1fr);gap:12px}
+ #paragon-design .gd-recipe-open,#paragon-design .gd-recipe-heading{padding:14px 16px}
+ #paragon-design .gd-ingredients{padding:12px 16px 16px}
+ #paragon-design .gd-recipe footer{padding:12px 16px}
+}
+@media(max-width:370px){#paragon-design .gd-recipes[data-layout=compact]{grid-template-columns:minmax(0,1fr)}}

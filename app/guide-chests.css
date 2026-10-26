@@ -1,0 +1,113 @@
+#paragon-design .gg-chests-explorer{display:grid;grid-template-columns:250px minmax(0,1fr);gap:24px;align-items:start}
+#paragon-design .gg-chest-browser,#paragon-design .gg-chest-content{min-width:0}
+#paragon-design .gg-chest-list{padding-top:14px;display:grid;gap:6px}
+#paragon-design .gg-chest-list>button{min-width:0;width:100%;padding:14px 10px;display:flex;align-items:center;gap:10px;min-height:86px;border:1px solid transparent;border-radius:5px;background:transparent;color:var(--pg-text);text-align:left}
+#paragon-design .gg-chest-list>button:hover{background:#191e27}
+#paragon-design .gg-chest-list>button[aria-pressed=true]{background:#251a20;border-color:#69343e}
+#paragon-design .gg-chest-list>button>span:nth-child(2){min-width:0;flex:1}
+#paragon-design .gg-chest-list strong{display:block;font-size:12px;font-weight:600;line-height:1.45;overflow-wrap:anywhere}
+#paragon-design .gg-chest-list small{display:block;font-size:10px;color:var(--pg-muted);margin-top:5px}
+#paragon-design .gg-chest-list-icon{width:40px;flex-shrink:0;display:grid;place-items:center}
+#paragon-design .gg-chest-list-icon img{width:36px;height:44px;object-fit:contain}
+#paragon-design .gg-loot-sprite{display:block;flex-shrink:0;background-repeat:no-repeat;image-rendering:auto}
+#paragon-design .gg-chest-content{border:1px solid var(--pg-edge);border-radius:8px;overflow:hidden;background:#11151b}
+#paragon-design .gg-chest-heading{display:flex;align-items:center;gap:18px;padding:24px;border-bottom:1px solid var(--pg-edge)}
+#paragon-design .gg-chest-heading>div:last-child{min-width:0}
+#paragon-design .gg-chest-heading h3{font-size:21px;letter-spacing:-.4px;line-height:1.3;margin-top:7px;overflow-wrap:anywhere}
+#paragon-design .gg-chest-heading p{font-size:11px;color:var(--pg-muted);margin-top:7px}
+#paragon-design .gg-chest-art{display:grid;place-items:center;background:#0b0e13;border:1px solid #343a46;border-radius:6px;flex-shrink:0;width:66px;height:66px}
+#paragon-design .gg-loot-disclaimer{padding:18px 24px;color:var(--pg-muted);font-size:11px;line-height:1.7;max-width:90ch}
+#paragon-design .gg-loot-filters{border-bottom:1px solid #28313e;margin-bottom:14px}
+#paragon-design .gg-loot-filters>summary{display:flex;align-items:center;gap:8px;list-style:none;min-height:44px;padding:10px 24px;color:var(--pg-muted);font-size:11px;cursor:pointer}
+#paragon-design .gg-loot-filters>summary::-webkit-details-marker{display:none}
+#paragon-design .gg-loot-filters>summary::after{content:'+';margin-left:auto;font-size:16px}
+#paragon-design .gg-loot-filters[open]>summary::after{content:'−'}
+#paragon-design .gg-loot-tools{display:grid;grid-template-columns:minmax(0,1fr) 180px;gap:12px;padding:0 24px 18px}
+#paragon-design .gg-loot-category{display:flex;gap:8px;align-items:center;color:var(--pg-muted);font-size:11px;min-width:0}
+#paragon-design .gg-loot-category>span{position:absolute;clip-path:inset(50%);width:1px;height:1px;overflow:hidden}
+#paragon-design .gg-loot-category select{min-width:0;width:100%;font-size:12px;min-height:46px;padding:10px;border:1px solid #303641;border-radius:5px;background:#0f1319;color:var(--pg-text)}
+#paragon-design .gg-loot-review-note{display:flex;align-items:flex-start;gap:8px;margin:0 24px 18px;padding:12px;border:1px solid #61444b;border-radius:5px;background:#21191e;color:#ebc4c8;flex-wrap:wrap}
+#paragon-design .gg-loot-review-note>svg{flex-shrink:0;margin-top:3px}
+#paragon-design .gg-loot-review-note p{font-size:11px;min-width:0;flex:1}
+#paragon-design .gg-loot-review-note>button{margin-left:24px;display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:4px 0;border:0;background:none;color:#f2d3d6;font-size:11px;text-decoration:underline;text-underline-offset:3px}
+#paragon-design .gg-loot-result-count{font-size:10px;color:var(--pg-muted);padding:0 24px 10px}
+#paragon-design .gg-loot-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:0 24px 24px}
+#paragon-design .gg-loot-card{display:flex;align-items:center;gap:10px;min-width:0;min-height:106px;padding:10px;border:1px solid #2c3440;border-radius:5px;background:#151a22;text-align:left;color:var(--pg-text)}
+#paragon-design .gg-loot-card:hover{background:#1e2530;border-color:#667386}
+#paragon-design .gg-loot-icon{position:relative;flex-shrink:0;width:44px;min-height:80px;display:flex;align-items:center;justify-content:center}
+#paragon-design .gg-loot-icon>img{max-width:40px;max-height:76px;width:auto;height:auto;object-fit:contain}
+#paragon-design .gg-loot-card>span:last-child{min-width:0}
+#paragon-design .gg-loot-card strong{display:block;font-size:11px;font-weight:600;line-height:1.45;overflow-wrap:anywhere}
+#paragon-design .gg-loot-card small{display:block;font-size:9px;color:var(--pg-muted);margin-top:5px}
+#paragon-design .gg-loot-quantity{position:absolute;bottom:0;right:0;padding:1px 4px;border-radius:3px;color:#e7eef8;background:#080c12;box-shadow:0 0 0 1px #313b4c;font-size:10px;font-variant-numeric:tabular-nums}
+#paragon-design .gg-loot-unconfirmed{background:#1b181d;border-color:#4c3943}
+#paragon-design .gg-needs-name{display:inline-block;margin-top:6px;color:#e6acb3;font-size:9px}
+#paragon-design .gg-loot-empty{display:flex;flex-direction:column;align-items:center;gap:14px;padding:36px 20px;color:var(--pg-muted);font-size:12px}
+#paragon-design .gg-loot-footer{padding:18px 24px;border-top:1px solid var(--pg-edge);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+#paragon-design .gg-loot-footer>span{display:flex;gap:7px;color:var(--pg-muted);font-size:10px;align-items:center;max-width:52ch}
+#paragon-design .gg-loot-footer>span>svg{flex-shrink:0}
+#paragon-design .gg-loot-footer .pg-button{font-size:11px}
+#paragon-design :is(.gg-item-review,.gg-item-detail){background:#11151b;border:1px solid #525d6f;color:var(--pg-text);padding:0;border-radius:8px;width:860px;max-width:calc(100vw - 28px);max-height:calc(100dvh - 32px);overscroll-behavior:contain}
+#paragon-design :is(.gg-item-review,.gg-item-detail)::backdrop{background:#000b}
+#paragon-design :is(.gg-item-review,.gg-item-detail)>header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 20px;border-bottom:1px solid #303641;position:sticky;top:0;background:#151a22;z-index:1}
+#paragon-design :is(.gg-item-review,.gg-item-detail)>header h3{font-size:15px}
+#paragon-design .gg-item-review>header p{font-size:11px;color:var(--pg-muted);margin-top:3px}
+#paragon-design .gg-review-grid{padding:20px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+#paragon-design .gg-review-grid>div{position:relative;min-width:0;background:#1a1f28;border:1px solid #35404f;border-radius:5px;padding:12px 8px;min-height:120px}
+#paragon-design .gg-review-number{position:absolute;left:8px;top:6px;font-size:12px;font-weight:700;color:#ffb9bf;font-variant-numeric:tabular-nums}
+#paragon-design .gg-review-icon{height:58px;display:grid;place-items:center;margin-bottom:8px}
+#paragon-design .gg-review-grid>div>span:last-child{display:block;text-align:center;font-size:10px;line-height:1.4;color:#bdc7d5;overflow-wrap:anywhere}
+#paragon-design .gg-item-detail{width:480px}
+#paragon-design .gg-detail-body{padding:24px;display:flex;flex-direction:column;gap:16px}
+#paragon-design .gg-detail-art{display:grid;place-items:center;min-height:110px;background:#090d12;border:1px solid #303a48;border-radius:6px}
+#paragon-design .gg-detail-art img{max-width:64px;max-height:100px;width:auto;height:auto;object-fit:contain}
+#paragon-design .gg-detail-body>p{font-size:12px;color:var(--pg-muted)}
+#paragon-design .gg-detail-body dl{border-top:1px solid #303641;padding-top:10px}
+#paragon-design .gg-detail-body dl>div{display:grid;grid-template-columns:110px minmax(0,1fr);gap:12px;font-size:11px}
+#paragon-design .gg-detail-body dd{text-align:right;overflow-wrap:anywhere}
+#paragon-design .gg-loot-layout-tools{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 24px 16px}
+#paragon-design .gg-loot-layout-tools>span{font-size:11px;color:var(--pg-muted)}
+#paragon-design .gg-loot-layout-switch{display:inline-flex;gap:3px;padding:3px;border:1px solid #354050;border-radius:6px;background:#0b1016}
+#paragon-design .gg-loot-layout-switch button{display:flex;align-items:center;justify-content:center;gap:6px;min-height:44px;padding:8px 12px;border:1px solid transparent;border-radius:4px;background:none;color:var(--pg-muted);font-size:11px}
+#paragon-design .gg-loot-layout-switch button[aria-pressed=true]{background:#2c2028;color:#ffb4bd;border-color:#72404e}
+#paragon-design .gg-loot-layout-switch button:hover{background:#272d37;color:#f3f5f8;border-color:#586477}
+#paragon-design .gg-loot-grid[data-layout=compact]{grid-template-columns:repeat(auto-fill,minmax(46px,1fr));grid-auto-rows:46px;grid-auto-flow:dense;gap:5px}
+#paragon-design .gg-loot-grid[data-layout=compact] .gg-loot-card{padding:4px;min-height:0;position:relative;justify-content:center;align-items:stretch;gap:0}
+#paragon-design .gg-loot-grid[data-layout=compact] .gg-loot-card>span:last-child{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+#paragon-design .gg-loot-grid[data-layout=compact] .gg-loot-icon{min-height:0;height:100%;width:100%;max-width:40px}
+#paragon-design .gg-loot-grid[data-layout=compact] .gg-loot-icon>img{max-height:100%;max-width:100%;height:auto;width:auto;object-fit:contain}
+#paragon-design .gg-loot-grid[data-layout=compact] .gg-loot-sprite{transform:scale(.84)}
+#paragon-design .gg-loot-grid[data-layout=compact] .gg-loot-quantity{font-size:9px;line-height:1.4;white-space:nowrap;bottom:-2px;right:-2px;padding:1px 3px}
+#paragon-design .gb-detail-loot .gg-chest-heading{padding:16px 20px;gap:14px}
+#paragon-design .gb-detail-loot .gg-chest-heading h3{font-size:18px}
+#paragon-design .gb-detail-loot .gg-chest-art{width:50px;height:54px}
+@media(max-width:1100px){#paragon-design .gg-chests-explorer{grid-template-columns:210px minmax(0,1fr);gap:16px}#paragon-design .gg-loot-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#paragon-design .gg-loot-tools{grid-template-columns:minmax(0,1fr)}#paragon-design .gg-review-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:700px){
+ #paragon-design .gg-chests-explorer{grid-template-columns:minmax(0,1fr);gap:18px}
+ #paragon-design .gg-chest-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+ #paragon-design .gg-chest-list>button{padding:10px 8px;min-height:88px;gap:8px}
+ #paragon-design .gg-chest-list>button>svg{display:none}
+ #paragon-design .gg-chest-list-icon{width:32px;overflow:hidden}
+ #paragon-design .gg-chest-list strong{font-size:10px}
+ #paragon-design .gg-chest-heading{padding:18px 16px;gap:12px}
+ #paragon-design .gg-chest-heading h3{font-size:18px}
+ #paragon-design .gg-chest-art{width:54px;height:60px}
+ #paragon-design .gg-loot-disclaimer{padding:16px;font-size:10px}
+ #paragon-design .gg-loot-tools{padding:0 16px 16px;grid-template-columns:minmax(0,1fr)}
+ #paragon-design .gg-loot-filters>summary{padding-inline:16px}
+ #paragon-design .gg-loot-layout-tools{padding-inline:16px;flex-wrap:wrap}
+ #paragon-design .gg-loot-review-note{margin:0 16px 16px;padding:10px}
+ #paragon-design .gg-loot-review-note p{font-size:10px}
+ #paragon-design .gg-loot-result-count{padding-inline:16px}
+ #paragon-design .gg-loot-grid{padding:0 12px 16px;gap:6px}
+ #paragon-design .gg-loot-card{padding:8px;gap:6px;min-height:110px}
+ #paragon-design .gg-loot-card strong{font-size:10px}
+ #paragon-design .gg-loot-icon{width:36px}
+ #paragon-design .gg-loot-icon>img{max-width:32px}
+ #paragon-design .gg-loot-footer{padding:16px}
+ #paragon-design .gg-review-grid{grid-template-columns:repeat(3,minmax(0,1fr));padding:12px;gap:6px}
+ #paragon-design .gg-review-grid>div{min-height:124px;padding:16px 6px 10px}
+ #paragon-design .gg-review-grid>div>span:last-child{font-size:9px}
+ #paragon-design .gg-item-review>header h3{font-size:13px}
+ #paragon-design :is(.gg-item-review,.gg-item-detail)>header{padding:12px}
+}

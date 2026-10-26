@@ -1,0 +1,4214 @@
+{
+ "categories": [
+  {
+   "id": "earrings",
+   "name": "Earrings"
+  },
+  {
+   "id": "necklaces",
+   "name": "Necklaces"
+  },
+  {
+   "id": "bracelets",
+   "name": "Bracelets"
+  },
+  {
+   "id": "shoes",
+   "name": "Shoes"
+  },
+  {
+   "id": "helmets",
+   "name": "Helmets"
+  },
+  {
+   "id": "shields",
+   "name": "Shields"
+  },
+  {
+   "id": "armours",
+   "name": "Armours"
+  },
+  {
+   "id": "weapons",
+   "name": "Weapons"
+  }
+ ],
+ "materials": {
+  "wolf-fur": {
+   "id": "wolf-fur",
+   "name": "Wolf Fur",
+   "icon": {
+    "src": "/guide/upgrades/icons/wolf-fur.png"
+   }
+  },
+  "bear-gall-plus": {
+   "id": "bear-gall-plus",
+   "name": "Bear Gall+",
+   "icon": {
+    "src": "/guide/upgrades/icons/bear-gall-plus.png"
+   }
+  },
+  "ball": {
+   "id": "ball",
+   "name": "Ball",
+   "icon": {
+    "src": "/guide/upgrades/icons/ball.png"
+   }
+  },
+  "bear-gall": {
+   "id": "bear-gall",
+   "name": "Bear Gall",
+   "icon": {
+    "src": "/guide/upgrades/icons/bear-gall.png"
+   }
+  },
+  "bear-foot-skin-plus": {
+   "id": "bear-foot-skin-plus",
+   "name": "Bear Foot Skin+",
+   "icon": {
+    "src": "/guide/upgrades/icons/bear-foot-skin-plus.png"
+   }
+  },
+  "white-hairband-plus": {
+   "id": "white-hairband-plus",
+   "name": "White Hairband+",
+   "icon": {
+    "src": "/guide/upgrades/icons/white-hairband-plus.png"
+   }
+  },
+  "tiger-hide": {
+   "id": "tiger-hide",
+   "name": "Tiger Hide",
+   "icon": {
+    "src": "/guide/upgrades/icons/tiger-hide.png"
+   }
+  },
+  "white-hairband": {
+   "id": "white-hairband",
+   "name": "White Hairband",
+   "icon": {
+    "src": "/guide/upgrades/icons/white-hairband.png"
+   }
+  },
+  "ornamental-hairpin": {
+   "id": "ornamental-hairpin",
+   "name": "Ornamental Hairpin",
+   "icon": {
+    "src": "/guide/upgrades/icons/ornamental-hairpin.png"
+   }
+  },
+  "bear-foot-skin": {
+   "id": "bear-foot-skin",
+   "name": "Bear Foot Skin",
+   "icon": {
+    "src": "/guide/upgrades/icons/bear-foot-skin.png"
+   }
+  },
+  "white-tiger-hide": {
+   "id": "white-tiger-hide",
+   "name": "White Tiger Hide",
+   "icon": {
+    "src": "/guide/upgrades/icons/white-tiger-hide.png"
+   }
+  },
+  "face-cream": {
+   "id": "face-cream",
+   "name": "Face Cream",
+   "icon": {
+    "src": "/guide/upgrades/icons/face-cream.png"
+   }
+  },
+  "piece-of-broken-armour": {
+   "id": "piece-of-broken-armour",
+   "name": "Piece of Broken Armour",
+   "icon": {
+    "src": "/guide/upgrades/icons/piece-of-broken-armour.png"
+   }
+  },
+  "broken-porcelain": {
+   "id": "broken-porcelain",
+   "name": "Broken Porcelain",
+   "icon": {
+    "src": "/guide/upgrades/icons/broken-porcelain.png"
+   }
+  },
+  "shiriken-plus": {
+   "id": "shiriken-plus",
+   "name": "Shiriken+",
+   "icon": {
+    "src": "/guide/upgrades/icons/shiriken-plus.png"
+   }
+  },
+  "fishbones": {
+   "id": "fishbones",
+   "name": "Fishbones",
+   "icon": {
+    "src": "/guide/upgrades/icons/fishbones.png"
+   }
+  },
+  "scorpion-tail": {
+   "id": "scorpion-tail",
+   "name": "Scorpion Tail",
+   "icon": {
+    "src": "/guide/upgrades/icons/scorpion-tail.png"
+   }
+  },
+  "snake-tail": {
+   "id": "snake-tail",
+   "name": "Snake Tail",
+   "icon": {
+    "src": "/guide/upgrades/icons/snake-tail.png"
+   }
+  },
+  "clam": {
+   "id": "clam",
+   "name": "Clam",
+   "icon": {
+    "src": "/guide/upgrades/icons/clam.png"
+   }
+  },
+  "rusty-blade": {
+   "id": "rusty-blade",
+   "name": "Rusty Blade",
+   "icon": {
+    "src": "/guide/upgrades/icons/rusty-blade.png"
+   }
+  },
+  "esoteric-primer-plus": {
+   "id": "esoteric-primer-plus",
+   "name": "Esoteric Primer+",
+   "icon": {
+    "src": "/guide/upgrades/icons/esoteric-primer-plus.png"
+   }
+  },
+  "spider-web": {
+   "id": "spider-web",
+   "name": "Spider Web",
+   "icon": {
+    "src": "/guide/upgrades/icons/spider-web.png"
+   }
+  },
+  "spider-s-poison-sack": {
+   "id": "spider-s-poison-sack",
+   "name": "Spider's Poison Sack",
+   "icon": {
+    "src": "/guide/upgrades/icons/spider-s-poison-sack.png"
+   }
+  },
+  "spider-egg-sack": {
+   "id": "spider-egg-sack",
+   "name": "Spider Egg Sack",
+   "icon": {
+    "src": "/guide/upgrades/icons/spider-egg-sack.png"
+   }
+  },
+  "piece-of-gem": {
+   "id": "piece-of-gem",
+   "name": "Piece of Gem",
+   "icon": {
+    "src": "/guide/upgrades/icons/piece-of-gem.png"
+   }
+  },
+  "shiriken": {
+   "id": "shiriken",
+   "name": "Shiriken",
+   "icon": {
+    "src": "/guide/upgrades/icons/shiriken.png"
+   }
+  },
+  "black-uniform": {
+   "id": "black-uniform",
+   "name": "Black Uniform",
+   "icon": {
+    "src": "/guide/upgrades/icons/black-uniform.png"
+   }
+  },
+  "unknown-talisman": {
+   "id": "unknown-talisman",
+   "name": "Unknown Talisman",
+   "icon": {
+    "src": "/guide/upgrades/icons/unknown-talisman.png"
+   }
+  },
+  "curse-book": {
+   "id": "curse-book",
+   "name": "Curse Book",
+   "icon": {
+    "src": "/guide/upgrades/icons/curse-book.png"
+   }
+  },
+  "unknown-talisman-plus": {
+   "id": "unknown-talisman-plus",
+   "name": "Unknown Talisman+",
+   "icon": {
+    "src": "/guide/upgrades/icons/unknown-talisman-plus.png"
+   }
+  },
+  "curse-book-plus": {
+   "id": "curse-book-plus",
+   "name": "Curse Book+",
+   "icon": {
+    "src": "/guide/upgrades/icons/curse-book-plus.png"
+   }
+  },
+  "demon-s-gem-plus": {
+   "id": "demon-s-gem-plus",
+   "name": "Demon's Gem+",
+   "icon": {
+    "src": "/guide/upgrades/icons/demon-s-gem-plus.png"
+   }
+  },
+  "white-pearl": {
+   "id": "white-pearl",
+   "name": "White Pearl",
+   "icon": {
+    "src": "/guide/upgrades/icons/white-pearl.png"
+   }
+  },
+  "ice-killer-whale-horn": {
+   "id": "ice-killer-whale-horn",
+   "name": "Ice Killer Whale Horn",
+   "icon": {
+    "src": "/guide/upgrades/icons/ice-killer-whale-horn.png"
+   }
+  },
+  "blue-pearl": {
+   "id": "blue-pearl",
+   "name": "Blue Pearl",
+   "icon": {
+    "src": "/guide/upgrades/icons/blue-pearl.png"
+   }
+  },
+  "yeti-fur-plus": {
+   "id": "yeti-fur-plus",
+   "name": "Yeti Fur+",
+   "icon": {
+    "src": "/guide/upgrades/icons/yeti-fur-plus.png"
+   }
+  },
+  "blood-red-pearl": {
+   "id": "blood-red-pearl",
+   "name": "Blood-Red Pearl",
+   "icon": {
+    "src": "/guide/upgrades/icons/blood-red-pearl.png"
+   }
+  },
+  "snake-tail-plus": {
+   "id": "snake-tail-plus",
+   "name": "Snake Tail+",
+   "icon": {
+    "src": "/guide/upgrades/icons/snake-tail-plus.png"
+   }
+  },
+  "frog-tongue": {
+   "id": "frog-tongue",
+   "name": "Frog Tongue",
+   "icon": {
+    "src": "/guide/upgrades/icons/frog-tongue.png"
+   }
+  },
+  "frog-s-legs": {
+   "id": "frog-s-legs",
+   "name": "Frog's Legs",
+   "icon": {
+    "src": "/guide/upgrades/icons/frog-s-legs.png"
+   }
+  },
+  "ice-marble": {
+   "id": "ice-marble",
+   "name": "Ice Marble",
+   "icon": {
+    "src": "/guide/upgrades/icons/ice-marble.png"
+   }
+  },
+  "flaming-mane": {
+   "id": "flaming-mane",
+   "name": "Flaming Mane",
+   "icon": {
+    "src": "/guide/upgrades/icons/flaming-mane.png"
+   }
+  },
+  "scorpion-tail-plus": {
+   "id": "scorpion-tail-plus",
+   "name": "Scorpion Tail+",
+   "icon": {
+    "src": "/guide/upgrades/icons/scorpion-tail-plus.png"
+   }
+  },
+  "demon-s-keepsake": {
+   "id": "demon-s-keepsake",
+   "name": "Demon's Keepsake",
+   "icon": {
+    "src": "/guide/upgrades/icons/demon-s-keepsake.png"
+   }
+  },
+  "leaf": {
+   "id": "leaf",
+   "name": "Leaf",
+   "icon": {
+    "src": "/guide/upgrades/icons/leaf.png"
+   }
+  },
+  "yeti-fur": {
+   "id": "yeti-fur",
+   "name": "Yeti Fur",
+   "icon": {
+    "src": "/guide/upgrades/icons/yeti-fur.png"
+   }
+  },
+  "tiger-fang": {
+   "id": "tiger-fang",
+   "name": "Tiger Fang",
+   "icon": {
+    "src": "/guide/upgrades/icons/tiger-fang.png"
+   }
+  },
+  "spider-legs": {
+   "id": "spider-legs",
+   "name": "Spider Legs",
+   "icon": {
+    "src": "/guide/upgrades/icons/spider-legs.png"
+   }
+  },
+  "demon-s-gem": {
+   "id": "demon-s-gem",
+   "name": "Demon's Gem",
+   "icon": {
+    "src": "/guide/upgrades/icons/demon-s-gem.png"
+   }
+  },
+  "demon-s-keepsake-plus": {
+   "id": "demon-s-keepsake-plus",
+   "name": "Demon's Keepsake+",
+   "icon": {
+    "src": "/guide/upgrades/icons/demon-s-keepsake-plus.png"
+   }
+  },
+  "finger-bones": {
+   "id": "finger-bones",
+   "name": "Finger Bones",
+   "icon": {
+    "src": "/guide/upgrades/icons/finger-bones.png"
+   }
+  },
+  "warrior-s-symbol": {
+   "id": "warrior-s-symbol",
+   "name": "Warrior's Symbol",
+   "icon": {
+    "src": "/guide/upgrades/icons/warrior-s-symbol.png"
+   }
+  },
+  "flag": {
+   "id": "flag",
+   "name": "Flag",
+   "icon": {
+    "src": "/guide/upgrades/icons/flag.png"
+   }
+  },
+  "esoteric-primer": {
+   "id": "esoteric-primer",
+   "name": "Esoteric Primer",
+   "icon": {
+    "src": "/guide/upgrades/icons/esoteric-primer.png"
+   }
+  },
+  "scorpion-needle": {
+   "id": "scorpion-needle",
+   "name": "Scorpion Needle",
+   "icon": {
+    "src": "/guide/upgrades/icons/scorpion-needle.png"
+   }
+  },
+  "scorpion-claw": {
+   "id": "scorpion-claw",
+   "name": "Scorpion Claw",
+   "icon": {
+    "src": "/guide/upgrades/icons/scorpion-claw.png"
+   }
+  },
+  "snakeskin": {
+   "id": "snakeskin",
+   "name": "Snakeskin",
+   "icon": {
+    "src": "/guide/upgrades/icons/snakeskin.png"
+   }
+  },
+  "orc-tooth": {
+   "id": "orc-tooth",
+   "name": "Orc Tooth",
+   "icon": {
+    "src": "/guide/upgrades/icons/orc-tooth.png"
+   }
+  },
+  "orc-tooth-plus": {
+   "id": "orc-tooth-plus",
+   "name": "Orc Tooth+",
+   "icon": {
+    "src": "/guide/upgrades/icons/orc-tooth-plus.png"
+   }
+  },
+  "unknown-medicine": {
+   "id": "unknown-medicine",
+   "name": "Unknown Medicine",
+   "icon": {
+    "src": "/guide/upgrades/icons/unknown-medicine.png"
+   }
+  },
+  "piece-of-fabric": {
+   "id": "piece-of-fabric",
+   "name": "Piece of Fabric",
+   "icon": {
+    "src": "/guide/upgrades/icons/piece-of-fabric.png"
+   }
+  },
+  "piece-of-fabric-plus": {
+   "id": "piece-of-fabric-plus",
+   "name": "Piece of Fabric+",
+   "icon": {
+    "src": "/guide/upgrades/icons/piece-of-fabric-plus.png"
+   }
+  },
+  "piece-of-ice-plus": {
+   "id": "piece-of-ice-plus",
+   "name": "Piece of Ice+",
+   "icon": {
+    "src": "/guide/upgrades/icons/piece-of-ice-plus.png"
+   }
+  },
+  "ice-marble-plus": {
+   "id": "ice-marble-plus",
+   "name": "Ice Marble+",
+   "icon": {
+    "src": "/guide/upgrades/icons/ice-marble-plus.png"
+   }
+  },
+  "wolf-claw": {
+   "id": "wolf-claw",
+   "name": "Wolf Claw",
+   "icon": {
+    "src": "/guide/upgrades/icons/wolf-claw.png"
+   }
+  },
+  "wolf-claw-plus": {
+   "id": "wolf-claw-plus",
+   "name": "Wolf Claw+",
+   "icon": {
+    "src": "/guide/upgrades/icons/wolf-claw-plus.png"
+   }
+  },
+  "ornament": {
+   "id": "ornament",
+   "name": "Ornament",
+   "icon": {
+    "src": "/guide/upgrades/icons/ornament.png"
+   }
+  },
+  "savage-s-booty": {
+   "id": "savage-s-booty",
+   "name": "Savage's Booty",
+   "icon": {
+    "src": "/guide/upgrades/icons/savage-s-booty.png"
+   }
+  },
+  "orc-amulet": {
+   "id": "orc-amulet",
+   "name": "Orc Amulet",
+   "icon": {
+    "src": "/guide/upgrades/icons/orc-amulet.png"
+   }
+  },
+  "orc-amulet-plus": {
+   "id": "orc-amulet-plus",
+   "name": "Orc Amulet+",
+   "icon": {
+    "src": "/guide/upgrades/icons/orc-amulet-plus.png"
+   }
+  },
+  "spider-eyes": {
+   "id": "spider-eyes",
+   "name": "Spider Eyes",
+   "icon": {
+    "src": "/guide/upgrades/icons/spider-eyes.png"
+   }
+  }
+ },
+ "items": [
+  {
+   "id": "earrings-copper-earrings-8",
+   "category": "earrings",
+   "name": "Copper Earrings",
+   "level": 8,
+   "bonuses": [
+    {
+     "label": "Adaptation",
+     "value": 7,
+     "unit": "flat"
+    },
+    {
+     "label": "Defence",
+     "value": 8,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [],
+    "6": [],
+    "7": [
+     {
+      "item": "wolf-fur",
+      "quantity": 2
+     }
+    ],
+    "8": [
+     {
+      "item": "bear-gall-plus",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "ball",
+      "quantity": 2
+     }
+    ]
+   },
+   "sourceOrder": 1,
+   "icon": {
+    "src": "/guide/upgrades/icons/copper-earrings.png"
+   }
+  },
+  {
+   "id": "earrings-silver-earrings-15",
+   "category": "earrings",
+   "name": "Silver Earrings",
+   "level": 15,
+   "bonuses": [
+    {
+     "label": "Adaptation",
+     "value": 10,
+     "unit": "flat"
+    },
+    {
+     "label": "Average Attack Value",
+     "value": 12,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [],
+    "6": [],
+    "7": [
+     {
+      "item": "bear-gall",
+      "quantity": 2
+     }
+    ],
+    "8": [
+     {
+      "item": "bear-foot-skin-plus",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "white-hairband-plus",
+      "quantity": 2
+     }
+    ]
+   },
+   "sourceOrder": 2,
+   "icon": {
+    "src": "/guide/upgrades/icons/silver-earrings.png"
+   }
+  },
+  {
+   "id": "earrings-gold-earrings-22",
+   "category": "earrings",
+   "name": "Golden Earrings",
+   "level": 22,
+   "bonuses": [
+    {
+     "label": "Adaptation",
+     "value": 10,
+     "unit": "flat"
+    },
+    {
+     "label": "Average Skill Attack",
+     "value": 12,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [],
+    "6": [],
+    "7": [
+     {
+      "item": "tiger-hide",
+      "quantity": 2
+     }
+    ],
+    "8": [
+     {
+      "item": "white-hairband",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "ornamental-hairpin",
+      "quantity": 2
+     }
+    ]
+   },
+   "sourceOrder": 3,
+   "icon": {
+    "src": "/guide/upgrades/icons/golden-earrings.png"
+   }
+  },
+  {
+   "id": "earrings-jade-earrings-28",
+   "category": "earrings",
+   "name": "Jade Earrings",
+   "level": 28,
+   "bonuses": [
+    {
+     "label": "Adaptation",
+     "value": 12,
+     "unit": "flat"
+    },
+    {
+     "label": "Attack Speed",
+     "value": 10,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "piece-of-broken-armour",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "broken-porcelain",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "shiriken-plus",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "scorpion-tail",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "snake-tail",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 4,
+   "icon": {
+    "src": "/guide/upgrades/icons/jade-earrings.png"
+   }
+  },
+  {
+   "id": "earrings-ebony-earrings-33",
+   "category": "earrings",
+   "name": "Ebony Earrings",
+   "level": 33,
+   "bonuses": [
+    {
+     "label": "Adaptation",
+     "value": 12,
+     "unit": "flat"
+    },
+    {
+     "label": "HP",
+     "value": 1200,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "rusty-blade",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "esoteric-primer-plus",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "spider-web",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "spider-s-poison-sack",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "spider-egg-sack",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 5,
+   "icon": {
+    "src": "/guide/upgrades/icons/ebony-earrings.png"
+   }
+  },
+  {
+   "id": "earrings-pearl-earrings-38",
+   "category": "earrings",
+   "name": "Pearl Earrings",
+   "level": 38,
+   "bonuses": [
+    {
+     "label": "Adaptation",
+     "value": 12,
+     "unit": "flat"
+    },
+    {
+     "label": "Average Attack Value",
+     "value": 30,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "piece-of-gem",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "shiriken",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "black-uniform",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 2
+     }
+    ],
+    "8": [
+     {
+      "item": "unknown-talisman",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "curse-book",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 6,
+   "icon": {
+    "src": "/guide/upgrades/icons/pearl-earrings.png"
+   }
+  },
+  {
+   "id": "earrings-white-gold-earrings-42",
+   "category": "earrings",
+   "name": "White Gold Earrings",
+   "level": 42,
+   "bonuses": [
+    {
+     "label": "Adaptation",
+     "value": 12,
+     "unit": "flat"
+    },
+    {
+     "label": "Skill Attack Value",
+     "value": 30,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "piece-of-gem",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "shiriken",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "black-uniform",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 2
+     }
+    ],
+    "8": [
+     {
+      "item": "unknown-talisman",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "curse-book",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 7,
+   "icon": {
+    "src": "/guide/upgrades/icons/white-gold-earrings.png"
+   }
+  },
+  {
+   "id": "earrings-crystal-earrings-46",
+   "category": "earrings",
+   "name": "Crystal Earrings",
+   "level": 46,
+   "bonuses": [
+    {
+     "label": "Adaptation",
+     "value": 14,
+     "unit": "flat"
+    },
+    {
+     "label": "Opponent Average Attack Value",
+     "value": -6,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "unknown-talisman-plus",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "curse-book-plus",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "demon-s-gem-plus",
+      "quantity": 2
+     },
+     {
+      "item": "white-pearl",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "ice-killer-whale-horn",
+      "quantity": 2
+     },
+     {
+      "item": "blue-pearl",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "yeti-fur-plus",
+      "quantity": 2
+     },
+     {
+      "item": "blood-red-pearl",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 8,
+   "icon": {
+    "src": "/guide/upgrades/icons/crystal-earrings.png"
+   }
+  },
+  {
+   "id": "earrings-amethyst-earrings-50",
+   "category": "earrings",
+   "name": "Amethyst Earrings",
+   "level": 50,
+   "bonuses": [
+    {
+     "label": "Adaptation",
+     "value": 14,
+     "unit": "flat"
+    },
+    {
+     "label": "Average Attack Value",
+     "value": 50,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "snake-tail-plus",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "frog-tongue",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "frog-s-legs",
+      "quantity": 2
+     },
+     {
+      "item": "white-pearl",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "ice-marble",
+      "quantity": 2
+     },
+     {
+      "item": "blue-pearl",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "flaming-mane",
+      "quantity": 2
+     },
+     {
+      "item": "blood-red-pearl",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 9,
+   "icon": {
+    "src": "/guide/upgrades/icons/amethyst-earrings.png"
+   }
+  },
+  {
+   "id": "earrings-heaven-s-tear-earrings-54",
+   "category": "earrings",
+   "name": "Heaven's Tear Earrings",
+   "level": 54,
+   "bonuses": [
+    {
+     "label": "Adaptation",
+     "value": 14,
+     "unit": "flat"
+    },
+    {
+     "label": "Skill Attack Value",
+     "value": 50,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "snake-tail-plus",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "frog-tongue",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "frog-s-legs",
+      "quantity": 2
+     },
+     {
+      "item": "white-pearl",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "ice-marble",
+      "quantity": 2
+     },
+     {
+      "item": "blue-pearl",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "flaming-mane",
+      "quantity": 2
+     },
+     {
+      "item": "blood-red-pearl",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 10,
+   "icon": {
+    "src": "/guide/upgrades/icons/heaven-s-tear-earrings.png"
+   }
+  },
+  {
+   "id": "necklaces-copper-necklace-8",
+   "category": "necklaces",
+   "name": "Copper Necklace",
+   "level": 8,
+   "bonuses": [
+    {
+     "label": "Movement Speed",
+     "value": 10,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [],
+    "6": [],
+    "7": [
+     {
+      "item": "wolf-fur",
+      "quantity": 2
+     }
+    ],
+    "8": [
+     {
+      "item": "bear-gall-plus",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "ball",
+      "quantity": 2
+     }
+    ]
+   },
+   "sourceOrder": 11,
+   "icon": {
+    "src": "/guide/upgrades/icons/copper-necklace.png"
+   }
+  },
+  {
+   "id": "necklaces-silver-necklace-15",
+   "category": "necklaces",
+   "name": "Silver Necklace",
+   "level": 15,
+   "bonuses": [
+    {
+     "label": "Critical Hit Chance",
+     "value": 6,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [],
+    "6": [],
+    "7": [
+     {
+      "item": "bear-gall",
+      "quantity": 2
+     }
+    ],
+    "8": [
+     {
+      "item": "bear-foot-skin-plus",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "white-hairband-plus",
+      "quantity": 2
+     }
+    ]
+   },
+   "sourceOrder": 12,
+   "icon": {
+    "src": "/guide/upgrades/icons/silver-necklace.png"
+   }
+  },
+  {
+   "id": "necklaces-gold-necklace-22",
+   "category": "necklaces",
+   "name": "Golden Necklace",
+   "level": 22,
+   "bonuses": [
+    {
+     "label": "Arrow Defence",
+     "value": 10,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [],
+    "6": [],
+    "7": [
+     {
+      "item": "tiger-hide",
+      "quantity": 2
+     }
+    ],
+    "8": [
+     {
+      "item": "white-hairband",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "ornamental-hairpin",
+      "quantity": 2
+     }
+    ]
+   },
+   "sourceOrder": 13,
+   "icon": {
+    "src": "/guide/upgrades/icons/golden-necklace.png"
+   }
+  },
+  {
+   "id": "necklaces-jade-necklace-28",
+   "category": "necklaces",
+   "name": "Jade Necklace",
+   "level": 28,
+   "bonuses": [
+    {
+     "label": "Adaptation",
+     "value": 4,
+     "unit": "flat"
+    },
+    {
+     "label": "Skill Duration",
+     "value": 16,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "piece-of-broken-armour",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "broken-porcelain",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "shiriken-plus",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "scorpion-tail",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "snake-tail",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 14,
+   "icon": {
+    "src": "/guide/upgrades/icons/jade-necklace.png"
+   }
+  },
+  {
+   "id": "necklaces-ebony-necklace-33",
+   "category": "necklaces",
+   "name": "Ebony Necklace",
+   "level": 33,
+   "bonuses": [
+    {
+     "label": "Adaptation",
+     "value": 4,
+     "unit": "flat"
+    },
+    {
+     "label": "Healing Power",
+     "value": 12,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "piece-of-broken-armour",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "broken-porcelain",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "shiriken-plus",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "scorpion-tail",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "snake-tail",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 15,
+   "icon": {
+    "src": "/guide/upgrades/icons/ebony-necklace.png"
+   }
+  },
+  {
+   "id": "necklaces-pearl-necklace-38",
+   "category": "necklaces",
+   "name": "Pearl Necklace",
+   "level": 38,
+   "bonuses": [
+    {
+     "label": "Adaptation",
+     "value": 4,
+     "unit": "flat"
+    },
+    {
+     "label": "Skill Attack Value",
+     "value": 16,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "piece-of-gem",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "shiriken",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "black-uniform",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "unknown-talisman",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "curse-book",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 16,
+   "icon": {
+    "src": "/guide/upgrades/icons/pearl-necklace.png"
+   }
+  },
+  {
+   "id": "necklaces-white-gold-necklace-42",
+   "category": "necklaces",
+   "name": "White Gold Necklace",
+   "level": 42,
+   "bonuses": [
+    {
+     "label": "Adaptation",
+     "value": 4,
+     "unit": "flat"
+    },
+    {
+     "label": "Average Attack Value",
+     "value": 20,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "piece-of-gem",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "shiriken",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "black-uniform",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "unknown-talisman",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "curse-book",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 17,
+   "icon": {
+    "src": "/guide/upgrades/icons/white-gold-necklace.png"
+   }
+  },
+  {
+   "id": "necklaces-crystal-necklace-46",
+   "category": "necklaces",
+   "name": "Crystal Necklace",
+   "level": 46,
+   "bonuses": [
+    {
+     "label": "Critical Hit Power",
+     "value": 8,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "unknown-talisman-plus",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "curse-book-plus",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "demon-s-gem-plus",
+      "quantity": 2
+     },
+     {
+      "item": "white-pearl",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "ice-killer-whale-horn",
+      "quantity": 2
+     },
+     {
+      "item": "blue-pearl",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "yeti-fur-plus",
+      "quantity": 2
+     },
+     {
+      "item": "blood-red-pearl",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 18,
+   "icon": {
+    "src": "/guide/upgrades/icons/crystal-necklace.png"
+   }
+  },
+  {
+   "id": "necklaces-amethyst-necklace-50",
+   "category": "necklaces",
+   "name": "Amethyst Necklace",
+   "level": 50,
+   "bonuses": [
+    {
+     "label": "Adaptation",
+     "value": 8,
+     "unit": "flat"
+    },
+    {
+     "label": "Tenacity",
+     "value": 10,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "scorpion-tail-plus",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "demon-s-keepsake",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "leaf",
+      "quantity": 2
+     },
+     {
+      "item": "white-pearl",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "yeti-fur",
+      "quantity": 2
+     },
+     {
+      "item": "blue-pearl",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "tiger-fang",
+      "quantity": 2
+     },
+     {
+      "item": "blood-red-pearl",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 19,
+   "icon": {
+    "src": "/guide/upgrades/icons/amethyst-necklace.png"
+   }
+  },
+  {
+   "id": "necklaces-heaven-s-tear-necklace-54",
+   "category": "necklaces",
+   "name": "Heaven's Tear Necklace",
+   "level": 54,
+   "bonuses": [
+    {
+     "label": "Piercing Hit Chance",
+     "value": 20,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "spider-legs",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "demon-s-gem",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "demon-s-keepsake-plus",
+      "quantity": 2
+     },
+     {
+      "item": "white-pearl",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "finger-bones",
+      "quantity": 2
+     },
+     {
+      "item": "blue-pearl",
+      "quantity": null
+     }
+    ],
+    "9": [
+     {
+      "item": "warrior-s-symbol",
+      "quantity": 2
+     },
+     {
+      "item": "blood-red-pearl",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 20,
+   "icon": {
+    "src": "/guide/upgrades/icons/heaven-s-tear-necklace.png"
+   }
+  },
+  {
+   "id": "bracelets-copper-bracelet-8",
+   "category": "bracelets",
+   "name": "Copper Bracelet",
+   "level": 8,
+   "bonuses": [
+    {
+     "label": "Average Attack Value",
+     "value": 9,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [],
+    "6": [],
+    "7": [
+     {
+      "item": "wolf-fur",
+      "quantity": 2
+     }
+    ],
+    "8": [
+     {
+      "item": "bear-gall-plus",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "ball",
+      "quantity": 2
+     }
+    ]
+   },
+   "sourceOrder": 21,
+   "icon": {
+    "src": "/guide/upgrades/icons/copper-bracelet.png"
+   }
+  },
+  {
+   "id": "bracelets-silver-bracelet-15",
+   "category": "bracelets",
+   "name": "Silver Bracelet",
+   "level": 15,
+   "bonuses": [
+    {
+     "label": "HP",
+     "value": 1000,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [],
+    "6": [],
+    "7": [
+     {
+      "item": "bear-foot-skin",
+      "quantity": 2
+     }
+    ],
+    "8": [
+     {
+      "item": "white-tiger-hide",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "face-cream",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 22,
+   "icon": {
+    "src": "/guide/upgrades/icons/silver-bracelet.png"
+   }
+  },
+  {
+   "id": "bracelets-gold-bracelet-22",
+   "category": "bracelets",
+   "name": "Gold Bracelet",
+   "level": 22,
+   "bonuses": [
+    {
+     "label": "Poison Chance",
+     "value": 8,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": null,
+    "6": null,
+    "7": null,
+    "8": null,
+    "9": null
+   },
+   "sourceOrder": 23,
+   "icon": {
+    "src": "/guide/upgrades/icons/gold-bracelet.png"
+   }
+  },
+  {
+   "id": "bracelets-jade-bracelet-28",
+   "category": "bracelets",
+   "name": "Jade Bracelet",
+   "level": 28,
+   "bonuses": [
+    {
+     "label": "Swift Skill Recovery",
+     "value": 10,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "piece-of-broken-armour",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "broken-porcelain",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "shiriken-plus",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "scorpion-tail",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "snake-tail",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 24,
+   "icon": {
+    "src": "/guide/upgrades/icons/jade-bracelet.png"
+   }
+  },
+  {
+   "id": "bracelets-ebony-bracelet-33",
+   "category": "bracelets",
+   "name": "Ebony Bracelet",
+   "level": 33,
+   "bonuses": [
+    {
+     "label": "HP Restored on Kill",
+     "value": 8,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "flag",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "esoteric-primer",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "scorpion-needle",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "scorpion-claw",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "snakeskin",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 25,
+   "icon": {
+    "src": "/guide/upgrades/icons/ebony-bracelet.png"
+   }
+  },
+  {
+   "id": "bracelets-pearl-bracelet-38",
+   "category": "bracelets",
+   "name": "Pearl Bracelet",
+   "level": 38,
+   "bonuses": [
+    {
+     "label": "Max HP (base HP)",
+     "value": 8,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "flag",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "esoteric-primer",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "scorpion-needle",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "scorpion-claw",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "snakeskin",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 26,
+   "icon": {
+    "src": "/guide/upgrades/icons/pearl-bracelet.png"
+   }
+  },
+  {
+   "id": "bracelets-white-gold-bracelet-42",
+   "category": "bracelets",
+   "name": "White Gold Bracelet",
+   "level": 42,
+   "bonuses": [
+    {
+     "label": "HP",
+     "value": 1500,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "rusty-blade",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "esoteric-primer-plus",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "spider-web",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "spider-s-poison-sack",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "spider-egg-sack",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 27,
+   "icon": {
+    "src": "/guide/upgrades/icons/white-gold-bracelet.png"
+   }
+  },
+  {
+   "id": "bracelets-crystal-bracelet-46",
+   "category": "bracelets",
+   "name": "Crystal Bracelet",
+   "level": 46,
+   "bonuses": [
+    {
+     "label": "Opponent Skill Attack Value",
+     "value": -6,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "unknown-talisman-plus",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "curse-book-plus",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "demon-s-gem-plus",
+      "quantity": 2
+     },
+     {
+      "item": "white-pearl",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "ice-killer-whale-horn",
+      "quantity": 2
+     },
+     {
+      "item": "blue-pearl",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "yeti-fur-plus",
+      "quantity": 2
+     },
+     {
+      "item": "blood-red-pearl",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 28,
+   "icon": {
+    "src": "/guide/upgrades/icons/crystal-bracelet.png"
+   }
+  },
+  {
+   "id": "bracelets-amethyst-bracelet-50",
+   "category": "bracelets",
+   "name": "Amethyst Bracelet",
+   "level": 50,
+   "bonuses": [
+    {
+     "label": "Skill Attack Value",
+     "value": 30,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "spider-legs",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "demon-s-gem",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "demon-s-keepsake-plus",
+      "quantity": 2
+     },
+     {
+      "item": "white-pearl",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "finger-bones",
+      "quantity": 2
+     },
+     {
+      "item": "blue-pearl",
+      "quantity": null
+     }
+    ],
+    "9": [
+     {
+      "item": "warrior-s-symbol",
+      "quantity": 2
+     },
+     {
+      "item": "blood-red-pearl",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 29,
+   "icon": {
+    "src": "/guide/upgrades/icons/amethyst-bracelet.png"
+   }
+  },
+  {
+   "id": "bracelets-heaven-s-tear-bracelet-54",
+   "category": "bracelets",
+   "name": "Heaven's Tear Bracelet",
+   "level": 54,
+   "bonuses": [
+    {
+     "label": "Critical Hit Chance",
+     "value": 10,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "scorpion-tail-plus",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "demon-s-keepsake",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "leaf",
+      "quantity": 2
+     },
+     {
+      "item": "white-pearl",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "yeti-fur",
+      "quantity": 2
+     },
+     {
+      "item": "blue-pearl",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "tiger-fang",
+      "quantity": 2
+     },
+     {
+      "item": "blood-red-pearl",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 30,
+   "icon": {
+    "src": "/guide/upgrades/icons/heaven-s-tear-bracelet.png"
+   }
+  },
+  {
+   "id": "shoes-bamboo-skin-shoes-9",
+   "category": "shoes",
+   "name": "Bamboo Skin Shoes",
+   "level": 9,
+   "bonuses": [
+    {
+     "label": "Mount Movement Speed",
+     "value": 10,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [],
+    "6": [],
+    "7": [
+     {
+      "item": "wolf-fur",
+      "quantity": 2
+     }
+    ],
+    "8": [
+     {
+      "item": "bear-gall-plus",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "ball",
+      "quantity": 2
+     }
+    ]
+   },
+   "sourceOrder": 31,
+   "icon": {
+    "src": "/guide/upgrades/icons/bamboo-skin-shoes.png"
+   }
+  },
+  {
+   "id": "shoes-wooden-shoes-17",
+   "category": "shoes",
+   "name": "Wooden Shoes",
+   "level": 17,
+   "bonuses": [
+    {
+     "label": "HP",
+     "value": 800,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [],
+    "6": [],
+    "7": [
+     {
+      "item": "bear-foot-skin",
+      "quantity": 2
+     }
+    ],
+    "8": [
+     {
+      "item": "white-tiger-hide",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "face-cream",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 32,
+   "icon": {
+    "src": "/guide/upgrades/icons/wooden-shoes.png"
+   }
+  },
+  {
+   "id": "shoes-gold-threaded-shoes-23",
+   "category": "shoes",
+   "name": "Gold Threaded Shoes",
+   "level": 23,
+   "bonuses": [
+    {
+     "label": "Mount Attack Speed",
+     "value": 8,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [],
+    "6": [],
+    "7": [
+     {
+      "item": "tiger-hide",
+      "quantity": 2
+     }
+    ],
+    "8": [
+     {
+      "item": "white-hairband",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "ornamental-hairpin",
+      "quantity": 2
+     }
+    ]
+   },
+   "sourceOrder": 33,
+   "icon": {
+    "src": "/guide/upgrades/icons/gold-threaded-shoes.png"
+   }
+  },
+  {
+   "id": "shoes-leather-boots-29",
+   "category": "shoes",
+   "name": "Leather Boots",
+   "level": 29,
+   "bonuses": [
+    {
+     "label": "Arrow Defence",
+     "value": 12,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "piece-of-gem",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "shiriken",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "black-uniform",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "orc-tooth",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "orc-tooth-plus",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 34,
+   "icon": {
+    "src": "/guide/upgrades/icons/leather-boots.png"
+   }
+  },
+  {
+   "id": "shoes-golden-shoes-34",
+   "category": "shoes",
+   "name": "Golden Shoes",
+   "level": 34,
+   "bonuses": [
+    {
+     "label": "Yang Drop Rate",
+     "value": 10,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "piece-of-gem",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "shiriken",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "black-uniform",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "orc-tooth",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "orc-tooth-plus",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 35,
+   "icon": {
+    "src": "/guide/upgrades/icons/golden-shoes.png"
+   }
+  },
+  {
+   "id": "shoes-bronze-boots-39",
+   "category": "shoes",
+   "name": "Bronze Boots",
+   "level": 39,
+   "bonuses": [
+    {
+     "label": "Item Drop Rate",
+     "value": 5,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "flag",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "esoteric-primer",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "scorpion-needle",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "scorpion-claw",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "snakeskin",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 36,
+   "icon": {
+    "src": "/guide/upgrades/icons/bronze-boots.png"
+   }
+  },
+  {
+   "id": "shoes-jade-shoes-43",
+   "category": "shoes",
+   "name": "Jade Shoes",
+   "level": 43,
+   "bonuses": [
+    {
+     "label": "EXP Bonus",
+     "value": 10,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "flag",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "esoteric-primer",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "scorpion-needle",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "scorpion-claw",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "snakeskin",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 37,
+   "icon": {
+    "src": "/guide/upgrades/icons/jade-shoes.png"
+   }
+  },
+  {
+   "id": "shoes-ecstasy-shoes-47",
+   "category": "shoes",
+   "name": "Ecstasy Shoes",
+   "level": 47,
+   "bonuses": [
+    {
+     "label": "Casting Speed",
+     "value": 12,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "unknown-talisman-plus",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "curse-book-plus",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "demon-s-gem-plus",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "ice-killer-whale-horn",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "yeti-fur-plus",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 2
+     }
+    ]
+   },
+   "sourceOrder": 38,
+   "icon": {
+    "src": "/guide/upgrades/icons/ecstasy-shoes.png"
+   }
+  },
+  {
+   "id": "shoes-nimbus-boots-51",
+   "category": "shoes",
+   "name": "Nimbus Boots",
+   "level": 51,
+   "bonuses": [
+    {
+     "label": "Magic Attack Block Chance",
+     "value": 10,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "unknown-medicine",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "piece-of-fabric",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "piece-of-fabric-plus",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "piece-of-ice-plus",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "ice-marble-plus",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 2
+     }
+    ]
+   },
+   "sourceOrder": 39,
+   "icon": {
+    "src": "/guide/upgrades/icons/nimbus-boots.png"
+   }
+  },
+  {
+   "id": "shoes-phoenix-shoes-55",
+   "category": "shoes",
+   "name": "Phoenix Shoes",
+   "level": 55,
+   "bonuses": [
+    {
+     "label": "Physical Attack Block Chance",
+     "value": 10,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "unknown-medicine",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "piece-of-fabric",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "piece-of-fabric-plus",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "piece-of-ice-plus",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "ice-marble-plus",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 2
+     }
+    ]
+   },
+   "sourceOrder": 40,
+   "icon": {
+    "src": "/guide/upgrades/icons/phoenix-shoes.png"
+   }
+  },
+  {
+   "id": "shoes-fire-bird-shoes-59",
+   "category": "shoes",
+   "name": "Fire Bird Shoes",
+   "level": 59,
+   "bonuses": [
+    {
+     "label": "Magic Defence",
+     "value": 30,
+     "unit": "flat"
+    },
+    {
+     "label": "Defence",
+     "value": 30,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "scorpion-tail-plus",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "demon-s-keepsake",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "leaf",
+      "quantity": 2
+     },
+     {
+      "item": "white-pearl",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "yeti-fur",
+      "quantity": 2
+     },
+     {
+      "item": "blue-pearl",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "tiger-fang",
+      "quantity": 2
+     },
+     {
+      "item": "blood-red-pearl",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 41,
+   "icon": {
+    "src": "/guide/upgrades/icons/fire-bird-shoes.png"
+   }
+  },
+  {
+   "id": "helmets-class-helmet-1",
+   "category": "helmets",
+   "name": "Class Helmet",
+   "level": 1,
+   "bonuses": [
+    {
+     "label": "Defence",
+     "value": 41,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [],
+    "6": [],
+    "7": [
+     {
+      "item": "bear-foot-skin",
+      "quantity": 2
+     }
+    ],
+    "8": [
+     {
+      "item": "white-tiger-hide",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "face-cream",
+      "quantity": 2
+     }
+    ]
+   },
+   "sourceOrder": 42,
+   "generic": true
+  },
+  {
+   "id": "helmets-class-helmet-21",
+   "category": "helmets",
+   "name": "Class Helmet",
+   "level": 21,
+   "bonuses": [
+    {
+     "label": "Defence",
+     "value": 65,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "piece-of-gem",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "shiriken",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "black-uniform",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "savage-s-booty",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "snakeskin",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 43,
+   "generic": true
+  },
+  {
+   "id": "helmets-class-helmet-41",
+   "category": "helmets",
+   "name": "Class Helmet",
+   "level": 41,
+   "bonuses": [
+    {
+     "label": "Defence",
+     "value": 79,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "orc-amulet",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "orc-amulet-plus",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "spider-eyes",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "unknown-talisman",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "curse-book",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 44,
+   "generic": true
+  },
+  {
+   "id": "shields-battle-shield-1",
+   "category": "shields",
+   "name": "Battle Shield",
+   "level": 1,
+   "bonuses": [
+    {
+     "label": "Defence",
+     "value": 57,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [],
+    "6": [],
+    "7": [
+     {
+      "item": "wolf-claw",
+      "quantity": 2
+     }
+    ],
+    "8": [
+     {
+      "item": "wolf-claw-plus",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "ornament",
+      "quantity": 2
+     }
+    ]
+   },
+   "sourceOrder": 45,
+   "icon": {
+    "src": "/guide/upgrades/icons/battle-shield.png"
+   }
+  },
+  {
+   "id": "shields-pentagon-shield-21",
+   "category": "shields",
+   "name": "Pentagon Shield",
+   "level": 21,
+   "bonuses": [
+    {
+     "label": "Movement Speed",
+     "value": -6,
+     "unit": "percent"
+    },
+    {
+     "label": "Defence",
+     "value": 74,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "piece-of-gem",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "shiriken",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "black-uniform",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "savage-s-booty",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "spider-egg-sack",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 46,
+   "icon": {
+    "src": "/guide/upgrades/icons/pentagon-shield.png"
+   }
+  },
+  {
+   "id": "shields-black-round-shield-41",
+   "category": "shields",
+   "name": "Black Round Shield",
+   "level": 41,
+   "bonuses": [
+    {
+     "label": "Movement Speed",
+     "value": -10,
+     "unit": "percent"
+    },
+    {
+     "label": "Defence",
+     "value": 97,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "rusty-blade",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "esoteric-primer-plus",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "spider-web",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "spider-s-poison-sack",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "spider-egg-sack",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 47,
+   "icon": {
+    "src": "/guide/upgrades/icons/black-round-shield.png"
+   }
+  },
+  {
+   "id": "shields-class-shield-61",
+   "category": "shields",
+   "name": "Class Shield",
+   "level": 61,
+   "bonuses": [
+    {
+     "label": "Movement Speed",
+     "value": -6,
+     "unit": "percent"
+    },
+    {
+     "label": "Defence",
+     "value": 153,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "scorpion-tail-plus",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "demon-s-keepsake",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "leaf",
+      "quantity": 2
+     },
+     {
+      "item": "white-pearl",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "yeti-fur",
+      "quantity": 2
+     },
+     {
+      "item": "blue-pearl",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "tiger-fang",
+      "quantity": 2
+     },
+     {
+      "item": "blood-red-pearl",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 48,
+   "generic": true
+  },
+  {
+   "id": "armours-class-armour-1",
+   "category": "armours",
+   "name": "Class Armour",
+   "level": 1,
+   "bonuses": [
+    {
+     "label": "Defence",
+     "value": 66,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [],
+    "6": [],
+    "7": [
+     {
+      "item": "wolf-claw",
+      "quantity": 2
+     }
+    ],
+    "8": [
+     {
+      "item": "wolf-claw-plus",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "ornament",
+      "quantity": 2
+     }
+    ]
+   },
+   "sourceOrder": 49,
+   "generic": true
+  },
+  {
+   "id": "armours-class-armour-9",
+   "category": "armours",
+   "name": "Class Armour",
+   "level": 9,
+   "bonuses": [
+    {
+     "label": "Defence",
+     "value": 75,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [],
+    "6": [],
+    "7": [
+     {
+      "item": "bear-gall",
+      "quantity": 2
+     }
+    ],
+    "8": [
+     {
+      "item": "bear-foot-skin-plus",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "white-hairband-plus",
+      "quantity": 2
+     }
+    ]
+   },
+   "sourceOrder": 50,
+   "generic": true
+  },
+  {
+   "id": "armours-class-armour-18",
+   "category": "armours",
+   "name": "Class Armour",
+   "level": 18,
+   "bonuses": [
+    {
+     "label": "Defence",
+     "value": 83,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [],
+    "6": [],
+    "7": [
+     {
+      "item": "tiger-hide",
+      "quantity": 2
+     }
+    ],
+    "8": [
+     {
+      "item": "white-hairband",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "ornamental-hairpin",
+      "quantity": 2
+     }
+    ]
+   },
+   "sourceOrder": 51,
+   "generic": true
+  },
+  {
+   "id": "armours-class-armour-26",
+   "category": "armours",
+   "name": "Class Armour",
+   "level": 26,
+   "bonuses": [
+    {
+     "label": "Movement Speed",
+     "value": -5,
+     "unit": "percent"
+    },
+    {
+     "label": "Defence",
+     "value": 92,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "piece-of-gem",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "shiriken",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "black-uniform",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "orc-tooth",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "orc-tooth-plus",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 52,
+   "generic": true
+  },
+  {
+   "id": "armours-class-armour-34",
+   "category": "armours",
+   "name": "Class Armour",
+   "level": 34,
+   "bonuses": [
+    {
+     "label": "Movement Speed",
+     "value": -7,
+     "unit": "percent"
+    },
+    {
+     "label": "Defence",
+     "value": 101,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "flag",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "esoteric-primer",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "scorpion-needle",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "scorpion-claw",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "snakeskin",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 53,
+   "generic": true
+  },
+  {
+   "id": "armours-class-armour-42",
+   "category": "armours",
+   "name": "Class Armour",
+   "level": 42,
+   "bonuses": [
+    {
+     "label": "Movement Speed",
+     "value": -8,
+     "unit": "percent"
+    },
+    {
+     "label": "Defence",
+     "value": 109,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "rusty-blade",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "esoteric-primer-plus",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "spider-web",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "spider-s-poison-sack",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "spider-egg-sack",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 54,
+   "generic": true
+  },
+  {
+   "id": "armours-class-armour-48",
+   "category": "armours",
+   "name": "Class Armour",
+   "level": 48,
+   "bonuses": [
+    {
+     "label": "Movement Speed",
+     "value": -10,
+     "unit": "percent"
+    },
+    {
+     "label": "Defence",
+     "value": 118,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "unknown-medicine",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "piece-of-fabric",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "piece-of-fabric-plus",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "piece-of-ice-plus",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "ice-marble-plus",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 2
+     }
+    ]
+   },
+   "sourceOrder": 55,
+   "generic": true
+  },
+  {
+   "id": "armours-class-armour-54",
+   "category": "armours",
+   "name": "Class Armour",
+   "level": 54,
+   "bonuses": [
+    {
+     "label": "Movement Speed",
+     "value": -12,
+     "unit": "percent"
+    },
+    {
+     "label": "Defence",
+     "value": 126,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "snake-tail-plus",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "frog-tongue",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "frog-s-legs",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "ice-marble",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "flaming-mane",
+      "quantity": 2
+     },
+     {
+      "item": "blue-pearl",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 56,
+   "generic": true
+  },
+  {
+   "id": "armours-class-armour-61",
+   "category": "armours",
+   "name": "Class Armour",
+   "level": 61,
+   "bonuses": [
+    {
+     "label": "Movement Speed",
+     "value": -13,
+     "unit": "percent"
+    },
+    {
+     "label": "Defence",
+     "value": 135,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "spider-legs",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "demon-s-gem",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "demon-s-keepsake-plus",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "finger-bones",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "warrior-s-symbol",
+      "quantity": 2
+     },
+     {
+      "item": "blood-red-pearl",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 57,
+   "generic": true
+  },
+  {
+   "id": "armours-class-armour-66",
+   "category": "armours",
+   "name": "Class Armour",
+   "level": 66,
+   "bonuses": null,
+   "stages": {
+    "5": null,
+    "6": null,
+    "7": null,
+    "8": null,
+    "9": null
+   },
+   "sourceOrder": 58,
+   "generic": true
+  },
+  {
+   "id": "weapons-class-weapon-32",
+   "category": "weapons",
+   "name": "Class Weapon",
+   "level": 32,
+   "bonuses": [
+    {
+     "label": "Average Damage vs Monsters",
+     "value": 10,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "piece-of-broken-armour",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "broken-porcelain",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "shiriken-plus",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "scorpion-tail",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "snake-tail",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 59,
+   "generic": true
+  },
+  {
+   "id": "weapons-class-weapon-36",
+   "category": "weapons",
+   "name": "Class Weapon",
+   "level": 36,
+   "bonuses": [
+    {
+     "label": "Average Damage vs Monsters",
+     "value": 11,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "piece-of-gem",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "shiriken",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "black-uniform",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "orc-tooth",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "orc-tooth-plus",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 60,
+   "generic": true
+  },
+  {
+   "id": "weapons-class-weapon-40",
+   "category": "weapons",
+   "name": "Class Weapon",
+   "level": 40,
+   "bonuses": [
+    {
+     "label": "Average Damage vs Monsters",
+     "value": 12,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "orc-amulet",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "orc-amulet-plus",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "spider-eyes",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "unknown-talisman",
+      "quantity": 2
+     },
+     {
+      "item": "fishbones",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "curse-book",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 61,
+   "generic": true
+  },
+  {
+   "id": "weapons-class-weapon-45",
+   "category": "weapons",
+   "name": "Class Weapon",
+   "level": 45,
+   "bonuses": [
+    {
+     "label": "Average Damage vs Monsters",
+     "value": 15,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "unknown-talisman-plus",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "curse-book-plus",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "demon-s-gem-plus",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "ice-killer-whale-horn",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "yeti-fur-plus",
+      "quantity": 2
+     },
+     {
+      "item": "white-pearl",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 62,
+   "generic": true
+  },
+  {
+   "id": "weapons-class-weapon-50",
+   "category": "weapons",
+   "name": "Class Weapon",
+   "level": 50,
+   "bonuses": [
+    {
+     "label": "Average Damage vs Monsters",
+     "value": 16,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "unknown-medicine",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "piece-of-fabric",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "piece-of-fabric-plus",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "piece-of-ice-plus",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "ice-marble-plus",
+      "quantity": 2
+     },
+     {
+      "item": "white-pearl",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 63,
+   "generic": true
+  },
+  {
+   "id": "weapons-class-weapon-55",
+   "category": "weapons",
+   "name": "Class Weapon",
+   "level": 55,
+   "bonuses": [
+    {
+     "label": "Average Damage vs Monsters",
+     "value": 17,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": null,
+    "6": null,
+    "7": null,
+    "8": null,
+    "9": null
+   },
+   "sourceOrder": 64,
+   "generic": true
+  },
+  {
+   "id": "weapons-class-weapon-60",
+   "category": "weapons",
+   "name": "Class Weapon",
+   "level": 60,
+   "bonuses": [
+    {
+     "label": "Average Damage vs Monsters",
+     "value": 18,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "snake-tail-plus",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "frog-tongue",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "frog-s-legs",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "ice-marble",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "flaming-mane",
+      "quantity": 2
+     },
+     {
+      "item": "blue-pearl",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 65,
+   "generic": true
+  },
+  {
+   "id": "weapons-class-weapon-65",
+   "category": "weapons",
+   "name": "Class Weapon",
+   "level": 65,
+   "bonuses": [
+    {
+     "label": "Average Damage vs Monsters",
+     "value": 20,
+     "unit": "percent"
+    }
+   ],
+   "stages": {
+    "5": [
+     {
+      "item": "spider-legs",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "demon-s-gem",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "demon-s-keepsake-plus",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "finger-bones",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "warrior-s-symbol",
+      "quantity": 2
+     },
+     {
+      "item": "blood-red-pearl",
+      "quantity": 1
+     }
+    ]
+   },
+   "sourceOrder": 66,
+   "generic": true
+  },
+  {
+   "id": "weapons-pvp-65",
+   "category": "weapons",
+   "name": "Class Weapon",
+   "level": 65,
+   "bonuses": [
+    {
+     "label": "PvP Flat",
+     "value": null,
+     "unit": "flat"
+    }
+   ],
+   "stages": {
+    "5": null,
+    "6": null,
+    "7": null,
+    "8": null,
+    "9": null
+   },
+   "sourceOrder": 67,
+   "generic": true,
+   "variant": "PvP"
+  },
+  {
+   "id": "weapons-class-weapon-75",
+   "category": "weapons",
+   "name": "Class Weapon",
+   "level": 75,
+   "bonuses": null,
+   "stages": {
+    "5": null,
+    "6": null,
+    "7": null,
+    "8": null,
+    "9": null
+   },
+   "sourceOrder": 68,
+   "generic": true
+  }
+ ]
+}
