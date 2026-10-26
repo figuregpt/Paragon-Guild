@@ -72,18 +72,17 @@
 #paragon-design .gg-expanded-heading h3{font-size:16px}
 #paragon-design .gg-expanded .gg-map-scroll{height:calc(100dvh - 200px)}
 #paragon-design .gg-expanded .gg-terrain{max-width:none}
-#paragon-design .pg-mobile-guide{display:none}
 @media(max-width:1000px){
  #paragon-design .gg-map-selector{grid-template-columns:repeat(2,minmax(0,1fr))}
  #paragon-design .gg-explorer{grid-template-columns:210px minmax(0,1fr);gap:16px}
  #paragon-design .gg-map-thumb{width:44px;height:44px}
 }
 @media(max-width:700px){
- #paragon-design .pg-nav[data-count="6"]{grid-template-columns:repeat(5,minmax(0,1fr))}
- #paragon-design .pg-nav[data-count="6"] button{font-size:11px;min-height:56px;padding-inline:2px;letter-spacing:-.1px}
- #paragon-design .pg-nav .pg-guide-nav{display:none}
- #paragon-design .pg-mobile-guide{display:inline-flex;min-width:44px;min-height:44px;padding:10px}
- #paragon-design .pg-mobile-guide[aria-pressed=true]{border-color:#d8373e;color:#ff858b}
+ #paragon-design .pg-nav[data-count="6"]{grid-template-columns:repeat(3,minmax(0,1fr))}
+ #paragon-design .pg-nav[data-count="6"] button{font-size:12px;min-height:48px;padding:10px 6px;letter-spacing:normal}
+ #paragon-design .pg-app:has(.pg-nav[data-count="6"]) .pg-footer{padding-bottom:calc(160px + env(safe-area-inset-bottom,0px))}
+ #paragon-design .pg-app:has(.pg-nav[data-count="6"]) .pg-main :is(button,a,input,select,textarea,summary){scroll-margin-bottom:calc(164px + env(safe-area-inset-bottom,0px))}
+ html:has(#paragon-design .pg-nav[data-count="6"]){scroll-padding-bottom:calc(164px + env(safe-area-inset-bottom,0px))}
  #paragon-design .gg-intro{align-items:flex-start;flex-direction:column;gap:12px;margin-bottom:20px}
  #paragon-design .gg-intro h2{font-size:27px}
  #paragon-design .gg-intro p{font-size:13px}
