@@ -530,6 +530,20 @@
    "icon": {
     "src": "/guide/upgrades/icons/spider-eyes.png"
    }
+  },
+  "plant-sap": {
+   "id": "plant-sap",
+   "name": "Plant Sap",
+   "icon": {
+    "src": "/guide/upgrades/icons/plant-sap.png"
+   }
+  },
+  "magical-seed": {
+   "id": "magical-seed",
+   "name": "Magical Seed",
+   "icon": {
+    "src": "/guide/upgrades/icons/magical-seed.png"
+   }
   }
  },
  "items": [
@@ -817,24 +831,24 @@
    "stages": {
     "5": [
      {
-      "item": "piece-of-gem",
+      "item": "orc-amulet",
       "quantity": 2
      }
     ],
     "6": [
      {
-      "item": "shiriken",
+      "item": "orc-amulet-plus",
       "quantity": 2
      }
     ],
     "7": [
      {
-      "item": "black-uniform",
+      "item": "spider-eyes",
       "quantity": 2
      },
      {
       "item": "fishbones",
-      "quantity": 2
+      "quantity": 1
      }
     ],
     "8": [
@@ -883,24 +897,24 @@
    "stages": {
     "5": [
      {
-      "item": "piece-of-gem",
+      "item": "orc-amulet",
       "quantity": 2
      }
     ],
     "6": [
      {
-      "item": "shiriken",
+      "item": "orc-amulet-plus",
       "quantity": 2
      }
     ],
     "7": [
      {
-      "item": "black-uniform",
+      "item": "spider-eyes",
       "quantity": 2
      },
      {
       "item": "fishbones",
-      "quantity": 2
+      "quantity": 1
      }
     ],
     "8": [
@@ -1677,7 +1691,7 @@
      },
      {
       "item": "blue-pearl",
-      "quantity": null
+      "quantity": 1
      }
     ],
     "9": [
@@ -1787,11 +1801,26 @@
     }
    ],
    "stages": {
-    "5": null,
-    "6": null,
-    "7": null,
-    "8": null,
-    "9": null
+    "5": [],
+    "6": [],
+    "7": [
+     {
+      "item": "tiger-hide",
+      "quantity": 2
+     }
+    ],
+    "8": [
+     {
+      "item": "white-hairband",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "ornamental-hairpin",
+      "quantity": 2
+     }
+    ]
    },
    "sourceOrder": 23,
    "icon": {
@@ -2145,7 +2174,7 @@
      },
      {
       "item": "blue-pearl",
-      "quantity": null
+      "quantity": 1
      }
     ],
     "9": [
@@ -3764,7 +3793,7 @@
     "7": [
      {
       "item": "shiriken-plus",
-      "quantity": 2
+      "quantity": 1
      },
      {
       "item": "fishbones",
@@ -4044,11 +4073,48 @@
     }
    ],
    "stages": {
-    "5": null,
-    "6": null,
-    "7": null,
-    "8": null,
-    "9": null
+    "5": [
+     {
+      "item": "scorpion-tail-plus",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "demon-s-keepsake",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "leaf",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "yeti-fur",
+      "quantity": 2
+     },
+     {
+      "item": "clam",
+      "quantity": 2
+     }
+    ],
+    "9": [
+     {
+      "item": "tiger-fang",
+      "quantity": 2
+     },
+     {
+      "item": "blue-pearl",
+      "quantity": 1
+     }
+    ]
    },
    "sourceOrder": 64,
    "generic": true
@@ -4184,11 +4250,48 @@
     }
    ],
    "stages": {
-    "5": null,
-    "6": null,
-    "7": null,
-    "8": null,
-    "9": null
+    "5": [
+     {
+      "item": "snake-tail-plus",
+      "quantity": 2
+     }
+    ],
+    "6": [
+     {
+      "item": "frog-tongue",
+      "quantity": 2
+     }
+    ],
+    "7": [
+     {
+      "item": "frog-s-legs",
+      "quantity": 2
+     },
+     {
+      "item": "white-pearl",
+      "quantity": 1
+     }
+    ],
+    "8": [
+     {
+      "item": "plant-sap",
+      "quantity": 2
+     },
+     {
+      "item": "blue-pearl",
+      "quantity": 1
+     }
+    ],
+    "9": [
+     {
+      "item": "magical-seed",
+      "quantity": 2
+     },
+     {
+      "item": "blood-red-pearl",
+      "quantity": 1
+     }
+    ]
    },
    "sourceOrder": 67,
    "generic": true,

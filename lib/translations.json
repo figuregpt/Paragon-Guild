@@ -5274,5 +5274,13 @@
  "Equipment": {
   "tr": "Eşya",
   "el": "Εξοπλισμός"
+ },
+ "Plant Sap": {
+  "tr": "Süt Şerbeti",
+  "el": "Γαλακτώδης Χυμός"
+ },
+ "Magical Seed": {
+  "tr": "Büyülü Tohum",
+  "el": "Μαγικοί σπόροι"
  }
 }

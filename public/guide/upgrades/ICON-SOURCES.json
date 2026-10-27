@@ -688,5 +688,17 @@
   "image": "/guide/upgrades/icons/black-round-shield.png",
   "source": "https://en-wiki.metin2.gameforge.com/index.php/Black_Round_Shield",
   "sourceImage": "https://en-wiki.metin2.gameforge.com/images/6/66/Black_Round_Shield.png"
+ },
+ {
+  "name": "Plant Sap",
+  "image": "/guide/upgrades/icons/plant-sap.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Plant_Sap",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/e/ee/Plant_Sap.png"
+ },
+ {
+  "name": "Magical Seed",
+  "image": "/guide/upgrades/icons/magical-seed.png",
+  "source": "https://en-wiki.metin2.gameforge.com/index.php/Magic_Seeds",
+  "sourceImage": "https://en-wiki.metin2.gameforge.com/images/f/f2/Magic_Seeds.png"
  }
 ]

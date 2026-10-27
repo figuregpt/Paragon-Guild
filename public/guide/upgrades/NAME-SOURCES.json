@@ -384,5 +384,13 @@
  },
  "Wooden Shoes": {
   "gr": "Ξύλινα Παπούτσια"
+ },
+ "Plant Sap": {
+  "tr": "Süt Şerbeti",
+  "gr": "Γαλακτώδης Χυμός"
+ },
+ "Magical Seed": {
+  "tr": "Büyülü Tohum",
+  "gr": "Μαγικοί σπόροι"
  }
 }
