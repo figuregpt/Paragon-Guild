@@ -24,9 +24,13 @@
 #paragon-design .gu-class-item{width:28px;height:50px;display:flex;align-items:center;justify-content:center;overflow:hidden}
 #paragon-design .gu-class-item>img{width:28px;height:50px;object-fit:contain}
 #paragon-design .gu-item-heading{min-width:0;flex:1}
-#paragon-design .gu-item-heading>span{display:block;color:var(--pg-muted);font-size:10px;margin-bottom:5px}
 #paragon-design .gu-item-heading h3{font-size:16px;line-height:1.3;overflow-wrap:anywhere}
-#paragon-design .gu-item-heading small{display:block;color:var(--pg-muted);font-size:10px;margin-top:4px}
+#paragon-design .gu-item-meta{display:flex;align-items:center;flex-wrap:wrap;gap:6px 10px;margin-top:7px;min-width:0}
+#paragon-design .gu-level-badge{display:inline-flex;align-items:center;gap:8px;padding:4px 8px;border:1px solid #506b89;border-radius:4px;background:#1b2b3c;color:#dcecff;white-space:nowrap;max-width:100%;line-height:1.2}
+#paragon-design .gu-level-badge>span{font-size:10px;font-weight:500}
+#paragon-design .gu-level-badge>strong{font:700 14px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace;font-variant-numeric:tabular-nums;color:#f3f8ff}
+#paragon-design .gu-variant{font-size:10px;color:#c3ccda;border-left:1px solid #4d596a;padding-left:10px}
+#paragon-design .gu-item-meta small{display:block;color:var(--pg-muted);font-size:10px;min-width:0;overflow-wrap:anywhere}
 #paragon-design .gu-card-bonuses{min-width:0;max-width:50%;font-size:10px}
 #paragon-design .gu-card-bonuses>span{display:block;color:var(--pg-muted);font-size:9px;margin-bottom:5px}
 #paragon-design .gu-card-bonuses dl{margin:0;display:flex;gap:6px 18px;flex-wrap:wrap;justify-content:flex-end}

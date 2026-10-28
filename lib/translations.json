@@ -5430,5 +5430,9 @@
  "Retry": {
   "tr": "Yeniden dene",
   "el": "Δοκίμασε ξανά"
+ },
+ "Item level": {
+  "tr": "Eşya seviyesi",
+  "el": "Επίπεδο"
  }
 }
