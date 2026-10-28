@@ -5438,5 +5438,37 @@
  "Bonuses at +9": {
   "tr": "+9’daki özellikler",
   "el": "Μπόνους στο +9"
+ },
+ "Adjust CH{channel}": {
+  "tr": "CH{channel} süresini ayarla",
+  "el": "Ρύθμιση CH{channel}"
+ },
+ "Subtract 10 minutes from CH{channel}": {
+  "tr": "CH{channel} süresinden 10 dakika çıkar",
+  "el": "Αφαίρεση 10 λεπτών από το CH{channel}"
+ },
+ "Add 10 minutes to CH{channel}": {
+  "tr": "CH{channel} süresine 10 dakika ekle",
+  "el": "Προσθήκη 10 λεπτών στο CH{channel}"
+ },
+ "−10 min": {
+  "tr": "−10 dk",
+  "el": "−10 λ."
+ },
+ "+10 min": {
+  "tr": "+10 dk",
+  "el": "+10 λ."
+ },
+ "CH{channel} timer updated.": {
+  "tr": "CH{channel} süresi güncellendi.",
+  "el": "Το χρονόμετρο CH{channel} ενημερώθηκε."
+ },
+ "This timer has ended. Mark a new kill to start again.": {
+  "tr": "Bu sayacın süresi doldu. Yeniden başlatmak için yeni bir kesim işaretle.",
+  "el": "Αυτό το χρονόμετρο έληξε. Κατάγραψε νέα εξόντωση για να ξεκινήσεις ξανά."
+ },
+ "A boss timer cannot exceed 24 hours.": {
+  "tr": "Boss sayacı 24 saati aşamaz.",
+  "el": "Ένα χρονόμετρο boss δεν μπορεί να ξεπεράσει τις 24 ώρες."
  }
 }

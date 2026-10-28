@@ -5,9 +5,9 @@ import {useLanguage} from './language-provider';
 import {t} from '@/lib/i18n';
 import {findGuideBoss} from '@/lib/boss-guide';
 import {BossChime} from '@/lib/boss-sound';
-import type {BossTimerState} from '@/lib/boss-timers';
+import type {BossTimerState,BossTimerAction} from '@/lib/boss-timers';
 import './boss-tracker.css';
-type Tracking={state:BossTimerState|null;clock:number;error:string;saving:Set<string>;message:string;refresh:()=>Promise<void>;record:(bossId:string,channel:number,action:'kill'|'clear')=>Promise<boolean>;soundOn:boolean;audioReady:boolean;toggleSound:()=>void;testSound:()=>Promise<void>};
+type Tracking={state:BossTimerState|null;clock:number;error:string;saving:Set<string>;message:string;refresh:()=>Promise<void>;record:(bossId:string,channel:number,action:BossTimerAction)=>Promise<boolean>;soundOn:boolean;audioReady:boolean;toggleSound:()=>void;testSound:()=>Promise<void>};
 const Context=createContext<Tracking|null>(null);
 export function useBossTracking(){const value=useContext(Context);if(!value)throw new Error('Boss tracker provider is missing.');return value;}
 export function BossTrackerProvider({memberId,children}:{memberId?:string;children:ReactNode}){
@@ -35,12 +35,12 @@ export function BossTrackerProvider({memberId,children}:{memberId?:string;childr
   setToast({text:ready.map(timer=>t('{boss} · CH{channel} is ready again.',{boss:findGuideBoss(timer.boss_id)?.name??timer.boss_id,channel:timer.game_channel})).join(' '),bossId:ready[0].boss_id});
   if(!muted.current&&chime.current?.ready){let unheard=ready;const key='paragon-boss-heard:'+memberId;try{const prior=JSON.parse(localStorage.getItem(key)||'[]') as string[];unheard=ready.filter(timer=>!prior.includes(timer.revision));if(unheard.length)localStorage.setItem(key,JSON.stringify([...prior,...unheard.map(timer=>timer.revision)].slice(-100)));}catch{}if(unheard.length)chime.current.play();}
  },[state,clock,memberId,language]);
- async function record(bossId:string,channel:number,action:'kill'|'clear'){
+ async function record(bossId:string,channel:number,action:BossTimerAction){
   const key=bossId+':'+channel;if(!state||writes.current.has(key))return false;
-  if(action==='kill')void prepareSound();
+  if(action!=='clear')void prepareSound();
   const current=state.timers.find(timer=>timer.boss_id===bossId&&timer.game_channel===channel);
   writes.current.add(key);++readVersion.current;setSaving(new Set(writes.current));setError('');
-  try{const response=await fetch('/api/boss-timers',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({bossId,channel,action,requestId:crypto.randomUUID(),expectedRevision:current?.revision??null})}),value=await response.json();if(!response.ok)throw new Error(value.error||'The timer could not be saved. Try again.');if(!alive.current)return false;offset.current=value.serverTime-Date.now()/1000;setClock(value.serverTime);setState(previous=>previous?{...previous,serverTime:value.serverTime,timers:[...previous.timers.filter(timer=>timer.boss_id!==bossId||timer.game_channel!==channel),...(value.timer?[value.timer]:[])]}:previous);setMessage(action==='kill'?t('CH{channel} recorded. Respawn in 40 minutes.',{channel}):t('CH{channel} timer cleared.',{channel}));return true;}
+  try{const response=await fetch('/api/boss-timers',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({bossId,channel,action,requestId:crypto.randomUUID(),expectedRevision:current?.revision??null})}),value=await response.json();if(!response.ok)throw new Error(value.error||'The timer could not be saved. Try again.');if(!alive.current)return false;offset.current=value.serverTime-Date.now()/1000;setClock(value.serverTime);setState(previous=>previous?{...previous,serverTime:value.serverTime,timers:[...previous.timers.filter(timer=>timer.boss_id!==bossId||timer.game_channel!==channel),...(value.timer?[value.timer]:[])]}:previous);setMessage(action==='kill'?t('CH{channel} recorded. Respawn in 40 minutes.',{channel}):action==='clear'?t('CH{channel} timer cleared.',{channel}):t('CH{channel} timer updated.',{channel}));return true;}
   catch(e){if(alive.current)setError(e instanceof Error?e.message:'The timer could not be saved. Try again.');return false;}
   finally{writes.current.delete(key);if(alive.current){setSaving(new Set(writes.current));void refresh();}}
  }

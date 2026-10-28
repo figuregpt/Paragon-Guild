@@ -50,4 +50,16 @@
 .bt-toast :is(button,a):focus-visible{outline:2px solid #ff8992;outline-offset:3px}
 @media(max-width:700px){#paragon-design .bt-feedback{align-items:flex-start}#paragon-design .bt-sound{justify-content:flex-start;width:100%}#paragon-design .bt-sound>span{text-align:left}.bt-toast{bottom:calc(146px + env(safe-area-inset-bottom,0px));right:12px;max-width:calc(100vw - 24px);padding:12px}}
 #paragon-design .bt-channel-status{overflow-wrap:anywhere}
-@media(max-width:360px){#paragon-design .bt-channels{grid-template-columns:repeat(2,minmax(0,1fr))}#paragon-design .bt-channel{min-height:156px}}
+@media(max-width:420px){#paragon-design .bt-channels{grid-template-columns:repeat(2,minmax(0,1fr))}#paragon-design .bt-channel{min-height:156px}}
+
+#paragon-design .bt-channel-tile{min-width:0;display:flex;flex-direction:column;position:relative;overflow:hidden;border:1px solid #343e4c;border-radius:6px;background:#0d1218}
+#paragon-design .bt-channel-tile>.bt-channel{flex:1;border:0;border-radius:0;background:transparent}
+#paragon-design .bt-channel-tile.bt-running{border-color:#bd424e;background:#30171c}
+#paragon-design .bt-channel-tile.bt-ready{border-color:#397d62;background:#12231e}
+#paragon-design .bt-channel-tile.bt-running>.bt-channel:hover{background:#3b1c23}
+#paragon-design .bt-channel-tile.bt-ready>.bt-channel:hover{background:#183027}
+#paragon-design .bt-adjust{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;padding:6px;border-top:1px solid #74363f;background:#22161d}
+#paragon-design .bt-adjust button{min-width:0;min-height:44px;padding:6px 2px;border:1px solid #91545e;border-radius:4px;background:#3b232b;color:#ffd5da;font-family:inherit;font-size:11px;font-weight:600;line-height:1.3;cursor:pointer;touch-action:manipulation;white-space:nowrap}
+#paragon-design .bt-adjust button:hover{background:#57303b;border-color:#ec9aa7}
+#paragon-design .bt-adjust button:disabled{opacity:.45;cursor:default}
+#paragon-design .bt-adjust button:focus-visible{outline:2px solid #ff99a5;outline-offset:1px}

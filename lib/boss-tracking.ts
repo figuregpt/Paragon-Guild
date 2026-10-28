@@ -4,7 +4,7 @@ import {all,first,run} from './database';
 import {HttpError} from './auth';
 import {now,type Member} from './domain';
 import {findGuideBoss} from './boss-guide';
-import {BOSS_RESPAWN_SECONDS,type BossTimer} from './boss-timers';
+import {BOSS_RESPAWN_SECONDS,BOSS_ADJUSTMENT_SECONDS,BOSS_MAX_DURATION_SECONDS,type BossTimer} from './boss-timers';
 import {sendPush} from './web-push';
 
 const json=(data:unknown)=>Response.json(data,{headers:{'Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff'}});
@@ -16,7 +16,7 @@ export async function bossTrackingRoute(request:Request,path:string,member:Membe
  if(request.method!=='POST')return null;
  const text=await request.text();if(text.length>1500)throw new HttpError(413,'Request is too large.');
  let body:unknown;try{body=JSON.parse(text);}catch{throw new HttpError(400,'Check the form fields.');}
- const b=z.object({bossId:z.string().max(60),channel:z.number().int().min(1).max(6),action:z.enum(['kill','clear']),requestId:z.string().uuid(),expectedRevision:z.string().uuid().nullable()}).strict().parse(body);
+ const b=z.object({bossId:z.string().max(60),channel:z.number().int().min(1).max(6),action:z.enum(['kill','clear','subtract10','add10']),requestId:z.string().uuid(),expectedRevision:z.string().uuid().nullable()}).strict().parse(body);
  if(!findGuideBoss(b.bossId))throw new HttpError(400,'Choose a boss from the guide.');
  const current=await first<BossTimer>('SELECT '+columns+' FROM boss_timers WHERE member_id=? AND boss_id=? AND game_channel=?',member.id,b.bossId,b.channel);
  if(current?.revision===b.requestId)return json({timer:current,serverTime:now()});
@@ -26,6 +26,14 @@ export async function bossTrackingRoute(request:Request,path:string,member:Membe
   return json({timer:null,serverTime:now()});
  }
  const time=now();
+ if(b.action==='subtract10'||b.action==='add10'){
+  if(!current||current.respawns<=time)throw new HttpError(409,'This timer has ended. Mark a new kill to start again.');
+  const respawns=b.action==='add10'?Math.min(current.respawns+BOSS_ADJUSTMENT_SECONDS,current.killed+BOSS_MAX_DURATION_SECONDS):Math.max(time,current.respawns-BOSS_ADJUSTMENT_SECONDS);
+  if(respawns===current.respawns)throw new HttpError(400,'A boss timer cannot exceed 24 hours.');
+  const changed=await run('UPDATE boss_timers SET respawns=?,revision=? WHERE member_id=? AND boss_id=? AND game_channel=? AND revision=?',respawns,b.requestId,member.id,b.bossId,b.channel,b.expectedRevision);
+  if(!changed.meta.changes)throw new HttpError(409,'This timer changed on another device. Try again.');
+  return json({timer:{...current,respawns,revision:b.requestId},serverTime:time});
+ }
  const result=await run('INSERT INTO boss_timers(member_id,boss_id,game_channel,killed,respawns,revision) VALUES(?,?,?,?,?,?) ON CONFLICT(member_id,boss_id,game_channel) DO UPDATE SET killed=excluded.killed,respawns=excluded.respawns,revision=excluded.revision WHERE boss_timers.revision=?',member.id,b.bossId,b.channel,time,time+BOSS_RESPAWN_SECONDS,b.requestId,b.expectedRevision);
  if(!result.meta.changes)throw new HttpError(409,'This timer changed on another device. Try again.');
  return json({timer:{boss_id:b.bossId,game_channel:b.channel,killed:time,respawns:time+BOSS_RESPAWN_SECONDS,revision:b.requestId},serverTime:time});

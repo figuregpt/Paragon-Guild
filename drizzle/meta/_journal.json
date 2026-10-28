@@ -141,6 +141,13 @@
       "when": 1793167914262,
       "tag": "0019_boss_timers",
       "breakpoints": true
+    },
+    {
+      "idx": 20,
+      "version": "6",
+      "when": 1793210995853,
+      "tag": "0020_adjustable_boss_timers",
+      "breakpoints": true
     }
   ]
 }
