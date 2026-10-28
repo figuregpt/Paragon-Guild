@@ -6,9 +6,11 @@ import {shouldDeliverNotification} from './notification-policy';
 import {sendPush} from './web-push';
 import {syncContributions,rewardGuildContributions} from './contributions';
 import {syncGuildMembers} from './guild-roster';
+import {processBossTimers} from './boss-tracking';
 export async function settleAuctions(){await run("UPDATE auctions SET status='closed' WHERE status='active' AND ends<=?",now());}
 export async function processJobs(){
  await settleAuctions();
+ await processBossTimers();
  try{await syncGuildMembers();}catch{console.warn('Guild roster refresh delayed; retained the last verified members.');}
  await syncContributions();await rewardGuildContributions();await announceEvents();
  await run("DELETE FROM sessions WHERE expires<?",now());await run('DELETE FROM oauth_states WHERE expires<?',now());

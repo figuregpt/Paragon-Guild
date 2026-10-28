@@ -157,3 +157,14 @@ The member-only Guide directory lists 13 bosses with maps and supplied spawn mar
 Dews & Potions contains 12 recipes transcribed from the supplied Arthion crafting screen, including output counts, ingredient quantities and Yang costs. Item Upgrades presents 68 equipment/level rows across eight categories as a notebook-style list, with all +5–+9 material columns visible together. Clicking a material opens its name, quantity and exact upgrade step. Unknown requirements and uncertain quantities remain explicit. The supplied Adaptation stat is translated as Kararlılık in Turkish.
 
 All guide sections support English, Turkish and Greek. Original image/name references are documented beneath `public/guide/bosses`, `public/guide/loot`, `public/guide/dews`, `public/guide/upgrades` and `public/maps/boss-guide`. Guide content does not change membership checks, rewards or production data.
+
+
+## Personal boss tracking
+
+The Guide groups its 13 entries by map and by Boss / Miniboss. Magma Golem, Ember Tiger, Nightmare Tree, Thornspike Stump, Dark Crystal Golem and Plague Carrier are minibosses. Map, type and search filters have shareable URLs.
+
+Each authenticated member has independent CH1–CH6 timers for every boss. The server records a kill and enforces a 40-minute respawn; optimistic revisions protect another device's updates and replaying the same request cannot restart a timer. Reads and writes always use the authenticated member. Timers persist across reloads and devices. `0019_boss_timers.sql` adds timer storage and separate notification receipts for each device.
+
+A global in-app monitor shows ready alerts on any app screen. A quiet, synthesized double chime can be muted and tested; its setting is remembered per account on each device. Browser audio is activated by a channel tap or sound-test gesture. Already-expired timers do not make sound again after a reload. Successful device pushes are not retried when another device fails. Inactive memberships, cancelled/restarted timers and reassigned device subscriptions are checked before delivery. The Railway scheduler checks private respawn notifications every 15 seconds independently of the normal guild jobs; push clicks open the relevant boss. No Discord announcements are created for personal timers.
+
+`node tests/boss-timers.mjs` covers isolation, server timing, revisions, queue leases, retries and the real localized service-worker handler with a stubbed push transport. `node tests/boss-sound.mjs` tests the audio graph with a fake audio device. `node tests/boss-timers-api.mjs` checks the real API against isolated localhost preview identities. These tests do not notify real devices or write production data.

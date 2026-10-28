@@ -21,7 +21,10 @@ const server=spawn(process.execPath,['node_modules/vinext/dist/cli.js','start','
 let running=false;
 async function tick(){if(running||process.env.SCHEDULER_ENABLED!=='true'||!process.env.SCHEDULER_SECRET)return;running=true;try{const r=await fetch(`http://127.0.0.1:${port}/api/jobs/tick`,{method:'POST',headers:{Authorization:'Bearer '+process.env.SCHEDULER_SECRET},signal:AbortSignal.timeout(45000)});if(!r.ok)console.error('Scheduled guild jobs failed:',r.status);}catch{console.error('Scheduled guild jobs unavailable; retrying next minute.');}finally{running=false;}}
 const timer=setInterval(tick,60000);const initial=setTimeout(tick,5000);
-function stop(signal){clearInterval(timer);clearTimeout(initial);server.kill(signal);}
+let bossRunning=false;
+async function bossTick(){if(bossRunning||process.env.SCHEDULER_ENABLED!=='true'||!process.env.SCHEDULER_SECRET)return;bossRunning=true;try{const r=await fetch(`http://127.0.0.1:${port}/api/jobs/boss-timers`,{method:'POST',headers:{Authorization:'Bearer '+process.env.SCHEDULER_SECRET},signal:AbortSignal.timeout(45000)});if(!r.ok)console.error('Boss timer delivery delayed:',r.status);}catch{console.error('Boss timer delivery unavailable; retrying shortly.');}finally{bossRunning=false;}}
+const bossTimer=setInterval(bossTick,15000);
+function stop(signal){clearInterval(timer);clearInterval(bossTimer);clearTimeout(initial);server.kill(signal);}
 process.on('SIGTERM',()=>stop('SIGTERM'));process.on('SIGINT',()=>stop('SIGINT'));
-server.on('exit',code=>{clearInterval(timer);clearTimeout(initial);process.exit(code??1);});
+server.on('exit',code=>{clearInterval(timer);clearInterval(bossTimer);clearTimeout(initial);process.exit(code??1);});
 }

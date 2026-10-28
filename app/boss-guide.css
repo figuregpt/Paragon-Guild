@@ -13,7 +13,7 @@
 #paragon-design .gb-boss-card-copy{padding:16px;display:flex;flex-direction:column;flex:1;border-top:1px solid #26303d;min-width:0}
 #paragon-design .gb-boss-card-copy>span{display:flex;align-items:center;gap:5px;font-size:10px;color:var(--pg-muted)}
 #paragon-design .gb-boss-card-copy>span>svg{flex-shrink:0}
-#paragon-design .gb-boss-card-copy h3{font-size:15px;line-height:1.35;letter-spacing:-.2px;margin:8px 0 15px;overflow-wrap:anywhere}
+#paragon-design .gb-boss-card-copy :is(h3,h5){font-size:15px;line-height:1.35;letter-spacing:-.2px;margin:8px 0 15px;overflow-wrap:anywhere}
 #paragon-design .gb-boss-card-copy>div{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:8px;color:#c4cbd8}
 #paragon-design .gb-boss-card-copy small{font-size:10px;color:var(--pg-muted)}
 #paragon-design .gb-boss-card-copy>div>svg{flex-shrink:0;color:#f396a3}
@@ -98,3 +98,32 @@
 #paragon-design .gb-guide-links>.gb-dew-link{margin:0;min-width:0;min-height:82px}
 #paragon-design .gb-guide-links .gb-dew-link small{line-height:1.4}
 @media(max-width:700px){#paragon-design .gb-guide-links{grid-template-columns:minmax(0,1fr);gap:10px;margin-bottom:18px}}
+
+/* Maps contain independently labelled boss/miniboss groups. */
+#paragon-design .gb-directory-tools{grid-template-columns:minmax(180px,1fr) minmax(170px,.7fr) minmax(150px,.6fr)}
+#paragon-design .gb-map-groups{display:grid;gap:16px}
+#paragon-design .gb-map-group{border:1px solid #303844;border-radius:8px;background:#10151c;min-width:0;overflow:hidden}
+#paragon-design .gb-map-group>summary{display:flex;align-items:center;gap:14px;padding:16px 18px;min-height:76px;cursor:pointer;list-style:none}
+#paragon-design .gb-map-group>summary::-webkit-details-marker{display:none}
+#paragon-design .gb-map-group>summary:hover{background:#19202a}
+#paragon-design .gb-map-group>summary:focus-visible{outline-offset:-3px}
+#paragon-design .gb-map-group>summary>img{width:44px;height:44px;object-fit:cover;border:1px solid #48515e;border-radius:5px;flex-shrink:0}
+#paragon-design .gb-map-group-title{flex:1;min-width:0}
+#paragon-design .gb-map-group-title h3{font-size:17px;margin:0 0 5px;line-height:1.4;overflow-wrap:anywhere}
+#paragon-design .gb-map-group-title>span{display:flex;gap:12px;flex-wrap:wrap;font-size:11px;color:var(--pg-muted)}
+#paragon-design .gb-map-group>summary>svg{flex-shrink:0;color:#a8b3c3}
+#paragon-design .gb-map-group[open]>summary{border-bottom:1px solid #303844}
+#paragon-design .gb-map-group[open]>summary>svg{transform:rotate(180deg)}
+#paragon-design .gb-map-types{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;padding:20px}
+#paragon-design .gb-map-types[data-types="2"]{grid-template-columns:minmax(0,1fr) minmax(0,2fr)}
+#paragon-design .gb-type-group{min-width:0}
+#paragon-design .gb-type-group>header{display:flex;align-items:center;gap:8px;margin-bottom:12px}
+#paragon-design .gb-type-group h4{font-size:12px;margin:0;font-weight:600}
+#paragon-design .gb-type-group>header>span{font-size:10px;color:var(--pg-muted);font-variant-numeric:tabular-nums}
+#paragon-design .gb-type-group .gb-boss-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),220px));gap:12px}
+#paragon-design .gb-map-types[data-types="2"] .gb-type-group .gb-boss-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,140px),1fr))}
+#paragon-design .gb-kind-badge,#paragon-design .gb-boss-card-copy>span.gb-kind-badge{display:inline-flex;width:fit-content;padding:3px 7px;border:1px solid #495366;border-radius:4px;font-size:10px;line-height:1.3;color:#c2cbd9;background:#1a222d;letter-spacing:0}
+#paragon-design .gb-kind-boss,#paragon-design .gb-boss-card-copy>span.gb-kind-boss{color:#f1b4bb;border-color:#70434d;background:#302027}
+#paragon-design .gb-detail-heading .gb-kind-badge{margin-left:4px}
+@media(max-width:1000px){#paragon-design .gb-directory-tools{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}#paragon-design .gb-directory-tools>.gg-search{grid-column:1/-1}}
+@media(max-width:700px){#paragon-design .gb-directory-tools{grid-template-columns:minmax(0,1fr);gap:12px}#paragon-design .gb-map-group>summary{padding:14px 12px;gap:10px}#paragon-design .gb-map-group-title h3{font-size:16px}#paragon-design .gb-map-types,#paragon-design .gb-map-types[data-types="2"]{grid-template-columns:minmax(0,1fr);padding:14px 12px;gap:20px}#paragon-design .gb-type-group .gb-boss-grid,#paragon-design .gb-map-types[data-types="2"] .gb-type-group .gb-boss-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}#paragon-design .gb-type-group .gb-boss-card:only-child{max-width:240px}#paragon-design .gb-boss-card-copy h5{font-size:13px}}

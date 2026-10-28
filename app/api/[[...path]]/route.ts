@@ -11,6 +11,7 @@ import {contributionsEnabled,readContribution} from '@/lib/contributions';
 import {sendPush,validatePushSubscription} from '@/lib/web-push';
 import {memberProfileRoute} from '@/lib/member-profiles';
 import {dailyCm} from '@/lib/daily-cm';
+import {bossTrackingRoute,processBossTimers} from '@/lib/boss-tracking';
 const json=(data:unknown,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff'}});
 const pathOf=(r:Request)=>new URL(r.url).pathname.slice(5);
 const num=(min=0,max=1000000)=>z.number().int().min(min).max(max);
@@ -22,7 +23,7 @@ async function handle(request:Request){
  const path=pathOf(request),method=request.method;
  if(method==='GET'&&path==='health'){await first('SELECT 1');return json({ok:true,bot:env.DISCORD_BOT_TOKEN?(env.DISCORD_BOT?.ready?'connected':'connecting'):'not-configured'});}
  if(method==='GET'&&path==='status')return json({discordReady:configReady(),localPreview:localRequest(request),demoReady:Boolean(env.DEMO_RUNTIME?.enabled),pushReady:Boolean(env.VAPID_PUBLIC_KEY&&env.VAPID_PRIVATE_KEY&&env.VAPID_SUBJECT&&env.SCHEDULER_SECRET&&env.SCHEDULER_ENABLED==='true')});
- if(method==='POST'&&path!=='jobs/tick')sameOrigin(request);
+ if(method==='POST'&&!['jobs/tick','jobs/boss-timers'].includes(path))sameOrigin(request);
  if(method==='POST'&&path==='demo-login'){
   const {role}=z.object({role:z.enum(['leader','member'])}).parse(await body(request));
   if(!env.DEMO_RUNTIME?.enabled)throw new HttpError(404,'Not found.');
@@ -33,10 +34,11 @@ async function handle(request:Request){
   const {role}=z.object({role:z.enum(['admin','member'])}).parse(await body(request));const m=await first<any>('SELECT id FROM members WHERE id=?',role==='admin'?'preview-admin':'preview-member');if(!m)throw new HttpError(503,'Local preview data is not installed.');
   return new Response(JSON.stringify({ok:true}),{headers:{'Content-Type':'application/json','Cache-Control':'no-store','Set-Cookie':await createSession(m.id,request)}});
  }
- if(method==='POST'&&path==='jobs/tick'){
-  const key=request.headers.get('authorization');if(!env.SCHEDULER_SECRET||key!==`Bearer ${env.SCHEDULER_SECRET}`)throw new HttpError(403,'Scheduler authorization is required.');await processJobs();return json({ok:true});
+ if(method==='POST'&&['jobs/tick','jobs/boss-timers'].includes(path)){
+  const key=request.headers.get('authorization');if(!env.SCHEDULER_SECRET||key!==`Bearer ${env.SCHEDULER_SECRET}`)throw new HttpError(403,'Scheduler authorization is required.');if(path==='jobs/boss-timers')await processBossTimers();else await processJobs();return json({ok:true});
  }
  const admin=path.startsWith('admin/');const m=await requireMember(request,admin,method==='POST'||path.startsWith('event-evidence/'));
+ const bossResponse=await bossTrackingRoute(request,path,m);if(bossResponse)return bossResponse;
  if(method==='GET'&&path==='daily-cm')return json(await dailyCm(m.id,env.SESSION_SECRET||''));
  const profileResponse=await memberProfileRoute(request,path,m);if(profileResponse)return profileResponse;
  const pointsResponse=await adminPointsRoute(request,path,m);if(pointsResponse)return pointsResponse;

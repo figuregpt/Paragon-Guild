@@ -5282,5 +5282,153 @@
  "Magical Seed": {
   "tr": "Büyülü Tohum",
   "el": "Μαγικοί σπόροι"
+ },
+ "My Boss Tracker": {
+  "tr": "Boss Takibim",
+  "el": "Παρακολούθηση Boss"
+ },
+ "Killed this boss? Tap its channel to start 40 minutes.": {
+  "tr": "Bossu kestin mi? CH’ye bas, 40 dakika başlasın.",
+  "el": "Σκότωσες το boss; Πάτησε το CH για να ξεκινήσουν 40 λεπτά."
+ },
+ "Only you can see these timers": {
+  "tr": "Bu sayaçları yalnızca sen görürsün",
+  "el": "Μόνο εσύ βλέπεις αυτά τα χρονόμετρα"
+ },
+ "Respawning": {
+  "tr": "Yeniden doğuyor",
+  "el": "Επανεμφανίζεται"
+ },
+ "Ready to hunt": {
+  "tr": "Avlanmaya hazır",
+  "el": "Έτοιμο για κυνήγι"
+ },
+ "Not tracked": {
+  "tr": "Takip edilmiyor",
+  "el": "Χωρίς παρακολούθηση"
+ },
+ "Ready": {
+  "tr": "Hazır",
+  "el": "Έτοιμο"
+ },
+ "Mark kill": {
+  "tr": "Kestim",
+  "el": "Το σκότωσα"
+ },
+ "Last killed": {
+  "tr": "Son kesim",
+  "el": "Τελευταία εξόντωση"
+ },
+ "Tap after your kill": {
+  "tr": "Kestikten sonra dokun",
+  "el": "Πάτησε αφού το σκοτώσεις"
+ },
+ "CH{channel} · {status}": {
+  "tr": "CH{channel} · {status}",
+  "el": "CH{channel} · {status}"
+ },
+ "{boss} is ready again on {channels}.": {
+  "tr": "{boss}, {channels} için yeniden hazır.",
+  "el": "Το {boss} είναι ξανά διαθέσιμο στα {channels}."
+ },
+ "CH{channel} recorded. Respawn in 40 minutes.": {
+  "tr": "CH{channel} kaydedildi. 40 dakika sonra yeniden doğacak.",
+  "el": "Το CH{channel} καταγράφηκε. Επανεμφάνιση σε 40 λεπτά."
+ },
+ "CH{channel} timer cleared.": {
+  "tr": "CH{channel} sayacı temizlendi.",
+  "el": "Το χρονόμετρο CH{channel} διαγράφηκε."
+ },
+ "Device notifications are on. We will notify you when any tracked channel is ready.": {
+  "tr": "Cihaz bildirimleri açık. Takip ettiğin herhangi bir CH hazır olduğunda haber vereceğiz.",
+  "el": "Οι ειδοποιήσεις συσκευής είναι ενεργές. Θα ειδοποιηθείς όταν είναι έτοιμο οποιοδήποτε CH που παρακολουθείς."
+ },
+ "Enable device notifications to receive respawn alerts, even when the site is closed.": {
+  "tr": "Site kapalıyken de boss doğma uyarısı almak için cihaz bildirimlerini aç.",
+  "el": "Ενεργοποίησε τις ειδοποιήσεις συσκευής για ειδοποιήσεις επανεμφάνισης, ακόμη κι όταν ο ιστότοπος είναι κλειστός."
+ },
+ "Timer already running": {
+  "tr": "Sayaç zaten çalışıyor",
+  "el": "Το χρονόμετρο ήδη τρέχει"
+ },
+ "Killed it again? Restart this channel from 40 minutes, or clear an accidental mark.": {
+  "tr": "Tekrar mı kestin? Bu CH için 40 dakikayı yeniden başlatabilir veya yanlış işareti temizleyebilirsin.",
+  "el": "Το σκότωσες ξανά; Ξεκίνα πάλι τα 40 λεπτά γι’ αυτό το CH ή αφαίρεσε ένα κατά λάθος πάτημα."
+ },
+ "Clear timer": {
+  "tr": "Sayacı temizle",
+  "el": "Διαγραφή χρονομέτρου"
+ },
+ "Restart 40 minutes": {
+  "tr": "40 dakikayı yeniden başlat",
+  "el": "Επανεκκίνηση 40 λεπτών"
+ },
+ "Choose a boss from the guide.": {
+  "tr": "Rehberden bir boss seç.",
+  "el": "Επίλεξε ένα boss από τον οδηγό."
+ },
+ "This timer changed on another device. Try again.": {
+  "tr": "Bu sayaç başka bir cihazda değişti. Tekrar dene.",
+  "el": "Αυτό το χρονόμετρο άλλαξε σε άλλη συσκευή. Δοκίμασε ξανά."
+ },
+ "Could not load your boss timers.": {
+  "tr": "Boss sayaçların yüklenemedi.",
+  "el": "Δεν ήταν δυνατή η φόρτωση των χρονομέτρων σου."
+ },
+ "The timer could not be saved. Try again.": {
+  "tr": "Sayaç kaydedilemedi. Tekrar dene.",
+  "el": "Το χρονόμετρο δεν αποθηκεύτηκε. Δοκίμασε ξανά."
+ },
+ "{boss} · CH{channel} is ready again.": {
+  "tr": "{boss} · CH{channel} yeniden hazır.",
+  "el": "Το {boss} · CH{channel} είναι ξανά διαθέσιμο."
+ },
+ "Sound on": {
+  "tr": "Ses açık",
+  "el": "Ήχος ενεργός"
+ },
+ "Sound off": {
+  "tr": "Ses kapalı",
+  "el": "Ήχος ανενεργός"
+ },
+ "Test sound": {
+  "tr": "Sesi dene",
+  "el": "Δοκιμή ήχου"
+ },
+ "Sound starts after your first channel tap.": {
+  "tr": "Ses, bu sekmede ilk CH tıklamandan sonra etkinleşir.",
+  "el": "Ο ήχος ενεργοποιείται μετά το πρώτο πάτημα CH σε αυτή την καρτέλα."
+ },
+ "Saved for your account on this device.": {
+  "tr": "Bu cihazda hesabın için hatırlanır.",
+  "el": "Αποθηκεύεται για τον λογαριασμό σου σε αυτή τη συσκευή."
+ },
+ "Try again": {
+  "tr": "Tekrar dene",
+  "el": "Δοκίμασε ξανά"
+ },
+ "Boss": {
+  "tr": "Boss",
+  "el": "Boss"
+ },
+ "Miniboss": {
+  "tr": "Miniboss",
+  "el": "Μίνι Boss"
+ },
+ "Boss type": {
+  "tr": "Boss türü",
+  "el": "Τύπος boss"
+ },
+ "All types": {
+  "tr": "Tüm türler",
+  "el": "Όλοι οι τύποι"
+ },
+ "Cancellation Note:": {
+  "tr": "İptal Notu: ",
+  "el": "Σημείωση Ακύρωσης: "
+ },
+ "Retry": {
+  "tr": "Yeniden dene",
+  "el": "Δοκίμασε ξανά"
  }
 }

@@ -1,0 +1,53 @@
+#paragon-design .bt-tracker{border:1px solid #303844;border-radius:8px;background:#11161d;padding:20px;margin-bottom:28px}
+#paragon-design .bt-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:18px}
+#paragon-design .bt-heading h3{display:flex;align-items:center;gap:8px;font-size:16px;margin:0 0 8px}
+#paragon-design .bt-heading p{font-size:12px;color:var(--pg-muted);margin:0;line-height:1.6}
+#paragon-design .bt-private{display:inline-flex;align-items:center;gap:6px;color:var(--pg-muted);font-size:11px;flex-shrink:0;padding-top:3px}
+#paragon-design .bt-channels{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
+#paragon-design .bt-channel{position:relative;min-width:0;min-height:152px;padding:14px 12px;text-align:left;background:#0d1218;border:1px solid #343e4c;border-radius:6px;color:var(--pg-text);overflow:hidden;display:flex;flex-direction:column;gap:8px;touch-action:manipulation}
+#paragon-design .bt-channel:hover{background:#1b222d;border-color:#8290a5}
+#paragon-design .bt-channel:disabled{opacity:.6;cursor:wait}
+#paragon-design .bt-channel-head{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:13px}
+#paragon-design .bt-dot{width:6px;height:6px;border-radius:50%;background:#778295;flex-shrink:0}
+#paragon-design .bt-countdown{font-size:22px;line-height:1.2;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.5px;overflow-wrap:anywhere}
+#paragon-design .bt-channel-status{font-size:10px;color:var(--pg-muted)}
+#paragon-design .bt-last{display:flex;flex-direction:column;gap:3px;margin-top:auto;padding-top:7px;font-size:10px;line-height:1.5;color:#9da8b8;overflow-wrap:anywhere}
+#paragon-design .bt-last time{color:#c2cbd9;font-variant-numeric:tabular-nums}
+#paragon-design .bt-running{background:#30171c;border-color:#bd424e}
+#paragon-design .bt-running:hover{background:#3b1c23;border-color:#ff8992}
+#paragon-design .bt-running .bt-countdown,#paragon-design .bt-running .bt-channel-status{color:#ff969e}
+#paragon-design .bt-running .bt-dot{background:#ff7885}
+#paragon-design .bt-ready{background:#12231e;border-color:#397d62}
+#paragon-design .bt-ready:hover{background:#183027;border-color:#77bfa1}
+#paragon-design .bt-ready .bt-countdown,#paragon-design .bt-ready .bt-channel-head svg{color:#8bd4b2}
+#paragon-design .bt-progress{position:absolute;bottom:0;left:0;right:0;height:3px;background:#69242d}
+#paragon-design .bt-progress>span{display:block;height:100%;background:#f57180}
+#paragon-design .bt-notice{min-height:18px;color:#b8d9cb;font-size:12px;line-height:1.5;margin:12px 0}
+#paragon-design .bt-notifications{border-top:1px solid #2a3441;padding-top:14px;display:flex;align-items:center;gap:10px;color:var(--pg-muted)}
+#paragon-design .bt-notifications>svg{flex-shrink:0}
+#paragon-design .bt-notifications p{font-size:11px;line-height:1.6;margin:0;flex:1}
+#paragon-design .bt-notifications .pg-button{font-size:11px;min-height:44px;flex-shrink:0}
+#paragon-design .bt-error{font-size:12px;color:#ffa0a8;margin-bottom:16px;line-height:1.6}
+#paragon-design .bt-error button{color:inherit;min-height:44px;background:none;border:0;text-decoration:underline;padding-inline:8px}
+#paragon-design .bt-dialog{width:min(460px,calc(100vw - 32px));max-height:calc(100dvh - 40px);overflow:auto;overscroll-behavior:contain;background:#151b23;color:var(--pg-text);border:1px solid #3b4656;border-radius:8px;padding:22px}
+#paragon-design .bt-dialog::backdrop{background:#000b}
+#paragon-design .bt-dialog header{display:flex;align-items:center;justify-content:space-between;gap:14px}
+#paragon-design .bt-dialog h3{font-size:16px;margin:0;line-height:1.4}
+#paragon-design .bt-dialog p{font-size:13px;line-height:1.7;color:var(--pg-muted);margin:20px 0}
+#paragon-design .bt-dialog-actions{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:10px}
+@media(max-width:1100px){#paragon-design .bt-channels{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){#paragon-design .bt-tracker{padding:16px 12px}#paragon-design .bt-heading{flex-direction:column;gap:8px}#paragon-design .bt-private{font-size:10px}#paragon-design .bt-heading h3{font-size:15px}#paragon-design .bt-heading p{font-size:11px}#paragon-design .bt-channels{gap:7px}#paragon-design .bt-channel{padding:12px 8px;min-height:164px}#paragon-design .bt-countdown{font-size:20px}#paragon-design .bt-channel-head{font-size:12px}#paragon-design .bt-last{font-size:9px}#paragon-design .bt-notifications{flex-wrap:wrap;align-items:flex-start}#paragon-design .bt-notifications .pg-button{width:100%}#paragon-design .bt-dialog{padding:18px}}
+
+#paragon-design .bt-feedback{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-block:12px}
+#paragon-design .bt-feedback .bt-notice{margin:0;flex:1;min-width:150px}
+#paragon-design .bt-sound{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:8px}
+#paragon-design .bt-sound .pg-button{min-height:44px;font-size:11px;padding:8px 10px}
+#paragon-design .bt-sound>span{flex-basis:100%;font-size:10px;color:var(--pg-muted);text-align:right;line-height:1.5}
+.bt-toast{position:fixed;z-index:30;right:20px;bottom:24px;display:flex;align-items:center;gap:12px;max-width:min(440px,calc(100vw - 40px));padding:16px;border:1px solid #4f9777;border-radius:8px;background:#13251e;color:#cef1df;box-shadow:0 8px 28px #0007;font:13px/1.6 system-ui,sans-serif}
+.bt-toast>a{color:inherit;text-decoration:underline;text-underline-offset:3px;min-width:0;overflow-wrap:anywhere}
+.bt-toast>svg{flex-shrink:0}
+.bt-toast>button{background:transparent;border:0;color:inherit;min-width:44px;min-height:44px;display:grid;place-items:center;flex-shrink:0;cursor:pointer}
+.bt-toast :is(button,a):focus-visible{outline:2px solid #ff8992;outline-offset:3px}
+@media(max-width:700px){#paragon-design .bt-feedback{align-items:flex-start}#paragon-design .bt-sound{justify-content:flex-start;width:100%}#paragon-design .bt-sound>span{text-align:left}.bt-toast{bottom:calc(146px + env(safe-area-inset-bottom,0px));right:12px;max-width:calc(100vw - 24px);padding:12px}}
+#paragon-design .bt-channel-status{overflow-wrap:anywhere}
+@media(max-width:360px){#paragon-design .bt-channels{grid-template-columns:repeat(2,minmax(0,1fr))}#paragon-design .bt-channel{min-height:156px}}

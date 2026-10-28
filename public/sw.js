@@ -1,4 +1,4 @@
-const CACHE='paragon-static-v6';
+const CACHE='paragon-static-v7';
 const PREFS='paragon-preferences-v1';
 const LANGUAGE_URL=new URL('/__paragon_language',self.location.origin).href;
 const STATIC=['/offline-language.js','/offline.html','/branding/paragon-emblem.png','/favicon.svg'];
@@ -10,17 +10,18 @@ self.addEventListener('fetch',event=>{
  if(req.mode==='navigate'){event.respondWith(fetch(req).catch(()=>caches.match('/offline.html')));return;}
  if(url.pathname.startsWith('/metin2/')||url.pathname.startsWith('/assets/')||url.pathname.startsWith('/branding/'))event.respondWith(caches.match(req).then(cached=>cached||fetch(req).then(res=>{if(res.ok){const copy=res.clone();caches.open(CACHE).then(cache=>cache.put(req,copy));}return res;})));
 });
-function notificationUrl(value){try{const url=new URL(value,self.location.origin);if(url.origin===self.location.origin&&url.pathname==='/'&&['events','profile'].includes(url.searchParams.get('view')))return url.pathname+url.search;}catch{}return '/?view=events';}
+function notificationUrl(value){try{const url=new URL(value,self.location.origin);if(url.origin===self.location.origin&&url.pathname==='/'&&(['events','profile'].includes(url.searchParams.get('view'))||(url.searchParams.get('view')==='guide'&&/^[a-z0-9-]{1,60}$/.test(url.searchParams.get('boss')||''))))return url.pathname+url.search;}catch{}return '/?view=events';}
 const notificationCopy={
- en:{reminder:'Paragon — Event Reminder',event:'Paragon — New Event',test:'Paragon — Test Notification',enabled:'Notifications are enabled on this device.',fallback:'A guild event is coming up.'},
- tr:{reminder:'Paragon · Event Hatırlatıcısı',event:'Paragon · Yeni Event',test:'Paragon · Test Bildirimi',enabled:'Bu cihazda bildirimler açık.',fallback:'Bir lonca eventi yaklaşıyor.'},
- el:{reminder:'Paragon · Υπενθύμιση Εκδήλωσης',event:'Paragon · Νέα Εκδήλωση',test:'Paragon · Δοκιμαστική Ειδοποίηση',enabled:'Οι ειδοποιήσεις είναι ενεργές σε αυτή τη συσκευή.',fallback:'Πλησιάζει εκδήλωση συντεχνίας.'}
+ en:{boss:'Paragon — Boss Respawn',bossReady:'is ready again.',reminder:'Paragon — Event Reminder',event:'Paragon — New Event',test:'Paragon — Test Notification',enabled:'Notifications are enabled on this device.',fallback:'A guild event is coming up.'},
+ tr:{boss:'Paragon · Boss Yeniden Doğdu',bossReady:'yeniden hazır.',reminder:'Paragon · Event Hatırlatıcısı',event:'Paragon · Yeni Event',test:'Paragon · Test Bildirimi',enabled:'Bu cihazda bildirimler açık.',fallback:'Bir lonca eventi yaklaşıyor.'},
+ el:{boss:'Paragon · Επανεμφάνιση Boss',bossReady:'είναι ξανά διαθέσιμο.',reminder:'Paragon · Υπενθύμιση Εκδήλωσης',event:'Paragon · Νέα Εκδήλωση',test:'Paragon · Δοκιμαστική Ειδοποίηση',enabled:'Οι ειδοποιήσεις είναι ενεργές σε αυτή τη συσκευή.',fallback:'Πλησιάζει εκδήλωση συντεχνίας.'}
 };
 self.addEventListener('message',event=>{if(event.data?.type==='PARAGON_LANGUAGE'&&['en','tr','el'].includes(event.data.language)){event.waitUntil(caches.open(PREFS).then(cache=>cache.put(LANGUAGE_URL,new Response(event.data.language))));}});
 self.addEventListener('push',event=>{event.waitUntil((async()=>{
  let language='en';try{const stored=await(await caches.open(PREFS)).match(LANGUAGE_URL),value=stored&&await stored.text();if(['en','tr','el'].includes(value))language=value;}catch{}
  const copy=notificationCopy[language],locale=({en:'en-GB',tr:'tr-TR',el:'el-GR'})[language];
  let p={title:'Paragon',body:copy.fallback,url:'/?view=events'};try{p={...p,...event.data.json()};}catch{}
+ if(p.title==='Paragon — Boss Respawn'){p.title=copy.boss;if(typeof p.bossName==='string')p.body=p.bossName+' '+copy.bossReady;}
  if(p.title==='Paragon — Event Reminder')p.title=copy.reminder;
  if(p.title==='Paragon — New Event')p.title=copy.event;
  if(p.title==='Paragon — Test Notification')p.title=copy.test;
