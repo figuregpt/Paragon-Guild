@@ -5434,5 +5434,9 @@
  "Item level": {
   "tr": "Eşya seviyesi",
   "el": "Επίπεδο"
+ },
+ "Bonuses at +9": {
+  "tr": "+9’daki özellikler",
+  "el": "Μπόνους στο +9"
  }
 }

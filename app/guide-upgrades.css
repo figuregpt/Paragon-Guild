@@ -17,35 +17,24 @@
 #paragon-design .gu-equipment-list{display:grid;gap:16px}
 #paragon-design .gu-item-card{border:1px solid #303b49;border-radius:7px;overflow:hidden;background:#11161d;min-width:0;scroll-margin-top:20px}
 #paragon-design .gu-focused-item{border-color:#9e5868}
-#paragon-design .gu-item-header{display:flex;align-items:center;gap:14px;padding:10px 14px;min-height:72px;background:#141a23}
+#paragon-design .gu-item-header{display:flex;align-items:center;gap:14px;padding:14px 16px;min-height:78px;background:#141a23}
 #paragon-design .gu-equipment-art{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:44px;height:50px;background:#0b1017;border:1px solid #303b48;border-radius:4px;overflow:hidden}
 #paragon-design .gu-equipment-art>img{width:38px;height:50px;object-fit:contain}
 #paragon-design .gu-class-art{width:88px;gap:0}
 #paragon-design .gu-class-item{width:28px;height:50px;display:flex;align-items:center;justify-content:center;overflow:hidden}
 #paragon-design .gu-class-item>img{width:28px;height:50px;object-fit:contain}
 #paragon-design .gu-item-heading{min-width:0;flex:1}
-#paragon-design .gu-item-heading h3{font-size:16px;line-height:1.3;overflow-wrap:anywhere}
+#paragon-design .gu-item-heading h3{font-size:18px;line-height:1.3;overflow-wrap:anywhere}
 #paragon-design .gu-item-meta{display:flex;align-items:center;flex-wrap:wrap;gap:6px 10px;margin-top:7px;min-width:0}
 #paragon-design .gu-level-badge{display:inline-flex;align-items:center;gap:8px;padding:4px 8px;border:1px solid #506b89;border-radius:4px;background:#1b2b3c;color:#dcecff;white-space:nowrap;max-width:100%;line-height:1.2}
 #paragon-design .gu-level-badge>span{font-size:10px;font-weight:500}
 #paragon-design .gu-level-badge>strong{font:700 14px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace;font-variant-numeric:tabular-nums;color:#f3f8ff}
 #paragon-design .gu-variant{font-size:10px;color:#c3ccda;border-left:1px solid #4d596a;padding-left:10px}
-#paragon-design .gu-item-meta small{display:block;color:var(--pg-muted);font-size:10px;min-width:0;overflow-wrap:anywhere}
-#paragon-design .gu-card-bonuses{min-width:0;max-width:50%;font-size:10px}
-#paragon-design .gu-card-bonuses>span{display:block;color:var(--pg-muted);font-size:9px;margin-bottom:5px}
-#paragon-design .gu-card-bonuses dl{margin:0;display:flex;gap:6px 18px;flex-wrap:wrap;justify-content:flex-end}
-#paragon-design .gu-card-bonuses dl>div{display:flex;gap:7px;align-items:baseline;min-width:0}
-#paragon-design .gu-card-bonuses dt{color:#b9c4d4;overflow-wrap:anywhere}
-#paragon-design .gu-card-bonuses dd{margin:0;color:#f1f3f6;font-weight:700;flex-shrink:0;font-variant-numeric:tabular-nums}
-#paragon-design .gu-card-bonuses>p{color:var(--pg-muted)}
 #paragon-design .gu-upgrade-table{border-collapse:collapse;table-layout:fixed;width:100%;font-variant-numeric:tabular-nums;font-size:11px}
-#paragon-design .gu-row-label{width:90px}
 #paragon-design .gu-upgrade-table th,#paragon-design .gu-upgrade-table td{border-top:1px solid #2f3947;border-right:1px solid #29323f;text-align:center;padding:4px 6px}
 #paragon-design .gu-upgrade-table tr>:last-child{border-right:0}
-#paragon-design .gu-upgrade-table thead th{height:34px;font-size:11px;font-weight:600;color:#d9e0ea;background:#0e141d}
-#paragon-design .gu-upgrade-table thead th:first-child{font-weight:400;font-size:10px;color:var(--pg-muted);overflow-wrap:anywhere;line-height:1.25}
-#paragon-design .gu-upgrade-table tbody th{color:var(--pg-muted);font-weight:400;font-size:10px;background:#101620;line-height:1.4;overflow-wrap:anywhere}
-#paragon-design .gu-upgrade-table tbody td{height:54px;background:#0d1219}
+#paragon-design .gu-upgrade-table thead th{height:36px;font-size:12px;font-weight:700;color:#d9e0ea;background:#0e141d}
+#paragon-design .gu-upgrade-table tbody td{height:64px;vertical-align:middle;padding:10px 6px;background:#0d1219}
 #paragon-design .gu-upgrade-table .gu-focused-stage{background:#302029}
 #paragon-design .gu-matrix-material{position:relative;display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;min-width:44px;min-height:44px;padding:2px;border:1px solid transparent;border-radius:4px;background:transparent;color:#f7f8fa;vertical-align:middle}
 #paragon-design .gu-matrix-material:hover{border-color:#ad6879;background:#25202b}
@@ -74,23 +63,36 @@
  #paragon-design .gu-list-meta{align-items:flex-start;flex-direction:column;gap:8px}
  #paragon-design .gu-list-meta p{justify-content:flex-start;gap:6px}
  #paragon-design .gu-list-meta p>span:first-child{margin-left:0}
- #paragon-design .gu-item-header{padding:12px;gap:10px;flex-wrap:wrap}
- #paragon-design .gu-item-heading h3{font-size:14px}
+ #paragon-design .gu-item-header{padding:12px;gap:10px;flex-wrap:nowrap}
+ #paragon-design .gu-item-heading h3{font-size:16px}
  #paragon-design .gu-equipment-art{width:44px;height:50px}
  #paragon-design .gu-class-art{width:75px}
  #paragon-design .gu-class-item{width:24px;height:45px}
  #paragon-design .gu-class-item>img{width:24px;height:45px}
- #paragon-design .gu-card-bonuses{flex-basis:100%;max-width:100%;display:flex;gap:12px;padding-top:9px;border-top:1px solid #2d3745}
- #paragon-design .gu-card-bonuses>span{margin:0;flex-shrink:0}
- #paragon-design .gu-card-bonuses dl{justify-content:flex-start;gap:5px 12px;min-width:0}
- #paragon-design .gu-row-label{width:52px}
  #paragon-design .gu-upgrade-table th,#paragon-design .gu-upgrade-table td{padding:3px 0}
- #paragon-design .gu-upgrade-table tbody th{font-size:9px;padding:3px}
- #paragon-design .gu-upgrade-table thead th:first-child{font-size:9px}
- #paragon-design .gu-upgrade-table tbody td{height:54px}
  #paragon-design .gu-matrix-material{width:44px;height:44px;padding:2px}
  #paragon-design .gu-matrix-material>img{width:32px;height:36px}
  #paragon-design .gu-detail-body{padding:18px}
  #paragon-design .gu-detail-body dl>div{grid-template-columns:85px minmax(0,1fr);gap:10px}
 }
-@media(max-width:360px){#paragon-design .gu-row-label{width:42px}#paragon-design .gu-upgrade-table thead th:first-child{font-size:8px}}
+
+#paragon-design .gu-bonus-band{display:grid;grid-template-columns:112px minmax(0,1fr);align-items:center;gap:12px;padding:12px 16px;border-top:1px solid #2d3745;border-bottom:1px solid #2d3745;background:#101923}
+#paragon-design .gu-bonus-band h4{font-size:12px;font-weight:600;color:#d7e0ed;line-height:1.5;margin:0}
+#paragon-design .gu-bonus-band dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin:0;min-width:0}
+#paragon-design .gu-bonus-band dl>div{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:3px 14px;border-left:1px solid #364151;min-width:0}
+#paragon-design .gu-bonus-band dl>div:only-child{grid-column:1/-1}
+#paragon-design .gu-bonus-band dt{font-size:11px;line-height:1.5;color:#b5c3d6;overflow-wrap:anywhere}
+#paragon-design .gu-bonus-band dd{margin:0;font-size:16px;font-weight:700;line-height:1.4;font-variant-numeric:tabular-nums;color:#f5f7fb;flex-shrink:0}
+#paragon-design .gu-bonus-band>p{margin:0;font-size:12px;color:var(--pg-muted)}
+#paragon-design .gu-materials-section>h4{margin:0;padding:10px 16px;font-size:11px;font-weight:500;color:#aebacd;background:#0d131c;line-height:1.5}
+#paragon-design .gu-stage-materials{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px;min-height:44px}
+@media(max-width:700px){
+ #paragon-design .gu-bonus-band{grid-template-columns:minmax(0,1fr);gap:10px;padding:12px}
+ #paragon-design .gu-bonus-band dl>div{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;padding:0 10px 0 0;border-left:0}
+ #paragon-design .gu-bonus-band dl>div+div{padding:0 0 0 12px;border-left:1px solid #364151}
+ #paragon-design .gu-bonus-band dl>div:only-child{flex-direction:row;align-items:center;justify-content:space-between;gap:12px}
+ #paragon-design .gu-bonus-band dd{margin-top:auto;padding-top:4px;font-size:16px}
+ #paragon-design .gu-bonus-band dt{font-size:11px}
+ #paragon-design .gu-materials-section>h4{padding:10px 12px}
+ #paragon-design .gu-upgrade-table tbody td{padding:8px 1px}
+}
