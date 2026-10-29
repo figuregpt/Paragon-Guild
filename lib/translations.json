@@ -5470,5 +5470,21 @@
  "A boss timer cannot exceed 24 hours.": {
   "tr": "Boss sayacı 24 saati aşamaz.",
   "el": "Ένα χρονόμετρο boss δεν μπορεί να ξεπεράσει τις 24 ώρες."
+ },
+ "Reduced SP Consumption": {
+  "tr": "Azaltılmış SP Tüketimi",
+  "el": "Μειωμένη Κατανάλωση SP"
+ },
+ "Skill Damage": {
+  "tr": "Beceri Hasarı",
+  "el": "Ζημιά Δεξιοτήτων"
+ },
+ "Magic Resistance": {
+  "tr": "Büyüye Karşı Dayanıklılık",
+  "el": "Αντίσταση στη Μαγεία"
+ },
+ "Only effective in PvM.": {
+  "tr": "Yalnızca PvM’de etkilidir.",
+  "el": "Ισχύει μόνο στο PvM."
  }
 }

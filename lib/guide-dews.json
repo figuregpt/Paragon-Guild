@@ -214,7 +214,16 @@
      "item": "gango-root",
      "quantity": 20
     }
-   ]
+   ],
+   "effect": {
+    "name": "Reduced SP Consumption",
+    "values": [
+     10,
+     20,
+     30
+    ],
+    "unit": "%"
+   }
   },
   {
    "id": "violet-potion",
@@ -231,7 +240,16 @@
      "item": "kaki-blossom",
      "quantity": 20
     }
-   ]
+   ],
+   "effect": {
+    "name": "Skill Attack Value",
+    "values": [
+     30,
+     60,
+     90
+    ],
+    "unit": "%"
+   }
   },
   {
    "id": "black-potion",
@@ -248,7 +266,16 @@
      "item": "kaki-blossom",
      "quantity": 20
     }
-   ]
+   ],
+   "effect": {
+    "name": "Skill Damage",
+    "values": [
+     10,
+     14,
+     18
+    ],
+    "unit": "%"
+   }
   },
   {
    "id": "white-dew",
@@ -265,7 +292,16 @@
      "item": "thistle",
      "quantity": 20
     }
-   ]
+   ],
+   "effect": {
+    "name": "Defence",
+    "values": [
+     90,
+     120,
+     200
+    ],
+    "unit": ""
+   }
   },
   {
    "id": "blue-dew",
@@ -282,7 +318,16 @@
      "item": "gango-root",
      "quantity": 20
     }
-   ]
+   ],
+   "effect": {
+    "name": "Average Attack Value",
+    "values": [
+     70,
+     90,
+     120
+    ],
+    "unit": ""
+   }
   },
   {
    "id": "green-dew",
@@ -299,7 +344,16 @@
      "item": "dandelion",
      "quantity": 20
     }
-   ]
+   ],
+   "effect": {
+    "name": "Magic Resistance",
+    "values": [
+     10,
+     15,
+     20
+    ],
+    "unit": "%"
+   }
   },
   {
    "id": "yellow-dew",
@@ -316,7 +370,16 @@
      "item": "lilac",
      "quantity": 20
     }
-   ]
+   ],
+   "effect": {
+    "name": "Attack Speed",
+    "values": [
+     5,
+     7,
+     10
+    ],
+    "unit": "%"
+   }
   },
   {
    "id": "orange-dew",
@@ -333,7 +396,16 @@
      "item": "tue-fungus",
      "quantity": 20
     }
-   ]
+   ],
+   "effect": {
+    "name": "Piercing Hit Chance",
+    "values": [
+     10,
+     15,
+     20
+    ],
+    "unit": "%"
+   }
   },
   {
    "id": "red-dew",
@@ -350,7 +422,16 @@
      "item": "alpine-rose",
      "quantity": 20
     }
-   ]
+   ],
+   "effect": {
+    "name": "Critical Hit Chance",
+    "values": [
+     10,
+     15,
+     20
+    ],
+    "unit": "%"
+   }
   },
   {
    "id": "white-potion",
@@ -367,7 +448,14 @@
      "item": "thistle",
      "quantity": 10
     }
-   ]
+   ],
+   "effect": {
+    "name": "Defence",
+    "values": [
+     70
+    ],
+    "unit": ""
+   }
   },
   {
    "id": "purple-potion",

@@ -63,3 +63,12 @@
  #paragon-design .gd-recipe footer{padding:12px 16px}
 }
 @media(max-width:370px){#paragon-design .gd-recipes[data-layout=compact]{grid-template-columns:minmax(0,1fr)}}
+
+#paragon-design .gd-pvm-note{margin:-8px 0 22px;color:#f0bd85;font-size:12px;line-height:1.5}
+#paragon-design .gd-effect{margin:0;padding:13px 18px;background:#19171c;border-bottom:1px solid #34303b}
+#paragon-design .gd-effect>div{display:grid;gap:4px}
+#paragon-design .gd-effect dt{color:#d9c4ca;font-size:11px;line-height:1.5;overflow-wrap:anywhere}
+#paragon-design .gd-effect dd{margin:0;color:#ffb3c1;font-size:16px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.5;overflow-wrap:anywhere}
+#paragon-design .gd-recipes[data-layout=compact] .gd-effect{padding:10px 14px}
+#paragon-design .gd-recipes[data-layout=compact] .gd-effect dd{font-size:14px}
+#paragon-design .gd-recipe-dialog>.gd-pvm-note{margin:16px 16px 0}
