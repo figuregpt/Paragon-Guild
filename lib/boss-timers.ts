@@ -1,7 +1,7 @@
 export const BOSS_RESPAWN_SECONDS=40*60;
 export const BOSS_ADJUSTMENT_SECONDS=10*60;
 export const BOSS_MAX_DURATION_SECONDS=24*60*60;
-export type BossTimerAction='kill'|'clear'|'subtract10'|'add10';
+export type BossTimerAction='kill'|'clear'|'subtract10'|'add10'|'subtract1'|'add1';
 export const BOSS_CHANNELS=[1,2,3,4,5,6] as const;
 export type BossTimer={boss_id:string;game_channel:number;killed:number;respawns:number;revision:string};
 export type BossTimerState={timers:BossTimer[];serverTime:number;pushReady:boolean;subscribed:boolean};

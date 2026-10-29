@@ -5486,5 +5486,21 @@
  "Only effective in PvM.": {
   "tr": "Yalnızca PvM’de etkilidir.",
   "el": "Ισχύει μόνο στο PvM."
+ },
+ "Subtract 1 minute from CH{channel}": {
+  "tr": "CH{channel} süresinden 1 dakika çıkar",
+  "el": "Αφαίρεση 1 λεπτού από το CH{channel}"
+ },
+ "Add 1 minute to CH{channel}": {
+  "tr": "CH{channel} süresine 1 dakika ekle",
+  "el": "Προσθήκη 1 λεπτού στο CH{channel}"
+ },
+ "−1 min": {
+  "tr": "−1 dk",
+  "el": "−1 λ."
+ },
+ "+1 min": {
+  "tr": "+1 dk",
+  "el": "+1 λ."
  }
 }

@@ -20,5 +20,9 @@ await call('bob','boss-timers',{...plusRequest,requestId:crypto.randomUUID(),exp
 await call('alice','boss-timers',{...plusRequest,requestId:crypto.randomUUID(),expectedRevision:plus.timer.revision},403,'https://unrelated.example');
 const minus=await call('alice','boss-timers',{...request,action:'subtract10',requestId:crypto.randomUUID(),expectedRevision:plus.timer.revision});
 assert.equal(minus.timer.respawns,a.timer.respawns);assert.equal(minus.timer.killed,a.timer.killed);
-for(const [who,timer]of [['alice',minus.timer],['bob',b.timer]])await call(who,'boss-timers',{bossId,channel,action:'clear',requestId:crypto.randomUUID(),expectedRevision:timer.revision});
-console.log('PASS actual local API: member authentication, scheduler authorization, CSRF, private reads and writes, no member-ID spoofing, channel validation, initial timer, persisted +/-10 adjustments, replay idempotency, stale write rejection, independent accounts and cleanup. No production writes.');
+const oneRequest={...request,action:'add1',requestId:crypto.randomUUID(),expectedRevision:minus.timer.revision};
+const onePlus=await call('alice','boss-timers',oneRequest);assert.equal(onePlus.timer.respawns,minus.timer.respawns+60);assert.equal(onePlus.timer.killed,minus.timer.killed);assert.deepEqual((await call('alice','boss-timers',oneRequest)).timer,onePlus.timer);
+const oneMinus=await call('alice','boss-timers',{...request,action:'subtract1',requestId:crypto.randomUUID(),expectedRevision:onePlus.timer.revision});assert.equal(oneMinus.timer.respawns,minus.timer.respawns);assert.equal(oneMinus.timer.killed,minus.timer.killed);
+assert.deepEqual((await call('alice','boss-timers')).timers.find(t=>t.revision===oneMinus.timer.revision),oneMinus.timer);
+for(const [who,timer]of [['alice',oneMinus.timer],['bob',b.timer]])await call(who,'boss-timers',{bossId,channel,action:'clear',requestId:crypto.randomUUID(),expectedRevision:timer.revision});
+console.log('PASS actual local API: member authentication, scheduler authorization, CSRF, private reads and writes, no member-ID spoofing, channel validation, initial timer, persisted +/-1 and +/-10 adjustments, replay idempotency, stale write rejection, independent accounts and cleanup. No production writes.');

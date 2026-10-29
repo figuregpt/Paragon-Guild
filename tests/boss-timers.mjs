@@ -27,6 +27,10 @@ try{
  const plusBody={...kill('flame-king',4,adjustBase.timer.revision),action:'add10'};
  const plus=await post('alice',plusBody);assert.equal(plus.timer.respawns,adjustBase.timer.respawns+600);assert.equal(plus.timer.killed,adjustBase.timer.killed);assert.notEqual(plus.timer.revision,adjustBase.timer.revision);assert.deepEqual((await post('alice',plusBody)).timer,plus.timer);
  const minus=await post('alice',{...kill('flame-king',4,plus.timer.revision),action:'subtract10'});assert.equal(minus.timer.respawns,adjustBase.timer.respawns);assert.equal(minus.timer.killed,adjustBase.timer.killed);
+ const oneRequest={...kill('flame-king',4,minus.timer.revision),action:'add1'};
+ const onePlus=await post('alice',oneRequest);assert.equal(onePlus.timer.respawns,minus.timer.respawns+60);assert.equal(onePlus.timer.killed,minus.timer.killed);assert.deepEqual((await post('alice',oneRequest)).timer,onePlus.timer);
+ const oneMinus=await post('alice',{...kill('flame-king',4,onePlus.timer.revision),action:'subtract1'});assert.equal(oneMinus.timer.respawns,minus.timer.respawns);assert.equal(oneMinus.timer.killed,minus.timer.killed);
+ minus.timer=oneMinus.timer;
  await assert.rejects(()=>post('alice',{...kill('flame-king',4,plus.timer.revision),action:'add10'}),e=>e.status===409);
  await assert.rejects(()=>post('bob',{...kill('flame-king',4,minus.timer.revision),action:'subtract10'}),e=>e.status===409);
  sql("UPDATE boss_timers SET respawns=killed+86400 WHERE member_id='alice' AND game_channel=4");await assert.rejects(()=>post('alice',{...kill('flame-king',4,minus.timer.revision),action:'add10'}),e=>e.status===400);
@@ -51,13 +55,13 @@ try{
  // Moving a deadline skips its old queued generation and sends once at the new deadline.
  const beforeMove=await post('alice',kill('flame-king',6));
  sql("INSERT INTO boss_timer_deliveries(revision,endpoint,member_id,created) VALUES(?,'a1','alice',?)",beforeMove.timer.revision,time);
- const moved=await post('alice',{...kill('flame-king',6,beforeMove.timer.revision),action:'add10'});
+ const moved=await post('alice',{...kill('flame-king',6,beforeMove.timer.revision),action:'add1'});
  time=beforeMove.timer.respawns;await tick();
  assert.equal(one('SELECT status FROM boss_timer_deliveries WHERE revision=?',beforeMove.timer.revision).status,'skipped');
  assert.equal(calls.filter(c=>c.payload.tag==='boss-respawn:'+moved.timer.revision).length,0);
  time=moved.timer.respawns;await tick();await tick();
  assert.equal(calls.filter(c=>c.endpoint==='a1'&&c.payload.tag==='boss-respawn:'+moved.timer.revision).length,1);
- console.log('PASS: private account/boss/channel keys, initial 40 minutes, private +/-10 adjustments, rescheduled push, independent CHs, replay safety, conflict protection, validation, clear/restart, no early push, concurrent claims, per-device retries, membership/device ownership and stale-delivery suppression. Push transport stubbed.');
+ console.log('PASS: private account/boss/channel keys, initial 40 minutes, private +/-1 and +/-10 adjustments, rescheduled push, independent CHs, replay safety, conflict protection, validation, clear/restart, no early push, concurrent claims, per-device retries, membership/device ownership and stale-delivery suppression. Push transport stubbed.');
 }finally{db.close();delete globalThis.__bossTest;}
 
 for(const language of ['en','tr','el']){
