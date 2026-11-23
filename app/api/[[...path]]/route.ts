@@ -1,4 +1,5 @@
 import {env} from 'cloudflare:workers';
+import {privateTimerFeed} from '@/lib/private-timer-feed';
 import {z} from 'zod';
 import {HttpError,configReady,requireMember,sameOrigin,createSession,cookie,sessionCookieName,cookies,hash,localRequest} from '@/lib/auth';
 import {all,first,run,database} from '@/lib/database';
@@ -21,6 +22,8 @@ async function settings(){const rows=await all<any>('SELECT key,value FROM setti
 async function audited(m:string,action:string,target:string){await run('INSERT INTO audit(id,member_id,action,target,created) VALUES(?,?,?,?,?)',id(),m,action,target,now());}
 async function handle(request:Request){
  const path=pathOf(request),method=request.method;
+ const privateFeed = await privateTimerFeed(request, path);
+ if (privateFeed) return privateFeed;
  if(method==='GET'&&path==='health'){await first('SELECT 1');return json({ok:true,bot:env.DISCORD_BOT_TOKEN?(env.DISCORD_BOT?.ready?'connected':'connecting'):'not-configured'});}
  if(method==='GET'&&path==='status')return json({discordReady:configReady(),localPreview:localRequest(request),demoReady:Boolean(env.DEMO_RUNTIME?.enabled),pushReady:Boolean(env.VAPID_PUBLIC_KEY&&env.VAPID_PRIVATE_KEY&&env.VAPID_SUBJECT&&env.SCHEDULER_SECRET&&env.SCHEDULER_ENABLED==='true')});
  if(method==='POST'&&!['jobs/tick','jobs/boss-timers'].includes(path))sameOrigin(request);
