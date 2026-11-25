@@ -28,8 +28,7 @@ export default function DailyCm({initial}:{initial?:Roll}){
   document.addEventListener('visibilitychange',resume);
   return()=>{active=false;clearTimeout(timer);document.removeEventListener('visibilitychange',resume);};
  },[roll]);
- return <p className="pg-pp-meme" title={t('Random daily size, unrelated to PP. Resets at 01:00 Türkiye time.')}>
-  {t('PP size: ')}<span aria-live="polite">{!roll||refreshing?t('Refreshing…'):new Intl.NumberFormat(localeTag(),{minimumFractionDigits:2,maximumFractionDigits:2}).format(roll.cents/100)+t(' cm')}</span> <span aria-hidden="true">😏</span>
-  <small className="pg-cm-reset">{t('Random · resets at 01:00 TR')}</small>
+ return <p className="pg-pp-meme">
+  <small>{t('PP size:')}</small><span aria-live="polite">{!roll||refreshing?t('Refreshing…'):new Intl.NumberFormat(localeTag(),{minimumFractionDigits:2,maximumFractionDigits:2}).format(roll.cents/100)+t(' cm')}</span> <span aria-hidden="true">😏</span>
  </p>;
 }

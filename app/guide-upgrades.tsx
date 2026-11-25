@@ -32,13 +32,13 @@ export default function GuideUpgrades({onBack}:{onBack:()=>void}){
  useEffect(()=>{if(detail)dialog.current?.showModal();else dialog.current?.close();},[detail]);
  function update(category=state.category,query=state.query){
   setState({...state,category,query,focusItem:null});
-  const params=new URLSearchParams({view:'guide',guide:'upgrades',category});
+  const params=new URLSearchParams({view:'recipes',guide:'upgrades',category});
   if(query.trim())params.set('q',query);
   history.replaceState(null,'','/?'+params);
  }
  function bonusValue(value:number|null,unit:string){return value===null?t('Value not provided'):(value>=0?'+':'')+number.format(value)+(unit==='percent'?'%':'');}
- return <div className="gu-guide"><button type="button" className="gb-back" onClick={onBack}><ArrowLeft size={16} aria-hidden="true"/>{t('All bosses')}</button>
-  <header className="gu-heading"><Hammer size={27} aria-hidden="true"/><div><span className="gg-kicker">ARTHION / {t('Game Guide')}</span><h2>{t('Item Upgrades')}</h2><p>{t('Compare every item and its +5–+9 materials in one list.')}</p></div></header>
+ return <div className="gu-guide"><button type="button" className="gb-back" onClick={onBack}><ArrowLeft size={16} aria-hidden="true"/>{t('Recipes')}</button>
+  <header className="gu-heading"><Hammer size={27} aria-hidden="true"/><div><h2>{t('Item Upgrades')}</h2><p>{t('Compare every item and its +5–+9 materials in one list.')}</p></div></header>
   <div className="gu-list-controls"><label className="gu-category"><span>{t('Equipment type')}</span><select name="upgradeCategory" value={state.category} onChange={event=>update(event.target.value as typeof state.category,'')}>{upgradeCategories.map(category=><option key={category.id} value={category.id}>{t(category.name)}</option>)}</select></label><label className="gu-search"><span>{t('Find an item')}</span><span><Search size={16} aria-hidden="true"/><input type="search" name="upgradeSearch" value={state.query} onChange={event=>update(state.category,event.target.value)} placeholder={t('Name or level…')} autoComplete="off"/></span></label></div>
   <div className="gu-list-meta"><span role="status">{t('{count} items shown',{count:items.length})}</span><p><span>—</span> {t('No materials listed')}<span>?</span> {t('Not confirmed')}</p></div>
   <div className="gu-equipment-list">{items.map(item=>{

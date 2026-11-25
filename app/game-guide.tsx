@@ -1,21 +1,20 @@
 'use client';
 import {useEffect,useState,type MouseEvent} from 'react';
-import Link from 'next/link';
 import {ArrowLeft,ArrowRight,ChevronDown,ImageOff,MapPin,PackageOpen,Search} from 'lucide-react';
 import {useLanguage} from './language-provider';
 import {t,translate} from '@/lib/i18n';
 import {bossGuide,bossFromParams,findGuideBoss,type BossKind,type BossGuideEntry} from '@/lib/boss-guide';
 import BossMap from './guide-boss-map';
 import BossTracker from './boss-tracker';
-import GuideDews from './guide-dews';
-import GuideUpgrades from './guide-upgrades';
+import RecipeDirectory from './recipe-directory';
+import TrackerTools from './tracker-tools';
 import {ChestContents} from './guide-chests';
 import './game-guide.css';
 import './boss-guide.css';
 
-type GuideSection='bosses'|'dews'|'upgrades';
-const guideSection=(params:URLSearchParams):GuideSection=>params.get('guide')==='dews'?'dews':params.get('guide')==='upgrades'?'upgrades':'bosses';
-const directoryParams=()=>{const params=new URLSearchParams(typeof window==='undefined'?'':location.search);return guideSection(params)==='bosses'?params:new URLSearchParams();};
+export type GuideArea = 'guide' | 'recipes' | 'tools';
+type TrackingProps = {pushEnabled: boolean; onEnableNotifications: () => void};
+const directoryParams = () => new URLSearchParams(typeof window === 'undefined' ? '' : window.location.search);
 const directoryKind=(value:string|null):BossKind|'all'=>value==='Boss'||value==='Miniboss'?value:'all';
 const normalized=(value:string)=>value.normalize('NFD').replace(/\p{M}/gu,'').toLocaleLowerCase();
 function BossArt({boss}:{boss:BossGuideEntry}){
@@ -30,20 +29,47 @@ function BossDetail({boss,onBack,onSelect,pushEnabled,onEnableNotifications}:{bo
   </div>
  </div>;
 }
-export default function GameGuide({pushEnabled,onEnableNotifications}:{pushEnabled:boolean;onEnableNotifications:()=>void}){
- useLanguage();const [selected,setSelected]=useState<string|null>(()=>typeof window==='undefined'?null:bossFromParams(new URLSearchParams(window.location.search))?.id??null),[section,setSection]=useState<GuideSection>(()=>guideSection(new URLSearchParams(typeof window==='undefined'?'':window.location.search))),[query,setQuery]=useState(()=>directoryParams().get('q')??''),[map,setMap]=useState(()=>directoryParams().get('map')??'all'),[kind,setKind]=useState<BossKind|'all'>(()=>directoryKind(directoryParams().get('type')));
+export default function GameGuide({area='guide',...tracking}:{area?:GuideArea} & TrackingProps) {
+ if(area === 'recipes') return <RecipeDirectory/>;
+ if(area === 'tools') return <TrackerTools {...tracking}/>;
+ return <BossDirectory {...tracking}/>;
+}
+
+function BossDirectory({pushEnabled,onEnableNotifications}:TrackingProps) {
+ useLanguage();
+ const [selected,setSelected]=useState(() => bossFromParams(directoryParams())?.id ?? null);
+ const [query,setQuery]=useState(() => directoryParams().get('q') ?? '');
+ const [map,setMap]=useState(() => directoryParams().get('map') ?? 'all');
+ const [kind,setKind]=useState(() => directoryKind(directoryParams().get('type')));
  const chosen=findGuideBoss(selected),maps=[...new Set(bossGuide.map(boss=>boss.mapName))];
- useEffect(()=>{const update=()=>{const params=new URLSearchParams(location.search);setSelected(bossFromParams(params)?.id??null);setSection(guideSection(params));const filters=guideSection(params)==='bosses'?params:new URLSearchParams();setQuery(filters.get('q')??'');setMap(filters.get('map')??'all');setKind(directoryKind(filters.get('type')));};window.addEventListener('popstate',update);return()=>window.removeEventListener('popstate',update);},[]);
- function navigate(id:string|null,nextSection:GuideSection='bosses'){setSelected(id);setSection(nextSection);const params=new URLSearchParams({view:'guide'});if(id)params.set('boss',id);if(nextSection!=='bosses')params.set('guide',nextSection);if(!id&&nextSection==='bosses'){if(query.trim())params.set('q',query.trim());if(map!=='all')params.set('map',map);if(kind!=='all')params.set('type',kind);}history.pushState(null,'','/?'+params);window.scrollTo({top:0,behavior:'instant'});}
+ useEffect(() => {
+   function sync() {
+     const params=directoryParams();
+     setSelected(bossFromParams(params)?.id ?? null);
+     setQuery(params.get('q') ?? '');
+     setMap(params.get('map') ?? 'all');
+     setKind(directoryKind(params.get('type')));
+   }
+   window.addEventListener('popstate',sync);
+   return () => window.removeEventListener('popstate',sync);
+ },[]);
+ function navigate(id:string|null) {
+   setSelected(id);
+   const params=new URLSearchParams({view:'guide'});
+   if(id) params.set('boss',id);
+   if(!id) {
+     if(query.trim()) params.set('q',query.trim());
+     if(map!=='all') params.set('map',map);
+     if(kind!=='all') params.set('type',kind);
+   }
+   history.pushState(null,'','/?'+params);
+   window.scrollTo({top:0,behavior:'instant'});
+ }
  function filters(nextQuery=query,nextMap=map,nextKind=kind){setQuery(nextQuery);setMap(nextMap);setKind(nextKind);const params=new URLSearchParams({view:'guide'});if(nextQuery.trim())params.set('q',nextQuery.trim());if(nextMap!=='all')params.set('map',nextMap);if(nextKind!=='all')params.set('type',nextKind);history.replaceState(null,'','/?'+params);}
  function openBoss(event:MouseEvent<HTMLAnchorElement>,id:string){if(event.button||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;event.preventDefault();navigate(id);}
  const search=normalized(query.trim()),matches=bossGuide.filter(boss=>(map==='all'||boss.mapName===map)&&(kind==='all'||boss.kind===kind)&&normalized([boss.name,t(boss.kind),translate(boss.kind,'en'),translate(boss.kind,'tr'),translate(boss.kind,'el'),t(boss.mapName),translate(boss.mapName,'en'),translate(boss.mapName,'tr'),translate(boss.mapName,'el'),...(boss.chest?.aliases??[])].join(' ')).includes(search));
- if(chosen&&section==='bosses')return <div className="gg-guide"><BossDetail key={chosen.id} boss={chosen} pushEnabled={pushEnabled} onEnableNotifications={onEnableNotifications} onBack={()=>navigate(null)} onSelect={id=>navigate(id)}/></div>;
- if(section==='dews')return <div className="gg-guide"><GuideDews onBack={()=>navigate(null)}/></div>;
- if(section==='upgrades')return <div className="gg-guide"><GuideUpgrades onBack={()=>navigate(null)}/></div>;
- return <div className="gg-guide"><header className="gg-intro gb-directory-intro"><div><span className="gg-kicker">ARTHION / {t('Guild knowledge')}</span><h2>{t('Game Guide')}</h2><p>{t('Choose a boss to see its map, drops and chest contents together.')}</p></div><span className="gg-guide-count">{t('{count} bosses',{count:bossGuide.length})}</span></header>
-  <div className="gb-guide-links"><Link className="gb-dew-link" href="/?view=guide&guide=dews" onClick={event=>{if(event.button||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;event.preventDefault();navigate(null,'dews');}}><span className="gb-dew-icons" aria-hidden="true"><img src="/guide/dews/red-dew.png" width={32} height={32} alt=""/><img src="/guide/dews/blue-dew.png" width={32} height={32} alt=""/><img src="/guide/dews/green-dew.png" width={32} height={32} alt=""/></span><span><strong>{t('Dews & Potions')}</strong><small>{t('{count} recipes · ingredients and Yang costs',{count:12})}</small></span><ArrowRight size={17} aria-hidden="true"/></Link>
-  <Link className="gb-dew-link gb-upgrade-link" href="/?view=guide&guide=upgrades" onClick={event=>{if(event.button||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;event.preventDefault();navigate(null,'upgrades');}}><span className="gb-dew-icons" aria-hidden="true"><img src="/guide/loot/battle-sword.png" width={32} height={64} alt=""/><img src="/guide/upgrades/icons/golden-earrings.png" width={32} height={32} alt=""/></span><span><strong>{t('Item Upgrades')}</strong><small>{t('{count} item types · +5–+9 materials',{count:8})}</small></span><ArrowRight size={17} aria-hidden="true"/></Link></div>
+ if(chosen)return <div className="gg-guide"><BossDetail key={chosen.id} boss={chosen} pushEnabled={pushEnabled} onEnableNotifications={onEnableNotifications} onBack={()=>navigate(null)} onSelect={id=>navigate(id)}/></div>;
+ return <div className="gg-guide"><header className="gg-intro gb-directory-intro"><div><h2>{t('Game Guide')}</h2><p>{t('Choose a boss to see its map, drops and chest contents together.')}</p></div><span className="gg-guide-count">{t('{count} bosses',{count:bossGuide.length})}</span></header>
   <div className="gb-directory-tools"><label className="gg-search"><Search size={17} aria-hidden="true"/><input type="search" name="bossSearch" value={query} onChange={event=>filters(event.target.value)} placeholder={t('Find a boss or map…')} aria-label={t('Find a boss or map')} autoComplete="off"/></label><label className="gb-map-filter"><span>{t('Map')}</span><select name="guideMapFilter" value={map} onChange={event=>filters(query,event.target.value)} aria-label={t('Filter by map')}><option value="all">{t('All maps')}</option>{maps.map(map=><option key={map} value={map}>{t(map)}</option>)}</select></label><label className="gb-map-filter"><span>{t('Boss type')}</span><select name="guideKindFilter" value={kind} onChange={event=>filters(query,map,event.target.value as BossKind|'all')}><option value="all">{t('All types')}</option><option value="Boss">{t('Boss')}</option><option value="Miniboss">{t('Miniboss')}</option></select></label></div>
   <p className="gb-directory-count" role="status">{t('{count} bosses shown',{count:matches.length})}</p>
   {matches.length?<div className="gb-map-groups">{maps.map(mapName=>{

@@ -12,7 +12,11 @@ try{
  sql("INSERT INTO event_members(event_id,member_id,joined,attended,created) VALUES('old-help','member',1,1,?)",t);
  sql("INSERT INTO event_evidence VALUES('proof','old-help','host','proof.png','image/png',?)",t);
  sql("UPDATE events SET phase='confirming',ended=? WHERE id='old-help'",t);sql("UPDATE events SET phase='pending',submitted=? WHERE id='old-help'",t);
- migrate(db);migrate(db);assert.equal(one('SELECT COUNT(*) n FROM railway_migrations').n,16);assert.equal(one("SELECT pp FROM events WHERE id='old-help'").pp,25);
+ migrate(db);migrate(db);
+ const expectedMigrations=readdirSync('drizzle').filter(name=>/^\d+.*\.sql$/.test(name)).sort();
+ const appliedMigrations=db.connection.prepare('SELECT name FROM railway_migrations ORDER BY name').all().map(row=>row.name);
+ assert.deepEqual(appliedMigrations,expectedMigrations);
+ assert.equal(one("SELECT pp FROM events WHERE id='old-help'").pp,25);
  for(const id of ['host','member'])sql("INSERT INTO event_reward_reviews VALUES('old-help',?,'approved','reviewer',?)",id,t);
  sql("UPDATE events SET phase='approved',status='completed',reviewed_by='reviewer',reviewed=? WHERE id='old-help'",t);
  for(const id of ['host','member'])assert.equal(one('SELECT balance FROM members WHERE id=?',id).balance,25);

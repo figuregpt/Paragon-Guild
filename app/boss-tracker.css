@@ -2,7 +2,6 @@
 #paragon-design .bt-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:18px}
 #paragon-design .bt-heading h3{display:flex;align-items:center;gap:8px;font-size:16px;margin:0 0 8px}
 #paragon-design .bt-heading p{font-size:12px;color:var(--pg-muted);margin:0;line-height:1.6}
-#paragon-design .bt-private{display:inline-flex;align-items:center;gap:6px;color:var(--pg-muted);font-size:11px;flex-shrink:0;padding-top:3px}
 #paragon-design .bt-channels{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
 #paragon-design .bt-channel{position:relative;min-width:0;min-height:152px;padding:14px 12px;text-align:left;background:#0d1218;border:1px solid #343e4c;border-radius:6px;color:var(--pg-text);overflow:hidden;display:flex;flex-direction:column;gap:8px;touch-action:manipulation}
 #paragon-design .bt-channel:hover{background:#1b222d;border-color:#8290a5}
@@ -36,7 +35,7 @@
 #paragon-design .bt-dialog p{font-size:13px;line-height:1.7;color:var(--pg-muted);margin:20px 0}
 #paragon-design .bt-dialog-actions{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:10px}
 @media(max-width:1100px){#paragon-design .bt-channels{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media(max-width:700px){#paragon-design .bt-tracker{padding:16px 12px}#paragon-design .bt-heading{flex-direction:column;gap:8px}#paragon-design .bt-private{font-size:10px}#paragon-design .bt-heading h3{font-size:15px}#paragon-design .bt-heading p{font-size:11px}#paragon-design .bt-channels{gap:7px}#paragon-design .bt-channel{padding:12px 8px;min-height:164px}#paragon-design .bt-countdown{font-size:20px}#paragon-design .bt-channel-head{font-size:12px}#paragon-design .bt-last{font-size:9px}#paragon-design .bt-notifications{flex-wrap:wrap;align-items:flex-start}#paragon-design .bt-notifications .pg-button{width:100%}#paragon-design .bt-dialog{padding:18px}}
+@media(max-width:700px){#paragon-design .bt-tracker{padding:16px 12px}#paragon-design .bt-heading{flex-direction:column;gap:8px}#paragon-design .bt-heading h3{font-size:15px}#paragon-design .bt-heading p{font-size:11px}#paragon-design .bt-channels{gap:7px}#paragon-design .bt-channel{padding:12px 8px;min-height:164px}#paragon-design .bt-countdown{font-size:20px}#paragon-design .bt-channel-head{font-size:12px}#paragon-design .bt-last{font-size:9px}#paragon-design .bt-notifications{flex-wrap:wrap;align-items:flex-start}#paragon-design .bt-notifications .pg-button{width:100%}#paragon-design .bt-dialog{padding:18px}}
 
 #paragon-design .bt-feedback{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-block:12px}
 #paragon-design .bt-feedback .bt-notice{margin:0;flex:1;min-width:150px}

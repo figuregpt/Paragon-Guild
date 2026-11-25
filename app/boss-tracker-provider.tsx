@@ -5,7 +5,7 @@ import {useLanguage} from './language-provider';
 import {t} from '@/lib/i18n';
 import {findGuideBoss} from '@/lib/boss-guide';
 import {BossChime} from '@/lib/boss-sound';
-import type {BossTimerState,BossTimerAction} from '@/lib/boss-timers';
+import type {BossTimer,BossTimerState,BossTimerAction} from '@/lib/boss-timers';
 import './boss-tracker.css';
 type Tracking={state:BossTimerState|null;clock:number;error:string;saving:Set<string>;message:string;refresh:()=>Promise<void>;record:(bossId:string,channel:number,action:BossTimerAction)=>Promise<boolean>;soundOn:boolean;audioReady:boolean;toggleSound:()=>void;testSound:()=>Promise<void>};
 const Context=createContext<Tracking|null>(null);
@@ -40,7 +40,26 @@ export function BossTrackerProvider({memberId,children}:{memberId?:string;childr
   if(action!=='clear')void prepareSound();
   const current=state.timers.find(timer=>timer.boss_id===bossId&&timer.game_channel===channel);
   writes.current.add(key);++readVersion.current;setSaving(new Set(writes.current));setError('');
-  try{const response=await fetch('/api/boss-timers',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({bossId,channel,action,requestId:crypto.randomUUID(),expectedRevision:current?.revision??null})}),value=await response.json();if(!response.ok)throw new Error(value.error||'The timer could not be saved. Try again.');if(!alive.current)return false;offset.current=value.serverTime-Date.now()/1000;setClock(value.serverTime);setState(previous=>previous?{...previous,serverTime:value.serverTime,timers:[...previous.timers.filter(timer=>timer.boss_id!==bossId||timer.game_channel!==channel),...(value.timer?[value.timer]:[])]}:previous);setMessage(action==='kill'?t('CH{channel} recorded. Respawn in 40 minutes.',{channel}):action==='clear'?t('CH{channel} timer cleared.',{channel}):t('CH{channel} timer updated.',{channel}));return true;}
+  try{
+   const response=await fetch('/api/boss-timers',{
+    method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({bossId,channel,action,requestId:crypto.randomUUID(),expectedRevision:current?.revision??null})
+   });
+   if(!response.ok){
+    const failure=await response.json() as {error?:string};
+    throw new Error(failure.error||'The timer could not be saved. Try again.');
+   }
+   const {serverTime,timer}=await response.json() as {serverTime:number;timer:BossTimer|null};
+   if(!alive.current)return false;
+   offset.current=serverTime-Date.now()/1000;
+   setClock(serverTime);
+   setState(previous=>previous?{...previous,serverTime,timers:[
+    ...previous.timers.filter(entry=>entry.boss_id!==bossId||entry.game_channel!==channel),
+    ...(timer?[timer]:[])
+   ]}:previous);
+   setMessage(action==='kill'?t('CH{channel} recorded. Respawn in 40 minutes.',{channel}):action==='clear'?t('CH{channel} timer cleared.',{channel}):t('CH{channel} timer updated.',{channel}));
+   return true;
+  }
   catch(e){if(alive.current)setError(e instanceof Error?e.message:'The timer could not be saved. Try again.');return false;}
   finally{writes.current.delete(key);if(alive.current){setSaving(new Set(writes.current));void refresh();}}
  }

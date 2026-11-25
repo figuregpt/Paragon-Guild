@@ -1,6 +1,7 @@
 'use client';
 import {EventMapPicker,EventMapView} from './event-map';
-import {eventMapPin,type MapPin} from '@/lib/event-maps';
+import {eventMapPin,eventMapAsset,eventMapAssets,type MapPin} from '@/lib/event-maps';
+import {CalendarDays} from 'lucide-react';
 import {useLanguage} from '@/app/language-provider';
 import {t,localeTag} from '@/lib/i18n';
 import {useEffect,useRef,useState,type FormEvent} from 'react';
@@ -12,8 +13,31 @@ const typeLabel=(e:Event)=>eventKindLabel(e.kind==='Legacy'?e.type:e.kind);
 export function eventLabel(e:Event){if(e.kind==='Legacy')return e.status==='upcoming'?(e.starts>Date.now()/1000?'Upcoming':'Ongoing'):e.status;return ({open:e.kind==='Help'&&e.duration_minutes&&e.starts+e.duration_minutes*60<=Date.now()/1000?'Awaiting Completion':e.starts>Date.now()/1000?'Upcoming':'Ongoing',confirming:'Confirming Attendance',pending:'Awaiting Approval',approved:'Approved',rejected:'Rejected',cancelled:'Cancelled'} as Record<string,string>)[e.phase]||e.phase;}
 function eventTime(e:Event){return localTime(e.starts)+(e.kind==='Help'&&e.duration_minutes?' · '+e.duration_minutes+' '+t('min'):'');}
 const eventPlace=(e:Event)=>[e.location?mapLabel(e.location):'',e.game_channel?'CH-'+e.game_channel:''].filter(Boolean).join(' · ');
-export function EventSummary({events,empty='No ongoing or upcoming events.'}:{events:Event[];empty?:string}){
- useLanguage();return events.length?<ul className="pg-event-summary">{events.map(e=><li key={e.id}><a href={'/?view=events&event='+e.id}><div><strong>{e.title}</strong><span>{t(typeLabel(e))} · {eventTime(e)}</span>{(e.location||e.game_channel)&&<span>{eventPlace(e)}</span>}<span>{t("Hosted by ")}{e.creator_name}</span></div><div><b>{e.pp} PP</b><span>{t(eventLabel(e))}</span></div></a></li>)}</ul>:<p className="pg-empty">{t(empty)}</p>;}
+function EventMapThumbnail({event}:{event:Event}){
+ const maps=eventMapAssets(event.location);
+ const pin=eventMapPin(event);
+ const map=pin?eventMapAsset(pin.asset):maps.length===1?maps[0]:null;
+ return <span className="pg-event-thumb" aria-hidden="true">{map
+  ?<img src={map.src} width={64} height={64} alt="" loading="lazy"/>
+  :<CalendarDays size={21}/>}
+ </span>;
+}
+export function EventSummary({events,empty='No ongoing or upcoming events.',showMap=false}:{events:Event[];empty?:string;showMap?:boolean}){
+ useLanguage();
+ if(!events.length)return <p className="pg-empty">{t(empty)}</p>;
+ return <ul className="pg-event-summary">{events.map(event=><li key={event.id}>
+  <a href={'/?view=events&event='+event.id}>
+   {showMap&&<EventMapThumbnail event={event}/>}
+   <div className="pg-event-info">
+    <strong>{event.title}</strong>
+    <span>{t(typeLabel(event))} · {eventTime(event)}</span>
+    {(event.location||event.game_channel)&&<span>{eventPlace(event)}</span>}
+    <span>{t('Hosted by ')}{event.creator_name}</span>
+   </div>
+   <div className="pg-event-reward"><b>{event.pp} PP</b><span>{t(eventLabel(event))}</span></div>
+  </a>
+ </li>)}</ul>;
+}
 type Detail={event:Event;participants:{member_id:string;name:string;class:string;joined:number;attended:number}[];reward_reviews:{member_id:string;decision:string}[];evidence:{id:string;created:number}[]};
 export default function GuildEvents({data,onChange,manage=false,onReminder}:{data:GuildData;onChange:()=>Promise<void>;manage?:boolean;onReminder:(event:Event)=>void}){
  useLanguage();
@@ -26,7 +50,21 @@ export default function GuildEvents({data,onChange,manage=false,onReminder}:{dat
  const approvalDraft=useRef<{eventId:string;dirty:boolean;ids:string[]}>({eventId:'',dirty:false,ids:[]}),reviewNote=useRef<HTMLTextAreaElement>(null);
  const attendanceDraft=useRef<{eventId:string;dirty:boolean;ids:string[]}>({eventId:'',dirty:false,ids:[]});
  const dialog=useRef<HTMLDialogElement>(null),createDialog=useRef<HTMLDialogElement>(null),requestId=useRef(crypto.randomUUID()),createForm=useRef<HTMLFormElement>(null);
- useEffect(()=>{const eventId=new URLSearchParams(location.search).get('event');if(eventId)setSelected(eventId);const params=new URLSearchParams(location.search);if(params.get('create')==='1'&&!eventId)setCreate(true);if(['mine','history'].includes(params.get('section')||''))setSection(params.get('section')!);if(params.get('manage')==='1'&&data.member.admin)setSection('review');if(EVENT_KINDS.some(k=>k===params.get('type')))setFilter(params.get('type')!);},[]);
+ useEffect(()=>{
+  function syncRoute(){
+   const params=new URLSearchParams(location.search);
+   if(params.get('view')!=='events')return;
+   const eventId=params.get('event'),sectionParam=params.get('section'),type=params.get('type');
+   setSelected(eventId);
+   setCreate(params.get('create')==='1'&&!eventId);
+   setSection(params.get('manage')==='1'&&data.member.admin?'review':sectionParam==='mine'||sectionParam==='history'?sectionParam:'schedule');
+   setFilter(EVENT_KINDS.some(kind=>kind===type)?type!:'All');
+   setLimit(50);
+  }
+  syncRoute();
+  window.addEventListener('popstate',syncRoute);
+  return ()=>window.removeEventListener('popstate',syncRoute);
+ },[data.member.admin]);
  useEffect(()=>{if(create)createDialog.current?.showModal();else createDialog.current?.close();},[create]);
  useEffect(()=>{if(section==='review'&&!data.member.admin)setSection('schedule');},[data.member.admin,section]);
  function updateQuery(values:Record<string,string|null>){const url=new URL(location.href);for(const [key,value] of Object.entries(values)){if(value===null)url.searchParams.delete(key);else url.searchParams.set(key,value);}history.replaceState(null,'',url.pathname+url.search);}

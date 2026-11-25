@@ -1,6 +1,6 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
-import {Bell,Check,Clock3,LockKeyhole,Volume2,VolumeX} from 'lucide-react';
+import {Bell,Check,Clock3,Volume2,VolumeX} from 'lucide-react';
 import {useLanguage} from './language-provider';
 import {t,localeTag} from '@/lib/i18n';
 import {BOSS_CHANNELS,BOSS_MAX_DURATION_SECONDS,countdown,remainingSeconds,type BossTimer,type BossTimerAction} from '@/lib/boss-timers';
@@ -16,11 +16,11 @@ export default function BossTracker({bossId,bossName,pushEnabled,onEnableNotific
  useEffect(()=>{void refresh();},[pushEnabled,refresh]);
  const date=new Intl.DateTimeFormat(localeTag(language),{dateStyle:'medium',timeStyle:'short'});
  return <section className="bt-tracker" aria-labelledby="boss-tracker-title">
-  <header className="bt-heading"><div><h3 id="boss-tracker-title"><Clock3 size={18} aria-hidden="true"/>{t('My Boss Tracker')}</h3><p>{t('Killed this boss? Tap its channel to start 40 minutes.')}</p></div><span className="bt-private"><LockKeyhole size={13} aria-hidden="true"/>{t('Only you can see these timers')}</span></header>
+  <header className="bt-heading"><div><h3 id="boss-tracker-title"><Clock3 size={18} aria-hidden="true"/>{t('My Boss Tracker')}</h3><p>{t('Killed this boss? Tap its channel to start 40 minutes.')}</p></div></header>
   {error&&<div className="bt-error" role="alert">{t(error)} <button type="button" onClick={()=>{void refresh();}}>{t('Try again')}</button></div>}
   <div className="bt-channels" aria-busy={!state}>{BOSS_CHANNELS.map(channel=>{
    const timer=state?.timers.find(timer=>timer.boss_id===bossId&&timer.game_channel===channel),remaining=timer?remainingSeconds(timer,clock):0,running=Boolean(timer&&remaining>0),ready=Boolean(timer&&!running),status=running?'Respawning':ready?'Ready to hunt':'Not tracked';
-   return <div key={channel} className={'bt-channel-tile'+(running?' bt-running':ready?' bt-ready':'')}><button type="button" className="bt-channel" disabled={!state||busy(channel)} aria-label={t('CH{channel} · {status}',{channel,status:t(status)})+(running?' · '+countdown(remaining):'')} aria-haspopup={running?'dialog':undefined} onClick={()=>running?setSelected(timer!):void save(channel,'kill')}>
+   return <div key={channel} className={'bt-channel-tile'+(running?' bt-running':ready?' bt-ready':'')}><button type="button" id={'tracker-channel-'+channel} className="bt-channel" disabled={!state||busy(channel)} aria-label={t('CH{channel} · {status}',{channel,status:t(status)})+(running?' · '+countdown(remaining):'')} aria-haspopup={running?'dialog':undefined} onClick={()=>running?setSelected(timer!):void save(channel,'kill')}>
     <span className="bt-channel-head"><strong>CH{channel}</strong>{ready?<Check size={15} aria-hidden="true"/>:<span className="bt-dot"/>}</span><span className="bt-countdown" aria-hidden="true">{busy(channel)?'…':running?countdown(remaining):ready?t('Ready'):state?t('Mark kill'):'—'}</span><span className="bt-channel-status">{t(status)}</span>
     <span className="bt-last">{timer?<><span>{t('Last killed')}</span><time dateTime={new Date(timer.killed*1000).toISOString()}>{date.format(timer.killed*1000)}</time></>:<span>{t('Tap after your kill')}</span>}</span>
     {running&&<span className="bt-progress" aria-hidden="true"><span style={{width:Math.min(100,remaining/Math.max(1,timer!.respawns-timer!.killed)*100)+'%'}}/></span>}

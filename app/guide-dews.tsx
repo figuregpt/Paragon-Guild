@@ -7,9 +7,10 @@ import {dewItems,dewRecipes,type DewRecipe} from '@/lib/guide-dews';
 import {LootIcon} from './guide-chests';
 import './guide-dews.css';
 
-function RecipeCard({recipe,onSelect}:{recipe:DewRecipe;onSelect?:()=>void}){
+function RecipeCard({recipe,onSelect,standalone=false}:{recipe:DewRecipe;onSelect?:()=>void;standalone?:boolean}){
  const {language}=useLanguage(),number=new Intl.NumberFormat(localeTag(language)),percent=new Intl.NumberFormat(localeTag(language),{style:'percent'}),titleId=useId(),output=dewItems[recipe.output];
- const heading=<><span className="gd-output-art"><LootIcon icon={output.icon}/></span><div><span className="gd-recipe-number">{t('Recipe {number}',{number:String(recipe.referenceOrder).padStart(2,'0')})}</span><h3 id={titleId}>{t(output.name)}</h3><p>{t('Makes {count}',{count:recipe.quantity})}</p></div>{onSelect&&<ChevronRight size={15} aria-hidden="true"/>}</>;
+ const Title=standalone?'h2':'h3';
+ const heading=<><span className="gd-output-art"><LootIcon icon={output.icon}/></span><div><span className="gd-recipe-number">{t('Recipe {number}',{number:String(recipe.referenceOrder).padStart(2,'0')})}</span><Title id={titleId}>{t(output.name)}</Title><p>{t('Makes {count}',{count:recipe.quantity})}</p></div>{onSelect&&<ChevronRight size={15} aria-hidden="true"/>}</>;
  return <article className="gd-recipe" aria-labelledby={titleId} data-recipe={recipe.id}>
   <header>{onSelect?<button type="button" className="gd-recipe-open" onClick={onSelect} aria-label={t('View recipe')+': '+t(output.name)}>{heading}</button>:<div className="gd-recipe-heading">{heading}</div>}</header>
   {recipe.effect&&<dl className="gd-effect"><div><dt>{t(recipe.effect.name)}</dt><dd>{recipe.effect.values.map(value=>recipe.effect!.unit==='%'?percent.format(value/100):number.format(value)).join(' / ')}</dd></div></dl>}
@@ -17,14 +18,17 @@ function RecipeCard({recipe,onSelect}:{recipe:DewRecipe;onSelect?:()=>void}){
   <footer><span>{t('Crafting cost')}</span><strong>{number.format(recipe.yang)} <small>Yang</small></strong></footer>
  </article>;
 }
-export default function GuideDews({onBack}:{onBack:()=>void}){
+export default function GuideDews({onBack,recipeId}:{onBack:()=>void;recipeId?:string|null}){
  useLanguage();
  const [layout,setLayout]=useState<'compact'|'detailed'>(()=>{try{return localStorage.getItem('paragon-dew-layout')==='detailed'?'detailed':'compact';}catch{return 'compact';}});
  const [selected,setSelected]=useState<DewRecipe|null>(null),dialog=useRef<HTMLDialogElement>(null);
  useEffect(()=>{if(selected)dialog.current?.showModal();else dialog.current?.close();},[selected]);
  function changeLayout(value:'compact'|'detailed'){setLayout(value);try{localStorage.setItem('paragon-dew-layout',value);}catch{}}
- return <div className="gd-guide"><button type="button" className="gb-back" onClick={onBack}><ArrowLeft size={16} aria-hidden="true"/>{t('All bosses')}</button>
-  <header className="gd-heading"><FlaskConical size={28} aria-hidden="true"/><div><span className="gg-kicker">ARTHION / {t('Game Guide')}</span><h2>{t('Dews & Potions')}</h2><p>{t('Every recipe makes {count} items.',{count:10})}</p></div><span className="gd-total">{t('{count} recipes · ingredients and Yang costs',{count:dewRecipes.length})}</span></header>
+ const focusedRecipe=dewRecipes.find(recipe=>recipe.id===recipeId);
+ const backButton=<button type="button" className="gb-back" onClick={onBack}><ArrowLeft size={16} aria-hidden="true"/>{t('Recipes')}</button>;
+ if(focusedRecipe) return <div className="gd-guide">{backButton}<div className="gr-focused-recipe"><RecipeCard recipe={focusedRecipe} standalone/><p className="gd-pvm-note">{t('Only effective in PvM.')}</p></div></div>;
+ return <div className="gd-guide">{backButton}
+  <header className="gd-heading"><FlaskConical size={28} aria-hidden="true"/><div><h2>{t('Dews & Potions')}</h2><p>{t('Every recipe makes {count} items.',{count:10})}</p></div><span className="gd-total">{t('{count} recipes · ingredients and Yang costs',{count:dewRecipes.length})}</span></header>
   <p className="gd-pvm-note">{t('Only effective in PvM.')}</p>
   <div className="gd-layout-tools"><span>{t('All recipes')}</span><div className="gg-loot-layout-switch" aria-label={t('Item display')}><button type="button" aria-pressed={layout==='compact'} onClick={()=>changeLayout('compact')}><LayoutGrid size={15} aria-hidden="true"/>{t('Compact')}</button><button type="button" aria-pressed={layout==='detailed'} onClick={()=>changeLayout('detailed')}><List size={15} aria-hidden="true"/>{t('Detailed')}</button></div></div>
   <div className="gd-recipes" data-layout={layout}>{dewRecipes.map(recipe=><RecipeCard key={recipe.id} recipe={recipe} onSelect={()=>setSelected(recipe)}/>)}</div>

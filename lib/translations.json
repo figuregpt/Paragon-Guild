@@ -5502,5 +5502,37 @@
  "+1 min": {
   "tr": "+1 dk",
   "el": "+1 λ."
+ },
+ "Main navigation": {
+  "tr": "Ana menü",
+  "el": "Κύριο μενού"
+ },
+ "Guild": {
+  "tr": "Lonca",
+  "el": "Συντεχνία"
+ },
+ "Recipes": {
+  "tr": "Tarifler",
+  "el": "Συνταγές"
+ },
+ "Tools": {
+  "tr": "Araçlar",
+  "el": "Εργαλεία"
+ },
+ "Active channels": {
+  "tr": "Aktif kanallar",
+  "el": "Ενεργά κανάλια"
+ },
+ "Boss details": {
+  "tr": "Boss bilgileri",
+  "el": "Πληροφορίες αρχηγού"
+ },
+ "All equipment types": {
+  "tr": "Tüm eşya türleri",
+  "el": "Όλοι οι τύποι εξοπλισμού"
+ },
+ "Open Guild for events, auctions, members and your profile.": {
+  "tr": "Eventler, açık artırmalar, üyeler ve profilin için Lonca menüsünü aç.",
+  "el": "Άνοιξε τη Συντεχνία για εκδηλώσεις, δημοπρασίες, μέλη και το προφίλ σου."
  }
 }

@@ -102,6 +102,9 @@
 /* Maps contain independently labelled boss/miniboss groups. */
 #paragon-design .gb-directory-tools{grid-template-columns:minmax(180px,1fr) minmax(170px,.7fr) minmax(150px,.6fr)}
 #paragon-design .gb-map-groups{display:grid;gap:16px}
+@media(min-width:1440px){
+ #paragon-design .gb-map-groups{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+}
 #paragon-design .gb-map-group{border:1px solid #303844;border-radius:8px;background:#10151c;min-width:0;overflow:hidden}
 #paragon-design .gb-map-group>summary{display:flex;align-items:center;gap:14px;padding:16px 18px;min-height:76px;cursor:pointer;list-style:none}
 #paragon-design .gb-map-group>summary::-webkit-details-marker{display:none}

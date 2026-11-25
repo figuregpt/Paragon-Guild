@@ -1,19 +1,72 @@
 'use client';
+
 import {useLanguage} from '@/app/language-provider';
 import {t,localeTag} from '@/lib/i18n';
-import {useState} from 'react';
 import {EventSummary} from './guild-events';
 import {ContributionStatus} from './guild-contributions';
 import type {GuildData} from '@/lib/domain';
 import {localTime} from '@/lib/local-time';
-export default function GuildHome({data,onChange}:{data:GuildData;onChange:()=>Promise<void>}){
+
+export default function GuildHome({data}:{data:GuildData}) {
  useLanguage();
- const [busy,setBusy]=useState(false),[message,setMessage]=useState(''),[error,setError]=useState(false);
- const source=data.contribution;const quest=data.deposits.find(d=>d.kind==='weekly'&&d.week===data.week&&d.status!=='rejected');const completed=source?Boolean(source.checked)&&source.weekly_yang>=data.settings.weekly:quest?.status==='approved',status=source?(!source.checked?'Syncing':completed?'Completed':'Not Completed'):completed?'Completed':quest?'Awaiting Approval':'Not Completed';
- const current=data.events.filter(e=>e.phase==='open'||e.kind==='Legacy'&&e.status==='upcoming');
- const auctions=data.auctions.filter(a=>a.status==='active'&&a.ends>Date.now()/1000);
- async function submit(){if(busy)return;setBusy(true);setError(false);try{const r=await fetch('/api/deposit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:crypto.randomUUID(),kind:'weekly',yang:data.settings.weekly,note:'Weekly Quest · Ch-3 Blacksmith · GuildBanker'})});const j:any=await r.json();if(!r.ok)throw new Error(j.error);await onChange();setMessage('Transfer submitted for administrator approval.');}catch(e){setMessage(e instanceof Error?e.message:'Please try again.');setError(true);}finally{setBusy(false);}}
- return <div className="pg-home"><section className={'pg-window pg-weekly-quest'+(completed?' pg-quest-completed':'')}><div className="pg-title"><h3>{t("Weekly Quests")}</h3><span className={completed?'pg-green':'pg-dim'}>{t(status)}</span></div><div className="pg-quest-body"><div><h4>{t("Guild Bank Contribution")}</h4><p>{t('{amount} Yang to GuildBanker at the Ch-3 Blacksmith.',{amount:new Intl.NumberFormat(localeTag()).format(data.settings.weekly)})}</p><span>{data.settings.rate} PP {source?t("after the transfer appears in the Deposit Log"):t("after administrator approval")}{t(" · Resets every Monday")}</span></div>{source?<div className="pg-quest-progress"><strong className={completed?'pg-green':'pg-dim'}>{completed?t("Quest Completed"):source.checked?new Intl.NumberFormat(localeTag()).format(source.weekly_yang)+' / '+new Intl.NumberFormat(localeTag()).format(data.settings.weekly)+' Yang':t("Checking Deposit Log…")}</strong><progress max={data.settings.weekly} value={Math.min(source.weekly_yang,data.settings.weekly)} aria-label={t("Weekly contribution progress")}/></div>:quest?<strong className={quest.status==='approved'?'pg-green':'pg-gold'}>{quest.status==='approved'?t("Quest Completed"):t("Transfer Submitted")}</strong>:<details className="pg-quest-confirm"><summary className="pg-button pg-red">{t("I Have Given the Yang")}</summary><p>{t("Confirm that you made the transfer in game. An administrator will verify it.")}</p><button className="pg-button" disabled={busy} onClick={()=>void submit()}>{t("Confirm Yang Transfer")}</button></details>}</div>{source&&<ContributionStatus data={data}/>} {message&&<p className={'pg-message'+(error?' pg-error':'')} role={error?'alert':'status'}>{t(message)}</p>}</section>
- <section className="pg-window"><div className="pg-title"><h3>{t("Ongoing & Upcoming Events")}</h3><a className="pg-text-link" href="/?view=events">{t("View All Events")}</a></div><EventSummary events={current.slice(0,5)}/><div className="pg-home-foot"><a className="pg-button" href="/?view=events&create=1">{t("Create Event")}</a></div></section>
- <section className="pg-window"><div className="pg-title"><h3>{t("Ongoing & Upcoming Auctions")}</h3><a className="pg-text-link" href="/?view=auctions">{t("View All Auctions")}</a></div>{auctions.length?<ul className="pg-home-auctions">{auctions.slice(0,4).map(a=><li key={a.id}><a href={'/?view=auctions&auction='+a.id}><img className={a.icon.startsWith('/api/images/')?'pg-home-screenshot':undefined} src={a.icon} width={32} height={64} alt="" loading="lazy"/><div><strong>{a.name}{a.height===2?'+'+a.upgrade:''}</strong><span>{a.starts>Date.now()/1000?t("Starts"):t("Ends")} {localTime(a.starts>Date.now()/1000?a.starts:a.ends)}</span><span>{a.winner_name?t("Highest bidder: ")+a.winner_name:t("No bids yet")}</span></div><b>{a.current||a.minimum} PP</b></a></li>)}</ul>:<p className="pg-empty">{t("No ongoing or upcoming auctions.")}</p>}</section></div>;
+ const {contribution,settings}=data;
+ const completed=Boolean(contribution?.checked && contribution.weekly_yang>=settings.weekly);
+ const formatYang=new Intl.NumberFormat(localeTag());
+ const current=data.events.filter(event=>event.phase==='open'||event.kind==='Legacy'&&event.status==='upcoming');
+ const now=Date.now()/1000;
+ const auctions=data.auctions.filter(auction=>auction.status==='active'&&auction.ends>now);
+
+ return <div className="pg-home">
+  <section className="pg-window pg-home-events">
+   <div className="pg-title">
+    <h3>{t('Ongoing & Upcoming Events')}</h3>
+    <a className="pg-text-link" href="/?view=events">{t('View All Events')}</a>
+   </div>
+   <EventSummary events={current.slice(0,5)} showMap/>
+   <div className="pg-home-foot"><a className="pg-button" href="/?view=events&create=1">{t('Create Event')}</a></div>
+  </section>
+
+  <div className="pg-home-aside">
+   <section className="pg-window pg-home-auction-panel">
+    <div className="pg-title">
+     <h3>{t('Ongoing & Upcoming Auctions')}</h3>
+     <a className="pg-text-link" href="/?view=auctions">{t('View All Auctions')}</a>
+    </div>
+    {auctions.length?<ul className="pg-home-auctions">{auctions.slice(0,4).map(auction=>{
+     const upcoming=auction.starts>now;
+     return <li key={auction.id}><a href={'/?view=auctions&auction='+auction.id}>
+      <img className={auction.icon.startsWith('/api/images/')?'pg-home-screenshot':undefined} src={auction.icon} width={32} height={64} alt="" loading="lazy"/>
+      <div><strong>{auction.name}{auction.height===2?'+'+auction.upgrade:''}</strong>
+       <span>{upcoming?t('Starts'):t('Ends')} {localTime(upcoming?auction.starts:auction.ends)}</span>
+       <span>{auction.winner_name?t('Highest bidder: ')+auction.winner_name:t('No bids yet')}</span>
+      </div>
+      <b>{auction.current||auction.minimum} PP</b>
+     </a></li>;
+    })}</ul>:<p className="pg-empty">{t('No ongoing or upcoming auctions.')}</p>}
+   </section>
+
+   {contribution&&<section className={'pg-window pg-weekly-quest'+(completed?' pg-quest-completed':'')}>
+    <div className="pg-title">
+     <h3>{t('Weekly Quests')}</h3>
+     <span className={completed?'pg-green':'pg-dim'}>{completed?t('Completed'):contribution.checked?t('Not Completed'):t('Syncing')}</span>
+    </div>
+    <div className="pg-quest-body">
+     <div><h4>{t('Guild Bank Contribution')}</h4>
+      <p>{t('{amount} Yang to GuildBanker at the Ch-3 Blacksmith.',{amount:formatYang.format(settings.weekly)})}</p>
+      <span>{settings.rate} PP {t('after the transfer appears in the Deposit Log')}{t(' · Resets every Monday')}</span>
+     </div>
+     <div className="pg-quest-progress">
+      {Boolean(contribution.checked)&&<strong>{formatYang.format(contribution.weekly_yang)} / {formatYang.format(settings.weekly)} Yang</strong>}
+      <progress max={settings.weekly} value={contribution.checked?Math.min(contribution.weekly_yang,settings.weekly):undefined} aria-label={t('Weekly contribution progress')}/>
+     </div>
+    </div>
+    <ContributionStatus data={data}/>
+   </section>}
+
+   {settings.notice&&<section className="pg-window">
+    <div className="pg-title"><h3>{t('Guild Notice')}</h3></div>
+    <div className="pg-guild-notice">{settings.notice==='Welcome to Paragon. Join guild events and earn Participation Points.'?t(settings.notice):settings.notice}</div>
+   </section>}
+  </div>
+ </div>;
 }
