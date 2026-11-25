@@ -1,9 +1,8 @@
 'use client';
 
-import {useEffect, useState, type MouseEvent} from 'react';
+import {useEffect, useState} from 'react';
 import {ChevronRight} from 'lucide-react';
 import {bossGuide, findGuideBoss} from '@/lib/boss-guide';
-import {countdown, remainingSeconds} from '@/lib/boss-timers';
 import {t} from '@/lib/i18n';
 import {useLanguage} from './language-provider';
 import {useBossTracking} from './boss-tracker-provider';
@@ -22,7 +21,7 @@ function readBoss() {
 
 export default function TrackerTools({pushEnabled,onEnableNotifications}:{pushEnabled:boolean;onEnableNotifications:()=>void}) {
   useLanguage();
-  const {state,clock}=useBossTracking();
+  const {state}=useBossTracking();
   const [selected,setSelected]=useState(readBoss);
   const [focusChannel,setFocusChannel]=useState(readChannel);
   useEffect(()=>{
@@ -41,20 +40,13 @@ export default function TrackerTools({pushEnabled,onEnableNotifications}:{pushEn
       findGuideBoss(timer.boss_id)&&(!last||last.killed<timer.killed)?timer:last,undefined);
     setSelected(recent?.boss_id??bossGuide[0].id);
   },[selected,state]);
-  function chooseBoss(id:string,channel:number|null=null) {
-    const target='/?'+new URLSearchParams({view:'tools',boss:id})+(channel?'#tracker-channel-'+channel:'');
+  function chooseBoss(id:string) {
+    const target='/?'+new URLSearchParams({view:'tools',boss:id});
     if(location.pathname+location.search+location.hash!==target)history.pushState(null,'',target);
     setSelected(id);
-    setFocusChannel(channel);
-  }
-  function openTracked(event:MouseEvent<HTMLAnchorElement>,id:string,channel:number) {
-    if(event.button||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
-    event.preventDefault();
-    chooseBoss(id,channel);
+    setFocusChannel(null);
   }
   const chosen=findGuideBoss(selected)??bossGuide[0];
-  const active=(state?.timers??[]).filter(timer=>remainingSeconds(timer,clock)>0 && findGuideBoss(timer.boss_id))
-    .sort((a,b)=>a.respawns-b.respawns);
   return <div className="gg-guide gt-tools">
     <header className="gg-intro"><h2>{t('Tools')}</h2></header>
     <section className="gt-picker" aria-label={t('My Boss Tracker')}>
@@ -67,15 +59,5 @@ export default function TrackerTools({pushEnabled,onEnableNotifications}:{pushEn
       <a className="gt-guide-link" href={'/?view=guide&boss='+chosen.id}>{t('Boss details')}<ChevronRight size={15} aria-hidden="true"/></a>
     </section>
     <BossTracker key={chosen.id} bossId={chosen.id} bossName={chosen.name} pushEnabled={pushEnabled} onEnableNotifications={onEnableNotifications}/>
-    {active.length>0&&<section className="gt-active" aria-labelledby="gt-active-title">
-      <h3 id="gt-active-title">{t('Active channels')}</h3>
-      <ul>{active.map(timer=>{
-        const boss=findGuideBoss(timer.boss_id)!;
-        return <li key={timer.revision}><a href={'/?view=tools&boss='+boss.id+'#tracker-channel-'+timer.game_channel} onClick={event=>openTracked(event,boss.id,timer.game_channel)}>
-          <span><strong translate="no">{boss.name}</strong><small>{t(boss.mapName)}</small></span>
-          <span className="gt-channel">CH{timer.game_channel}</span><b>{countdown(remainingSeconds(timer,clock))}</b>
-        </a></li>;
-      })}</ul>
-    </section>}
   </div>;
 }

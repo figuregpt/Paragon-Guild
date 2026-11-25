@@ -89,14 +89,22 @@ async function checkMobileBounds(page, width, height) {
 
 async function checkSafeInsets(page) {
   const css = ['app/category-navigation.css','app/paragon.css'].map(file => readFileSync(path.join(__dirname, '..', file), 'utf8')).join('\n');
-  const insets = {bottom:34, left:20, right:20};
-  const override = css.replace(/env\(\s*safe-area-inset-(bottom|left|right)\s*(?:,[^)]*)?\)/g, (_, edge) => insets[edge] + 'px');
+  const insets = {top:62, bottom:34, left:20, right:20};
+  const override = css.replace(/env\(\s*safe-area-inset-(top|bottom|left|right)\s*(?:,[^)]*)?\)/g, (_, edge) => insets[edge] + 'px');
   const sheet = await page.addStyleTag({content:override});
   try {
     const geometry = await page.locator(navSelector).getByRole('link').evaluateAll(links => {
       const rects = links.map(link => link.getBoundingClientRect());
       return {left:rects[0].left, right:innerWidth - rects.at(-1).right, bottom:innerHeight - rects[0].bottom};
     });
+    await page.evaluate(() => scrollTo(0, 0));
+    const header = page.locator('.pg-masthead');
+    assert.equal(await page.locator('meta[name="apple-mobile-web-app-status-bar-style"]').getAttribute('content'), 'black');
+    assert.ok(await header.evaluate(el => getComputedStyle(el).backgroundColor !== 'rgba(0, 0, 0, 0)'), 'Opaque header');
+    for (const control of await header.locator('img, select, button').all()) {
+      const box = await control.boundingBox();
+      assert.ok(box && box.y >= insets.top + 8, 'Header content clears the status bar and its regular padding');
+    }
     assert.ok(geometry.left >= insets.left && geometry.right >= insets.right && geometry.bottom >= insets.bottom, 'All tabs clear safe areas');
   } finally { await sheet.evaluate(el => el.remove()); }
 }
@@ -122,15 +130,25 @@ async function checkDeepLinks(page) {
   for (const [route, category, content] of [
     ['view=guide&guide=dews','recipes','.gd-guide'],
     ['view=guide&boss=thornspike-stump','guide','.gb-boss-detail'],
-    ['view=tools&boss=thornspike-stump','tools','.bt-tracker'],
+    ['view=tools&boss=thornspike-stump#tracker-channel-3','tools','.bt-tracker'],
     ['view=members&section=groups','guild','.pg-guild-pages'],
   ]) {
+    if (category === 'tools') {
+      const now = Math.floor(Date.now() / 1000);
+      await page.route('**/api/boss-timers', request => request.fulfill({json:{
+        serverTime: now, pushReady:false, subscribed:false,
+        timers: [{boss_id:'thornspike-stump',game_channel:3,killed:now,respawns:now+2400,revision:'fixture'}],
+      }}));
+    }
     await open(page, '/?' + route);
     await assertCategory(page, category);
     await page.locator(content).waitFor();
     if (category === 'tools') {
       assert.equal(await page.locator('select[name="trackerBoss"]').inputValue(), 'thornspike-stump');
       assert.deepEqual(await page.locator('.bt-channel-head strong').allTextContents(), ['CH1','CH2','CH3','CH4','CH5','CH6']);
+      await page.locator('.bt-running #tracker-channel-3:focus').waitFor();
+      assert.equal(await page.getByRole('heading',{name:'Active channels',exact:true}).count(), 0);
+      await page.unroute('**/api/boss-timers');
     }
   }
   await page.locator(navSelector).locator('[data-category="recipes"]').click();
