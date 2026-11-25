@@ -1,30 +1,28 @@
-#paragon-design .gr-directory > section + section { margin-top: 28px; }
-#paragon-design .gr-section-heading {
-  display: flex; justify-content: space-between; align-items: center;
-  flex-wrap: wrap; gap: 4px 16px; margin-bottom: 10px;
-}
-#paragon-design .gr-section-heading h3 { margin: 0; font-size: 18px; }
-#paragon-design .gr-section-heading a, #paragon-design .gt-guide-link {
+#paragon-design .gt-guide-link {
   display: inline-flex; align-items: center; gap: 5px; min-height: 44px;
   color: var(--pg-text); font-size: 14px; text-underline-offset: 3px;
 }
-#paragon-design .gr-section-heading a:hover, #paragon-design .gt-guide-link:hover { color: #ffb6bf; }
-#paragon-design .gr-options { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+#paragon-design .gt-guide-link:hover { color: #ffb6bf; }
+#paragon-design .gr-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+  gap: 12px;
+}
 #paragon-design .gr-option {
   display: flex; align-items: center; gap: 14px; min-width: 0; min-height: 82px;
   padding: 14px 18px; background: var(--pg-surface); border: 1px solid var(--pg-edge);
   border-radius: 8px; text-decoration: none; color: var(--pg-text);
 }
 #paragon-design .gr-option:hover { background: var(--pg-raised); border-color: #697484; }
-#paragon-design .gr-option > span:nth-child(2) { flex: 1; min-width: 0; overflow-wrap: anywhere; }
-#paragon-design .gr-option strong { display: block; margin-bottom: 3px; font-size: 16px; }
+#paragon-design .gr-option:focus-visible { outline: 2px solid var(--pg-text); outline-offset: 3px; }
+#paragon-design .gr-label { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+#paragon-design .gr-option strong { display: block; margin-bottom: 3px; font-size: 18px; }
 #paragon-design .gr-option small { color: var(--pg-muted); font-size: 14px; }
 #paragon-design .gr-option > svg { flex-shrink: 0; color: var(--pg-muted); }
 #paragon-design .gr-art {
-  display: grid; flex: 0 0 44px; width: 44px; height: 46px; place-items: center;
-  background: var(--pg-raised); border-radius: 5px;
+  display: grid; flex: 0 0 44px; height: 44px; place-items: center;
+  background: var(--pg-raised); color: var(--pg-muted); border-radius: 5px;
 }
-#paragon-design .gr-art img { max-width: 36px; max-height: 40px; object-fit: contain; }
 #paragon-design .gr-focused-recipe { max-width: 520px; }
 #paragon-design .gr-focused-recipe .gd-pvm-note { margin-top: 16px; }
 #paragon-design .gt-picker {
@@ -38,13 +36,6 @@
 }
 
 @media (min-width: 1280px) {
-  #paragon-design .gr-directory {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: clamp(20px, 2vw, 36px);
-  }
-  #paragon-design .gr-directory > .gg-intro { grid-column: 1 / -1; }
-  #paragon-design .gr-directory > section + section { margin-top: 0; }
   #paragon-design .gt-picker {
     grid-template-columns: minmax(0, 18rem) minmax(0, 24rem) max-content;
   }

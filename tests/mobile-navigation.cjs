@@ -6,6 +6,8 @@ const path = require('node:path');
 const base = process.env.TEST_BASE_URL || 'http://127.0.0.1:3190';
 assert.equal(new URL(base).hostname, '127.0.0.1', 'Only use an isolated local instance');
 const dictionary = JSON.parse(readFileSync(path.join(__dirname, '../lib/translations.json'), 'utf8'));
+const {recipes} = require('../lib/guide-dews.json');
+const {categories:equipmentTypes} = require('../lib/guide-upgrades.json');
 const categories = [['guild', 'Guild', 'home'], ['guide', 'Guide', 'guide'], ['recipes', 'Recipes', 'recipes'], ['tools', 'Tools', 'tools']];
 const navSelector = '.pg-category-nav';
 const guildPages = ['home', 'events', 'auctions', 'members', 'profile'];
@@ -109,7 +111,7 @@ async function checkSafeInsets(page) {
   } finally { await sheet.evaluate(el => el.remove()); }
 }
 
-async function checkDeepLinks(page) {
+async function checkDeepLinks(page, mobile) {
   await page.locator(navSelector).locator('[data-category="guild"]').click();
   await page.getByRole('link', {name:'View PP History',exact:true}).click();
   await page.waitForURL(url => url.searchParams.get('view') === 'profile' && url.hash === '#pp-history');
@@ -159,12 +161,25 @@ async function checkDeepLinks(page) {
   await page.goForward();
   await assertCategory(page, 'recipes');
 
-  await page.locator('.gr-directory a[href*="recipe=red-dew"]').click();
-  await page.locator('.gr-focused-recipe [data-recipe="red-dew"]').waitFor();
-  assert.equal(new URL(page.url()).searchParams.get('recipe'), 'red-dew');
+  const directory = page.locator('.gr-directory');
+  const dews = directory.locator('a[href="/?view=recipes&guide=dews"]');
+  const upgrades = directory.locator('a[href="/?view=recipes&guide=upgrades"]');
+  await directory.waitFor();
+  assert.equal(await directory.getByRole('link').count(), 2);
+  if (mobile) await dews.tap(); else await dews.press('Enter');
+  await page.locator('.gd-recipes').waitFor();
+  assert.deepEqual(await page.locator('.gd-recipes [data-recipe]').evaluateAll(rows => rows.map(row => row.dataset.recipe)), recipes.map(recipe => recipe.id));
   await page.goBack();
-  await page.locator('.gr-directory a[href*="category=shields"]').click();
-  assert.equal(await page.locator('select[name="upgradeCategory"]').inputValue(), 'shields');
+  if (mobile) await upgrades.tap(); else await upgrades.press('Enter');
+  const equipment = page.locator('select[name="upgradeCategory"]');
+  await equipment.waitFor();
+  assert.deepEqual(await equipment.locator('option').evaluateAll(options => options.map(option => option.value)), equipmentTypes.map(type => type.id));
+  await equipment.selectOption('shields');
+  await page.waitForURL(url => url.searchParams.get('category') === 'shields');
+  await page.getByRole('button', {name:'Recipes', exact:true}).click();
+  await directory.waitFor();
+  await open(page, '/?view=recipes&guide=dews&recipe=red-dew');
+  await page.locator('.gr-focused-recipe [data-recipe="red-dew"]').waitFor();
 
   await page.locator(navSelector).locator('[data-category="guild"]').click();
   for (const view of guildPages) {
@@ -228,7 +243,6 @@ async function checkDeepLinks(page) {
             await page.evaluate(async () => {
               scrollTo(0, 0);
               await document.fonts.ready;
-              await Promise.all([...document.querySelectorAll('.gr-directory img')].map(image => image.decode()));
             });
             await page.screenshot({path:process.env.RECIPES_SCREENSHOT_PATH});
           }
@@ -240,7 +254,7 @@ async function checkDeepLinks(page) {
           }
         }
         if (mobile && width === 320) await checkSafeInsets(page);
-        if (language === 'en' && (width === 320 || width === 1440)) await checkDeepLinks(page);
+        if (language === 'en' && (width === 320 || width === 1440)) await checkDeepLinks(page,mobile);
         const last = nav.getByRole('link').last();
         await last.focus(); await page.keyboard.press('Tab'); await page.keyboard.press('Shift+Tab');
         assert.ok(await last.evaluate(el => el === document.activeElement && el.matches(':focus-visible')), 'Keyboard focus survives tab navigation');
